@@ -3,8 +3,8 @@ title: "Radiometria"
 email: "matheus.cavalcante@ee.ufcg.edu.br"
 description: "Grupo de Pesquisa em Radiometria"
 title_image: "assets/logo.png"
-baseurl: "/sson"
-url: "http://suehtamacv.github.io/"
+baseurl: ""
+url: "http://radiometria.github.io/"
 title_description: "Grupo de Pesquisa em Radiometria da Universidade Federal de Campina Grande"
 
 # Build settings
