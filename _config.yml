@@ -1,0 +1,21 @@
+# Site settings
+title: "Radiometria"
+email: "matheus.cavalcante@ee.ufcg.edu.br"
+description: "Grupo de Pesquisa em Radiometria"
+title_image: "assets/logo.png"
+baseurl: "/sson"
+url: "http://suehtamacv.github.io/"
+title_description: "Grupo de Pesquisa em Radiometria da Universidade Federal de Campina Grande"
+
+# Build settings
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
+exclude: [vendor]
+
+collections:
+  publicacoes:
+    output: false
+  membros:
+    output: true
+    layout: membro

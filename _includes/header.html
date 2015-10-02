@@ -1,0 +1,22 @@
+<nav id="my-menu">
+  <div>
+    <p>{{ site.description }}</p>
+
+    <ul class="pages">
+      <li><a href="{{ site.baseurl }}/"><i class="fa fa-home"></i> Home</a></li>
+      <li><a href="{{ site.baseurl }}/radiometria/"><i class="fa fa-gear"></i> Sobre o Grupo</a></li>
+	  <li><a href="{{ site.baseurl }}/linhas/"><i class="fa fa-flask"></i> Linhas de Pesquisa</a>
+		<ul class="pages">
+          <li><a href="{{ site.baseurl }}/linhas/modelagem/"><i class="fa fa-lightbulb-o"></i> Modelagem Computacional de Efeitos Eletromagnéticos</a>
+			<ul class="pages">
+			  <li><a href="{{ site.baseurl }}/sson"> SSON: Simulator for Slice Optical Networks</a></li>
+			</ul>
+		  </li>
+        </ul>
+	  </li>
+	  <li><a href="{{ site.baseurl }}/membros/"><i class="fa fa-user"></i> Membros</a></li>
+	  <li><a href="{{ site.baseurl }}/publicacoes/"><i class="fa fa-newspaper-o"></i>Publicações</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="menu-button" href="#menu"><i class="fa fa-bars"></i></div>

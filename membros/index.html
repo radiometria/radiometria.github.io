@@ -1,0 +1,21 @@
+---
+layout: post
+title: Membros
+thumbnail: user
+---
+
+<div class="page-content">
+  {% for membro in site.membros %}
+  <div class="membros">
+	<h3>Prof. Dr. {{ membro.name }}</h3>
+	<a data-toggle="collapse" href="#collapse{{ forloop.index }}"><i class="fa fa-caret-down"></i> Ver detalhes</a>
+	<div id="collapse{{ forloop.index }}" class="panel-collapse collapse">
+	  <p>
+		<a href={{ membro.lattes }}>Currículo Lattes</a>
+		<br/>
+		<a href={{ site.baseurl}}{{ membro.url }}>Página Pessoal</a>
+	  </p>
+	</div>
+  </div>
+  {% endfor %}
+</div>

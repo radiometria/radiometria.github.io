@@ -1,0 +1,45 @@
+---
+layout: post
+title: Publicações
+thumbnail: newspaper-o
+---
+
+<div class="page-content">
+  <div class="wrap">
+	{% assign artigosporano = site.publicacoes | group_by:"ano" | sort:"name" | reverse %}
+	{% for item in artigosporano %}
+	{% assign sorted_artigos = item.items | sort:"titulo" %}
+	{% for artigo in sorted_artigos %}
+	{% capture this_year %}{{ artigo.ano }}{% endcapture %}
+
+	{% if forloop.first %}
+	<div class="wrap">
+	  <h2 id="{{ this_year }}-ref">{{ this_year }}</h2>
+	  <a data-toggle="collapse" href="#{{ this_year }}"><i class="fa fa-caret-down"></i> {{ forloop.length }} artigos</a>
+	  <div id="{{ this_year }}" class="panel-collapse collapse">
+		<ul>
+	{% endif %}
+		  <li>
+			<h3>{{ artigo.titulo }}</h3>
+			<a data-toggle="collapse" href="#{{ item.name }}-{{ forloop.index }}"><i class="fa fa-caret-down"></i> Ver detalhes</a>
+			<div id="{{ item.name }}-{{ forloop.index }}" class="panel-collapse collapse">
+			  <p>{{ artigo.evento }}, {{ artigo.ano }}.</p>
+			  <div>
+				Lista de Autores:
+				<ul>
+				  {% for autor in artigo.autores %}
+				  <li> {{ autor.nome }} </li>
+				  {% endfor %}
+				</ul>
+			  </div>
+			</div>
+		  </li>
+		  {% if forloop.last %}
+		</ul>
+	  </div>
+	</div>
+	{% endif %}
+	{% endfor %}
+	{% endfor %}
+  </div>
+</div>
