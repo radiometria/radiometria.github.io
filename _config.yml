@@ -17,5 +17,5 @@ collections:
   publicacoes:
     output: false
   membros:
-    output: true
+    output: false
     layout: membro

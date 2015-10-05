@@ -13,7 +13,9 @@ thumbnail: user
 	  <p>
 		<a href={{ membro.lattes }}>Currículo Lattes</a>
 		<br/>
-		<a href={{ site.baseurl}}{{ membro.url }}>Página Pessoal</a>
+		{% if membro.pessoal == "" %}
+		<a href={{ membro.pessoal }}>Página Pessoal</a>
+		{% endif %}
 	  </p>
 	</div>
   </div>

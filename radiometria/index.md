@@ -13,7 +13,7 @@ O [Grupo de Pesquisa em Radiometria](http://dgp.cnpq.br/dgp/espelhogrupo/1937070
 O _Grupo de Pesquisa em Radiometria_ é formado pelos seguintes docentes.
 
 {% for membro in site.membros %}
-* Prof. Dr. [{{ membro.name }}]({{ site.baseurl }}{{ membro.url }}){% endfor %}
+* Prof. Dr. [{{ membro.name }}]({{ membro.lattes }}){% endfor %}
 
 ##Linhas de Pesquisa
 
