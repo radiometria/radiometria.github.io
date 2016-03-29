@@ -8,9 +8,7 @@ url: "http://radiometria.dee.ufcg.edu.br"
 title_description: "Grupo de Pesquisa em Radiometria da Universidade Federal de Campina Grande"
 
 # Build settings
-markdown: redcarpet
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
+markdown: kramdown
 exclude: [vendor]
 
 collections:
