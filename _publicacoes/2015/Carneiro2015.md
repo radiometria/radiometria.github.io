@@ -3,6 +3,6 @@ titulo: Aplicação da Codificação para Aumento da Robustez para a Identifica�
 ano: 2015
 evento: Encontro Anual do IECOM em Comunicações, Redes e Criptografia (ENCOM)
 autores:
-    - nome: Artur Carneiro
+    - nome: Arthur de Lima Carneiro
     - nome: Edmar Candeia Gurjão
 ---
