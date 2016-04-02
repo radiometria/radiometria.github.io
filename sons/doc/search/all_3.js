@@ -9,7 +9,7 @@ var searchData=
   ['destination',['Destination',['../class_call.html#aec6a233a15ef1b32f4849aafa7e11cc5',1,'Call::Destination()'],['../class_link.html#aa273d9ecee205daa2f69ead1a096e802',1,'Link::Destination()']]],
   ['device',['Device',['../class_devices_1_1_device.html',1,'Devices']]],
   ['device',['Device',['../class_devices_1_1_device.html#a774315f60f1a544c870a5213d401b701',1,'Devices::Device']]],
-  ['devices',['Devices',['../class_link.html#a8a02d8ea8811df0f01b5e1c51723b5a3',1,'Link::Devices()'],['../class_node.html#af2abec28ba436db9ed9796e52670e8a2',1,'Node::Devices()']]],
+  ['devices',['Devices',['../namespace_devices.html',1,'Devices'],['../class_link.html#a8a02d8ea8811df0f01b5e1c51723b5a3',1,'Link::Devices()'],['../class_node.html#af2abec28ba436db9ed9796e52670e8a2',1,'Node::Devices()']]],
   ['devicetype',['DeviceType',['../class_devices_1_1_device.html#a6fe70fa8017a07adda38721261dec046',1,'Devices::Device']]],
   ['devtype',['DevType',['../class_devices_1_1_device.html#a19618fae75044a91862d0e8c00e47d4c',1,'Devices::Device']]],
   ['dijkstraroutingalgorithm',['DijkstraRoutingAlgorithm',['../class_dijkstra_routing_algorithm.html',1,'']]],

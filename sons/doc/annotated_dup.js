@@ -1,33 +1,7 @@
 var annotated_dup =
 [
-    [ "Devices", null, [
-      [ "Amplifier", "class_devices_1_1_amplifier.html", "class_devices_1_1_amplifier" ],
-      [ "BoosterAmplifier", "class_devices_1_1_booster_amplifier.html", "class_devices_1_1_booster_amplifier" ],
-      [ "Device", "class_devices_1_1_device.html", "class_devices_1_1_device" ],
-      [ "EDFA", "class_devices_1_1_e_d_f_a.html", "class_devices_1_1_e_d_f_a" ],
-      [ "Fiber", "class_devices_1_1_fiber.html", "class_devices_1_1_fiber" ],
-      [ "InLineAmplifier", "class_devices_1_1_in_line_amplifier.html", "class_devices_1_1_in_line_amplifier" ],
-      [ "PreAmplifier", "class_devices_1_1_pre_amplifier.html", "class_devices_1_1_pre_amplifier" ],
-      [ "Regenerator", "class_devices_1_1_regenerator.html", "class_devices_1_1_regenerator" ],
-      [ "Splitter", "class_devices_1_1_splitter.html", "class_devices_1_1_splitter" ],
-      [ "SSS", "class_devices_1_1_s_s_s.html", "class_devices_1_1_s_s_s" ]
-    ] ],
-    [ "PSR", null, [
-      [ "cAvailability", "class_p_s_r_1_1c_availability.html", "class_p_s_r_1_1c_availability" ],
-      [ "cBitrate", "class_p_s_r_1_1c_bitrate.html", "class_p_s_r_1_1c_bitrate" ],
-      [ "cContiguity", "class_p_s_r_1_1c_contiguity.html", "class_p_s_r_1_1c_contiguity" ],
-      [ "cDistance", "class_p_s_r_1_1c_distance.html", "class_p_s_r_1_1c_distance" ],
-      [ "cHopDistance", "class_p_s_r_1_1c_hop_distance.html", "class_p_s_r_1_1c_hop_distance" ],
-      [ "cLinkLength", "class_p_s_r_1_1c_link_length.html", "class_p_s_r_1_1c_link_length" ],
-      [ "cModulationScheme", "class_p_s_r_1_1c_modulation_scheme.html", "class_p_s_r_1_1c_modulation_scheme" ],
-      [ "cNoise", "class_p_s_r_1_1c_noise.html", "class_p_s_r_1_1c_noise" ],
-      [ "cNormContiguity", "class_p_s_r_1_1c_norm_contiguity.html", "class_p_s_r_1_1c_norm_contiguity" ],
-      [ "cNormNoise", "class_p_s_r_1_1c_norm_noise.html", "class_p_s_r_1_1c_norm_noise" ],
-      [ "cOccupability", "class_p_s_r_1_1c_occupability.html", "class_p_s_r_1_1c_occupability" ],
-      [ "cOrigDestIndex", "class_p_s_r_1_1c_orig_dest_index.html", "class_p_s_r_1_1c_orig_dest_index" ],
-      [ "Cost", "class_p_s_r_1_1_cost.html", "class_p_s_r_1_1_cost" ],
-      [ "cSlots", "class_p_s_r_1_1c_slots.html", "class_p_s_r_1_1c_slots" ]
-    ] ],
+    [ "Devices", "namespace_devices.html", "namespace_devices" ],
+    [ "PSR", "namespace_p_s_r.html", "namespace_p_s_r" ],
     [ "Simulations", null, [
       [ "NSGA2_Parameters", null, [
         [ "NSGA2_Parameter_BlockingProbability", "class_simulations_1_1_n_s_g_a2___parameters_1_1_n_s_g_a2___parameter___blocking_probability.html", "class_simulations_1_1_n_s_g_a2___parameters_1_1_n_s_g_a2___parameter___blocking_probability" ],

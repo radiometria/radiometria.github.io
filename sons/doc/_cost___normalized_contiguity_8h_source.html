@@ -46,6 +46,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -111,7 +112,7 @@ $(document).ready(function(){initNavTree('_cost___normalized_contiguity_8h_sourc
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_p_s_r_1_1c_norm_contiguity.html">cNormContiguity</a>(<span class="keywordtype">int</span> NMin, <span class="keywordtype">int</span> NMax, std::shared_ptr&lt;Topology&gt; T);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    arma::rowvec getCost(std::weak_ptr&lt;Link&gt; link, std::shared_ptr&lt;Call&gt; C);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    arma::rowvec <a class="code" href="class_p_s_r_1_1c_norm_contiguity.html#ae845d161ddf99dd7c8707d21396b17be">getCost</a>(std::weak_ptr&lt;Link&gt; link, std::shared_ptr&lt;Call&gt; C);</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> createCache();</div>
@@ -122,9 +123,10 @@ $(document).ready(function(){initNavTree('_cost___normalized_contiguity_8h_sourc
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#endif // COST_NORMALIZEDCONTIGUITY_H</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="ttc" id="namespace_p_s_r_html"><div class="ttname"><a href="namespace_p_s_r.html">PSR</a></div><div class="ttdef"><b>Definition:</b> Cost.h:12</div></div>
+<div class="ttc" id="namespace_p_s_r_html"><div class="ttname"><a href="namespace_p_s_r.html">PSR</a></div><div class="ttdoc">Calculations and costs to the Power Series Routing (PSR) routing algorithm. </div><div class="ttdef"><b>Definition:</b> Cost.h:12</div></div>
 <div class="ttc" id="class_p_s_r_1_1c_norm_contiguity_html"><div class="ttname"><a href="class_p_s_r_1_1c_norm_contiguity.html">PSR::cNormContiguity</a></div><div class="ttdoc">The cNormContiguity class has, as cost, the contiguity measure of the link. It only works on transpar...</div><div class="ttdef"><b>Definition:</b> Cost_NormalizedContiguity.h:15</div></div>
-<div class="ttc" id="class_p_s_r_1_1_cost_html"><div class="ttname"><a href="class_p_s_r_1_1_cost.html">PSR::Cost</a></div><div class="ttdef"><b>Definition:</b> Cost.h:15</div></div>
+<div class="ttc" id="class_p_s_r_1_1_cost_html"><div class="ttname"><a href="class_p_s_r_1_1_cost.html">PSR::Cost</a></div><div class="ttdoc">The Cost class represents a cost to the PSR. </div><div class="ttdef"><b>Definition:</b> Cost.h:18</div></div>
+<div class="ttc" id="class_p_s_r_1_1c_norm_contiguity_html_ae845d161ddf99dd7c8707d21396b17be"><div class="ttname"><a href="class_p_s_r_1_1c_norm_contiguity.html#ae845d161ddf99dd7c8707d21396b17be">PSR::cNormContiguity::getCost</a></div><div class="ttdeci">arma::rowvec getCost(std::weak_ptr&lt; Link &gt; link, std::shared_ptr&lt; Call &gt; C)</div><div class="ttdoc">getCost returns a vector containing the cost, elevated to the required exponents, in order...</div><div class="ttdef"><b>Definition:</b> Cost_NormalizedContiguity.cpp:12</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -46,6 +46,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -108,23 +109,24 @@ $(document).ready(function(){initNavTree('_cost___slots_8h_source.html','');});
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_p_s_r.html">PSR</a></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_p_s_r_1_1c_slots.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_p_s_r_1_1c_slots.html">cSlots</a> : <span class="keyword">public</span> <a class="code" href="class_p_s_r_1_1_cost.html">Cost</a></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="class_p_s_r_1_1c_slots.html">cSlots</a>(<span class="keywordtype">int</span> NMin, <span class="keywordtype">int</span> NMax, std::shared_ptr&lt;Topology&gt; T);</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    arma::rowvec getCost(std::weak_ptr&lt;Link&gt;, std::shared_ptr&lt;Call&gt;);</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">void</span> createCache();</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    std::map&lt;unsigned int, arma::rowvec&gt; cache;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;};</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_p_s_r_1_1c_slots.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_p_s_r_1_1c_slots.html">cSlots</a> : <span class="keyword">public</span> <a class="code" href="class_p_s_r_1_1_cost.html">Cost</a></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_p_s_r_1_1c_slots.html">cSlots</a>(<span class="keywordtype">int</span> NMin, <span class="keywordtype">int</span> NMax, std::shared_ptr&lt;Topology&gt; T);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    arma::rowvec <a class="code" href="class_p_s_r_1_1c_slots.html#ade3cbe015ed48b28d29507563141b783">getCost</a>(std::weak_ptr&lt;Link&gt;, std::shared_ptr&lt;Call&gt;);</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#endif // CSLOTS_H</span></div>
-<div class="ttc" id="namespace_p_s_r_html"><div class="ttname"><a href="namespace_p_s_r.html">PSR</a></div><div class="ttdef"><b>Definition:</b> Cost.h:12</div></div>
-<div class="ttc" id="class_p_s_r_1_1_cost_html"><div class="ttname"><a href="class_p_s_r_1_1_cost.html">PSR::Cost</a></div><div class="ttdef"><b>Definition:</b> Cost.h:15</div></div>
-<div class="ttc" id="class_p_s_r_1_1c_slots_html"><div class="ttname"><a href="class_p_s_r_1_1c_slots.html">PSR::cSlots</a></div><div class="ttdef"><b>Definition:</b> Cost_Slots.h:10</div></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> createCache();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    std::map&lt;unsigned int, arma::rowvec&gt; cache;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#endif // CSLOTS_H</span></div>
+<div class="ttc" id="namespace_p_s_r_html"><div class="ttname"><a href="namespace_p_s_r.html">PSR</a></div><div class="ttdoc">Calculations and costs to the Power Series Routing (PSR) routing algorithm. </div><div class="ttdef"><b>Definition:</b> Cost.h:12</div></div>
+<div class="ttc" id="class_p_s_r_1_1c_slots_html_ade3cbe015ed48b28d29507563141b783"><div class="ttname"><a href="class_p_s_r_1_1c_slots.html#ade3cbe015ed48b28d29507563141b783">PSR::cSlots::getCost</a></div><div class="ttdeci">arma::rowvec getCost(std::weak_ptr&lt; Link &gt;, std::shared_ptr&lt; Call &gt;)</div><div class="ttdoc">getCost returns a vector containing the cost, elevated to the required exponents, in order...</div><div class="ttdef"><b>Definition:</b> Cost_Slots.cpp:10</div></div>
+<div class="ttc" id="class_p_s_r_1_1_cost_html"><div class="ttname"><a href="class_p_s_r_1_1_cost.html">PSR::Cost</a></div><div class="ttdoc">The Cost class represents a cost to the PSR. </div><div class="ttdef"><b>Definition:</b> Cost.h:18</div></div>
+<div class="ttc" id="class_p_s_r_1_1c_slots_html"><div class="ttname"><a href="class_p_s_r_1_1c_slots.html">PSR::cSlots</a></div><div class="ttdoc">The cSlots class has, as cost, the quantity of slots required by this connection, normalized by the h...</div><div class="ttdef"><b>Definition:</b> Cost_Slots.h:15</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
