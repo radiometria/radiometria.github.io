@@ -7,7 +7,7 @@ var searchData=
   ['modulationschemes',['ModulationSchemes',['../class_regenerator_assignment_algorithm.html#aeaa62c69e003813e680aa9cdc2cddeed',1,'RegeneratorAssignmentAlgorithm']]],
   ['mostsimultaneouslyused',['MostSimultaneouslyUsed',['../class_most_simultaneously_used.html',1,'']]],
   ['mostused',['MostUsed',['../class_most_used.html',1,'']]],
-  ['mostused',['MostUsed',['../class_w_a_1_1_most_used.html',1,'WA']]],
+  ['mostused',['MostUsed',['../class_s_a_1_1_most_used.html',1,'SA']]],
   ['mu',['mu',['../class_call_generator.html#a745ad9085e2a6cc4d87e1add58303425',1,'CallGenerator']]],
   ['mutate',['mutate',['../class_n_s_g_a2___individual.html#a6477f9016d514b671de3cdcc526b8c67',1,'NSGA2_Individual']]],
   ['mutationprob',['mutationProb',['../class_n_s_g_a2.html#a9caa987f202d8ec8f6e01b4c7c73140f',1,'NSGA2']]]

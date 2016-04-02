@@ -1,8 +1,0 @@
-<map id="WA::WavelengthAssignmentAlgorithm" name="WA::WavelengthAssignmentAlgorithm">
-<area shape="rect" id="node2" href="$class_w_a_1_1_best_fit.html" title="WA::BestFit" alt="" coords="5,95,100,121"/>
-<area shape="rect" id="node3" href="$class_w_a_1_1_exact_fit.html" title="WA::ExactFit" alt="" coords="125,95,226,121"/>
-<area shape="rect" id="node4" href="$class_w_a_1_1_first_fit.html" title="WA::FirstFit" alt="" coords="250,95,343,121"/>
-<area shape="rect" id="node5" href="$class_w_a_1_1_least_used.html" title="WA::LeastUsed" alt="" coords="367,95,482,121"/>
-<area shape="rect" id="node6" href="$class_w_a_1_1_most_used.html" title="WA::MostUsed" alt="" coords="506,95,618,121"/>
-<area shape="rect" id="node7" href="$class_w_a_1_1_random_fit.html" title="WA::RandomFit" alt="" coords="643,95,759,121"/>
-</map>

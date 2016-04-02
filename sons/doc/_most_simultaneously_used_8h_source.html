@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>SONS: include/RWA/RegeneratorPlacementAlgorithms/MostSimultaneouslyUsed.h Source File</title>
+<title>SONS: include/RMSA/RegeneratorPlacementAlgorithms/MostSimultaneouslyUsed.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -103,7 +103,7 @@ $(document).ready(function(){initNavTree('_most_simultaneously_used_8h_source.ht
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef MOSTSIMULTANEOUSLYUSED_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define MOSTSIMULTANEOUSLYUSED_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;RWA/RegeneratorPlacementAlgorithms/RegeneratorPlacementAlgorithm.h&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;RMSA/RegeneratorPlacementAlgorithms/RegeneratorPlacementAlgorithm.h&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;GeneralClasses/TransmissionBitrate.h&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">class </span><a class="code" href="class_routing_wavelength_assignment.html">RoutingWavelengthAssignment</a>;</div>
@@ -112,7 +112,7 @@ $(document).ready(function(){initNavTree('_most_simultaneously_used_8h_source.ht
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="class_most_simultaneously_used.html">MostSimultaneouslyUsed</a>(std::shared_ptr&lt;Topology&gt; <a class="code" href="class_regenerator_placement_algorithm.html#a5dacf34f64fd86f5b71fdb2a4a131b1e">T</a>,</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;                           std::shared_ptr&lt;RoutingWavelengthAssignment&gt; RWA,</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;                           std::shared_ptr&lt;RoutingWavelengthAssignment&gt; RMSA,</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;                           <span class="keywordtype">double</span> NetworkLoad,</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                           <span class="keywordtype">long</span> <span class="keywordtype">long</span> <span class="keywordtype">unsigned</span> NumCalls = 1E6,</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                           std::vector&lt;TransmissionBitrate&gt; Bitrates = TransmissionBitrate::DefaultBitrates</div>
@@ -121,7 +121,7 @@ $(document).ready(function(){initNavTree('_most_simultaneously_used_8h_source.ht
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> load();</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    std::shared_ptr&lt;RoutingWavelengthAssignment&gt; RWA;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    std::shared_ptr&lt;RoutingWavelengthAssignment&gt; RMSA;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">double</span> NetworkLoad;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <span class="keywordtype">unsigned</span> NumCalls;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    std::vector&lt;TransmissionBitrate&gt; Bitrates;</div>
@@ -140,7 +140,7 @@ $(document).ready(function(){initNavTree('_most_simultaneously_used_8h_source.ht
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_74b5e077de09bff75ad057014dda84b5.html">RWA</a></li><li class="navelem"><a class="el" href="dir_09acf1bedab009546fbbe20b827098dc.html">RegeneratorPlacementAlgorithms</a></li><li class="navelem"><b>MostSimultaneouslyUsed.h</b></li>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_2519acf618d355623026ac0df097c1a3.html">RMSA</a></li><li class="navelem"><a class="el" href="dir_1ec378438afeadf336ee65a3779d2dd9.html">RegeneratorPlacementAlgorithms</a></li><li class="navelem"><b>MostSimultaneouslyUsed.h</b></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>

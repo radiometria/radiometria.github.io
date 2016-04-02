@@ -105,18 +105,18 @@ var hierarchy =
     ] ],
     [ "Slot", "class_slot.html", null ],
     [ "SpectralDensity", "class_spectral_density.html", null ],
+    [ "SA::SpectrumAssignmentAlgorithm", "class_s_a_1_1_spectrum_assignment_algorithm.html", [
+      [ "SA::BestFit", "class_s_a_1_1_best_fit.html", null ],
+      [ "SA::ExactFit", "class_s_a_1_1_exact_fit.html", null ],
+      [ "SA::FirstFit", "class_s_a_1_1_first_fit.html", null ],
+      [ "SA::LeastUsed", "class_s_a_1_1_least_used.html", null ],
+      [ "SA::MostUsed", "class_s_a_1_1_most_used.html", null ],
+      [ "SA::RandomFit", "class_s_a_1_1_random_fit.html", null ]
+    ] ],
     [ "Topology", "class_topology.html", null ],
     [ "TransferFunction", "class_transfer_function.html", [
       [ "GaussianTransferFunction", "class_gaussian_transfer_function.html", null ]
     ] ],
     [ "TransmissionBitrate", "class_transmission_bitrate.html", null ],
-    [ "TransparentSegment", "class_transparent_segment.html", null ],
-    [ "WA::WavelengthAssignmentAlgorithm", "class_w_a_1_1_wavelength_assignment_algorithm.html", [
-      [ "WA::BestFit", "class_w_a_1_1_best_fit.html", null ],
-      [ "WA::ExactFit", "class_w_a_1_1_exact_fit.html", null ],
-      [ "WA::FirstFit", "class_w_a_1_1_first_fit.html", null ],
-      [ "WA::LeastUsed", "class_w_a_1_1_least_used.html", null ],
-      [ "WA::MostUsed", "class_w_a_1_1_most_used.html", null ],
-      [ "WA::RandomFit", "class_w_a_1_1_random_fit.html", null ]
-    ] ]
+    [ "TransparentSegment", "class_transparent_segment.html", null ]
 ];

@@ -4,7 +4,7 @@ var searchData=
   ['fiber',['Fiber',['../class_devices_1_1_fiber.html#a90f388399fddf08274fcba536689c30f',1,'Devices::Fiber']]],
   ['fiberdevice',['FiberDevice',['../class_devices_1_1_device.html#a6fe70fa8017a07adda38721261dec046ae064d609173b5d8f6bcd2dcf319a51e4',1,'Devices::Device']]],
   ['filterorder',['filterOrder',['../class_devices_1_1_s_s_s.html#a960c21aa139bf3524b9a8ba5e16414a6',1,'Devices::SSS']]],
-  ['firstfit',['FirstFit',['../class_w_a_1_1_first_fit.html',1,'WA']]],
+  ['firstfit',['FirstFit',['../class_s_a_1_1_first_fit.html',1,'SA']]],
   ['firstlongestreach',['FirstLongestReach',['../class_first_longest_reach.html',1,'FirstLongestReach'],['../class_first_longest_reach.html#a4079f3e37a9ab7ee16e559b1ed17a434',1,'FirstLongestReach::FirstLongestReach()']]],
   ['firstnarrowestspectrum',['FirstNarrowestSpectrum',['../class_first_narrowest_spectrum.html',1,'FirstNarrowestSpectrum'],['../class_first_narrowest_spectrum.html#af8083f80a1006be186ca83f3271fa148',1,'FirstNarrowestSpectrum::FirstNarrowestSpectrum()']]],
   ['free_5fregenerators',['free_Regenerators',['../class_node.html#a6e744c886f24face11d26d616bd7a2ce',1,'Node']]],

@@ -15,6 +15,7 @@ var searchData=
   ['simulationtype',['SimulationType',['../class_simulations_1_1_simulation_type.html',1,'Simulations']]],
   ['slot',['Slot',['../class_slot.html',1,'']]],
   ['spectraldensity',['SpectralDensity',['../class_spectral_density.html',1,'']]],
+  ['spectrumassignmentalgorithm',['SpectrumAssignmentAlgorithm',['../class_s_a_1_1_spectrum_assignment_algorithm.html',1,'SA']]],
   ['splitter',['Splitter',['../class_devices_1_1_splitter.html',1,'Devices']]],
   ['sqp_5fnetworksimulation',['SQP_NetworkSimulation',['../class_s_q_p___network_simulation.html',1,'']]],
   ['sss',['SSS',['../class_devices_1_1_s_s_s.html',1,'Devices']]],

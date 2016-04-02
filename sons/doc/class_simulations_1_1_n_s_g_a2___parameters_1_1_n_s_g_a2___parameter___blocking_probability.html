@@ -112,6 +112,11 @@ $(document).ready(function(){initNavTree('class_simulations_1_1_n_s_g_a2___param
 <div class="title">Simulations::NSGA2_Parameters::NSGA2_Parameter_BlockingProbability Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The <a class="el" href="class_simulations_1_1_n_s_g_a2___parameters_1_1_n_s_g_a2___parameter___blocking_probability.html" title="The NSGA2_Parameter_BlockingProbability class is a parameter to the MORP algorithm, that implements the Call Request Blocking Probability parameter. ">NSGA2_Parameter_BlockingProbability</a> class is a parameter to the MORP algorithm, that implements the <a class="el" href="class_call.html" title="The Call class is the standard object representing a connection between two nodes. ">Call</a> Request Blocking Probability parameter.  
+ <a href="class_simulations_1_1_n_s_g_a2___parameters_1_1_n_s_g_a2___parameter___blocking_probability.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_n_s_g_a2___parameter___blocking_probability_8h_source.html">NSGA2_Parameter_BlockingProbability.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Simulations::NSGA2_Parameters::NSGA2_Parameter_BlockingProbability:</div>
 <div class="dyncontent">
@@ -170,7 +175,9 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>value</b></td></tr>
 std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>gene</b></td></tr>
 <tr class="separator:a15a0951c588c890b4fbe8309314b85de inherit pro_attribs_class_n_s_g_a2___parameter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The <a class="el" href="class_simulations_1_1_n_s_g_a2___parameters_1_1_n_s_g_a2___parameter___blocking_probability.html" title="The NSGA2_Parameter_BlockingProbability class is a parameter to the MORP algorithm, that implements the Call Request Blocking Probability parameter. ">NSGA2_Parameter_BlockingProbability</a> class is a parameter to the MORP algorithm, that implements the <a class="el" href="class_call.html" title="The Call class is the standard object representing a connection between two nodes. ">Call</a> Request Blocking Probability parameter. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ac8f00eaa7d5f389e80963a7355edcc8b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -217,21 +224,21 @@ std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>g
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        std::shared_ptr&lt;RoutingAlgorithm&gt; R_Alg =</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            RoutingAlgorithm::create_RoutingAlgorithm(Sim.<a class="code" href="class_simulations_1_1_simulation___n_s_g_a2___regn_plac.html#a3c8cb1857687d426deae6c241dccfe6d">Routing_Algorithm</a>, T);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        std::shared_ptr&lt;WA::WavelengthAssignmentAlgorithm&gt; WA_Alg =</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            WA::WavelengthAssignmentAlgorithm::create_WavelengthAssignmentAlgorithm(</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                Sim.<a class="code" href="class_simulations_1_1_simulation___n_s_g_a2___regn_plac.html#aa763d3b102c3d2939f7df5c015f059bc">WavAssign_Algorithm</a>, T);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        std::shared_ptr&lt;SA::SpectrumAssignmentAlgorithm&gt; WA_Alg =</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            SA::SpectrumAssignmentAlgorithm::create_SpectrumAssignmentAlgorithm(</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                Sim.<a class="code" href="class_simulations_1_1_simulation___n_s_g_a2___regn_plac.html#a71c2ca2fcb1be2ff5ac48acb81e6823d">WavAssign_Algorithm</a>, T);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        std::shared_ptr&lt;RegeneratorAssignmentAlgorithm&gt; RA_Alg =</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            RegeneratorAssignmentAlgorithm::create_RegeneratorAssignmentAlgorithm(</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                Sim.<a class="code" href="class_simulations_1_1_simulation___n_s_g_a2___regn_plac.html#af58b1f2660b959a65ba5dc2dbcfb7421">RegAssignment_Algorithm</a>, T);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="comment">//Creates the Call Generator and the RWA Object</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="comment">//Creates the Call Generator and the RMSA Object</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        std::shared_ptr&lt;CallGenerator&gt; Generator(<span class="keyword">new</span> <a class="code" href="class_call_generator.html">CallGenerator</a>(T,</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                Sim.<a class="code" href="class_simulations_1_1_simulation___n_s_g_a2___regn_plac.html#a3929f16cf6ef01cde4e5c8447f8e967b">NetworkLoad</a>));</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        std::shared_ptr&lt;RoutingWavelengthAssignment&gt; RWA(</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        std::shared_ptr&lt;RoutingWavelengthAssignment&gt; RMSA(</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keyword">new</span> <a class="code" href="class_routing_wavelength_assignment.html">RoutingWavelengthAssignment</a>(</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                R_Alg, WA_Alg, RA_Alg, <a class="code" href="class_modulation_scheme.html#a8dd467b4b5a9d5aa2d5777cabcc3e64d">ModulationScheme::DefaultSchemes</a>, T));</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        value = NetworkSimulation(Generator, RWA, Sim.<a class="code" href="class_simulations_1_1_simulation___n_s_g_a2___regn_plac.html#a8561989f6f4e909767db589f7c2e0916">NumCalls</a>)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        value = NetworkSimulation(Generator, RMSA, Sim.<a class="code" href="class_simulations_1_1_simulation___n_s_g_a2___regn_plac.html#a8561989f6f4e909767db589f7c2e0916">NumCalls</a>)</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                    .get_CallBlockingProbability();</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        isEvaluated = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        }</div>
@@ -243,10 +250,10 @@ std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>g
 <div class="ttc" id="class_modulation_scheme_html_a8dd467b4b5a9d5aa2d5777cabcc3e64d"><div class="ttname"><a href="class_modulation_scheme.html#a8dd467b4b5a9d5aa2d5777cabcc3e64d">ModulationScheme::DefaultSchemes</a></div><div class="ttdeci">static std::vector&lt; ModulationScheme &gt; DefaultSchemes</div><div class="ttdoc">DefaultSchemes is a vector with the default Modulation Schemes. </div><div class="ttdef"><b>Definition:</b> ModulationScheme.h:78</div></div>
 <div class="ttc" id="class_simulations_1_1_simulation___n_s_g_a2___regn_plac_html_a3929f16cf6ef01cde4e5c8447f8e967b"><div class="ttname"><a href="class_simulations_1_1_simulation___n_s_g_a2___regn_plac.html#a3929f16cf6ef01cde4e5c8447f8e967b">Simulations::Simulation_NSGA2_RegnPlac::NetworkLoad</a></div><div class="ttdeci">double NetworkLoad</div><div class="ttdoc">NetworkLoad is the network load, in Erlangs, over which the simulation of each individual is run...</div><div class="ttdef"><b>Definition:</b> Simulation_NSGA2_RegnPlac.h:44</div></div>
 <div class="ttc" id="class_simulations_1_1_simulation___n_s_g_a2___regn_plac_html_a3c8cb1857687d426deae6c241dccfe6d"><div class="ttname"><a href="class_simulations_1_1_simulation___n_s_g_a2___regn_plac.html#a3c8cb1857687d426deae6c241dccfe6d">Simulations::Simulation_NSGA2_RegnPlac::Routing_Algorithm</a></div><div class="ttdeci">RoutingAlgorithm::RoutingAlgorithms Routing_Algorithm</div><div class="ttdoc">Routing_Algorithm is the routing algorithm used by the network simulation of each individual...</div><div class="ttdef"><b>Definition:</b> Simulation_NSGA2_RegnPlac.h:50</div></div>
-<div class="ttc" id="class_simulations_1_1_simulation___n_s_g_a2___regn_plac_html_aa763d3b102c3d2939f7df5c015f059bc"><div class="ttname"><a href="class_simulations_1_1_simulation___n_s_g_a2___regn_plac.html#aa763d3b102c3d2939f7df5c015f059bc">Simulations::Simulation_NSGA2_RegnPlac::WavAssign_Algorithm</a></div><div class="ttdeci">WA::WavelengthAssignmentAlgorithm::WavelengthAssignmentAlgorithms WavAssign_Algorithm</div><div class="ttdoc">WavAssign_Algorithm is the wavelength assignment algorithm used by the network simulation of each ind...</div><div class="ttdef"><b>Definition:</b> Simulation_NSGA2_RegnPlac.h:56</div></div>
-<div class="ttc" id="class_simulations_1_1_simulation_type_html_a76dcb065f0856da408e02205fb59d0f9"><div class="ttname"><a href="class_simulations_1_1_simulation_type.html#a76dcb065f0856da408e02205fb59d0f9">Simulations::SimulationType::T</a></div><div class="ttdeci">std::shared_ptr&lt; Topology &gt; T</div><div class="ttdoc">T is a pointer to a "master" Topology. </div><div class="ttdef"><b>Definition:</b> SimulationType.h:123</div></div>
+<div class="ttc" id="class_simulations_1_1_simulation_type_html_a76dcb065f0856da408e02205fb59d0f9"><div class="ttname"><a href="class_simulations_1_1_simulation_type.html#a76dcb065f0856da408e02205fb59d0f9">Simulations::SimulationType::T</a></div><div class="ttdeci">std::shared_ptr&lt; Topology &gt; T</div><div class="ttdoc">T is a pointer to a "master" Topology. </div><div class="ttdef"><b>Definition:</b> SimulationType.h:124</div></div>
 <div class="ttc" id="class_simulations_1_1_simulation___n_s_g_a2___regn_plac_html_af58b1f2660b959a65ba5dc2dbcfb7421"><div class="ttname"><a href="class_simulations_1_1_simulation___n_s_g_a2___regn_plac.html#af58b1f2660b959a65ba5dc2dbcfb7421">Simulations::Simulation_NSGA2_RegnPlac::RegAssignment_Algorithm</a></div><div class="ttdeci">RegeneratorAssignmentAlgorithm::RegeneratorAssignmentAlgorithms RegAssignment_Algorithm</div><div class="ttdoc">RegAssignment_Algorithm is the regenerator assignment algorithm used by the network simulation of eac...</div><div class="ttdef"><b>Definition:</b> Simulation_NSGA2_RegnPlac.h:62</div></div>
 <div class="ttc" id="class_topology_html"><div class="ttname"><a href="class_topology.html">Topology</a></div><div class="ttdoc">The Topology class represents a topology, i.e. a set of links and nodes. </div><div class="ttdef"><b>Definition:</b> Topology.h:17</div></div>
+<div class="ttc" id="class_simulations_1_1_simulation___n_s_g_a2___regn_plac_html_a71c2ca2fcb1be2ff5ac48acb81e6823d"><div class="ttname"><a href="class_simulations_1_1_simulation___n_s_g_a2___regn_plac.html#a71c2ca2fcb1be2ff5ac48acb81e6823d">Simulations::Simulation_NSGA2_RegnPlac::WavAssign_Algorithm</a></div><div class="ttdeci">SA::SpectrumAssignmentAlgorithm::SpectrumAssignmentAlgorithms WavAssign_Algorithm</div><div class="ttdoc">WavAssign_Algorithm is the wavelength assignment algorithm used by the network simulation of each ind...</div><div class="ttdef"><b>Definition:</b> Simulation_NSGA2_RegnPlac.h:56</div></div>
 <div class="ttc" id="class_call_generator_html"><div class="ttname"><a href="class_call_generator.html">CallGenerator</a></div><div class="ttdoc">The CallGenerator class implements methods to continuously generate calls. </div><div class="ttdef"><b>Definition:</b> CallGenerator.h:23</div></div>
 </div><!-- fragment -->
 </div>
@@ -276,9 +283,9 @@ std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>g
 <dl class="section return"><dt>Returns</dt><dd>the name of this Parameter. </dd></dl>
 
 <p>Implements <a class="el" href="class_n_s_g_a2___parameter.html#a794edc984f4bc72275b1ecd827d682c2">NSGA2_Parameter</a>.</p>
-<div class="fragment"><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;Blocking Probability&quot;</span>;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;Blocking Probability&quot;</span>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -287,7 +294,7 @@ std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>g
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>Simulations</b></li><li class="navelem"><b>NSGA2_Parameters</b></li><li class="navelem"><a class="el" href="class_simulations_1_1_n_s_g_a2___parameters_1_1_n_s_g_a2___parameter___blocking_probability.html">NSGA2_Parameter_BlockingProbability</a></li>
+    <li class="navelem"><a class="el" href="namespace_simulations.html">Simulations</a></li><li class="navelem"><a class="el" href="namespace_simulations_1_1_n_s_g_a2___parameters.html">NSGA2_Parameters</a></li><li class="navelem"><a class="el" href="class_simulations_1_1_n_s_g_a2___parameters_1_1_n_s_g_a2___parameter___blocking_probability.html">NSGA2_Parameter_BlockingProbability</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>

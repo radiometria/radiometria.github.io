@@ -5,5 +5,5 @@ var searchData=
   ['modulationscheme',['ModulationScheme',['../class_modulation_scheme.html',1,'']]],
   ['mostsimultaneouslyused',['MostSimultaneouslyUsed',['../class_most_simultaneously_used.html',1,'']]],
   ['mostused',['MostUsed',['../class_most_used.html',1,'']]],
-  ['mostused',['MostUsed',['../class_w_a_1_1_most_used.html',1,'WA']]]
+  ['mostused',['MostUsed',['../class_s_a_1_1_most_used.html',1,'SA']]]
 ];

@@ -1,7 +1,7 @@
 var searchData=
 [
   ['lambda',['lambda',['../class_physical_constants.html#a667e8f7d9d3f2ff71982514cc936e8df',1,'PhysicalConstants']]],
-  ['leastused',['LeastUsed',['../class_w_a_1_1_least_used.html',1,'WA']]],
+  ['leastused',['LeastUsed',['../class_s_a_1_1_least_used.html',1,'SA']]],
   ['length',['Length',['../class_link.html#a43c39aaf9b64ea2155b199d89309cbae',1,'Link']]],
   ['lengthoccupationroutingavailability',['LengthOccupationRoutingAvailability',['../class_length_occupation_routing_availability.html',1,'']]],
   ['lengthoccupationroutingcontiguity',['LengthOccupationRoutingContiguity',['../class_length_occupation_routing_contiguity.html',1,'']]],

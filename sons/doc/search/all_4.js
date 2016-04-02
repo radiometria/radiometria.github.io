@@ -8,5 +8,5 @@ var searchData=
   ['event',['Event',['../class_event.html',1,'Event'],['../class_event.html#a2714c6e47470f15fa00c2dfa2a0a3b49',1,'Event::Event()']]],
   ['event_5ftype',['Event_Type',['../class_event.html#aaf5ee85a0734d6cc2c69caaa6182c708',1,'Event']]],
   ['events',['Events',['../class_call_generator.html#a7b1f5ba5d278af7c6b282dfee48975b7',1,'CallGenerator']]],
-  ['exactfit',['ExactFit',['../class_w_a_1_1_exact_fit.html',1,'WA']]]
+  ['exactfit',['ExactFit',['../class_s_a_1_1_exact_fit.html',1,'SA']]]
 ];

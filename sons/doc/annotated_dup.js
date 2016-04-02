@@ -2,31 +2,8 @@ var annotated_dup =
 [
     [ "Devices", "namespace_devices.html", "namespace_devices" ],
     [ "PSR", "namespace_p_s_r.html", "namespace_p_s_r" ],
-    [ "Simulations", null, [
-      [ "NSGA2_Parameters", null, [
-        [ "NSGA2_Parameter_BlockingProbability", "class_simulations_1_1_n_s_g_a2___parameters_1_1_n_s_g_a2___parameter___blocking_probability.html", "class_simulations_1_1_n_s_g_a2___parameters_1_1_n_s_g_a2___parameter___blocking_probability" ],
-        [ "NSGA2_Parameter_CapEx", "class_simulations_1_1_n_s_g_a2___parameters_1_1_n_s_g_a2___parameter___cap_ex.html", "class_simulations_1_1_n_s_g_a2___parameters_1_1_n_s_g_a2___parameter___cap_ex" ],
-        [ "NSGA2_Parameter_NumberOfRegenerators", "class_simulations_1_1_n_s_g_a2___parameters_1_1_n_s_g_a2___parameter___number_of_regenerators.html", "class_simulations_1_1_n_s_g_a2___parameters_1_1_n_s_g_a2___parameter___number_of_regenerators" ],
-        [ "NSGA2_Parameter_OpEx", "class_simulations_1_1_n_s_g_a2___parameters_1_1_n_s_g_a2___parameter___op_ex.html", "class_simulations_1_1_n_s_g_a2___parameters_1_1_n_s_g_a2___parameter___op_ex" ]
-      ] ],
-      [ "NetworkSimulation", "class_simulations_1_1_network_simulation.html", "class_simulations_1_1_network_simulation" ],
-      [ "Simulation_NetworkLoad", "class_simulations_1_1_simulation___network_load.html", "class_simulations_1_1_simulation___network_load" ],
-      [ "Simulation_NSGA2_RegnPlac", "class_simulations_1_1_simulation___n_s_g_a2___regn_plac.html", "class_simulations_1_1_simulation___n_s_g_a2___regn_plac" ],
-      [ "Simulation_PSROptimization", "class_simulations_1_1_simulation___p_s_r_optimization.html", "class_simulations_1_1_simulation___p_s_r_optimization" ],
-      [ "Simulation_RegeneratorNumber", "class_simulations_1_1_simulation___regenerator_number.html", "class_simulations_1_1_simulation___regenerator_number" ],
-      [ "Simulation_StatisticalTrend", "class_simulations_1_1_simulation___statistical_trend.html", "class_simulations_1_1_simulation___statistical_trend" ],
-      [ "Simulation_TransparencyAnalysis", "class_simulations_1_1_simulation___transparency_analysis.html", "class_simulations_1_1_simulation___transparency_analysis" ],
-      [ "SimulationType", "class_simulations_1_1_simulation_type.html", "class_simulations_1_1_simulation_type" ]
-    ] ],
-    [ "WA", null, [
-      [ "BestFit", "class_w_a_1_1_best_fit.html", "class_w_a_1_1_best_fit" ],
-      [ "ExactFit", "class_w_a_1_1_exact_fit.html", "class_w_a_1_1_exact_fit" ],
-      [ "FirstFit", "class_w_a_1_1_first_fit.html", "class_w_a_1_1_first_fit" ],
-      [ "LeastUsed", "class_w_a_1_1_least_used.html", "class_w_a_1_1_least_used" ],
-      [ "MostUsed", "class_w_a_1_1_most_used.html", "class_w_a_1_1_most_used" ],
-      [ "RandomFit", "class_w_a_1_1_random_fit.html", "class_w_a_1_1_random_fit" ],
-      [ "WavelengthAssignmentAlgorithm", "class_w_a_1_1_wavelength_assignment_algorithm.html", "class_w_a_1_1_wavelength_assignment_algorithm" ]
-    ] ],
+    [ "SA", "namespace_s_a.html", "namespace_s_a" ],
+    [ "Simulations", "namespace_simulations.html", "namespace_simulations" ],
     [ "AdaptativeWeighingRouting", "class_adaptative_weighing_routing.html", "class_adaptative_weighing_routing" ],
     [ "Call", "class_call.html", "class_call" ],
     [ "CallGenerator", "class_call_generator.html", "class_call_generator" ],
