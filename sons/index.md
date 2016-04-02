@@ -39,6 +39,10 @@ It is a powerful tool in the area of elastic optical networks. It can work as ba
 
 Its latest version can be found [here](https://github.com/suehtamacv/adamant-broccoli/releases).
 
+## Documentation
+
+SONS is highly documented. Such documentation can be found [here](doc/).
+
 ## About us
 
 SONS is being developed by the [Radiometry Research Group]({{ site.baseurl }}/radiometria), under the [Computational Modelling of Electromagnetic Effects]({{ site.baseurl }}/linhas/modelagem) research line.

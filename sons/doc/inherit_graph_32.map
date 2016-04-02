@@ -1,0 +1,9 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_w_a_1_1_wavelength_assignment_algorithm.html" title="WA::WavelengthAssignment\lAlgorithm" alt="" coords="5,125,196,166"/>
+<area shape="rect" id="node2" href="$class_w_a_1_1_best_fit.html" title="WA::BestFit" alt="" coords="255,5,349,32"/>
+<area shape="rect" id="node3" href="$class_w_a_1_1_exact_fit.html" title="WA::ExactFit" alt="" coords="251,56,353,83"/>
+<area shape="rect" id="node4" href="$class_w_a_1_1_first_fit.html" title="WA::FirstFit" alt="" coords="255,107,349,133"/>
+<area shape="rect" id="node5" href="$class_w_a_1_1_least_used.html" title="WA::LeastUsed" alt="" coords="245,157,359,184"/>
+<area shape="rect" id="node6" href="$class_w_a_1_1_most_used.html" title="WA::MostUsed" alt="" coords="246,208,358,235"/>
+<area shape="rect" id="node7" href="$class_w_a_1_1_random_fit.html" title="WA::RandomFit" alt="" coords="244,259,360,285"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="NX_RegeneratorPlacement" name="NX_RegeneratorPlacement">
+<area shape="rect" id="node3" href="$class_most_used.html" title="MostUsed" alt="" coords="5,155,88,181"/>
+<area shape="rect" id="node4" href="$class_nodal_degree_first.html" title="The NodalDegreeFirst class implements the Nodal Degree First (NDF) regenerator placement algorithm..." alt="" coords="113,155,237,181"/>
+<area shape="rect" id="node5" href="$class_n_x___most_simultaneously_used.html" title="NX_MostSimultaneouslyUsed" alt="" coords="261,155,459,181"/>
+<area shape="rect" id="node6" href="$class_signal_quality_prediction.html" title="SignalQualityPrediction" alt="" coords="483,155,640,181"/>
+<area shape="rect" id="node2" href="$class_regenerator_placement_algorithm.html" title="The RegeneratorPlacementAlgorithm class decides how to insert the regenerators over the network..." alt="" coords="161,5,372,32"/>
+<area shape="rect" id="node7" href="$class_signal_quality_prediction___variants.html" title="SignalQualityPrediction\l_Variants" alt="" coords="483,229,640,271"/>
+</map>

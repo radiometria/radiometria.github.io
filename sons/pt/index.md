@@ -39,6 +39,10 @@ O SONS é uma ferramenta poderosa na área de redes ópticas elásticas. Ele pod
 
 A última versão do SONS pode ser encontrada [aqui](https://github.com/suehtamacv/adamant-broccoli/releases).
 
+## Documentação
+
+O SONS é altamente documentado. Essa documentação pode ser encontrada [aqui](../doc/).
+
 ## Sobre Nós
 
 O SONS foi desenvolvido pelo [Grupo de Pesquisa em Radiometria]({{ site.baseurl }}/radiometria), sob a Linha de Pesquisa em [Modelagem Computacional de Efeitos Eletromagnéticos]({{ site.baseurl }}/linhas/modelagem).

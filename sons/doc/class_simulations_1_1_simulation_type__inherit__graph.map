@@ -1,0 +1,8 @@
+<map id="Simulations::SimulationType" name="Simulations::SimulationType">
+<area shape="rect" id="node2" href="$class_simulations_1_1_simulation___network_load.html" title="The Simulation_NetworkLoad class is the simulation that varies the network load and analyses the effe..." alt="" coords="241,5,400,47"/>
+<area shape="rect" id="node3" href="$class_simulations_1_1_simulation___n_s_g_a2___regn_plac.html" title="The Simulation_NSGA2_RegnPlac class runs MORP regenerator placement algorithm. This simulation uses t..." alt="" coords="241,71,400,112"/>
+<area shape="rect" id="node4" href="$class_simulations_1_1_simulation___p_s_r_optimization.html" title="The Simulation_PSROptimization class is the PSR Optimization simulation. " alt="" coords="241,136,400,177"/>
+<area shape="rect" id="node5" href="$class_simulations_1_1_simulation___regenerator_number.html" title="The Simulation_RegeneratorNumber class represents a simulation that varies the number of regenerators..." alt="" coords="241,201,400,243"/>
+<area shape="rect" id="node6" href="$class_simulations_1_1_simulation___statistical_trend.html" title="The Simulation_StatisticalTrend class represents a statistical trend analysis. " alt="" coords="241,267,400,308"/>
+<area shape="rect" id="node7" href="$class_simulations_1_1_simulation___transparency_analysis.html" title="The Simulation_TransparencyAnalysis class represents a transparency analysis simulation. " alt="" coords="241,332,400,373"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="Devices::EDFA" name="Devices::EDFA">
+<area shape="rect" id="node2" href="$class_devices_1_1_amplifier.html" title="The Amplifier class represents an amplifier, that amplifies a signal and generates noise..." alt="" coords="108,95,237,121"/>
+<area shape="rect" id="node3" href="$class_devices_1_1_device.html" title="The Device class represents in a generic way a device on the network. " alt="" coords="5,5,124,32"/>
+<area shape="rect" id="node4" href="$class_gain.html" title="The Gain class provides a interface to gain variables that are measured in dB units or in linear unit..." alt="" coords="148,5,197,32"/>
+<area shape="rect" id="node5" href="$class_power.html" title="The Power class represents a power, either measured in dBm or in Watts. " alt="" coords="257,5,315,32"/>
+</map>

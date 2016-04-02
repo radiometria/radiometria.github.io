@@ -1,0 +1,8 @@
+<map id="PowerSeriesRouting" name="PowerSeriesRouting">
+<area shape="rect" id="node4" href="$class_adaptative_weighing_routing.html" title="AdaptativeWeighingRouting" alt="" coords="586,5,769,32"/>
+<area shape="rect" id="node5" href="$class_local_power_series_routing.html" title="LocalPowerSeriesRouting" alt="" coords="591,56,763,83"/>
+<area shape="rect" id="node6" href="$class_matricial_power_series_routing.html" title="MatricialPowerSeriesRouting" alt="" coords="582,107,773,133"/>
+<area shape="rect" id="node7" href="$class_tensorial_power_series_routing.html" title="TensorialPowerSeriesRouting" alt="" coords="580,157,775,184"/>
+<area shape="rect" id="node2" href="$class_dijkstra_routing_algorithm.html" title="The DijkstraRoutingAlgorithm class is a class of routing algorithms whose routes are determined using..." alt="" coords="176,81,343,108"/>
+<area shape="rect" id="node3" href="$class_routing_algorithm.html" title="The RoutingAlgorithm class searches for a route, given a Call. " alt="" coords="5,81,128,108"/>
+</map>

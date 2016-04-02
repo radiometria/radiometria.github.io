@@ -1,0 +1,16 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_p_s_r_1_1_cost.html" title="PSR::Cost" alt="" coords="5,309,92,336"/>
+<area shape="rect" id="node2" href="$class_p_s_r_1_1c_availability.html" title="The cAvailability class has, as cost, the number of free slots on each link, normalized by the number..." alt="" coords="164,5,292,32"/>
+<area shape="rect" id="node3" href="$class_p_s_r_1_1c_bitrate.html" title="PSR::cBitrate" alt="" coords="177,56,279,83"/>
+<area shape="rect" id="node4" href="$class_p_s_r_1_1c_contiguity.html" title="The cContiguity class has, as cost, the contiguity measure of the link. It only works on transparent ..." alt="" coords="166,107,290,133"/>
+<area shape="rect" id="node5" href="$class_p_s_r_1_1c_distance.html" title="The cDistance class has, as cost, the length of the link, normalized by the length of the longest lin..." alt="" coords="169,157,287,184"/>
+<area shape="rect" id="node6" href="$class_p_s_r_1_1c_hop_distance.html" title="PSR::cHopDistance" alt="" coords="157,208,299,235"/>
+<area shape="rect" id="node7" href="$class_p_s_r_1_1c_link_length.html" title="PSR::cLinkLength" alt="" coords="164,259,292,285"/>
+<area shape="rect" id="node8" href="$class_p_s_r_1_1c_modulation_scheme.html" title="PSR::cModulationScheme" alt="" coords="140,309,316,336"/>
+<area shape="rect" id="node9" href="$class_p_s_r_1_1c_noise.html" title="PSR::cNoise" alt="" coords="179,360,277,387"/>
+<area shape="rect" id="node10" href="$class_p_s_r_1_1c_norm_contiguity.html" title="The cNormContiguity class has, as cost, the contiguity measure of the link. It only works on transpar..." alt="" coords="150,411,306,437"/>
+<area shape="rect" id="node11" href="$class_p_s_r_1_1c_norm_noise.html" title="PSR::cNormNoise" alt="" coords="163,461,293,488"/>
+<area shape="rect" id="node12" href="$class_p_s_r_1_1c_occupability.html" title="The cOccupability class has, as cost, the number of occupied slots on each link, normalized by the nu..." alt="" coords="159,512,297,539"/>
+<area shape="rect" id="node13" href="$class_p_s_r_1_1c_orig_dest_index.html" title="PSR::cOrigDestIndex" alt="" coords="153,563,303,589"/>
+<area shape="rect" id="node14" href="$class_p_s_r_1_1c_slots.html" title="PSR::cSlots" alt="" coords="181,613,275,640"/>
+</map>

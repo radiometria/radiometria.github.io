@@ -1,0 +1,5 @@
+<map id="AdaptativeWeighingRouting" name="AdaptativeWeighingRouting">
+<area shape="rect" id="node2" href="$class_power_series_routing.html" title="PowerSeriesRouting" alt="" coords="26,155,167,181"/>
+<area shape="rect" id="node3" href="$class_dijkstra_routing_algorithm.html" title="The DijkstraRoutingAlgorithm class is a class of routing algorithms whose routes are determined using..." alt="" coords="13,80,180,107"/>
+<area shape="rect" id="node4" href="$class_routing_algorithm.html" title="The RoutingAlgorithm class searches for a route, given a Call. " alt="" coords="35,5,158,32"/>
+</map>

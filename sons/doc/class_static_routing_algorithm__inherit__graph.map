@@ -1,0 +1,6 @@
+<map id="StaticRoutingAlgorithm" name="StaticRoutingAlgorithm">
+<area shape="rect" id="node4" href="$class_minimum_hops.html" title="MinimumHops" alt="" coords="5,229,112,256"/>
+<area shape="rect" id="node5" href="$class_shortest_path.html" title="ShortestPath" alt="" coords="136,229,235,256"/>
+<area shape="rect" id="node2" href="$class_dijkstra_routing_algorithm.html" title="The DijkstraRoutingAlgorithm class is a class of routing algorithms whose routes are determined using..." alt="" coords="38,80,205,107"/>
+<area shape="rect" id="node3" href="$class_routing_algorithm.html" title="The RoutingAlgorithm class searches for a route, given a Call. " alt="" coords="60,5,183,32"/>
+</map>
