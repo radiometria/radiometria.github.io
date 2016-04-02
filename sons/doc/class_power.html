@@ -47,7 +47,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -162,8 +161,6 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>operator/</b> (cons
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="class_power.html" title="The Power class represents a power, either measured in dBm or in Watts. ">Power</a> class represents a power, either measured in dBm or in Watts. </p>
-
-<p>Definition at line <a class="el" href="_power_8h_source.html#l00009">9</a> of file <a class="el" href="_power_8h_source.html">Power.h</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a class="anchor" id="a4573f1df98243e1618b99cdcba06ccde"></a>
 <div class="memitem">
@@ -184,9 +181,13 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>operator/</b> (cons
 <p>Use Watt to provide an initial value in watts </p>
 </td></tr>
 </table>
-
-<p>Definition at line <a class="el" href="_power_8h_source.html#l00015">15</a> of file <a class="el" href="_power_8h_source.html">Power.h</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <a class="code" href="class_power.html#a4573f1df98243e1618b99cdcba06ccdea6dd58461280fe5f8c3890f267b780299">dBm</a>, </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="class_power.html#a4573f1df98243e1618b99cdcba06ccdeaf1c07dea76989c86df74e669c845a732">Watt</a> </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    };</div>
+<div class="ttc" id="class_power_html_a4573f1df98243e1618b99cdcba06ccdeaf1c07dea76989c86df74e669c845a732"><div class="ttname"><a href="class_power.html#a4573f1df98243e1618b99cdcba06ccdeaf1c07dea76989c86df74e669c845a732">Power::Watt</a></div><div class="ttdef"><b>Definition:</b> Power.h:18</div></div>
+<div class="ttc" id="class_power_html_a4573f1df98243e1618b99cdcba06ccdea6dd58461280fe5f8c3890f267b780299"><div class="ttname"><a href="class_power.html#a4573f1df98243e1618b99cdcba06ccdea6dd58461280fe5f8c3890f267b780299">Power::dBm</a></div><div class="ttdef"><b>Definition:</b> Power.h:17</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -222,9 +223,18 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>operator/</b> (cons
   </table>
   </dd>
 </dl>
-
-<p>Definition at line <a class="el" href="_power_8cpp_source.html#l00005">5</a> of file <a class="el" href="_power_8cpp_source.html">Power.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="keywordflow">if</span> (Type == InitType::dBm)</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        value_Watts = 0.001L * pow(10, 0.1 * value);</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        }</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (Type == InitType::Watt)</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        BOOST_ASSERT_MSG(value &gt;= 0, <span class="stringliteral">&quot;A power, in Watts, can&#39;t be negative.&quot;</span>);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        value_Watts = value;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        }</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -243,9 +253,10 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>operator/</b> (cons
 
 <p>in_dBm returns the value of this <a class="el" href="class_power.html" title="The Power class represents a power, either measured in dBm or in Watts. ">Power</a> in dBm. </p>
 <dl class="section return"><dt>Returns</dt><dd>the value of this <a class="el" href="class_power.html" title="The Power class represents a power, either measured in dBm or in Watts. ">Power</a> in dBm. </dd></dl>
-
-<p>Definition at line <a class="el" href="_power_8cpp_source.html#l00045">45</a> of file <a class="el" href="_power_8cpp_source.html">Power.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">return</span> 10 * log10(value_Watts) + 30;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="ae968ad54bfd67a7d707a00713aae6f36"></a>
@@ -263,9 +274,10 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>operator/</b> (cons
 
 <p>in_Watts returns the value of this <a class="el" href="class_power.html" title="The Power class represents a power, either measured in dBm or in Watts. ">Power</a> in Watts. </p>
 <dl class="section return"><dt>Returns</dt><dd>the value of this <a class="el" href="class_power.html" title="The Power class represents a power, either measured in dBm or in Watts. ">Power</a> in Watts. </dd></dl>
-
-<p>Definition at line <a class="el" href="_power_8cpp_source.html#l00050">50</a> of file <a class="el" href="_power_8cpp_source.html">Power.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">return</span> value_Watts;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a686cfb99c160eea3b8194a7d5be21341"></a>
@@ -290,9 +302,13 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>operator/</b> (cons
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a <a class="el" href="class_power.html" title="The Power class represents a power, either measured in dBm or in Watts. ">Power</a> object, after suffering the <a class="el" href="class_gain.html" title="The Gain class provides a interface to gain variables that are measured in dB units or in linear unit...">Gain</a> G. </dd></dl>
-
-<p>Definition at line <a class="el" href="_power_8cpp_source.html#l00023">23</a> of file <a class="el" href="_power_8cpp_source.html">Power.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_power.html#a03b5d8a63ae47929a019a5fca224988a">Power</a>(value_Watts * G.<a class="code" href="class_gain.html#a3572c11a683be4dbbc395ae5d327f11e">in_Linear</a>(), <a class="code" href="class_power.html#a4573f1df98243e1618b99cdcba06ccdeaf1c07dea76989c86df74e669c845a732">Power::Watt</a>);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
+<div class="ttc" id="class_gain_html_a3572c11a683be4dbbc395ae5d327f11e"><div class="ttname"><a href="class_gain.html#a3572c11a683be4dbbc395ae5d327f11e">Gain::in_Linear</a></div><div class="ttdeci">double in_Linear()</div><div class="ttdoc">in_Linear returns the value of this object in linear units. </div><div class="ttdef"><b>Definition:</b> Gain.cpp:56</div></div>
+<div class="ttc" id="class_power_html_a03b5d8a63ae47929a019a5fca224988a"><div class="ttname"><a href="class_power.html#a03b5d8a63ae47929a019a5fca224988a">Power::Power</a></div><div class="ttdeci">Power(double value, InitType=dBm)</div><div class="ttdoc">Power is the standard constructor for a Power. </div><div class="ttdef"><b>Definition:</b> Power.cpp:5</div></div>
+<div class="ttc" id="class_power_html_a4573f1df98243e1618b99cdcba06ccdeaf1c07dea76989c86df74e669c845a732"><div class="ttname"><a href="class_power.html#a4573f1df98243e1618b99cdcba06ccdeaf1c07dea76989c86df74e669c845a732">Power::Watt</a></div><div class="ttdef"><b>Definition:</b> Power.h:18</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="af9a84dc062ea59965d96a8712dd05a36"></a>
@@ -317,9 +333,12 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>operator/</b> (cons
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a reference to this object. </dd></dl>
-
-<p>Definition at line <a class="el" href="_power_8cpp_source.html#l00028">28</a> of file <a class="el" href="_power_8cpp_source.html">Power.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    value_Watts *= G.<a class="code" href="class_gain.html#a3572c11a683be4dbbc395ae5d327f11e">in_Linear</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
+<div class="ttc" id="class_gain_html_a3572c11a683be4dbbc395ae5d327f11e"><div class="ttname"><a href="class_gain.html#a3572c11a683be4dbbc395ae5d327f11e">Gain::in_Linear</a></div><div class="ttdeci">double in_Linear()</div><div class="ttdoc">in_Linear returns the value of this object in linear units. </div><div class="ttdef"><b>Definition:</b> Gain.cpp:56</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a416c500124db9175b16af1563fdfbb8e"></a>
@@ -344,9 +363,13 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>operator/</b> (cons
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a <a class="el" href="class_power.html" title="The Power class represents a power, either measured in dBm or in Watts. ">Power</a> object, result of summing the two Powers. </dd></dl>
-
-<p>Definition at line <a class="el" href="_power_8cpp_source.html#l00034">34</a> of file <a class="el" href="_power_8cpp_source.html">Power.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_power.html#a03b5d8a63ae47929a019a5fca224988a">Power</a>(value_Watts + P.<a class="code" href="class_power.html#ae968ad54bfd67a7d707a00713aae6f36">in_Watts</a>(), <a class="code" href="class_power.html#a4573f1df98243e1618b99cdcba06ccdeaf1c07dea76989c86df74e669c845a732">Power::Watt</a>);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<div class="ttc" id="class_power_html_a03b5d8a63ae47929a019a5fca224988a"><div class="ttname"><a href="class_power.html#a03b5d8a63ae47929a019a5fca224988a">Power::Power</a></div><div class="ttdeci">Power(double value, InitType=dBm)</div><div class="ttdoc">Power is the standard constructor for a Power. </div><div class="ttdef"><b>Definition:</b> Power.cpp:5</div></div>
+<div class="ttc" id="class_power_html_ae968ad54bfd67a7d707a00713aae6f36"><div class="ttname"><a href="class_power.html#ae968ad54bfd67a7d707a00713aae6f36">Power::in_Watts</a></div><div class="ttdeci">double in_Watts() const </div><div class="ttdoc">in_Watts returns the value of this Power in Watts. </div><div class="ttdef"><b>Definition:</b> Power.cpp:50</div></div>
+<div class="ttc" id="class_power_html_a4573f1df98243e1618b99cdcba06ccdeaf1c07dea76989c86df74e669c845a732"><div class="ttname"><a href="class_power.html#a4573f1df98243e1618b99cdcba06ccdeaf1c07dea76989c86df74e669c845a732">Power::Watt</a></div><div class="ttdef"><b>Definition:</b> Power.h:18</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="ab515369c772076ad9329a756d1b2ad4f"></a>
@@ -371,15 +394,14 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>operator/</b> (cons
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a reference to this object. </dd></dl>
-
-<p>Definition at line <a class="el" href="_power_8cpp_source.html#l00039">39</a> of file <a class="el" href="_power_8cpp_source.html">Power.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    value_Watts += P.<a class="code" href="class_power.html#ae968ad54bfd67a7d707a00713aae6f36">in_Watts</a>();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
+<div class="ttc" id="class_power_html_ae968ad54bfd67a7d707a00713aae6f36"><div class="ttname"><a href="class_power.html#ae968ad54bfd67a7d707a00713aae6f36">Power::in_Watts</a></div><div class="ttdeci">double in_Watts() const </div><div class="ttdoc">in_Watts returns the value of this Power in Watts. </div><div class="ttdef"><b>Definition:</b> Power.cpp:50</div></div>
+</div><!-- fragment -->
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>include/GeneralClasses/<a class="el" href="_power_8h_source.html">Power.h</a></li>
-<li>src/GeneralClasses/<a class="el" href="_power_8cpp_source.html">Power.cpp</a></li>
-</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

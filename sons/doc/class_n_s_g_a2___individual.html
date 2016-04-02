@@ -47,7 +47,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -213,8 +212,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>NSGA2</b></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="class_n_s_g_a2___individual.html" title="The NSGA2_Individual class represents a single Individual to the NSGA2. ">NSGA2_Individual</a> class represents a single Individual to the <a class="el" href="class_n_s_g_a2.html" title="The NSGA2 class implements the Non Sorting Genetic Algorithm II (NSGA 2) Algorithm. ">NSGA2</a>. </p>
-
-<p>Definition at line <a class="el" href="_n_s_g_a2___individual_8h_source.html#l00013">13</a> of file <a class="el" href="_n_s_g_a2___individual_8h_source.html">NSGA2_Individual.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a6cd68729816a64325c19e096bd17c496"></a>
 <div class="memitem">
@@ -294,9 +291,11 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>NSGA2</b></td></tr>
 
 <p>getGenes returns the genes of this individual. </p>
 <dl class="section return"><dt>Returns</dt><dd>the genes of this individual. </dd></dl>
-
-<p>Definition at line <a class="el" href="_n_s_g_a2___individual_8cpp_source.html#l00156">156</a> of file <a class="el" href="_n_s_g_a2___individual_8cpp_source.html">NSGA2_Individual.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;{</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_n_s_g_a2___individual.html#ac3e4c1fba2d360f9cd48e21b7870c96b">Gene</a>;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;}</div>
+<div class="ttc" id="class_n_s_g_a2___individual_html_ac3e4c1fba2d360f9cd48e21b7870c96b"><div class="ttname"><a href="class_n_s_g_a2___individual.html#ac3e4c1fba2d360f9cd48e21b7870c96b">NSGA2_Individual::Gene</a></div><div class="ttdeci">std::vector&lt; int &gt; Gene</div><div class="ttdoc">Gene is the genes of this Individual. </div><div class="ttdef"><b>Definition:</b> NSGA2_Individual.h:128</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a8944f3bb1bbf73ba1210bd89ce8657a2"></a>
@@ -314,9 +313,10 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>NSGA2</b></td></tr>
 
 <p>getNumParameters returns the number of Parameters of this individual. </p>
 <dl class="section return"><dt>Returns</dt><dd>the number of Parameters of this individual. </dd></dl>
-
-<p>Definition at line <a class="el" href="_n_s_g_a2___individual_8cpp_source.html#l00101">101</a> of file <a class="el" href="_n_s_g_a2___individual_8cpp_source.html">NSGA2_Individual.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;{</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordflow">return</span> Parameters.size();</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="aaaa5b3c820b34c633d416e467b400e77"></a>
@@ -341,9 +341,11 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>NSGA2</b></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a pointer to the i-th Parameter. </dd></dl>
-
-<p>Definition at line <a class="el" href="_n_s_g_a2___individual_8cpp_source.html#l00087">87</a> of file <a class="el" href="_n_s_g_a2___individual_8cpp_source.html">NSGA2_Individual.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;{</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    BOOST_ASSERT_MSG(i &lt; Parameters.size(), <span class="stringliteral">&quot;Invalid parameter requested&quot;</span>);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">return</span> Parameters[i];</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="ab9632cbf936910500cb9de864a4a9371"></a>
@@ -368,9 +370,12 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>NSGA2</b></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the value of the i-th Parameter. </dd></dl>
-
-<p>Definition at line <a class="el" href="_n_s_g_a2___individual_8cpp_source.html#l00094">94</a> of file <a class="el" href="_n_s_g_a2___individual_8cpp_source.html">NSGA2_Individual.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;{</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    BOOST_ASSERT_MSG(i &lt; Parameters.size(), <span class="stringliteral">&quot;Invalid parameter requested&quot;</span>);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">return</span> Parameters[i]-&gt;evaluate();</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a3cdb0512808aa4e79edddebaaa49bf0a"></a>
@@ -395,9 +400,30 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>NSGA2</b></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if this Individual is dominated by other. </dd></dl>
-
-<p>Definition at line <a class="el" href="_n_s_g_a2___individual_8cpp_source.html#l00107">107</a> of file <a class="el" href="_n_s_g_a2___individual_8cpp_source.html">NSGA2_Individual.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;{</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> par1 = 0; par1 &lt; Parameters.size(); par1++)</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        {</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordflow">if</span> (other-&gt;getParameter(par1)-&gt;evaluate() &lt; <a class="code" href="class_n_s_g_a2___individual.html#aaaa5b3c820b34c633d416e467b400e77">getParameter</a>(par1)-&gt;evaluate())</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <span class="keywordtype">bool</span> Dominates = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> par2 = 0; par2 &lt; Parameters.size() &amp;&amp; Dominates; par2++)</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                Dominates = Dominates &amp;&amp;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                            (other-&gt;getParameter(par2)-&gt;evaluate() &lt;= <a class="code" href="class_n_s_g_a2___individual.html#aaaa5b3c820b34c633d416e467b400e77">getParameter</a>(par2)-&gt;evaluate());</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                }</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            <span class="keywordflow">if</span> (Dominates)</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                }</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            }</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        }</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;}</div>
+<div class="ttc" id="class_n_s_g_a2___individual_html_aaaa5b3c820b34c633d416e467b400e77"><div class="ttname"><a href="class_n_s_g_a2___individual.html#aaaa5b3c820b34c633d416e467b400e77">NSGA2_Individual::getParameter</a></div><div class="ttdeci">std::shared_ptr&lt; NSGA2_Parameter &gt; getParameter(unsigned int i) const </div><div class="ttdoc">getParameter returns a pointer to the i-th Parameter. </div><div class="ttdef"><b>Definition:</b> NSGA2_Individual.cpp:87</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a6477f9016d514b671de3cdcc526b8c67"></a>
@@ -415,9 +441,29 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>NSGA2</b></td></tr>
 
 <p>mutate mutates this Individual. </p>
 <dl class="section return"><dt>Returns</dt><dd>a reference to this Individual, mutated. </dd></dl>
-
-<p>Definition at line <a class="el" href="_n_s_g_a2___individual_8cpp_source.html#l00131">131</a> of file <a class="el" href="_n_s_g_a2___individual_8cpp_source.html">NSGA2_Individual.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;{</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <a class="code" href="class_n_s_g_a2___individual.html#af3567d56a64dbeddc14fff6c1f7364cb">crowdingDistance</a> = <a class="code" href="class_n_s_g_a2___individual.html#a1a7cf2d30b7e06b2d245e6edd3b0e4a0">paretoFront</a> = -1;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    std::uniform_real_distribution&lt;double&gt; dist(0, 1);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="class_n_s_g_a2___individual.html#ac3e4c1fba2d360f9cd48e21b7870c96b">Gene</a>.size(); i++)</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        {</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        <span class="keywordflow">if</span> (dist(random_generator) &lt; <a class="code" href="class_n_s_g_a2.html#a9caa987f202d8ec8f6e01b4c7c73140f">NSGA2::mutationProb</a>)   <span class="comment">//mutates</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            {</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;            <a class="code" href="class_n_s_g_a2___individual.html#ac3e4c1fba2d360f9cd48e21b7870c96b">Gene</a>[i] = <a class="code" href="class_n_s_g_a2___individual.html#a1141704c61a021c4166a688ed3acd40c">createGene</a>(i);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            <a class="code" href="class_n_s_g_a2___individual.html#a428caf2de5a92eb410f9d25267e27964">isEvaluated</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            }</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        }</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;}</div>
+<div class="ttc" id="class_n_s_g_a2___individual_html_ac3e4c1fba2d360f9cd48e21b7870c96b"><div class="ttname"><a href="class_n_s_g_a2___individual.html#ac3e4c1fba2d360f9cd48e21b7870c96b">NSGA2_Individual::Gene</a></div><div class="ttdeci">std::vector&lt; int &gt; Gene</div><div class="ttdoc">Gene is the genes of this Individual. </div><div class="ttdef"><b>Definition:</b> NSGA2_Individual.h:128</div></div>
+<div class="ttc" id="class_n_s_g_a2_html_a9caa987f202d8ec8f6e01b4c7c73140f"><div class="ttname"><a href="class_n_s_g_a2.html#a9caa987f202d8ec8f6e01b4c7c73140f">NSGA2::mutationProb</a></div><div class="ttdeci">static constexpr double mutationProb</div><div class="ttdoc">mutationProb is the probability of mutation of each Individual&#39;s gene. </div><div class="ttdef"><b>Definition:</b> NSGA2.h:42</div></div>
+<div class="ttc" id="class_n_s_g_a2___individual_html_a1141704c61a021c4166a688ed3acd40c"><div class="ttname"><a href="class_n_s_g_a2___individual.html#a1141704c61a021c4166a688ed3acd40c">NSGA2_Individual::createGene</a></div><div class="ttdeci">virtual int createGene(unsigned int g)=0</div><div class="ttdoc">createGene returns the integer that represents the g-th Gene. It is required by the Mutation function...</div></div>
+<div class="ttc" id="class_n_s_g_a2___individual_html_af3567d56a64dbeddc14fff6c1f7364cb"><div class="ttname"><a href="class_n_s_g_a2___individual.html#af3567d56a64dbeddc14fff6c1f7364cb">NSGA2_Individual::crowdingDistance</a></div><div class="ttdeci">double crowdingDistance</div><div class="ttdoc">crowdingDistance measures how close this Individual is from the other Individuals in the same Pareto ...</div><div class="ttdef"><b>Definition:</b> NSGA2_Individual.h:84</div></div>
+<div class="ttc" id="class_n_s_g_a2___individual_html_a428caf2de5a92eb410f9d25267e27964"><div class="ttname"><a href="class_n_s_g_a2___individual.html#a428caf2de5a92eb410f9d25267e27964">NSGA2_Individual::isEvaluated</a></div><div class="ttdeci">bool isEvaluated</div><div class="ttdoc">isEvaluated is true, if this Individual&#39;s Parameters have already been evaluated. ...</div><div class="ttdef"><b>Definition:</b> NSGA2_Individual.h:122</div></div>
+<div class="ttc" id="class_n_s_g_a2___individual_html_a1a7cf2d30b7e06b2d245e6edd3b0e4a0"><div class="ttname"><a href="class_n_s_g_a2___individual.html#a1a7cf2d30b7e06b2d245e6edd3b0e4a0">NSGA2_Individual::paretoFront</a></div><div class="ttdeci">int paretoFront</div><div class="ttdoc">paretoFront is the Pareto Front of this Individual. </div><div class="ttdef"><b>Definition:</b> NSGA2_Individual.h:88</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a8ca193c862810331c57ec82d2f680968"></a>
@@ -442,9 +488,16 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>NSGA2</b></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true (this is "less" than other) if the Pareto Front of this Individual is inner than the other's, or if they're in the same Pareto Front but this Individual has smaller Crowding Distance. </dd></dl>
-
-<p>Definition at line <a class="el" href="_n_s_g_a2___individual_8cpp_source.html#l00021">21</a> of file <a class="el" href="_n_s_g_a2___individual_8cpp_source.html">NSGA2_Individual.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="comment">//This is less than other if its Pareto Front is inner, or iff they&#39;re in the</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">//same Pareto Front and this has smaller crowding Distance.</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">return</span> ((<a class="code" href="class_n_s_g_a2___individual.html#a1a7cf2d30b7e06b2d245e6edd3b0e4a0">paretoFront</a> &lt; other.<a class="code" href="class_n_s_g_a2___individual.html#a1a7cf2d30b7e06b2d245e6edd3b0e4a0">paretoFront</a>) ||</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            ((<a class="code" href="class_n_s_g_a2___individual.html#a1a7cf2d30b7e06b2d245e6edd3b0e4a0">paretoFront</a> == other.<a class="code" href="class_n_s_g_a2___individual.html#a1a7cf2d30b7e06b2d245e6edd3b0e4a0">paretoFront</a>) &amp;&amp;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;             (<a class="code" href="class_n_s_g_a2___individual.html#af3567d56a64dbeddc14fff6c1f7364cb">crowdingDistance</a> &lt; other.<a class="code" href="class_n_s_g_a2___individual.html#af3567d56a64dbeddc14fff6c1f7364cb">crowdingDistance</a>)));</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
+<div class="ttc" id="class_n_s_g_a2___individual_html_af3567d56a64dbeddc14fff6c1f7364cb"><div class="ttname"><a href="class_n_s_g_a2___individual.html#af3567d56a64dbeddc14fff6c1f7364cb">NSGA2_Individual::crowdingDistance</a></div><div class="ttdeci">double crowdingDistance</div><div class="ttdoc">crowdingDistance measures how close this Individual is from the other Individuals in the same Pareto ...</div><div class="ttdef"><b>Definition:</b> NSGA2_Individual.h:84</div></div>
+<div class="ttc" id="class_n_s_g_a2___individual_html_a1a7cf2d30b7e06b2d245e6edd3b0e4a0"><div class="ttname"><a href="class_n_s_g_a2___individual.html#a1a7cf2d30b7e06b2d245e6edd3b0e4a0">NSGA2_Individual::paretoFront</a></div><div class="ttdeci">int paretoFront</div><div class="ttdoc">paretoFront is the Pareto Front of this Individual. </div><div class="ttdef"><b>Definition:</b> NSGA2_Individual.h:88</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="ae800fa1ffc6f458796ef4418ba1be79c"></a>
@@ -469,9 +522,11 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>NSGA2</b></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true iff the Individuals are equal. </dd></dl>
-
-<p>Definition at line <a class="el" href="_n_s_g_a2___individual_8cpp_source.html#l00016">16</a> of file <a class="el" href="_n_s_g_a2___individual_8cpp_source.html">NSGA2_Individual.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">return</span> (<a class="code" href="class_n_s_g_a2___individual.html#ac3e4c1fba2d360f9cd48e21b7870c96b">Gene</a> == other.<a class="code" href="class_n_s_g_a2___individual.html#ac3e4c1fba2d360f9cd48e21b7870c96b">Gene</a>);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
+<div class="ttc" id="class_n_s_g_a2___individual_html_ac3e4c1fba2d360f9cd48e21b7870c96b"><div class="ttname"><a href="class_n_s_g_a2___individual.html#ac3e4c1fba2d360f9cd48e21b7870c96b">NSGA2_Individual::Gene</a></div><div class="ttdeci">std::vector&lt; int &gt; Gene</div><div class="ttdoc">Gene is the genes of this Individual. </div><div class="ttdef"><b>Definition:</b> NSGA2_Individual.h:128</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="aafcbb1979adfb5a7490efe836ff7bd13"></a>
@@ -495,15 +550,18 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>NSGA2</b></td></tr>
   </table>
   </dd>
 </dl>
-
-<p>Definition at line <a class="el" href="_n_s_g_a2___individual_8cpp_source.html#l00149">149</a> of file <a class="el" href="_n_s_g_a2___individual_8cpp_source.html">NSGA2_Individual.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;{</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <a class="code" href="class_n_s_g_a2___individual.html#a428caf2de5a92eb410f9d25267e27964">isEvaluated</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <a class="code" href="class_n_s_g_a2___individual.html#af3567d56a64dbeddc14fff6c1f7364cb">crowdingDistance</a> = <a class="code" href="class_n_s_g_a2___individual.html#a1a7cf2d30b7e06b2d245e6edd3b0e4a0">paretoFront</a> = -1;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <a class="code" href="class_n_s_g_a2___individual.html#ac3e4c1fba2d360f9cd48e21b7870c96b">Gene</a> = newGene;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;}</div>
+<div class="ttc" id="class_n_s_g_a2___individual_html_ac3e4c1fba2d360f9cd48e21b7870c96b"><div class="ttname"><a href="class_n_s_g_a2___individual.html#ac3e4c1fba2d360f9cd48e21b7870c96b">NSGA2_Individual::Gene</a></div><div class="ttdeci">std::vector&lt; int &gt; Gene</div><div class="ttdoc">Gene is the genes of this Individual. </div><div class="ttdef"><b>Definition:</b> NSGA2_Individual.h:128</div></div>
+<div class="ttc" id="class_n_s_g_a2___individual_html_af3567d56a64dbeddc14fff6c1f7364cb"><div class="ttname"><a href="class_n_s_g_a2___individual.html#af3567d56a64dbeddc14fff6c1f7364cb">NSGA2_Individual::crowdingDistance</a></div><div class="ttdeci">double crowdingDistance</div><div class="ttdoc">crowdingDistance measures how close this Individual is from the other Individuals in the same Pareto ...</div><div class="ttdef"><b>Definition:</b> NSGA2_Individual.h:84</div></div>
+<div class="ttc" id="class_n_s_g_a2___individual_html_a428caf2de5a92eb410f9d25267e27964"><div class="ttname"><a href="class_n_s_g_a2___individual.html#a428caf2de5a92eb410f9d25267e27964">NSGA2_Individual::isEvaluated</a></div><div class="ttdeci">bool isEvaluated</div><div class="ttdoc">isEvaluated is true, if this Individual&#39;s Parameters have already been evaluated. ...</div><div class="ttdef"><b>Definition:</b> NSGA2_Individual.h:122</div></div>
+<div class="ttc" id="class_n_s_g_a2___individual_html_a1a7cf2d30b7e06b2d245e6edd3b0e4a0"><div class="ttname"><a href="class_n_s_g_a2___individual.html#a1a7cf2d30b7e06b2d245e6edd3b0e4a0">NSGA2_Individual::paretoFront</a></div><div class="ttdeci">int paretoFront</div><div class="ttdoc">paretoFront is the Pareto Front of this Individual. </div><div class="ttdef"><b>Definition:</b> NSGA2_Individual.h:88</div></div>
+</div><!-- fragment -->
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>include/GeneralPurposeAlgorithms/NSGA-II/<a class="el" href="_n_s_g_a2___individual_8h_source.html">NSGA2_Individual.h</a></li>
-<li>src/GeneralPurposeAlgorithms/NSGA-II/<a class="el" href="_n_s_g_a2___individual_8cpp_source.html">NSGA2_Individual.cpp</a></li>
-</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

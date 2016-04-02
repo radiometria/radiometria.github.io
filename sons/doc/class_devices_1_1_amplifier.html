@@ -47,7 +47,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -212,8 +211,6 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="class_devices_1_1_amplifier.html" title="The Amplifier class represents an amplifier, that amplifies a signal and generates noise...">Amplifier</a> class represents an amplifier, that amplifies a signal and generates noise. </p>
-
-<p>Definition at line <a class="el" href="_amplifier_8h_source.html#l00012">12</a> of file <a class="el" href="_amplifier_8h_source.html">Amplifier.h</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a class="anchor" id="a554185ed39282cb1e9cdc6026b5f2b16"></a>
 <div class="memitem">
@@ -237,9 +234,15 @@ Public Attributes</h2></td></tr>
 <p>Pre-Amplifier </p>
 </td></tr>
 </table>
-
-<p>Definition at line <a class="el" href="_amplifier_8h_source.html#l00018">18</a> of file <a class="el" href="_amplifier_8h_source.html">Amplifier.h</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="class_devices_1_1_amplifier.html#a554185ed39282cb1e9cdc6026b5f2b16ad2dee7680c6faf7da8ed2a15845d515d">InLineAmplifierType</a>, </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="class_devices_1_1_amplifier.html#a554185ed39282cb1e9cdc6026b5f2b16a200074c1e19f3d872908e34c8f56e7b5">BoosterAmplifierType</a>, </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <a class="code" href="class_devices_1_1_amplifier.html#a554185ed39282cb1e9cdc6026b5f2b16a3693e094ee9ff2652ddef9f596bb29a8">PreAmplifierType</a> </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    };</div>
+<div class="ttc" id="class_devices_1_1_amplifier_html_a554185ed39282cb1e9cdc6026b5f2b16ad2dee7680c6faf7da8ed2a15845d515d"><div class="ttname"><a href="class_devices_1_1_amplifier.html#a554185ed39282cb1e9cdc6026b5f2b16ad2dee7680c6faf7da8ed2a15845d515d">Devices::Amplifier::InLineAmplifierType</a></div><div class="ttdef"><b>Definition:</b> Amplifier.h:20</div></div>
+<div class="ttc" id="class_devices_1_1_amplifier_html_a554185ed39282cb1e9cdc6026b5f2b16a200074c1e19f3d872908e34c8f56e7b5"><div class="ttname"><a href="class_devices_1_1_amplifier.html#a554185ed39282cb1e9cdc6026b5f2b16a200074c1e19f3d872908e34c8f56e7b5">Devices::Amplifier::BoosterAmplifierType</a></div><div class="ttdef"><b>Definition:</b> Amplifier.h:21</div></div>
+<div class="ttc" id="class_devices_1_1_amplifier_html_a554185ed39282cb1e9cdc6026b5f2b16a3693e094ee9ff2652ddef9f596bb29a8"><div class="ttname"><a href="class_devices_1_1_amplifier.html#a554185ed39282cb1e9cdc6026b5f2b16a3693e094ee9ff2652ddef9f596bb29a8">Devices::Amplifier::PreAmplifierType</a></div><div class="ttdef"><b>Definition:</b> Amplifier.h:22</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -264,9 +267,16 @@ Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p>Definition at line <a class="el" href="_amplifier_8cpp_source.html#l00005">5</a> of file <a class="el" href="_amplifier_8cpp_source.html">Amplifier.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;                           : <a class="code" href="class_devices_1_1_device.html#a774315f60f1a544c870a5213d401b701">Device</a>(<a class="code" href="class_devices_1_1_device.html#a6fe70fa8017a07adda38721261dec046a854aa96ae931cfcd3e9b309ce5511202">Device::AmplifierDevice</a>),</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    <a class="code" href="class_devices_1_1_amplifier.html#ac204f1d2fcdd125757380acee5dc67e7">AmplifierGain</a>(G), <a class="code" href="class_devices_1_1_amplifier.html#afc0879979e9a74eaadcf00a2d4ffc932">NoisePower</a>(0)</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;}</div>
+<div class="ttc" id="class_devices_1_1_amplifier_html_afc0879979e9a74eaadcf00a2d4ffc932"><div class="ttname"><a href="class_devices_1_1_amplifier.html#afc0879979e9a74eaadcf00a2d4ffc932">Devices::Amplifier::NoisePower</a></div><div class="ttdeci">Power NoisePower</div><div class="ttdoc">NoisePower is the power of the ASE noise generated by the amplifier. </div><div class="ttdef"><b>Definition:</b> Amplifier.h:54</div></div>
+<div class="ttc" id="class_devices_1_1_device_html_a6fe70fa8017a07adda38721261dec046a854aa96ae931cfcd3e9b309ce5511202"><div class="ttname"><a href="class_devices_1_1_device.html#a6fe70fa8017a07adda38721261dec046a854aa96ae931cfcd3e9b309ce5511202">Devices::Device::AmplifierDevice</a></div><div class="ttdef"><b>Definition:</b> Device.h:22</div></div>
+<div class="ttc" id="class_devices_1_1_device_html_a774315f60f1a544c870a5213d401b701"><div class="ttname"><a href="class_devices_1_1_device.html#a774315f60f1a544c870a5213d401b701">Devices::Device::Device</a></div><div class="ttdeci">Device(DeviceType DevType=UndefinedDevice)</div><div class="ttdoc">Device is the standard constructor for a Device. </div><div class="ttdef"><b>Definition:</b> Device.cpp:5</div></div>
+<div class="ttc" id="class_devices_1_1_amplifier_html_ac204f1d2fcdd125757380acee5dc67e7"><div class="ttname"><a href="class_devices_1_1_amplifier.html#ac204f1d2fcdd125757380acee5dc67e7">Devices::Amplifier::AmplifierGain</a></div><div class="ttdeci">Gain AmplifierGain</div><div class="ttdoc">AmplifierGain is the gain of this amplifier. </div><div class="ttdef"><b>Definition:</b> Amplifier.h:50</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -295,9 +305,10 @@ Public Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>the CapEx cost of the device. </dd></dl>
 
 <p>Implements <a class="el" href="class_devices_1_1_device.html#a57f5cd86931835f2a7b0ff164d530597">Devices::Device</a>.</p>
-
-<p>Definition at line <a class="el" href="_amplifier_8cpp_source.html#l00024">24</a> of file <a class="el" href="_amplifier_8cpp_source.html">Amplifier.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a2028ca20e0125645fb5a63db7167c692"></a>
@@ -325,9 +336,11 @@ Public Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>the noise generated by the device. </dd></dl>
 
 <p>Implements <a class="el" href="class_devices_1_1_device.html#acd080004f179b0d01bb91070eb550c26">Devices::Device</a>.</p>
-
-<p>Definition at line <a class="el" href="_amplifier_8cpp_source.html#l00011">11</a> of file <a class="el" href="_amplifier_8cpp_source.html">Amplifier.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_devices_1_1_amplifier.html#afc0879979e9a74eaadcf00a2d4ffc932">NoisePower</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
+<div class="ttc" id="class_devices_1_1_amplifier_html_afc0879979e9a74eaadcf00a2d4ffc932"><div class="ttname"><a href="class_devices_1_1_amplifier.html#afc0879979e9a74eaadcf00a2d4ffc932">Devices::Amplifier::NoisePower</a></div><div class="ttdeci">Power NoisePower</div><div class="ttdoc">NoisePower is the power of the ASE noise generated by the amplifier. </div><div class="ttdef"><b>Definition:</b> Amplifier.h:54</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a51854f80b5253d394775f432024bba84"></a>
@@ -355,9 +368,10 @@ Public Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>the OpEx cost of the device. </dd></dl>
 
 <p>Implements <a class="el" href="class_devices_1_1_device.html#accffa5d63191494582235ecd411dead5">Devices::Device</a>.</p>
-
-<p>Definition at line <a class="el" href="_amplifier_8cpp_source.html#l00029">29</a> of file <a class="el" href="_amplifier_8cpp_source.html">Amplifier.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">return</span> 0.1;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="afeba5ec351bd2193cf12496948b85a9c"></a>
@@ -392,9 +406,10 @@ Public Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>the transfer function that represents the device's frequency response. </dd></dl>
 
 <p>Implements <a class="el" href="class_devices_1_1_device.html#a93a3780b813460dda72e28a2d133da87">Devices::Device</a>.</p>
-
-<p>Definition at line <a class="el" href="_amplifier_8cpp_source.html#l00034">34</a> of file <a class="el" href="_amplifier_8cpp_source.html">Amplifier.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">return</span> *deviceTF.get();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a9a8f58faee7c82f36b33b1224a731b2a"></a>
@@ -418,15 +433,17 @@ Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p>Definition at line <a class="el" href="_amplifier_8cpp_source.html#l00016">16</a> of file <a class="el" href="_amplifier_8cpp_source.html">Amplifier.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_devices_1_1_amplifier.html#ac204f1d2fcdd125757380acee5dc67e7">AmplifierGain</a> = G;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    deviceTF =</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        std::make_shared&lt;TransferFunction&gt;(std::pow(G.<a class="code" href="class_gain.html#a3572c11a683be4dbbc395ae5d327f11e">in_Linear</a>(), 2));</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    calculate_NoisePower();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
+<div class="ttc" id="class_gain_html_a3572c11a683be4dbbc395ae5d327f11e"><div class="ttname"><a href="class_gain.html#a3572c11a683be4dbbc395ae5d327f11e">Gain::in_Linear</a></div><div class="ttdeci">double in_Linear()</div><div class="ttdoc">in_Linear returns the value of this object in linear units. </div><div class="ttdef"><b>Definition:</b> Gain.cpp:56</div></div>
+<div class="ttc" id="class_devices_1_1_amplifier_html_ac204f1d2fcdd125757380acee5dc67e7"><div class="ttname"><a href="class_devices_1_1_amplifier.html#ac204f1d2fcdd125757380acee5dc67e7">Devices::Amplifier::AmplifierGain</a></div><div class="ttdeci">Gain AmplifierGain</div><div class="ttdoc">AmplifierGain is the gain of this amplifier. </div><div class="ttdef"><b>Definition:</b> Amplifier.h:50</div></div>
+</div><!-- fragment -->
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>include/Devices/Amplifiers/<a class="el" href="_amplifier_8h_source.html">Amplifier.h</a></li>
-<li>src/Devices/Amplifiers/<a class="el" href="_amplifier_8cpp_source.html">Amplifier.cpp</a></li>
-</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

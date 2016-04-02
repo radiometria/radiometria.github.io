@@ -47,7 +47,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
-      <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -64,11 +63,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
           </span>
         </div>
       </li>
-    </ul>
-  </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li><a href="files.html"><span>File&#160;List</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -122,11 +116,11 @@ $(document).ready(function(){initNavTree('_integration_method_8h_source.html',''
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#endif // INTEGRATIONMETHOD_H</span></div>
 <div class="ttc" id="class_integration_method_html_a64eda894cf648d20351605e0a46e8dd2"><div class="ttname"><a href="class_integration_method.html#a64eda894cf648d20351605e0a46e8dd2">IntegrationMethod::calculate</a></div><div class="ttdeci">virtual double calculate()=0</div><div class="ttdoc">calculate is used to compute the IntegrationMethod. </div></div>
-<div class="ttc" id="class_integration_method_html"><div class="ttname"><a href="class_integration_method.html">IntegrationMethod</a></div><div class="ttdoc">The IntegrationMethod class represents a numerical integration method. </div><div class="ttdef"><b>Definition:</b> <a href="_integration_method_8h_source.html#l00009">IntegrationMethod.h:9</a></div></div>
-<div class="ttc" id="class_integration_method_html_a29ea481bd990b720b1a04f5d794d064b"><div class="ttname"><a href="class_integration_method.html#a29ea481bd990b720b1a04f5d794d064b">IntegrationMethod::IntegrationMethod</a></div><div class="ttdeci">IntegrationMethod(arma::mat &amp;, double)</div><div class="ttdoc">IntegrationMethod is a constructor for an IntegrationMethod. </div><div class="ttdef"><b>Definition:</b> <a href="_integration_method_8cpp_source.html#l00003">IntegrationMethod.cpp:3</a></div></div>
-<div class="ttc" id="class_integration_method_html_ab13c0911754853242a03c364af9e728b"><div class="ttname"><a href="class_integration_method.html#ab13c0911754853242a03c364af9e728b">IntegrationMethod::setValues</a></div><div class="ttdeci">void setValues(arma::mat &amp;, double)</div><div class="ttdoc">setValues sets this IntegrationMethod YPoints and XRange values. </div><div class="ttdef"><b>Definition:</b> <a href="_integration_method_8cpp_source.html#l00009">IntegrationMethod.cpp:9</a></div></div>
-<div class="ttc" id="class_integration_method_html_a52ebd16a8315a819384c722528e0c683"><div class="ttname"><a href="class_integration_method.html#a52ebd16a8315a819384c722528e0c683">IntegrationMethod::XRange</a></div><div class="ttdeci">double XRange</div><div class="ttdoc">XRange is the domain to be integrated. </div><div class="ttdef"><b>Definition:</b> <a href="_integration_method_8h_source.html#l00023">IntegrationMethod.h:23</a></div></div>
-<div class="ttc" id="class_integration_method_html_adbaf26cbf342e57aba2693ba8a5d35f5"><div class="ttname"><a href="class_integration_method.html#adbaf26cbf342e57aba2693ba8a5d35f5">IntegrationMethod::YPoints</a></div><div class="ttdeci">arma::mat YPoints</div><div class="ttdoc">YPoints is a vector with the given function image values. </div><div class="ttdef"><b>Definition:</b> <a href="_integration_method_8h_source.html#l00019">IntegrationMethod.h:19</a></div></div>
+<div class="ttc" id="class_integration_method_html"><div class="ttname"><a href="class_integration_method.html">IntegrationMethod</a></div><div class="ttdoc">The IntegrationMethod class represents a numerical integration method. </div><div class="ttdef"><b>Definition:</b> IntegrationMethod.h:9</div></div>
+<div class="ttc" id="class_integration_method_html_a29ea481bd990b720b1a04f5d794d064b"><div class="ttname"><a href="class_integration_method.html#a29ea481bd990b720b1a04f5d794d064b">IntegrationMethod::IntegrationMethod</a></div><div class="ttdeci">IntegrationMethod(arma::mat &amp;, double)</div><div class="ttdoc">IntegrationMethod is a constructor for an IntegrationMethod. </div><div class="ttdef"><b>Definition:</b> IntegrationMethod.cpp:3</div></div>
+<div class="ttc" id="class_integration_method_html_ab13c0911754853242a03c364af9e728b"><div class="ttname"><a href="class_integration_method.html#ab13c0911754853242a03c364af9e728b">IntegrationMethod::setValues</a></div><div class="ttdeci">void setValues(arma::mat &amp;, double)</div><div class="ttdoc">setValues sets this IntegrationMethod YPoints and XRange values. </div><div class="ttdef"><b>Definition:</b> IntegrationMethod.cpp:9</div></div>
+<div class="ttc" id="class_integration_method_html_a52ebd16a8315a819384c722528e0c683"><div class="ttname"><a href="class_integration_method.html#a52ebd16a8315a819384c722528e0c683">IntegrationMethod::XRange</a></div><div class="ttdeci">double XRange</div><div class="ttdoc">XRange is the domain to be integrated. </div><div class="ttdef"><b>Definition:</b> IntegrationMethod.h:23</div></div>
+<div class="ttc" id="class_integration_method_html_adbaf26cbf342e57aba2693ba8a5d35f5"><div class="ttname"><a href="class_integration_method.html#adbaf26cbf342e57aba2693ba8a5d35f5">IntegrationMethod::YPoints</a></div><div class="ttdeci">arma::mat YPoints</div><div class="ttdoc">YPoints is a vector with the given function image values. </div><div class="ttdef"><b>Definition:</b> IntegrationMethod.h:19</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -47,7 +47,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -183,8 +182,6 @@ static constexpr unsigned long&#160;</td><td class="memItemRight" valign="bottom
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="class_signal.html" title="The Signal class represents a signal that propagates through the network. ">Signal</a> class represents a signal that propagates through the network. </p>
-
-<p>Definition at line <a class="el" href="_signal_8h_source.html#l00017">17</a> of file <a class="el" href="_signal_8h_source.html">Signal.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ab2af783424ebc41a9da190f5b00d3385"></a>
 <div class="memitem">
@@ -201,9 +198,11 @@ static constexpr unsigned long&#160;</td><td class="memItemRight" valign="bottom
 
 <p>get_NoisePower returns the Noise <a class="el" href="class_power.html" title="The Power class represents a power, either measured in dBm or in Watts. ">Power</a> of the <a class="el" href="class_signal.html" title="The Signal class represents a signal that propagates through the network. ">Signal</a>. </p>
 <dl class="section return"><dt>Returns</dt><dd>the Noise <a class="el" href="class_power.html" title="The Power class represents a power, either measured in dBm or in Watts. ">Power</a> of the <a class="el" href="class_signal.html" title="The Signal class represents a signal that propagates through the network. ">Signal</a>. </dd></dl>
-
-<p>Definition at line <a class="el" href="_signal_8cpp_source.html#l00049">49</a> of file <a class="el" href="_signal_8cpp_source.html">Signal.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_power.html">Power</a>(NoisePower);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
+<div class="ttc" id="class_power_html"><div class="ttname"><a href="class_power.html">Power</a></div><div class="ttdoc">The Power class represents a power, either measured in dBm or in Watts. </div><div class="ttdef"><b>Definition:</b> Power.h:9</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a93da50e2818ca6a60596be4d60d7939e"></a>
@@ -221,9 +220,12 @@ static constexpr unsigned long&#160;</td><td class="memItemRight" valign="bottom
 
 <p>get_OSNR returns the Signal-To-Noise Ratio of the <a class="el" href="class_signal.html" title="The Signal class represents a signal that propagates through the network. ">Signal</a>. </p>
 <dl class="section return"><dt>Returns</dt><dd>the Signal-To-Noise Ratio of the <a class="el" href="class_signal.html" title="The Signal class represents a signal that propagates through the network. ">Signal</a>. </dd></dl>
-
-<p>Definition at line <a class="el" href="_signal_8cpp_source.html#l00044">44</a> of file <a class="el" href="_signal_8cpp_source.html">Signal.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_gain.html">Gain</a>(SignalPower.<a class="code" href="class_power.html#a627ece09b80e8397c5813ab141c253a7">in_dBm</a>() - NoisePower.<a class="code" href="class_power.html#a627ece09b80e8397c5813ab141c253a7">in_dBm</a>());</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
+<div class="ttc" id="class_gain_html"><div class="ttname"><a href="class_gain.html">Gain</a></div><div class="ttdoc">The Gain class provides a interface to gain variables that are measured in dB units or in linear unit...</div><div class="ttdef"><b>Definition:</b> Gain.h:7</div></div>
+<div class="ttc" id="class_power_html_a627ece09b80e8397c5813ab141c253a7"><div class="ttname"><a href="class_power.html#a627ece09b80e8397c5813ab141c253a7">Power::in_dBm</a></div><div class="ttdeci">double in_dBm() const </div><div class="ttdoc">in_dBm returns the value of this Power in dBm. </div><div class="ttdef"><b>Definition:</b> Power.cpp:45</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a5ebd44213a3e5b246fb8d9746f50ca2b"></a>
@@ -241,9 +243,10 @@ static constexpr unsigned long&#160;</td><td class="memItemRight" valign="bottom
 
 <p>get_PowerRatioThreshold returns the power ratio threshold for blocking a call. </p>
 <dl class="section return"><dt>Returns</dt><dd>the power ratio threshold for blocking a call. </dd></dl>
-
-<p>Definition at line <a class="el" href="_signal_8cpp_source.html#l00076">76</a> of file <a class="el" href="_signal_8cpp_source.html">Signal.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;{</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">return</span> 0.6;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="ace020d28c5711eeb36b2aa5d57636523"></a>
@@ -261,9 +264,29 @@ static constexpr unsigned long&#160;</td><td class="memItemRight" valign="bottom
 
 <p>get_SignalPowerRatio returns the ratio of this signal's original and final spectral density power. </p>
 <dl class="section return"><dt>Returns</dt><dd>the ratio of this signal's original and final spectral density power. </dd></dl>
-
-<p>Definition at line <a class="el" href="_signal_8cpp_source.html#l00061">61</a> of file <a class="el" href="_signal_8cpp_source.html">Signal.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">if</span> (!originalSpecDensityCache.count(<a class="code" href="class_signal.html#a0fcbcd07bb7278dca8d7a73780465219">numSlots</a>))</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="class_spectral_density.html">SpectralDensity</a> originSD(<a class="code" href="class_physical_constants.html#a08328d5190c4cb688fafce12a81d35ea">PhysicalConstants::freq</a> - frequencyRange,</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                                 <a class="code" href="class_physical_constants.html#a08328d5190c4cb688fafce12a81d35ea">PhysicalConstants::freq</a> + frequencyRange,</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                                 <a class="code" href="class_signal.html#a5d10cc9bf03f6e2f6c870ebf9e59b20e">numFrequencySamples</a>);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        originalSpecDensityCache.emplace(<a class="code" href="class_signal.html#a0fcbcd07bb7278dca8d7a73780465219">numSlots</a>, <a class="code" href="class_power.html">Power</a>(</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                                             <a class="code" href="class_trapezoidal_rule.html">TrapezoidalRule</a>(originSD.specDensity, frequencyRange * 2).<a class="code" href="class_trapezoidal_rule.html#aa61ea027189802a3bec80c0352e84c56">calculate</a>()</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                                             * originSD.densityScaling, <a class="code" href="class_power.html#a4573f1df98243e1618b99cdcba06ccdeaf1c07dea76989c86df74e669c845a732">Power::Watt</a>));</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_signal.html#aa0d1579720acbe40584edce3102a5a10">get_SpectralPower</a>() / originalSpecDensityCache.at(<a class="code" href="class_signal.html#a0fcbcd07bb7278dca8d7a73780465219">numSlots</a>);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
+<div class="ttc" id="class_power_html"><div class="ttname"><a href="class_power.html">Power</a></div><div class="ttdoc">The Power class represents a power, either measured in dBm or in Watts. </div><div class="ttdef"><b>Definition:</b> Power.h:9</div></div>
+<div class="ttc" id="class_power_html_a4573f1df98243e1618b99cdcba06ccdeaf1c07dea76989c86df74e669c845a732"><div class="ttname"><a href="class_power.html#a4573f1df98243e1618b99cdcba06ccdeaf1c07dea76989c86df74e669c845a732">Power::Watt</a></div><div class="ttdef"><b>Definition:</b> Power.h:18</div></div>
+<div class="ttc" id="class_spectral_density_html"><div class="ttname"><a href="class_spectral_density.html">SpectralDensity</a></div><div class="ttdoc">The SpectralDensity class represents the elements related to a signal&#39;s spectral density. </div><div class="ttdef"><b>Definition:</b> SpectralDensity.h:10</div></div>
+<div class="ttc" id="class_signal_html_a0fcbcd07bb7278dca8d7a73780465219"><div class="ttname"><a href="class_signal.html#a0fcbcd07bb7278dca8d7a73780465219">Signal::numSlots</a></div><div class="ttdeci">unsigned int numSlots</div><div class="ttdoc">numSlots is the number of slots occupied by this Signal. </div><div class="ttdef"><b>Definition:</b> Signal.h:82</div></div>
+<div class="ttc" id="class_trapezoidal_rule_html"><div class="ttname"><a href="class_trapezoidal_rule.html">TrapezoidalRule</a></div><div class="ttdoc">The TrapezoidalRule class represents the Trapezoidal Rule numerical integration method. </div><div class="ttdef"><b>Definition:</b> TrapezoidalRule.h:9</div></div>
+<div class="ttc" id="class_trapezoidal_rule_html_aa61ea027189802a3bec80c0352e84c56"><div class="ttname"><a href="class_trapezoidal_rule.html#aa61ea027189802a3bec80c0352e84c56">TrapezoidalRule::calculate</a></div><div class="ttdeci">double calculate()</div><div class="ttdoc">calculate is used to compute the SimpsonsRule integration method. </div><div class="ttdef"><b>Definition:</b> TrapezoidalRule.cpp:9</div></div>
+<div class="ttc" id="class_physical_constants_html_a08328d5190c4cb688fafce12a81d35ea"><div class="ttname"><a href="class_physical_constants.html#a08328d5190c4cb688fafce12a81d35ea">PhysicalConstants::freq</a></div><div class="ttdeci">static constexpr double freq</div><div class="ttdoc">freq is the light&#39;s frequency; </div><div class="ttdef"><b>Definition:</b> PhysicalConstants.h:25</div></div>
+<div class="ttc" id="class_signal_html_aa0d1579720acbe40584edce3102a5a10"><div class="ttname"><a href="class_signal.html#aa0d1579720acbe40584edce3102a5a10">Signal::get_SpectralPower</a></div><div class="ttdeci">Power get_SpectralPower()</div><div class="ttdoc">get_SpectralPower returns the power of the Signal along a spectral density curve. ...</div><div class="ttdef"><b>Definition:</b> Signal.cpp:54</div></div>
+<div class="ttc" id="class_signal_html_a5d10cc9bf03f6e2f6c870ebf9e59b20e"><div class="ttname"><a href="class_signal.html#a5d10cc9bf03f6e2f6c870ebf9e59b20e">Signal::numFrequencySamples</a></div><div class="ttdeci">static constexpr unsigned long numFrequencySamples</div><div class="ttdoc">numFrequencySamples number of samples along the signal&#39;s bandwidth. </div><div class="ttdef"><b>Definition:</b> Signal.h:78</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="aa0d1579720acbe40584edce3102a5a10"></a>
@@ -281,9 +304,16 @@ static constexpr unsigned long&#160;</td><td class="memItemRight" valign="bottom
 
 <p>get_SpectralPower returns the power of the <a class="el" href="class_signal.html" title="The Signal class represents a signal that propagates through the network. ">Signal</a> along a spectral density curve. </p>
 <dl class="section return"><dt>Returns</dt><dd>the power of the <a class="el" href="class_signal.html" title="The Signal class represents a signal that propagates through the network. ">Signal</a> along a spectral density curve. </dd></dl>
-
-<p>Definition at line <a class="el" href="_signal_8cpp_source.html#l00054">54</a> of file <a class="el" href="_signal_8cpp_source.html">Signal.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_power.html">Power</a>(</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;               <a class="code" href="class_trapezoidal_rule.html">TrapezoidalRule</a>(signalSpecDensity-&gt;specDensity, frequencyRange * 2).<a class="code" href="class_trapezoidal_rule.html#aa61ea027189802a3bec80c0352e84c56">calculate</a>()</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;               * signalSpecDensity-&gt;densityScaling, <a class="code" href="class_power.html#a4573f1df98243e1618b99cdcba06ccdeaf1c07dea76989c86df74e669c845a732">Power::Watt</a>);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
+<div class="ttc" id="class_power_html"><div class="ttname"><a href="class_power.html">Power</a></div><div class="ttdoc">The Power class represents a power, either measured in dBm or in Watts. </div><div class="ttdef"><b>Definition:</b> Power.h:9</div></div>
+<div class="ttc" id="class_power_html_a4573f1df98243e1618b99cdcba06ccdeaf1c07dea76989c86df74e669c845a732"><div class="ttname"><a href="class_power.html#a4573f1df98243e1618b99cdcba06ccdeaf1c07dea76989c86df74e669c845a732">Power::Watt</a></div><div class="ttdef"><b>Definition:</b> Power.h:18</div></div>
+<div class="ttc" id="class_trapezoidal_rule_html"><div class="ttname"><a href="class_trapezoidal_rule.html">TrapezoidalRule</a></div><div class="ttdoc">The TrapezoidalRule class represents the Trapezoidal Rule numerical integration method. </div><div class="ttdef"><b>Definition:</b> TrapezoidalRule.h:9</div></div>
+<div class="ttc" id="class_trapezoidal_rule_html_aa61ea027189802a3bec80c0352e84c56"><div class="ttname"><a href="class_trapezoidal_rule.html#aa61ea027189802a3bec80c0352e84c56">TrapezoidalRule::calculate</a></div><div class="ttdeci">double calculate()</div><div class="ttdoc">calculate is used to compute the SimpsonsRule integration method. </div><div class="ttdef"><b>Definition:</b> TrapezoidalRule.cpp:9</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a8241914449cba7bcf4de7f49a8b97b81"></a>
@@ -302,9 +332,12 @@ static constexpr unsigned long&#160;</td><td class="memItemRight" valign="bottom
 
 <p>operator *= multiplies the <a class="el" href="class_signal.html" title="The Signal class represents a signal that propagates through the network. ">Signal</a> by a gain, effectively rescaling both the signal and the noise. </p>
 <dl class="section return"><dt>Returns</dt><dd>a signal after the application of the gain. </dd></dl>
-
-<p>Definition at line <a class="el" href="_signal_8cpp_source.html#l00022">22</a> of file <a class="el" href="_signal_8cpp_source.html">Signal.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    SignalPower *= G;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    NoisePower *= G;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a41ec17b91cfd1d680bc4feac79ee2d9a"></a>
@@ -323,9 +356,14 @@ static constexpr unsigned long&#160;</td><td class="memItemRight" valign="bottom
 
 <p>operator *= multiplies this signal spectral density by a transfer function. </p>
 <dl class="section return"><dt>Returns</dt><dd>a signal after the transfer function. </dd></dl>
-
-<p>Definition at line <a class="el" href="_signal_8cpp_source.html#l00035">35</a> of file <a class="el" href="_signal_8cpp_source.html">Signal.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">if</span> (considerFilterImperfection)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        signalSpecDensity-&gt;operator *=(TF);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a0d2eb102b5dcb6c07bf22a9d15f9487b"></a>
@@ -344,15 +382,13 @@ static constexpr unsigned long&#160;</td><td class="memItemRight" valign="bottom
 
 <p>operator += adds a noise power to the current NoisePower. </p>
 <dl class="section return"><dt>Returns</dt><dd>a signal after adding the noise. </dd></dl>
-
-<p>Definition at line <a class="el" href="_signal_8cpp_source.html#l00029">29</a> of file <a class="el" href="_signal_8cpp_source.html">Signal.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    NoisePower += P;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
+</div><!-- fragment -->
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>include/GeneralClasses/<a class="el" href="_signal_8h_source.html">Signal.h</a></li>
-<li>src/GeneralClasses/<a class="el" href="_signal_8cpp_source.html">Signal.cpp</a></li>
-</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

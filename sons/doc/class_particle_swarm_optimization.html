@@ -47,7 +47,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -152,8 +151,6 @@ class ParticleSwarmOptimization&lt; PositionType, Fitness, Comparator &gt;</h3>
   </table>
   </dd>
 </dl>
-
-<p>Definition at line <a class="el" href="_particle_swarm_optimization_8h_source.html#l00023">23</a> of file <a class="el" href="_particle_swarm_optimization_8h_source.html">ParticleSwarmOptimization.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a562f8bf7f22499b9bfe94be7b3ad5b16"></a>
 <div class="memitem">
@@ -224,14 +221,49 @@ template&lt;class PositionType , class Fit , class Comp &gt; </div>
   </table>
   </dd>
 </dl>
-
-<p>Definition at line <a class="el" href="_particle_swarm_optimization_8h_source.html#l00075">75</a> of file <a class="el" href="_particle_swarm_optimization_8h_source.html">ParticleSwarmOptimization.h</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                       :</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    P(P), G(G), N(N), XMin(XMin), XMax(XMax), VMin(VMin), VMax(VMax)</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;{</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    chi = 2.0 / std::abs(2 - phi - sqrt(phi * phi - 4 * phi));</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="comment">//Create Particles</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="class_particle_swarm_optimization.html#a99789dfd980bb7ae62e0cdd2afaff312">Particles</a>.resize(P);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;particle : <a class="code" href="class_particle_swarm_optimization.html#a99789dfd980bb7ae62e0cdd2afaff312">Particles</a>)</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        particle = std::make_shared&lt;PSO_Particle&lt;PositionType&gt;&gt;(N, XMin, XMax);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="comment">//Create ring topology</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> particle = 0; particle &lt; Particles.size(); ++particle)</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordflow">if</span> (particle != 0)</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            Particles[particle]-&gt;Neighbour[0] = Particles[particle - 1];</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            Particles[particle]-&gt;Neighbour[0] = Particles.back();</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            }</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordflow">if</span> (particle != Particles.size() - 1)</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            {</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            Particles[particle]-&gt;Neighbour[1] = Particles[particle + 1];</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            }</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            Particles[particle]-&gt;Neighbour[1] = Particles.front();</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            }</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        }</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <a class="code" href="class_particle_swarm_optimization.html#a6afce5e7207601d907a610136792cdec">BestParticle</a> = Particles[0];</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    g = 1;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;}</div>
+<div class="ttc" id="class_particle_swarm_optimization_html_a6afce5e7207601d907a610136792cdec"><div class="ttname"><a href="class_particle_swarm_optimization.html#a6afce5e7207601d907a610136792cdec">ParticleSwarmOptimization::BestParticle</a></div><div class="ttdeci">std::shared_ptr&lt; PSO_Particle&lt; PositionType &gt; &gt; BestParticle</div><div class="ttdoc">BestParticle is a pointer to the best particle ever found. </div><div class="ttdef"><b>Definition:</b> ParticleSwarmOptimization.h:46</div></div>
+<div class="ttc" id="class_particle_swarm_optimization_html_a99789dfd980bb7ae62e0cdd2afaff312"><div class="ttname"><a href="class_particle_swarm_optimization.html#a99789dfd980bb7ae62e0cdd2afaff312">ParticleSwarmOptimization::Particles</a></div><div class="ttdeci">std::vector&lt; std::shared_ptr&lt; PSO_Particle&lt; PositionType &gt; &gt; &gt; Particles</div><div class="ttdoc">Particles is a vector with the current generation particles. </div><div class="ttdef"><b>Definition:</b> ParticleSwarmOptimization.h:42</div></div>
+</div><!-- fragment -->
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/GeneralPurposeAlgorithms/PSO/<a class="el" href="_particle_swarm_optimization_8h_source.html">ParticleSwarmOptimization.h</a></li>
-</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

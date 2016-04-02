@@ -47,7 +47,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -168,8 +167,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;=</b> (co
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="class_gain.html" title="The Gain class provides a interface to gain variables that are measured in dB units or in linear unit...">Gain</a> class provides a interface to gain variables that are measured in dB units or in linear units. </p>
-
-<p>Definition at line <a class="el" href="_gain_8h_source.html#l00007">7</a> of file <a class="el" href="_gain_8h_source.html">Gain.h</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a class="anchor" id="ac27ea54c8893eaf881e2bf716f28f30d"></a>
 <div class="memitem">
@@ -190,9 +187,13 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;=</b> (co
 <p>Use Linear to provide an initial value in linear units </p>
 </td></tr>
 </table>
-
-<p>Definition at line <a class="el" href="_gain_8h_source.html#l00013">13</a> of file <a class="el" href="_gain_8h_source.html">Gain.h</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <a class="code" href="class_gain.html#ac27ea54c8893eaf881e2bf716f28f30da146d31a26225edf351a45d6fe8cefb34">dB</a>, </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <a class="code" href="class_gain.html#ac27ea54c8893eaf881e2bf716f28f30da47bb76479e5737ec2231b8b7f7eceb54">Linear</a> </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    };</div>
+<div class="ttc" id="class_gain_html_ac27ea54c8893eaf881e2bf716f28f30da146d31a26225edf351a45d6fe8cefb34"><div class="ttname"><a href="class_gain.html#ac27ea54c8893eaf881e2bf716f28f30da146d31a26225edf351a45d6fe8cefb34">Gain::dB</a></div><div class="ttdef"><b>Definition:</b> Gain.h:15</div></div>
+<div class="ttc" id="class_gain_html_ac27ea54c8893eaf881e2bf716f28f30da47bb76479e5737ec2231b8b7f7eceb54"><div class="ttname"><a href="class_gain.html#ac27ea54c8893eaf881e2bf716f28f30da47bb76479e5737ec2231b8b7f7eceb54">Gain::Linear</a></div><div class="ttdef"><b>Definition:</b> Gain.h:16</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -228,9 +229,22 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;=</b> (co
   </table>
   </dd>
 </dl>
-
-<p>Definition at line <a class="el" href="_gain_8cpp_source.html#l00005">5</a> of file <a class="el" href="_gain_8cpp_source.html">Gain.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;                                      : value_Linear(0),</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    calculatedLinear(<span class="keyword">false</span>)</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keywordflow">if</span> (Type == InitType::dB)</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        value_dB = value;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        }</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (Type == InitType::Linear)</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        BOOST_ASSERT_MSG(value &gt; 0, <span class="stringliteral">&quot;There&#39;s no dB value for something negative.&quot;</span>);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        value_dB = 10 * log10(value);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        }</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -249,9 +263,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;=</b> (co
 
 <p>in_dB returns the value of this object in dB units. </p>
 <dl class="section return"><dt>Returns</dt><dd>the value of this object in dB units. </dd></dl>
-
-<p>Definition at line <a class="el" href="_gain_8cpp_source.html#l00051">51</a> of file <a class="el" href="_gain_8cpp_source.html">Gain.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">return</span> value_dB;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a3572c11a683be4dbbc395ae5d327f11e"></a>
@@ -269,9 +284,17 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;=</b> (co
 
 <p>in_Linear returns the value of this object in linear units. </p>
 <dl class="section return"><dt>Returns</dt><dd>the value of this object in linear units. </dd></dl>
-
-<p>Definition at line <a class="el" href="_gain_8cpp_source.html#l00056">56</a> of file <a class="el" href="_gain_8cpp_source.html">Gain.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">if</span> (!calculatedLinear)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        value_Linear = pow10(0.1 * value_dB);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        calculatedLinear = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">return</span> value_Linear;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="af1484c4e5ef2df8b78ae4464d758e79a"></a>
@@ -290,9 +313,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;=</b> (co
 
 <p>operator + returns the net gain after summing two successive gains. </p>
 <dl class="section return"><dt>Returns</dt><dd>the net gain after summing two successive gains. </dd></dl>
-
-<p>Definition at line <a class="el" href="_gain_8cpp_source.html#l00026">26</a> of file <a class="el" href="_gain_8cpp_source.html">Gain.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_gain.html#a3ddc3a67ba6d1414027774b1b175f6d4">Gain</a>(value_dB + G.<a class="code" href="class_gain.html#a8a05cc3c66f5ad69f6f6de405f663831">in_dB</a>());</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+<div class="ttc" id="class_gain_html_a3ddc3a67ba6d1414027774b1b175f6d4"><div class="ttname"><a href="class_gain.html#a3ddc3a67ba6d1414027774b1b175f6d4">Gain::Gain</a></div><div class="ttdeci">Gain(double value, InitType Type=dB)</div><div class="ttdoc">dB is the standard constructor. </div><div class="ttdef"><b>Definition:</b> Gain.cpp:5</div></div>
+<div class="ttc" id="class_gain_html_a8a05cc3c66f5ad69f6f6de405f663831"><div class="ttname"><a href="class_gain.html#a8a05cc3c66f5ad69f6f6de405f663831">Gain::in_dB</a></div><div class="ttdeci">double in_dB() const </div><div class="ttdoc">in_dB returns the value of this object in dB units. </div><div class="ttdef"><b>Definition:</b> Gain.cpp:51</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a4c0dd6a0d6c106cb1bf25ada0cfadce2"></a>
@@ -310,9 +336,11 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;=</b> (co
 
 <p>operator - returns the symmetrical <a class="el" href="class_gain.html" title="The Gain class provides a interface to gain variables that are measured in dB units or in linear unit...">Gain</a>. </p>
 <dl class="section return"><dt>Returns</dt><dd>the symmetrical <a class="el" href="class_gain.html" title="The Gain class provides a interface to gain variables that are measured in dB units or in linear unit...">Gain</a>. </dd></dl>
-
-<p>Definition at line <a class="el" href="_gain_8cpp_source.html#l00021">21</a> of file <a class="el" href="_gain_8cpp_source.html">Gain.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_gain.html#a3ddc3a67ba6d1414027774b1b175f6d4">Gain</a>(-value_dB);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
+<div class="ttc" id="class_gain_html_a3ddc3a67ba6d1414027774b1b175f6d4"><div class="ttname"><a href="class_gain.html#a3ddc3a67ba6d1414027774b1b175f6d4">Gain::Gain</a></div><div class="ttdeci">Gain(double value, InitType Type=dB)</div><div class="ttdoc">dB is the standard constructor. </div><div class="ttdef"><b>Definition:</b> Gain.cpp:5</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a1240b01af6e7f5c581a26b422ca7c118"></a>
@@ -331,15 +359,14 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;=</b> (co
 
 <p>operator - returns the net gain after subtracting two successive gains. </p>
 <dl class="section return"><dt>Returns</dt><dd>the net gain after subtracting two successive gains. </dd></dl>
-
-<p>Definition at line <a class="el" href="_gain_8cpp_source.html#l00031">31</a> of file <a class="el" href="_gain_8cpp_source.html">Gain.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_gain.html#a3ddc3a67ba6d1414027774b1b175f6d4">Gain</a>(value_dB - G.<a class="code" href="class_gain.html#a8a05cc3c66f5ad69f6f6de405f663831">in_dB</a>());</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
+<div class="ttc" id="class_gain_html_a3ddc3a67ba6d1414027774b1b175f6d4"><div class="ttname"><a href="class_gain.html#a3ddc3a67ba6d1414027774b1b175f6d4">Gain::Gain</a></div><div class="ttdeci">Gain(double value, InitType Type=dB)</div><div class="ttdoc">dB is the standard constructor. </div><div class="ttdef"><b>Definition:</b> Gain.cpp:5</div></div>
+<div class="ttc" id="class_gain_html_a8a05cc3c66f5ad69f6f6de405f663831"><div class="ttname"><a href="class_gain.html#a8a05cc3c66f5ad69f6f6de405f663831">Gain::in_dB</a></div><div class="ttdeci">double in_dB() const </div><div class="ttdoc">in_dB returns the value of this object in dB units. </div><div class="ttdef"><b>Definition:</b> Gain.cpp:51</div></div>
+</div><!-- fragment -->
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>include/GeneralClasses/<a class="el" href="_gain_8h_source.html">Gain.h</a></li>
-<li>src/GeneralClasses/<a class="el" href="_gain_8cpp_source.html">Gain.cpp</a></li>
-</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

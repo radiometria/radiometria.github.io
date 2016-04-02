@@ -47,7 +47,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -164,8 +163,6 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a cl
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="class_call_generator.html" title="The CallGenerator class implements methods to continuously generate calls. ">CallGenerator</a> class implements methods to continuously generate calls. </p>
 <p>Currently, the origin and destination node are chosen with an uniform distribution and the call duration and arrival times are chosen with exponential distributions, the former with parameter mu and the latter with parameter 1/h. </p>
-
-<p>Definition at line <a class="el" href="_call_generator_8h_source.html#l00023">23</a> of file <a class="el" href="_call_generator_8h_source.html">CallGenerator.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="adfc0fe8070f7ef351c878e5ca062b083"></a>
 <div class="memitem">
@@ -206,9 +203,25 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a cl
   </table>
   </dd>
 </dl>
-
-<p>Definition at line <a class="el" href="_call_generator_8cpp_source.html#l00013">13</a> of file <a class="el" href="_call_generator_8cpp_source.html">CallGenerator.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                                                                      :</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="class_call_generator.html#ab61caa3b02bec504a0e95b6d164d55ca">T</a>(<a class="code" href="class_call_generator.html#ab61caa3b02bec504a0e95b6d164d55ca">T</a>), <a class="code" href="class_call_generator.html#a362f2735d0023cb7430fc7791d41cc9a">h</a>(<a class="code" href="class_call_generator.html#a362f2735d0023cb7430fc7791d41cc9a">h</a>), <a class="code" href="class_call_generator.html#a405a07011496e0781b3c54f0edaf1b49">simulationTime</a>(0), <a class="code" href="class_call_generator.html#a82576dcac3102d026096a36254eb259c">Bitrates</a>(<a class="code" href="class_call_generator.html#a82576dcac3102d026096a36254eb259c">Bitrates</a>)</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    UniformNodeDistribution = std::uniform_int_distribution&lt;int&gt;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                              (0, <a class="code" href="class_call_generator.html#ab61caa3b02bec504a0e95b6d164d55ca">T</a>-&gt;Nodes.size() - 1);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    UniformBitrateDistribution = std::uniform_int_distribution&lt;int&gt;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                                 (0, <a class="code" href="class_call_generator.html#a82576dcac3102d026096a36254eb259c">Bitrates</a>.size() - 1);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    ExponentialDistributionMu = std::exponential_distribution&lt;double&gt;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                                (1.0L / <a class="code" href="class_call_generator.html#a745ad9085e2a6cc4d87e1add58303425">mu</a>);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    ExponentialDistributionH = std::exponential_distribution&lt;double&gt;(<a class="code" href="class_call_generator.html#a362f2735d0023cb7430fc7791d41cc9a">h</a>);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
+<div class="ttc" id="class_call_generator_html_a82576dcac3102d026096a36254eb259c"><div class="ttname"><a href="class_call_generator.html#a82576dcac3102d026096a36254eb259c">CallGenerator::Bitrates</a></div><div class="ttdeci">std::vector&lt; TransmissionBitrate &gt; Bitrates</div><div class="ttdoc">Bitrates is a vector containing the possible bitrates. </div><div class="ttdef"><b>Definition:</b> CallGenerator.h:78</div></div>
+<div class="ttc" id="class_call_generator_html_a362f2735d0023cb7430fc7791d41cc9a"><div class="ttname"><a href="class_call_generator.html#a362f2735d0023cb7430fc7791d41cc9a">CallGenerator::h</a></div><div class="ttdeci">double h</div><div class="ttdoc">h is t parameter for the cl interarrival time exponential distribution. </div><div class="ttdef"><b>Definition:</b> CallGenerator.h:70</div></div>
+<div class="ttc" id="class_call_generator_html_a405a07011496e0781b3c54f0edaf1b49"><div class="ttname"><a href="class_call_generator.html#a405a07011496e0781b3c54f0edaf1b49">CallGenerator::simulationTime</a></div><div class="ttdeci">double simulationTime</div><div class="ttdoc">simulationTime is the current time seen by the last call. </div><div class="ttdef"><b>Definition:</b> CallGenerator.h:74</div></div>
+<div class="ttc" id="class_call_generator_html_a745ad9085e2a6cc4d87e1add58303425"><div class="ttname"><a href="class_call_generator.html#a745ad9085e2a6cc4d87e1add58303425">CallGenerator::mu</a></div><div class="ttdeci">static constexpr double mu</div><div class="ttdoc">mu is the parameter for the call duration exponential distribution. </div><div class="ttdef"><b>Definition:</b> CallGenerator.h:65</div></div>
+<div class="ttc" id="class_call_generator_html_ab61caa3b02bec504a0e95b6d164d55ca"><div class="ttname"><a href="class_call_generator.html#ab61caa3b02bec504a0e95b6d164d55ca">CallGenerator::T</a></div><div class="ttdeci">std::shared_ptr&lt; Topology &gt; T</div><div class="ttdoc">T is the Topology over which the calls are generated. </div><div class="ttdef"><b>Definition:</b> CallGenerator.h:61</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -227,9 +240,48 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a cl
 
 <p>generate_Call chooses at random an origin, a destination, a bitrate and creates a call. Its arrival time and duration are chosen with the exponential distributions determined by <em>h</em> and <em>mu</em>. </p>
 <dl class="section return"><dt>Returns</dt><dd>a shared_ptr to a <a class="el" href="class_call.html" title="The Call class is the standard object representing a connection between two nodes. ">Call</a>. </dd></dl>
-
-<p>Definition at line <a class="el" href="_call_generator_8cpp_source.html#l00029">29</a> of file <a class="el" href="_call_generator_8cpp_source.html">CallGenerator.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">double</span> ArrivalTime = <a class="code" href="class_call_generator.html#a405a07011496e0781b3c54f0edaf1b49">simulationTime</a> + ExponentialDistributionH(</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                             random_generator);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">double</span> EndingTime = ArrivalTime + ExponentialDistributionMu(random_generator);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="class_call_generator.html#a405a07011496e0781b3c54f0edaf1b49">simulationTime</a> = ArrivalTime;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">int</span> Origin = UniformNodeDistribution(random_generator);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">int</span> Destination = UniformNodeDistribution(random_generator);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">while</span> (Origin == Destination)</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        Destination = UniformNodeDistribution(random_generator);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">int</span> Bitrate = UniformBitrateDistribution(random_generator);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    std::shared_ptr&lt;Call&gt; C(<span class="keyword">new</span> <a class="code" href="class_call.html">Call</a>(std::weak_ptr&lt;Node&gt;(<a class="code" href="class_call_generator.html#ab61caa3b02bec504a0e95b6d164d55ca">T</a>-&gt;Nodes[Origin]),</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                     std::weak_ptr&lt;Node&gt;(<a class="code" href="class_call_generator.html#ab61caa3b02bec504a0e95b6d164d55ca">T</a>-&gt;Nodes[Destination]),</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                                     <a class="code" href="class_call_generator.html#a82576dcac3102d026096a36254eb259c">Bitrates</a>[Bitrate]));</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    std::shared_ptr&lt;Event&gt; CallRequisition(<span class="keyword">new</span> <a class="code" href="class_event.html">Event</a>(ArrivalTime,</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                                           <a class="code" href="class_event.html#aaf5ee85a0734d6cc2c69caaa6182c708ad2c9e6005b916144114c4c66a34d6c30">Event::CallRequisition</a>, C));</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    std::shared_ptr&lt;Event&gt; CallEnding(<span class="keyword">new</span> <a class="code" href="class_event.html">Event</a>(EndingTime,</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                      <a class="code" href="class_event.html#aaf5ee85a0734d6cc2c69caaa6182c708a82cb975cee14a4fd09bef95cf76ecec9">Event::CallEnding</a>, C));</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="class_call_generator.html#a7b1f5ba5d278af7c6b282dfee48975b7">Events</a>.push(CallRequisition);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="class_call_generator.html#a7b1f5ba5d278af7c6b282dfee48975b7">Events</a>.push(CallEnding);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    C-&gt;CallRequisition = CallRequisition;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    C-&gt;CallEnding = CallEnding;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">return</span> C;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+<div class="ttc" id="class_call_generator_html_a82576dcac3102d026096a36254eb259c"><div class="ttname"><a href="class_call_generator.html#a82576dcac3102d026096a36254eb259c">CallGenerator::Bitrates</a></div><div class="ttdeci">std::vector&lt; TransmissionBitrate &gt; Bitrates</div><div class="ttdoc">Bitrates is a vector containing the possible bitrates. </div><div class="ttdef"><b>Definition:</b> CallGenerator.h:78</div></div>
+<div class="ttc" id="class_event_html"><div class="ttname"><a href="class_event.html">Event</a></div><div class="ttdoc">The Event class represents an event that happened in the network. Is either a call requisition or a c...</div><div class="ttdef"><b>Definition:</b> Event.h:13</div></div>
+<div class="ttc" id="class_call_html"><div class="ttname"><a href="class_call.html">Call</a></div><div class="ttdoc">The Call class is the standard object representing a connection between two nodes. </div><div class="ttdef"><b>Definition:</b> Call.h:15</div></div>
+<div class="ttc" id="class_event_html_aaf5ee85a0734d6cc2c69caaa6182c708a82cb975cee14a4fd09bef95cf76ecec9"><div class="ttname"><a href="class_event.html#aaf5ee85a0734d6cc2c69caaa6182c708a82cb975cee14a4fd09bef95cf76ecec9">Event::CallEnding</a></div><div class="ttdef"><b>Definition:</b> Event.h:25</div></div>
+<div class="ttc" id="class_event_html_aaf5ee85a0734d6cc2c69caaa6182c708ad2c9e6005b916144114c4c66a34d6c30"><div class="ttname"><a href="class_event.html#aaf5ee85a0734d6cc2c69caaa6182c708ad2c9e6005b916144114c4c66a34d6c30">Event::CallRequisition</a></div><div class="ttdef"><b>Definition:</b> Event.h:24</div></div>
+<div class="ttc" id="class_call_generator_html_a7b1f5ba5d278af7c6b282dfee48975b7"><div class="ttname"><a href="class_call_generator.html#a7b1f5ba5d278af7c6b282dfee48975b7">CallGenerator::Events</a></div><div class="ttdeci">std::priority_queue&lt; std::shared_ptr&lt; Event &gt;, std::vector&lt; std::shared_ptr&lt; Event &gt; &gt;, EventCompare &gt; Events</div><div class="ttdoc">Events is a priority queue. </div><div class="ttdef"><b>Definition:</b> CallGenerator.h:56</div></div>
+<div class="ttc" id="class_call_generator_html_a405a07011496e0781b3c54f0edaf1b49"><div class="ttname"><a href="class_call_generator.html#a405a07011496e0781b3c54f0edaf1b49">CallGenerator::simulationTime</a></div><div class="ttdeci">double simulationTime</div><div class="ttdoc">simulationTime is the current time seen by the last call. </div><div class="ttdef"><b>Definition:</b> CallGenerator.h:74</div></div>
+<div class="ttc" id="class_call_generator_html_ab61caa3b02bec504a0e95b6d164d55ca"><div class="ttname"><a href="class_call_generator.html#ab61caa3b02bec504a0e95b6d164d55ca">CallGenerator::T</a></div><div class="ttdeci">std::shared_ptr&lt; Topology &gt; T</div><div class="ttdoc">T is the Topology over which the calls are generated. </div><div class="ttdef"><b>Definition:</b> CallGenerator.h:61</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="ad38bcdb33326727bafa992c29a64a4cf"></a>
@@ -253,9 +305,13 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a cl
   </table>
   </dd>
 </dl>
-
-<p>Definition at line <a class="el" href="_call_generator_8cpp_source.html#l00064">64</a> of file <a class="el" href="_call_generator_8cpp_source.html">CallGenerator.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    BOOST_ASSERT_MSG(<a class="code" href="class_call_generator.html#a362f2735d0023cb7430fc7791d41cc9a">h</a> &gt;= 0, <span class="stringliteral">&quot;Network loads must be positive.&quot;</span>);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    this-&gt;<a class="code" href="class_call_generator.html#a362f2735d0023cb7430fc7791d41cc9a">h</a> = <a class="code" href="class_call_generator.html#a362f2735d0023cb7430fc7791d41cc9a">h</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    ExponentialDistributionH = std::exponential_distribution&lt;double&gt;(<a class="code" href="class_call_generator.html#a362f2735d0023cb7430fc7791d41cc9a">h</a>);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
+<div class="ttc" id="class_call_generator_html_a362f2735d0023cb7430fc7791d41cc9a"><div class="ttname"><a href="class_call_generator.html#a362f2735d0023cb7430fc7791d41cc9a">CallGenerator::h</a></div><div class="ttdeci">double h</div><div class="ttdoc">h is t parameter for the cl interarrival time exponential distribution. </div><div class="ttdef"><b>Definition:</b> CallGenerator.h:70</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -272,14 +328,8 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a cl
 <p>Events is a priority queue. </p>
 <p>The Events of the topology are stored here in increasing order of their ocurring times. </p>
 
-<p>Definition at line <a class="el" href="_call_generator_8h_source.html#l00056">56</a> of file <a class="el" href="_call_generator_8h_source.html">CallGenerator.h</a>.</p>
-
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>include/Calls/<a class="el" href="_call_generator_8h_source.html">CallGenerator.h</a></li>
-<li>src/Calls/<a class="el" href="_call_generator_8cpp_source.html">CallGenerator.cpp</a></li>
-</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

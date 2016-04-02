@@ -47,7 +47,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -226,8 +225,6 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="class_devices_1_1_in_line_amplifier.html" title="The InLineAmplifier class represents an In-Line Amplifier. ">InLineAmplifier</a> class represents an In-Line <a class="el" href="class_devices_1_1_amplifier.html" title="The Amplifier class represents an amplifier, that amplifies a signal and generates noise...">Amplifier</a>. </p>
 <p>Those amplifiers are scattered through the fiber. Each amplifier compensates for the loss in the precedent fiber segment. </p>
-
-<p>Definition at line <a class="el" href="_in_line_amplifier_8h_source.html#l00018">18</a> of file <a class="el" href="_in_line_amplifier_8h_source.html">InLineAmplifier.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ac662e56dd20ee0c273c8e7b3e47ba927"></a>
 <div class="memitem">
@@ -250,9 +247,13 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p>Definition at line <a class="el" href="_in_line_amplifier_8cpp_source.html#l00006">6</a> of file <a class="el" href="_in_line_amplifier_8cpp_source.html">InLineAmplifier.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;                                               : <a class="code" href="class_devices_1_1_e_d_f_a.html#ae3c573d0aa222cbf83cb8bd436d8c4f3">EDFA</a>(-Segment.<a class="code" href="class_devices_1_1_fiber.html#a4c031df2956733764d4addeeab51f226">get_Gain</a>())</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;}</div>
+<div class="ttc" id="class_devices_1_1_fiber_html_a4c031df2956733764d4addeeab51f226"><div class="ttname"><a href="class_devices_1_1_fiber.html#a4c031df2956733764d4addeeab51f226">Devices::Fiber::get_Gain</a></div><div class="ttdeci">Gain &amp; get_Gain()</div><div class="ttdoc">get_Gain returns the gain (or loss) of the device. </div><div class="ttdef"><b>Definition:</b> Fiber.cpp:16</div></div>
+<div class="ttc" id="class_devices_1_1_e_d_f_a_html_ae3c573d0aa222cbf83cb8bd436d8c4f3"><div class="ttname"><a href="class_devices_1_1_e_d_f_a.html#ae3c573d0aa222cbf83cb8bd436d8c4f3">Devices::EDFA::EDFA</a></div><div class="ttdeci">EDFA(Gain G)</div><div class="ttdoc">EDFA is the standard constructor of a EDFA. </div><div class="ttdef"><b>Definition:</b> EDFA.cpp:8</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -281,9 +282,11 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>a pointer to a <a class="el" href="class_devices_1_1_device.html" title="The Device class represents in a generic way a device on the network. ">Device</a> with the same content as this. </dd></dl>
 
 <p>Implements <a class="el" href="class_devices_1_1_device.html#ace500cfb90ddb4b20604220631d62654">Devices::Device</a>.</p>
-
-<p>Definition at line <a class="el" href="_in_line_amplifier_8cpp_source.html#l00016">16</a> of file <a class="el" href="_in_line_amplifier_8cpp_source.html">InLineAmplifier.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">return</span> std::shared_ptr&lt;Device&gt;(<span class="keyword">new</span> <a class="code" href="class_devices_1_1_in_line_amplifier.html#ac662e56dd20ee0c273c8e7b3e47ba927">InLineAmplifier</a>(*<span class="keyword">this</span>));</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
+<div class="ttc" id="class_devices_1_1_in_line_amplifier_html_ac662e56dd20ee0c273c8e7b3e47ba927"><div class="ttname"><a href="class_devices_1_1_in_line_amplifier.html#ac662e56dd20ee0c273c8e7b3e47ba927">Devices::InLineAmplifier::InLineAmplifier</a></div><div class="ttdeci">InLineAmplifier(Fiber &amp;Segment)</div><div class="ttdoc">InLineAmplifier is the standard constructor for a InLineAmplifier. </div><div class="ttdef"><b>Definition:</b> InLineAmplifier.cpp:6</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a077e401a9cdce8c08883174dfed2ae7d"></a>
@@ -311,15 +314,13 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>the gain (or loss) of the device. </dd></dl>
 
 <p>Implements <a class="el" href="class_devices_1_1_device.html#a5a084bb2606e56e80f5f470841f4eaa6">Devices::Device</a>.</p>
-
-<p>Definition at line <a class="el" href="_in_line_amplifier_8cpp_source.html#l00011">11</a> of file <a class="el" href="_in_line_amplifier_8cpp_source.html">InLineAmplifier.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_devices_1_1_amplifier.html#ac204f1d2fcdd125757380acee5dc67e7">AmplifierGain</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
+<div class="ttc" id="class_devices_1_1_amplifier_html_ac204f1d2fcdd125757380acee5dc67e7"><div class="ttname"><a href="class_devices_1_1_amplifier.html#ac204f1d2fcdd125757380acee5dc67e7">Devices::Amplifier::AmplifierGain</a></div><div class="ttdeci">Gain AmplifierGain</div><div class="ttdoc">AmplifierGain is the gain of this amplifier. </div><div class="ttdef"><b>Definition:</b> Amplifier.h:50</div></div>
+</div><!-- fragment -->
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>include/Devices/Amplifiers/<a class="el" href="_in_line_amplifier_8h_source.html">InLineAmplifier.h</a></li>
-<li>src/Devices/Amplifiers/<a class="el" href="_in_line_amplifier_8cpp_source.html">InLineAmplifier.cpp</a></li>
-</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

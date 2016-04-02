@@ -47,7 +47,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -168,8 +167,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>NSGA2</b></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="class_n_s_g_a2___parameter.html" title="The NSGA2_Parameter class represents a Parameter to a NSGA2_Individual. ">NSGA2_Parameter</a> class represents a Parameter to a <a class="el" href="class_n_s_g_a2___individual.html" title="The NSGA2_Individual class represents a single Individual to the NSGA2. ">NSGA2_Individual</a>. </p>
-
-<p>Definition at line <a class="el" href="_n_s_g_a2___parameter_8h_source.html#l00010">10</a> of file <a class="el" href="_n_s_g_a2___parameter_8h_source.html">NSGA2_Parameter.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a38a494eb083b493b0b08c228c89fe171"></a>
 <div class="memitem">
@@ -192,9 +189,12 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>NSGA2</b></td></tr>
   </table>
   </dd>
 </dl>
-
-<p>Definition at line <a class="el" href="_n_s_g_a2___parameter_8cpp_source.html#l00003">3</a> of file <a class="el" href="_n_s_g_a2___parameter_8cpp_source.html">NSGA2_Parameter.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;                                                    :</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    isEvaluated(<span class="keyword">false</span>), value(-1), gene(gene)</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -276,9 +276,10 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>NSGA2</b></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true iff the value is equal. </dd></dl>
-
-<p>Definition at line <a class="el" href="_n_s_g_a2___parameter_8cpp_source.html#l00009">9</a> of file <a class="el" href="_n_s_g_a2___parameter_8cpp_source.html">NSGA2_Parameter.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordflow">return</span> value == other.value;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a18c00568a4c4ebda7e883c8702088ca5"></a>
@@ -302,15 +303,13 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>NSGA2</b></td></tr>
   </table>
   </dd>
 </dl>
-
-<p>Definition at line <a class="el" href="_n_s_g_a2___parameter_8cpp_source.html#l00014">14</a> of file <a class="el" href="_n_s_g_a2___parameter_8cpp_source.html">NSGA2_Parameter.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    isEvaluated = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    value = val;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
+</div><!-- fragment -->
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>include/GeneralPurposeAlgorithms/NSGA-II/<a class="el" href="_n_s_g_a2___parameter_8h_source.html">NSGA2_Parameter.h</a></li>
-<li>src/GeneralPurposeAlgorithms/NSGA-II/<a class="el" href="_n_s_g_a2___parameter_8cpp_source.html">NSGA2_Parameter.cpp</a></li>
-</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

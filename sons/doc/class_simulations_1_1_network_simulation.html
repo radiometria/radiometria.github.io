@@ -47,7 +47,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -185,8 +184,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>drop_call</b> (std::s
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="class_simulations_1_1_network_simulation.html" title="The NetworkSimulation class is the a basic block. This class runs a network simulation, coordinating the CallGenerator and the RoutingWavelengthAssignment objects. ">NetworkSimulation</a> class is the a basic block. This class runs a network simulation, coordinating the <a class="el" href="class_call_generator.html" title="The CallGenerator class implements methods to continuously generate calls. ">CallGenerator</a> and the <a class="el" href="class_routing_wavelength_assignment.html" title="The RoutingWavelengthAssignment class is a container to the routing, wavelength assignment, regenerator assignment and regenerator placement operations that a call must endure before its implementation. ">RoutingWavelengthAssignment</a> objects. </p>
-
-<p>Definition at line <a class="el" href="_network_simulation_8h_source.html#l00019">19</a> of file <a class="el" href="_network_simulation_8h_source.html">NetworkSimulation.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a5e20083f8ca19682264154ef07127a85"></a>
 <div class="memitem">
@@ -227,9 +224,20 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>drop_call</b> (std::s
   </table>
   </dd>
 </dl>
-
-<p>Definition at line <a class="el" href="_network_simulation_8cpp_source.html#l00011">11</a> of file <a class="el" href="_network_simulation_8cpp_source.html">NetworkSimulation.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;                                                                :</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="class_simulations_1_1_network_simulation.html#aedb86d55215f62b397299260ff53b6ec">Generator</a>(<a class="code" href="class_simulations_1_1_network_simulation.html#aedb86d55215f62b397299260ff53b6ec">Generator</a>), <a class="code" href="class_simulations_1_1_network_simulation.html#a235fcb8758b9ccb4f9343579686c5235">RWA</a>(<a class="code" href="class_simulations_1_1_network_simulation.html#a235fcb8758b9ccb4f9343579686c5235">RWA</a>), <a class="code" href="class_simulations_1_1_network_simulation.html#a1b683d6c604cc98c2568695991e6c2e1">NumMaxCalls</a>(<a class="code" href="class_simulations_1_1_network_simulation.html#a1b683d6c604cc98c2568695991e6c2e1">NumMaxCalls</a>)</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="class_simulations_1_1_network_simulation.html#aa2662372fc54aae37a707a4416103a75">NumCalls</a> = 0;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_simulations_1_1_network_simulation.html#a39c580b8a2e9a090b5626b6fd4983401">NumBlockedCalls</a> = 0;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_simulations_1_1_network_simulation.html#a6336a89afcf34143e6a785f8ed5f2bee">hasSimulated</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
+<div class="ttc" id="class_simulations_1_1_network_simulation_html_aedb86d55215f62b397299260ff53b6ec"><div class="ttname"><a href="class_simulations_1_1_network_simulation.html#aedb86d55215f62b397299260ff53b6ec">Simulations::NetworkSimulation::Generator</a></div><div class="ttdeci">std::shared_ptr&lt; CallGenerator &gt; Generator</div><div class="ttdoc">Generator is a pointer to this simulation&#39;s call generator. </div><div class="ttdef"><b>Definition:</b> NetworkSimulation.h:45</div></div>
+<div class="ttc" id="class_simulations_1_1_network_simulation_html_a235fcb8758b9ccb4f9343579686c5235"><div class="ttname"><a href="class_simulations_1_1_network_simulation.html#a235fcb8758b9ccb4f9343579686c5235">Simulations::NetworkSimulation::RWA</a></div><div class="ttdeci">std::shared_ptr&lt; RoutingWavelengthAssignment &gt; RWA</div><div class="ttdoc">RWA is a pointer to this simulation&#39;s RWA object. </div><div class="ttdef"><b>Definition:</b> NetworkSimulation.h:49</div></div>
+<div class="ttc" id="class_simulations_1_1_network_simulation_html_aa2662372fc54aae37a707a4416103a75"><div class="ttname"><a href="class_simulations_1_1_network_simulation.html#aa2662372fc54aae37a707a4416103a75">Simulations::NetworkSimulation::NumCalls</a></div><div class="ttdeci">long unsigned NumCalls</div><div class="ttdoc">NumCalls is the number of call requests that have been simulated. </div><div class="ttdef"><b>Definition:</b> NetworkSimulation.h:58</div></div>
+<div class="ttc" id="class_simulations_1_1_network_simulation_html_a39c580b8a2e9a090b5626b6fd4983401"><div class="ttname"><a href="class_simulations_1_1_network_simulation.html#a39c580b8a2e9a090b5626b6fd4983401">Simulations::NetworkSimulation::NumBlockedCalls</a></div><div class="ttdeci">long unsigned NumBlockedCalls</div><div class="ttdoc">NumBlockedCalls is the number of blocked call requests. </div><div class="ttdef"><b>Definition:</b> NetworkSimulation.h:62</div></div>
+<div class="ttc" id="class_simulations_1_1_network_simulation_html_a6336a89afcf34143e6a785f8ed5f2bee"><div class="ttname"><a href="class_simulations_1_1_network_simulation.html#a6336a89afcf34143e6a785f8ed5f2bee">Simulations::NetworkSimulation::hasSimulated</a></div><div class="ttdeci">bool hasSimulated</div><div class="ttdoc">hasSimulated is true iff the simulation has already run. </div><div class="ttdef"><b>Definition:</b> NetworkSimulation.h:79</div></div>
+<div class="ttc" id="class_simulations_1_1_network_simulation_html_a1b683d6c604cc98c2568695991e6c2e1"><div class="ttname"><a href="class_simulations_1_1_network_simulation.html#a1b683d6c604cc98c2568695991e6c2e1">Simulations::NetworkSimulation::NumMaxCalls</a></div><div class="ttdeci">long unsigned NumMaxCalls</div><div class="ttdoc">NumMaxCalls is the number of call requests that will be simulated. </div><div class="ttdef"><b>Definition:</b> NetworkSimulation.h:54</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -248,9 +256,19 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>drop_call</b> (std::s
 
 <p>get_CallBlockingProbability returns a estimation of the call request blocking probability. </p>
 <dl class="section return"><dt>Returns</dt><dd>a estimation of the call request blocking probability. </dd></dl>
-
-<p>Definition at line <a class="el" href="_network_simulation_8cpp_source.html#l00107">107</a> of file <a class="el" href="_network_simulation_8cpp_source.html">NetworkSimulation.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;{</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="class_simulations_1_1_network_simulation.html#a6336a89afcf34143e6a785f8ed5f2bee">hasSimulated</a>)</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        {</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <a class="code" href="class_simulations_1_1_network_simulation.html#a45af9a43841bcbd5445fd11f8eaacbef">run</a>();</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        }</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordflow">return</span> 1.0 * <a class="code" href="class_simulations_1_1_network_simulation.html#a39c580b8a2e9a090b5626b6fd4983401">NumBlockedCalls</a> / (1.0 * <a class="code" href="class_simulations_1_1_network_simulation.html#aa2662372fc54aae37a707a4416103a75">NumCalls</a>);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;}</div>
+<div class="ttc" id="class_simulations_1_1_network_simulation_html_aa2662372fc54aae37a707a4416103a75"><div class="ttname"><a href="class_simulations_1_1_network_simulation.html#aa2662372fc54aae37a707a4416103a75">Simulations::NetworkSimulation::NumCalls</a></div><div class="ttdeci">long unsigned NumCalls</div><div class="ttdoc">NumCalls is the number of call requests that have been simulated. </div><div class="ttdef"><b>Definition:</b> NetworkSimulation.h:58</div></div>
+<div class="ttc" id="class_simulations_1_1_network_simulation_html_a39c580b8a2e9a090b5626b6fd4983401"><div class="ttname"><a href="class_simulations_1_1_network_simulation.html#a39c580b8a2e9a090b5626b6fd4983401">Simulations::NetworkSimulation::NumBlockedCalls</a></div><div class="ttdeci">long unsigned NumBlockedCalls</div><div class="ttdoc">NumBlockedCalls is the number of blocked call requests. </div><div class="ttdef"><b>Definition:</b> NetworkSimulation.h:62</div></div>
+<div class="ttc" id="class_simulations_1_1_network_simulation_html_a6336a89afcf34143e6a785f8ed5f2bee"><div class="ttname"><a href="class_simulations_1_1_network_simulation.html#a6336a89afcf34143e6a785f8ed5f2bee">Simulations::NetworkSimulation::hasSimulated</a></div><div class="ttdeci">bool hasSimulated</div><div class="ttdoc">hasSimulated is true iff the simulation has already run. </div><div class="ttdef"><b>Definition:</b> NetworkSimulation.h:79</div></div>
+<div class="ttc" id="class_simulations_1_1_network_simulation_html_a45af9a43841bcbd5445fd11f8eaacbef"><div class="ttname"><a href="class_simulations_1_1_network_simulation.html#a45af9a43841bcbd5445fd11f8eaacbef">Simulations::NetworkSimulation::run</a></div><div class="ttdeci">void run()</div><div class="ttdoc">run silently runs a network simulation. </div><div class="ttdef"><b>Definition:</b> NetworkSimulation.cpp:21</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="ad8aa5264433c41d66e31dc3f0ffaa685"></a>
@@ -268,15 +286,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>drop_call</b> (std::s
 
 <p>get_Load returns the load of this simulation, in Erlangs. </p>
 <dl class="section return"><dt>Returns</dt><dd>the load of this simulation, in Erlangs. </dd></dl>
-
-<p>Definition at line <a class="el" href="_network_simulation_8cpp_source.html#l00117">117</a> of file <a class="el" href="_network_simulation_8cpp_source.html">NetworkSimulation.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;{</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_simulations_1_1_network_simulation.html#aedb86d55215f62b397299260ff53b6ec">Generator</a>-&gt;h;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div>
+<div class="ttc" id="class_simulations_1_1_network_simulation_html_aedb86d55215f62b397299260ff53b6ec"><div class="ttname"><a href="class_simulations_1_1_network_simulation.html#aedb86d55215f62b397299260ff53b6ec">Simulations::NetworkSimulation::Generator</a></div><div class="ttdeci">std::shared_ptr&lt; CallGenerator &gt; Generator</div><div class="ttdoc">Generator is a pointer to this simulation&#39;s call generator. </div><div class="ttdef"><b>Definition:</b> NetworkSimulation.h:45</div></div>
+</div><!-- fragment -->
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>include/SimulationTypes/<a class="el" href="_network_simulation_8h_source.html">NetworkSimulation.h</a></li>
-<li>src/SimulationTypes/<a class="el" href="_network_simulation_8cpp_source.html">NetworkSimulation.cpp</a></li>
-</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -47,7 +47,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -192,8 +191,6 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="class_devices_1_1_fiber.html" title="The Fiber class represents a Fiber segment. ">Fiber</a> class represents a <a class="el" href="class_devices_1_1_fiber.html" title="The Fiber class represents a Fiber segment. ">Fiber</a> segment. </p>
-
-<p>Definition at line <a class="el" href="_fiber_8h_source.html#l00011">11</a> of file <a class="el" href="_fiber_8h_source.html">Fiber.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a90f388399fddf08274fcba536689c30f"></a>
 <div class="memitem">
@@ -216,9 +213,21 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p>Definition at line <a class="el" href="_fiber_8cpp_source.html#l00007">7</a> of file <a class="el" href="_fiber_8cpp_source.html">Fiber.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;                              :</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="code" href="class_devices_1_1_device.html#a774315f60f1a544c870a5213d401b701">Device</a>(<a class="code" href="class_devices_1_1_device.html#a6fe70fa8017a07adda38721261dec046ae064d609173b5d8f6bcd2dcf319a51e4">Device::FiberDevice</a>), NetLoss(- SpanLength * <a class="code" href="class_devices_1_1_fiber.html#af8ca77c8cb1d37fcb90f74f322ff7481">alphaFiber</a>, <a class="code" href="class_gain.html#ac27ea54c8893eaf881e2bf716f28f30da146d31a26225edf351a45d6fe8cefb34">Gain::dB</a>),</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    NoisePower(0, <a class="code" href="class_power.html#a4573f1df98243e1618b99cdcba06ccdeaf1c07dea76989c86df74e669c845a732">Power::Watt</a>)</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    this-&gt;SpanLength = SpanLength;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    deviceTF = std::make_shared&lt;TransferFunction&gt;(std::pow(<a class="code" href="class_devices_1_1_fiber.html#a4c031df2956733764d4addeeab51f226">get_Gain</a>().in_Linear(), 2));</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
+<div class="ttc" id="class_devices_1_1_fiber_html_af8ca77c8cb1d37fcb90f74f322ff7481"><div class="ttname"><a href="class_devices_1_1_fiber.html#af8ca77c8cb1d37fcb90f74f322ff7481">Devices::Fiber::alphaFiber</a></div><div class="ttdeci">static double alphaFiber</div><div class="ttdoc">alphaFiber is the fiber loss coefficient, measured in dB per kilometer. </div><div class="ttdef"><b>Definition:</b> Fiber.h:18</div></div>
+<div class="ttc" id="class_gain_html_ac27ea54c8893eaf881e2bf716f28f30da146d31a26225edf351a45d6fe8cefb34"><div class="ttname"><a href="class_gain.html#ac27ea54c8893eaf881e2bf716f28f30da146d31a26225edf351a45d6fe8cefb34">Gain::dB</a></div><div class="ttdef"><b>Definition:</b> Gain.h:15</div></div>
+<div class="ttc" id="class_devices_1_1_device_html_a774315f60f1a544c870a5213d401b701"><div class="ttname"><a href="class_devices_1_1_device.html#a774315f60f1a544c870a5213d401b701">Devices::Device::Device</a></div><div class="ttdeci">Device(DeviceType DevType=UndefinedDevice)</div><div class="ttdoc">Device is the standard constructor for a Device. </div><div class="ttdef"><b>Definition:</b> Device.cpp:5</div></div>
+<div class="ttc" id="class_power_html_a4573f1df98243e1618b99cdcba06ccdeaf1c07dea76989c86df74e669c845a732"><div class="ttname"><a href="class_power.html#a4573f1df98243e1618b99cdcba06ccdeaf1c07dea76989c86df74e669c845a732">Power::Watt</a></div><div class="ttdef"><b>Definition:</b> Power.h:18</div></div>
+<div class="ttc" id="class_devices_1_1_device_html_a6fe70fa8017a07adda38721261dec046ae064d609173b5d8f6bcd2dcf319a51e4"><div class="ttname"><a href="class_devices_1_1_device.html#a6fe70fa8017a07adda38721261dec046ae064d609173b5d8f6bcd2dcf319a51e4">Devices::Device::FiberDevice</a></div><div class="ttdef"><b>Definition:</b> Device.h:23</div></div>
+<div class="ttc" id="class_devices_1_1_fiber_html_a4c031df2956733764d4addeeab51f226"><div class="ttname"><a href="class_devices_1_1_fiber.html#a4c031df2956733764d4addeeab51f226">Devices::Fiber::get_Gain</a></div><div class="ttdeci">Gain &amp; get_Gain()</div><div class="ttdoc">get_Gain returns the gain (or loss) of the device. </div><div class="ttdef"><b>Definition:</b> Fiber.cpp:16</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -247,9 +256,11 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>a pointer to a <a class="el" href="class_devices_1_1_device.html" title="The Device class represents in a generic way a device on the network. ">Device</a> with the same content as this. </dd></dl>
 
 <p>Implements <a class="el" href="class_devices_1_1_device.html#ace500cfb90ddb4b20604220631d62654">Devices::Device</a>.</p>
-
-<p>Definition at line <a class="el" href="_fiber_8cpp_source.html#l00026">26</a> of file <a class="el" href="_fiber_8cpp_source.html">Fiber.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">return</span> std::shared_ptr&lt;Device&gt;(<span class="keyword">new</span> <a class="code" href="class_devices_1_1_fiber.html#a90f388399fddf08274fcba536689c30f">Fiber</a>(*<span class="keyword">this</span>));</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+<div class="ttc" id="class_devices_1_1_fiber_html_a90f388399fddf08274fcba536689c30f"><div class="ttname"><a href="class_devices_1_1_fiber.html#a90f388399fddf08274fcba536689c30f">Devices::Fiber::Fiber</a></div><div class="ttdeci">Fiber(double SpanLength)</div><div class="ttdoc">Fiber is the constructor for a Fiber device. </div><div class="ttdef"><b>Definition:</b> Fiber.cpp:7</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a7dd217374fd66404a8b93fce49a5bbbf"></a>
@@ -277,9 +288,10 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>the CapEx cost of the device. </dd></dl>
 
 <p>Implements <a class="el" href="class_devices_1_1_device.html#a57f5cd86931835f2a7b0ff164d530597">Devices::Device</a>.</p>
-
-<p>Definition at line <a class="el" href="_fiber_8cpp_source.html#l00031">31</a> of file <a class="el" href="_fiber_8cpp_source.html">Fiber.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a4c031df2956733764d4addeeab51f226"></a>
@@ -307,9 +319,10 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>the gain (or loss) of the device. </dd></dl>
 
 <p>Implements <a class="el" href="class_devices_1_1_device.html#a5a084bb2606e56e80f5f470841f4eaa6">Devices::Device</a>.</p>
-
-<p>Definition at line <a class="el" href="_fiber_8cpp_source.html#l00016">16</a> of file <a class="el" href="_fiber_8cpp_source.html">Fiber.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">return</span> NetLoss;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="aa9ba80791509682e3047581baafe9c75"></a>
@@ -337,9 +350,10 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>the noise generated by the device. </dd></dl>
 
 <p>Implements <a class="el" href="class_devices_1_1_device.html#acd080004f179b0d01bb91070eb550c26">Devices::Device</a>.</p>
-
-<p>Definition at line <a class="el" href="_fiber_8cpp_source.html#l00021">21</a> of file <a class="el" href="_fiber_8cpp_source.html">Fiber.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">return</span> NoisePower;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a83b49c18c9864ff18c72ee2ed57e4e51"></a>
@@ -367,9 +381,10 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>the OpEx cost of the device. </dd></dl>
 
 <p>Implements <a class="el" href="class_devices_1_1_device.html#accffa5d63191494582235ecd411dead5">Devices::Device</a>.</p>
-
-<p>Definition at line <a class="el" href="_fiber_8cpp_source.html#l00036">36</a> of file <a class="el" href="_fiber_8cpp_source.html">Fiber.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a7cdd5757bf0e0ac99d7cce796c9c1fd7"></a>
@@ -404,15 +419,12 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>the transfer function that represents the device's frequency response. </dd></dl>
 
 <p>Implements <a class="el" href="class_devices_1_1_device.html#a93a3780b813460dda72e28a2d133da87">Devices::Device</a>.</p>
-
-<p>Definition at line <a class="el" href="_fiber_8cpp_source.html#l00041">41</a> of file <a class="el" href="_fiber_8cpp_source.html">Fiber.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">return</span> *deviceTF.get();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+</div><!-- fragment -->
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>include/Devices/<a class="el" href="_fiber_8h_source.html">Fiber.h</a></li>
-<li>src/Devices/<a class="el" href="_fiber_8cpp_source.html">Fiber.cpp</a></li>
-</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

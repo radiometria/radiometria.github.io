@@ -47,7 +47,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -218,10 +217,7 @@ std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a c
 <tr class="memdesc:ac3e4c1fba2d360f9cd48e21b7870c96b inherit pro_attribs_class_n_s_g_a2___individual"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gene is the genes of this Individual. <br /></td></tr>
 <tr class="separator:ac3e4c1fba2d360f9cd48e21b7870c96b inherit pro_attribs_class_n_s_g_a2___individual"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="_simulation___n_s_g_a2___regn_plac_8h_source.html#l00073">73</a> of file <a class="el" href="_simulation___n_s_g_a2___regn_plac_8h_source.html">Simulation_NSGA2_RegnPlac.h</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a30d360c3c9d01bf4a08c998e9c4ecf61"></a>
 <div class="memitem">
 <div class="memproto">
@@ -247,9 +243,26 @@ std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a c
 <dl class="section return"><dt>Returns</dt><dd>a clone of this <a class="el" href="class_simulations_1_1_simulation___n_s_g_a2___regn_plac_1_1_individual.html">Individual</a>. </dd></dl>
 
 <p>Implements <a class="el" href="class_n_s_g_a2___individual.html#a6cd68729816a64325c19e096bd17c496">NSGA2_Individual</a>.</p>
-
-<p>Definition at line <a class="el" href="_simulation___n_s_g_a2___regn_plac_8cpp_source.html#l00056">56</a> of file <a class="el" href="_simulation___n_s_g_a2___regn_plac_8cpp_source.html">Simulation_NSGA2_RegnPlac.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    std::shared_ptr&lt;Individual&gt; indiv(<span class="keyword">new</span> Individual(Sim));</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    indiv-&gt;setGene(<a class="code" href="class_n_s_g_a2___individual.html#ac3e4c1fba2d360f9cd48e21b7870c96b">Gene</a>);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    indiv-&gt;isEvaluated = <a class="code" href="class_n_s_g_a2___individual.html#a428caf2de5a92eb410f9d25267e27964">isEvaluated</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_n_s_g_a2___individual.html#a428caf2de5a92eb410f9d25267e27964">isEvaluated</a>)</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 0; i &lt; <a class="code" href="class_n_s_g_a2___individual.html#a8944f3bb1bbf73ba1210bd89ce8657a2">getNumParameters</a>(); i++)</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            indiv-&gt;getParameter(i)-&gt;setValue(<a class="code" href="class_n_s_g_a2___individual.html#aaaa5b3c820b34c633d416e467b400e77">getParameter</a>(i)-&gt;evaluate());</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">return</span> indiv;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
+<div class="ttc" id="class_n_s_g_a2___individual_html_a8944f3bb1bbf73ba1210bd89ce8657a2"><div class="ttname"><a href="class_n_s_g_a2___individual.html#a8944f3bb1bbf73ba1210bd89ce8657a2">NSGA2_Individual::getNumParameters</a></div><div class="ttdeci">unsigned int getNumParameters() const </div><div class="ttdoc">getNumParameters returns the number of Parameters of this individual. </div><div class="ttdef"><b>Definition:</b> NSGA2_Individual.cpp:101</div></div>
+<div class="ttc" id="class_n_s_g_a2___individual_html_ac3e4c1fba2d360f9cd48e21b7870c96b"><div class="ttname"><a href="class_n_s_g_a2___individual.html#ac3e4c1fba2d360f9cd48e21b7870c96b">NSGA2_Individual::Gene</a></div><div class="ttdeci">std::vector&lt; int &gt; Gene</div><div class="ttdoc">Gene is the genes of this Individual. </div><div class="ttdef"><b>Definition:</b> NSGA2_Individual.h:128</div></div>
+<div class="ttc" id="class_n_s_g_a2___individual_html_aaaa5b3c820b34c633d416e467b400e77"><div class="ttname"><a href="class_n_s_g_a2___individual.html#aaaa5b3c820b34c633d416e467b400e77">NSGA2_Individual::getParameter</a></div><div class="ttdeci">std::shared_ptr&lt; NSGA2_Parameter &gt; getParameter(unsigned int i) const </div><div class="ttdoc">getParameter returns a pointer to the i-th Parameter. </div><div class="ttdef"><b>Definition:</b> NSGA2_Individual.cpp:87</div></div>
+<div class="ttc" id="class_n_s_g_a2___individual_html_a428caf2de5a92eb410f9d25267e27964"><div class="ttname"><a href="class_n_s_g_a2___individual.html#a428caf2de5a92eb410f9d25267e27964">NSGA2_Individual::isEvaluated</a></div><div class="ttdeci">bool isEvaluated</div><div class="ttdoc">isEvaluated is true, if this Individual&#39;s Parameters have already been evaluated. ...</div><div class="ttdef"><b>Definition:</b> NSGA2_Individual.h:122</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a484236e587febc9701917839ee08ad66"></a>
@@ -284,15 +297,22 @@ std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a c
 <dl class="section return"><dt>Returns</dt><dd>the g-th Gene. </dd></dl>
 
 <p>Implements <a class="el" href="class_n_s_g_a2___individual.html#a1141704c61a021c4166a688ed3acd40c">NSGA2_Individual</a>.</p>
-
-<p>Definition at line <a class="el" href="_simulation___n_s_g_a2___regn_plac_8cpp_source.html#l00040">40</a> of file <a class="el" href="_simulation___n_s_g_a2___regn_plac_8cpp_source.html">Simulation_NSGA2_RegnPlac.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    std::uniform_real_distribution&lt;double&gt; isTranslucent(0, 1);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">if</span> (isTranslucent(random_generator) &lt; 0.5)</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">return</span> std::uniform_int_distribution&lt;unsigned int&gt;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;               (0, Simulation_NSGA2_RegnPlac::RegnMax)(random_generator);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
+</div><!-- fragment -->
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>include/SimulationTypes/Simulation_NSGA2_RegnPlac/<a class="el" href="_simulation___n_s_g_a2___regn_plac_8h_source.html">Simulation_NSGA2_RegnPlac.h</a></li>
-<li>src/SimulationTypes/Simulation_NSGA2_RegnPlac/<a class="el" href="_simulation___n_s_g_a2___regn_plac_8cpp_source.html">Simulation_NSGA2_RegnPlac.cpp</a></li>
-</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

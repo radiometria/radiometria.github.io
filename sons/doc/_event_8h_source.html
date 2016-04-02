@@ -47,7 +47,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
-      <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -64,11 +63,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
           </span>
         </div>
       </li>
-    </ul>
-  </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li><a href="files.html"><span>File&#160;List</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -133,18 +127,18 @@ $(document).ready(function(){initNavTree('_event_8h_source.html','');});
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif // EVENT_H</span></div>
-<div class="ttc" id="class_event_html_a36e1146799644b995642fcf9f30c9338"><div class="ttname"><a href="class_event.html#a36e1146799644b995642fcf9f30c9338">Event::route</a></div><div class="ttdeci">std::shared_ptr&lt; Route &gt; route</div><div class="ttdoc">route is a pointer to the Route used to stablish the Parent Call. If did not succeeded to stablish...</div><div class="ttdef"><b>Definition:</b> <a href="_event_8h_source.html#l00058">Event.h:58</a></div></div>
-<div class="ttc" id="class_event_html"><div class="ttname"><a href="class_event.html">Event</a></div><div class="ttdoc">The Event class represents an event that happened in the network. Is either a call requisition or a c...</div><div class="ttdef"><b>Definition:</b> <a href="_event_8h_source.html#l00013">Event.h:13</a></div></div>
-<div class="ttc" id="class_event_html_aaf5ee85a0734d6cc2c69caaa6182c708"><div class="ttname"><a href="class_event.html#aaf5ee85a0734d6cc2c69caaa6182c708">Event::Event_Type</a></div><div class="ttdeci">Event_Type</div><div class="ttdoc">The Event_Type enum is used to specify the type of event. </div><div class="ttdef"><b>Definition:</b> <a href="_event_8h_source.html#l00022">Event.h:22</a></div></div>
-<div class="ttc" id="class_route_html"><div class="ttname"><a href="class_route.html">Route</a></div><div class="ttdoc">The Route class is the result of RWA Algorithms. Contains a set of transparent segments, over which a Call can be implemented. Each Transparent segment might be ended with a Translucent Node. </div><div class="ttdef"><b>Definition:</b> <a href="_route_8h_source.html#l00014">Route.h:14</a></div></div>
-<div class="ttc" id="class_event_html_ae218351fd5ae1d16f4ca41f570f7beef"><div class="ttname"><a href="class_event.html#ae218351fd5ae1d16f4ca41f570f7beef">Event::Parent</a></div><div class="ttdeci">std::shared_ptr&lt; Call &gt; Parent</div><div class="ttdoc">Parent is a pointer to the Call that owns this Event. </div><div class="ttdef"><b>Definition:</b> <a href="_event_8h_source.html#l00053">Event.h:53</a></div></div>
-<div class="ttc" id="class_call_html"><div class="ttname"><a href="class_call.html">Call</a></div><div class="ttdoc">The Call class is the standard object representing a connection between two nodes. </div><div class="ttdef"><b>Definition:</b> <a href="_call_8h_source.html#l00015">Call.h:15</a></div></div>
-<div class="ttc" id="class_event_html_aaf5ee85a0734d6cc2c69caaa6182c708a82cb975cee14a4fd09bef95cf76ecec9"><div class="ttname"><a href="class_event.html#aaf5ee85a0734d6cc2c69caaa6182c708a82cb975cee14a4fd09bef95cf76ecec9">Event::CallEnding</a></div><div class="ttdef"><b>Definition:</b> <a href="_event_8h_source.html#l00025">Event.h:25</a></div></div>
-<div class="ttc" id="class_event_html_aaf5ee85a0734d6cc2c69caaa6182c708ad2c9e6005b916144114c4c66a34d6c30"><div class="ttname"><a href="class_event.html#aaf5ee85a0734d6cc2c69caaa6182c708ad2c9e6005b916144114c4c66a34d6c30">Event::CallRequisition</a></div><div class="ttdef"><b>Definition:</b> <a href="_event_8h_source.html#l00024">Event.h:24</a></div></div>
-<div class="ttc" id="class_event_html_a1c5c097830c1753d9074c5425c7ef468"><div class="ttname"><a href="class_event.html#a1c5c097830c1753d9074c5425c7ef468">Event::operator&gt;</a></div><div class="ttdeci">bool operator&gt;(const Event &amp;) const </div><div class="ttdoc">operator > is used to compare the ocurral instants of two events. </div><div class="ttdef"><b>Definition:</b> <a href="_event_8cpp_source.html#l00011">Event.cpp:11</a></div></div>
-<div class="ttc" id="class_event_html_ae55c0ae2ba2c76fff305f39816c03ad7"><div class="ttname"><a href="class_event.html#ae55c0ae2ba2c76fff305f39816c03ad7">Event::Type</a></div><div class="ttdeci">Event_Type Type</div><div class="ttdoc">Type is the type of Event. </div><div class="ttdef"><b>Definition:</b> <a href="_event_8h_source.html#l00049">Event.h:49</a></div></div>
-<div class="ttc" id="class_event_html_a67c029b2ee1455fbf56f1e081138be41"><div class="ttname"><a href="class_event.html#a67c029b2ee1455fbf56f1e081138be41">Event::t</a></div><div class="ttdeci">double t</div><div class="ttdoc">t is the ocurring time of the event. </div><div class="ttdef"><b>Definition:</b> <a href="_event_8h_source.html#l00045">Event.h:45</a></div></div>
-<div class="ttc" id="class_event_html_a2714c6e47470f15fa00c2dfa2a0a3b49"><div class="ttname"><a href="class_event.html#a2714c6e47470f15fa00c2dfa2a0a3b49">Event::Event</a></div><div class="ttdeci">Event(double t, Event_Type Type, std::shared_ptr&lt; Call &gt; Parent)</div><div class="ttdoc">Event is the constructor of a Event. </div><div class="ttdef"><b>Definition:</b> <a href="_event_8cpp_source.html#l00003">Event.cpp:3</a></div></div>
+<div class="ttc" id="class_event_html_a36e1146799644b995642fcf9f30c9338"><div class="ttname"><a href="class_event.html#a36e1146799644b995642fcf9f30c9338">Event::route</a></div><div class="ttdeci">std::shared_ptr&lt; Route &gt; route</div><div class="ttdoc">route is a pointer to the Route used to stablish the Parent Call. If did not succeeded to stablish...</div><div class="ttdef"><b>Definition:</b> Event.h:58</div></div>
+<div class="ttc" id="class_event_html"><div class="ttname"><a href="class_event.html">Event</a></div><div class="ttdoc">The Event class represents an event that happened in the network. Is either a call requisition or a c...</div><div class="ttdef"><b>Definition:</b> Event.h:13</div></div>
+<div class="ttc" id="class_event_html_aaf5ee85a0734d6cc2c69caaa6182c708"><div class="ttname"><a href="class_event.html#aaf5ee85a0734d6cc2c69caaa6182c708">Event::Event_Type</a></div><div class="ttdeci">Event_Type</div><div class="ttdoc">The Event_Type enum is used to specify the type of event. </div><div class="ttdef"><b>Definition:</b> Event.h:22</div></div>
+<div class="ttc" id="class_route_html"><div class="ttname"><a href="class_route.html">Route</a></div><div class="ttdoc">The Route class is the result of RWA Algorithms. Contains a set of transparent segments, over which a Call can be implemented. Each Transparent segment might be ended with a Translucent Node. </div><div class="ttdef"><b>Definition:</b> Route.h:14</div></div>
+<div class="ttc" id="class_event_html_ae218351fd5ae1d16f4ca41f570f7beef"><div class="ttname"><a href="class_event.html#ae218351fd5ae1d16f4ca41f570f7beef">Event::Parent</a></div><div class="ttdeci">std::shared_ptr&lt; Call &gt; Parent</div><div class="ttdoc">Parent is a pointer to the Call that owns this Event. </div><div class="ttdef"><b>Definition:</b> Event.h:53</div></div>
+<div class="ttc" id="class_call_html"><div class="ttname"><a href="class_call.html">Call</a></div><div class="ttdoc">The Call class is the standard object representing a connection between two nodes. </div><div class="ttdef"><b>Definition:</b> Call.h:15</div></div>
+<div class="ttc" id="class_event_html_aaf5ee85a0734d6cc2c69caaa6182c708a82cb975cee14a4fd09bef95cf76ecec9"><div class="ttname"><a href="class_event.html#aaf5ee85a0734d6cc2c69caaa6182c708a82cb975cee14a4fd09bef95cf76ecec9">Event::CallEnding</a></div><div class="ttdef"><b>Definition:</b> Event.h:25</div></div>
+<div class="ttc" id="class_event_html_aaf5ee85a0734d6cc2c69caaa6182c708ad2c9e6005b916144114c4c66a34d6c30"><div class="ttname"><a href="class_event.html#aaf5ee85a0734d6cc2c69caaa6182c708ad2c9e6005b916144114c4c66a34d6c30">Event::CallRequisition</a></div><div class="ttdef"><b>Definition:</b> Event.h:24</div></div>
+<div class="ttc" id="class_event_html_a1c5c097830c1753d9074c5425c7ef468"><div class="ttname"><a href="class_event.html#a1c5c097830c1753d9074c5425c7ef468">Event::operator&gt;</a></div><div class="ttdeci">bool operator&gt;(const Event &amp;) const </div><div class="ttdoc">operator > is used to compare the ocurral instants of two events. </div><div class="ttdef"><b>Definition:</b> Event.cpp:11</div></div>
+<div class="ttc" id="class_event_html_ae55c0ae2ba2c76fff305f39816c03ad7"><div class="ttname"><a href="class_event.html#ae55c0ae2ba2c76fff305f39816c03ad7">Event::Type</a></div><div class="ttdeci">Event_Type Type</div><div class="ttdoc">Type is the type of Event. </div><div class="ttdef"><b>Definition:</b> Event.h:49</div></div>
+<div class="ttc" id="class_event_html_a67c029b2ee1455fbf56f1e081138be41"><div class="ttname"><a href="class_event.html#a67c029b2ee1455fbf56f1e081138be41">Event::t</a></div><div class="ttdeci">double t</div><div class="ttdoc">t is the ocurring time of the event. </div><div class="ttdef"><b>Definition:</b> Event.h:45</div></div>
+<div class="ttc" id="class_event_html_a2714c6e47470f15fa00c2dfa2a0a3b49"><div class="ttname"><a href="class_event.html#a2714c6e47470f15fa00c2dfa2a0a3b49">Event::Event</a></div><div class="ttdeci">Event(double t, Event_Type Type, std::shared_ptr&lt; Call &gt; Parent)</div><div class="ttdoc">Event is the constructor of a Event. </div><div class="ttdef"><b>Definition:</b> Event.cpp:3</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

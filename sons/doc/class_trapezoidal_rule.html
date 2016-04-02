@@ -47,7 +47,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -166,8 +165,6 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="class_trapezoidal_rule.html" title="The TrapezoidalRule class represents the Trapezoidal Rule numerical integration method. ">TrapezoidalRule</a> class represents the Trapezoidal Rule numerical integration method. </p>
-
-<p>Definition at line <a class="el" href="_trapezoidal_rule_8h_source.html#l00009">9</a> of file <a class="el" href="_trapezoidal_rule_8h_source.html">TrapezoidalRule.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="aa61ea027189802a3bec80c0352e84c56"></a>
 <div class="memitem">
@@ -194,15 +191,22 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 <dl class="section return"><dt>Returns</dt><dd>the result of the calculations. </dd></dl>
 
 <p>Implements <a class="el" href="class_integration_method.html#a64eda894cf648d20351605e0a46e8dd2">IntegrationMethod</a>.</p>
-
-<p>Definition at line <a class="el" href="_trapezoidal_rule_8cpp_source.html#l00009">9</a> of file <a class="el" href="_trapezoidal_rule_8cpp_source.html">TrapezoidalRule.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordtype">double</span> Result, Sum = 0, h;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    h = <a class="code" href="class_integration_method.html#a52ebd16a8315a819384c722528e0c683">XRange</a> / (<a class="code" href="class_integration_method.html#adbaf26cbf342e57aba2693ba8a5d35f5">YPoints</a>.size() - 1);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Cont = 1; Cont &lt;= (<a class="code" href="class_integration_method.html#adbaf26cbf342e57aba2693ba8a5d35f5">YPoints</a>.size() - 2); Cont++)</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        Sum += <a class="code" href="class_integration_method.html#adbaf26cbf342e57aba2693ba8a5d35f5">YPoints</a>.at(Cont);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        }</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    Result = (h / 2) * (<a class="code" href="class_integration_method.html#adbaf26cbf342e57aba2693ba8a5d35f5">YPoints</a>.at(<a class="code" href="class_integration_method.html#adbaf26cbf342e57aba2693ba8a5d35f5">YPoints</a>.size() - 1) + <a class="code" href="class_integration_method.html#adbaf26cbf342e57aba2693ba8a5d35f5">YPoints</a>.at(0) + 2 * Sum);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">return</span> Result;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
+<div class="ttc" id="class_integration_method_html_a52ebd16a8315a819384c722528e0c683"><div class="ttname"><a href="class_integration_method.html#a52ebd16a8315a819384c722528e0c683">IntegrationMethod::XRange</a></div><div class="ttdeci">double XRange</div><div class="ttdoc">XRange is the domain to be integrated. </div><div class="ttdef"><b>Definition:</b> IntegrationMethod.h:23</div></div>
+<div class="ttc" id="class_integration_method_html_adbaf26cbf342e57aba2693ba8a5d35f5"><div class="ttname"><a href="class_integration_method.html#adbaf26cbf342e57aba2693ba8a5d35f5">IntegrationMethod::YPoints</a></div><div class="ttdeci">arma::mat YPoints</div><div class="ttdoc">YPoints is a vector with the given function image values. </div><div class="ttdef"><b>Definition:</b> IntegrationMethod.h:19</div></div>
+</div><!-- fragment -->
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>include/GeneralPurposeAlgorithms/IntegrationMethods/<a class="el" href="_trapezoidal_rule_8h_source.html">TrapezoidalRule.h</a></li>
-<li>src/GeneralPurposeAlgorithms/IntegrationMethods/<a class="el" href="_trapezoidal_rule_8cpp_source.html">TrapezoidalRule.cpp</a></li>
-</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

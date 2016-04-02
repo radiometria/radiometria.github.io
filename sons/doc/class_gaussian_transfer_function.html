@@ -47,7 +47,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -184,8 +183,6 @@ unsigned long int&#160;</td><td class="memItemRight" valign="bottom"><a class="e
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="class_gaussian_transfer_function.html" title="The GaussianTransferFunction class represents the impulse response of a Gaussian filter. ">GaussianTransferFunction</a> class represents the impulse response of a Gaussian filter. </p>
-
-<p>Definition at line <a class="el" href="_gaussian_transfer_function_8h_source.html#l00009">9</a> of file <a class="el" href="_gaussian_transfer_function_8h_source.html">GaussianTransferFunction.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="aa4546328d99481152404f0ceab3f8280"></a>
 <div class="memitem">
@@ -240,15 +237,26 @@ unsigned long int&#160;</td><td class="memItemRight" valign="bottom"><a class="e
   </table>
   </dd>
 </dl>
-
-<p>Definition at line <a class="el" href="_gaussian_transfer_function_8cpp_source.html#l00005">5</a> of file <a class="el" href="_gaussian_transfer_function_8cpp_source.html">GaussianTransferFunction.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;                                         :</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <a class="code" href="class_transfer_function.html#a7740fd5bbdd891b0f59d9310126e2246">TransferFunction</a>(<a class="code" href="class_transfer_function.html#a29e0806baef4089350f6484dd8cbea24">freqMin</a>, <a class="code" href="class_transfer_function.html#a255c952b649c88d2e0c581be70441ff5">freqMax</a>, <a class="code" href="class_transfer_function.html#a8eba4ff63a2f4837378ca7d7a5f7296b">numSamples</a>, <a class="code" href="class_transfer_function.html#ab0a911479b361868379bfe08d125860e">scale</a>)</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; val : <a class="code" href="class_transfer_function.html#a350ff8bc4bd3c3013c845e0b6aa5f133">frequencySamples</a>)</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        val = std::exp2l( (-2) * pow(2 * (val - <a class="code" href="class_physical_constants.html#a08328d5190c4cb688fafce12a81d35ea">PhysicalConstants::freq</a>) / <a class="code" href="class_gaussian_transfer_function.html#ab36f071907eb7ca79f3df0ac9ec22966">BW_3dB</a>,</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;                                     2 * filterOrder));</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        }</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
+<div class="ttc" id="class_gaussian_transfer_function_html_ab36f071907eb7ca79f3df0ac9ec22966"><div class="ttname"><a href="class_gaussian_transfer_function.html#ab36f071907eb7ca79f3df0ac9ec22966">GaussianTransferFunction::BW_3dB</a></div><div class="ttdeci">static constexpr double BW_3dB</div><div class="ttdoc">BW_3dB is the bandwidth of optical filter at 3 dB. </div><div class="ttdef"><b>Definition:</b> GaussianTransferFunction.h:26</div></div>
+<div class="ttc" id="class_transfer_function_html_a7740fd5bbdd891b0f59d9310126e2246"><div class="ttname"><a href="class_transfer_function.html#a7740fd5bbdd891b0f59d9310126e2246">TransferFunction::TransferFunction</a></div><div class="ttdeci">TransferFunction(double freqMin, double freqMax, unsigned long int numSamples, double scale)</div><div class="ttdoc">TransferFunction is a constructor for a TransferFunction. </div><div class="ttdef"><b>Definition:</b> TransferFunction.cpp:4</div></div>
+<div class="ttc" id="class_transfer_function_html_ab0a911479b361868379bfe08d125860e"><div class="ttname"><a href="class_transfer_function.html#ab0a911479b361868379bfe08d125860e">TransferFunction::scale</a></div><div class="ttdeci">double scale</div><div class="ttdoc">scale is the result of the gains and losses over this transfer function. </div><div class="ttdef"><b>Definition:</b> TransferFunction.h:34</div></div>
+<div class="ttc" id="class_transfer_function_html_a350ff8bc4bd3c3013c845e0b6aa5f133"><div class="ttname"><a href="class_transfer_function.html#a350ff8bc4bd3c3013c845e0b6aa5f133">TransferFunction::frequencySamples</a></div><div class="ttdeci">arma::rowvec frequencySamples</div><div class="ttdoc">frequencySamples is a vector with the frequency samples along the signal&#39;s bandwidth. </div><div class="ttdef"><b>Definition:</b> TransferFunction.h:30</div></div>
+<div class="ttc" id="class_transfer_function_html_a8eba4ff63a2f4837378ca7d7a5f7296b"><div class="ttname"><a href="class_transfer_function.html#a8eba4ff63a2f4837378ca7d7a5f7296b">TransferFunction::numSamples</a></div><div class="ttdeci">unsigned long int numSamples</div><div class="ttdoc">numSamples is the number of frequency samples along the bandwidth. </div><div class="ttdef"><b>Definition:</b> TransferFunction.h:51</div></div>
+<div class="ttc" id="class_physical_constants_html_a08328d5190c4cb688fafce12a81d35ea"><div class="ttname"><a href="class_physical_constants.html#a08328d5190c4cb688fafce12a81d35ea">PhysicalConstants::freq</a></div><div class="ttdeci">static constexpr double freq</div><div class="ttdoc">freq is the light&#39;s frequency; </div><div class="ttdef"><b>Definition:</b> PhysicalConstants.h:25</div></div>
+<div class="ttc" id="class_transfer_function_html_a255c952b649c88d2e0c581be70441ff5"><div class="ttname"><a href="class_transfer_function.html#a255c952b649c88d2e0c581be70441ff5">TransferFunction::freqMax</a></div><div class="ttdeci">double freqMax</div><div class="ttdoc">freqMax is the end of the signal&#39;s bandwidth. </div><div class="ttdef"><b>Definition:</b> TransferFunction.h:47</div></div>
+<div class="ttc" id="class_transfer_function_html_a29e0806baef4089350f6484dd8cbea24"><div class="ttname"><a href="class_transfer_function.html#a29e0806baef4089350f6484dd8cbea24">TransferFunction::freqMin</a></div><div class="ttdeci">double freqMin</div><div class="ttdoc">freqMin is the begining of the signal&#39;s bandwidth. </div><div class="ttdef"><b>Definition:</b> TransferFunction.h:43</div></div>
+</div><!-- fragment -->
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>include/GeneralClasses/TransferFunctions/<a class="el" href="_gaussian_transfer_function_8h_source.html">GaussianTransferFunction.h</a></li>
-<li>src/GeneralClasses/TransferFunctions/<a class="el" href="_gaussian_transfer_function_8cpp_source.html">GaussianTransferFunction.cpp</a></li>
-</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

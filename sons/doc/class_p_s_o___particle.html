@@ -47,7 +47,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -159,8 +158,6 @@ class PSO_Particle&lt; PositionType &gt;</h3>
   </table>
   </dd>
 </dl>
-
-<p>Definition at line <a class="el" href="_p_s_o___particle_8h_source.html#l00016">16</a> of file <a class="el" href="_p_s_o___particle_8h_source.html">PSO_Particle.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a5805f15e5eafb92f73f91dbd869f250a"></a>
 <div class="memitem">
@@ -203,14 +200,16 @@ template&lt;class PositionType &gt; </div>
   </table>
   </dd>
 </dl>
-
-<p>Definition at line <a class="el" href="_p_s_o___particle_8h_source.html#l00052">52</a> of file <a class="el" href="_p_s_o___particle_8h_source.html">PSO_Particle.h</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                                          : N(N)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    X.resize(N, 0);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    V.resize(N, 0);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    P.resize(N, 0);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    initialize(XMin, XMax);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
+</div><!-- fragment -->
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/GeneralPurposeAlgorithms/PSO/<a class="el" href="_p_s_o___particle_8h_source.html">PSO_Particle.h</a></li>
-</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

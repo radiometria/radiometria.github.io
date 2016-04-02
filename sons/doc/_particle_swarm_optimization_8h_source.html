@@ -47,7 +47,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
-      <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -64,11 +63,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
           </span>
         </div>
       </li>
-    </ul>
-  </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li><a href="files.html"><span>File&#160;List</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -275,11 +269,11 @@ $(document).ready(function(){initNavTree('_particle_swarm_optimization_8h_source
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;}</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="preprocessor">#endif // PARTICLESWARMOPTIMIZATION_H</span></div>
-<div class="ttc" id="class_particle_swarm_optimization_html"><div class="ttname"><a href="class_particle_swarm_optimization.html">ParticleSwarmOptimization</a></div><div class="ttdoc">The ParticleSwarmOptimization class is represents the PSO Algorithm. Its simulates a swarm of particl...</div><div class="ttdef"><b>Definition:</b> <a href="_particle_swarm_optimization_8h_source.html#l00023">ParticleSwarmOptimization.h:23</a></div></div>
-<div class="ttc" id="class_particle_swarm_optimization_html_a801a30b81e6b4fa1c84d0ff67f2a325e"><div class="ttname"><a href="class_particle_swarm_optimization.html#a801a30b81e6b4fa1c84d0ff67f2a325e">ParticleSwarmOptimization::run_generation</a></div><div class="ttdeci">void run_generation()</div><div class="ttdoc">run_generation runs the next generation on the PSO Optimization. </div><div class="ttdef"><b>Definition:</b> <a href="_particle_swarm_optimization_8h_source.html#l00122">ParticleSwarmOptimization.h:122</a></div></div>
-<div class="ttc" id="class_particle_swarm_optimization_html_a562f8bf7f22499b9bfe94be7b3ad5b16"><div class="ttname"><a href="class_particle_swarm_optimization.html#a562f8bf7f22499b9bfe94be7b3ad5b16">ParticleSwarmOptimization::ParticleSwarmOptimization</a></div><div class="ttdeci">ParticleSwarmOptimization(unsigned int P, unsigned int G, unsigned int N, PositionType XMin, PositionType XMax, PositionType VMin, PositionType VMax)</div><div class="ttdoc">ParticleSwarmOptimization is the standard constructor of a PSO Optimization. </div><div class="ttdef"><b>Definition:</b> <a href="_particle_swarm_optimization_8h_source.html#l00075">ParticleSwarmOptimization.h:75</a></div></div>
-<div class="ttc" id="class_particle_swarm_optimization_html_a6afce5e7207601d907a610136792cdec"><div class="ttname"><a href="class_particle_swarm_optimization.html#a6afce5e7207601d907a610136792cdec">ParticleSwarmOptimization::BestParticle</a></div><div class="ttdeci">std::shared_ptr&lt; PSO_Particle&lt; PositionType &gt; &gt; BestParticle</div><div class="ttdoc">BestParticle is a pointer to the best particle ever found. </div><div class="ttdef"><b>Definition:</b> <a href="_particle_swarm_optimization_8h_source.html#l00046">ParticleSwarmOptimization.h:46</a></div></div>
-<div class="ttc" id="class_particle_swarm_optimization_html_a99789dfd980bb7ae62e0cdd2afaff312"><div class="ttname"><a href="class_particle_swarm_optimization.html#a99789dfd980bb7ae62e0cdd2afaff312">ParticleSwarmOptimization::Particles</a></div><div class="ttdeci">std::vector&lt; std::shared_ptr&lt; PSO_Particle&lt; PositionType &gt; &gt; &gt; Particles</div><div class="ttdoc">Particles is a vector with the current generation particles. </div><div class="ttdef"><b>Definition:</b> <a href="_particle_swarm_optimization_8h_source.html#l00042">ParticleSwarmOptimization.h:42</a></div></div>
+<div class="ttc" id="class_particle_swarm_optimization_html"><div class="ttname"><a href="class_particle_swarm_optimization.html">ParticleSwarmOptimization</a></div><div class="ttdoc">The ParticleSwarmOptimization class is represents the PSO Algorithm. Its simulates a swarm of particl...</div><div class="ttdef"><b>Definition:</b> ParticleSwarmOptimization.h:23</div></div>
+<div class="ttc" id="class_particle_swarm_optimization_html_a801a30b81e6b4fa1c84d0ff67f2a325e"><div class="ttname"><a href="class_particle_swarm_optimization.html#a801a30b81e6b4fa1c84d0ff67f2a325e">ParticleSwarmOptimization::run_generation</a></div><div class="ttdeci">void run_generation()</div><div class="ttdoc">run_generation runs the next generation on the PSO Optimization. </div><div class="ttdef"><b>Definition:</b> ParticleSwarmOptimization.h:122</div></div>
+<div class="ttc" id="class_particle_swarm_optimization_html_a562f8bf7f22499b9bfe94be7b3ad5b16"><div class="ttname"><a href="class_particle_swarm_optimization.html#a562f8bf7f22499b9bfe94be7b3ad5b16">ParticleSwarmOptimization::ParticleSwarmOptimization</a></div><div class="ttdeci">ParticleSwarmOptimization(unsigned int P, unsigned int G, unsigned int N, PositionType XMin, PositionType XMax, PositionType VMin, PositionType VMax)</div><div class="ttdoc">ParticleSwarmOptimization is the standard constructor of a PSO Optimization. </div><div class="ttdef"><b>Definition:</b> ParticleSwarmOptimization.h:75</div></div>
+<div class="ttc" id="class_particle_swarm_optimization_html_a6afce5e7207601d907a610136792cdec"><div class="ttname"><a href="class_particle_swarm_optimization.html#a6afce5e7207601d907a610136792cdec">ParticleSwarmOptimization::BestParticle</a></div><div class="ttdeci">std::shared_ptr&lt; PSO_Particle&lt; PositionType &gt; &gt; BestParticle</div><div class="ttdoc">BestParticle is a pointer to the best particle ever found. </div><div class="ttdef"><b>Definition:</b> ParticleSwarmOptimization.h:46</div></div>
+<div class="ttc" id="class_particle_swarm_optimization_html_a99789dfd980bb7ae62e0cdd2afaff312"><div class="ttname"><a href="class_particle_swarm_optimization.html#a99789dfd980bb7ae62e0cdd2afaff312">ParticleSwarmOptimization::Particles</a></div><div class="ttdeci">std::vector&lt; std::shared_ptr&lt; PSO_Particle&lt; PositionType &gt; &gt; &gt; Particles</div><div class="ttdoc">Particles is a vector with the current generation particles. </div><div class="ttdef"><b>Definition:</b> ParticleSwarmOptimization.h:42</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
