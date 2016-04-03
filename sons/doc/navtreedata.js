@@ -22,8 +22,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"class_n_s_g_a2___individual.html#a2943cf8359c929ffc5339aff27eb9a68",
-"class_s_a_1_1_first_fit.html#aceaa13376b4f34b5f6d1bd638045a421",
+"class_n_x___most_simultaneously_used.html#acb2a04985838c071a96b4d58c9cb02fc",
+"class_s_a_1_1_best_fit.html#a3c4b69f4a8f9486bdf3694674a368ba6",
 "class_transparent_segment.html"
 ];
 

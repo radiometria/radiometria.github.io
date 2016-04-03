@@ -203,54 +203,54 @@ std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>g
 <dl class="section return"><dt>Returns</dt><dd>the result of the evaluation. </dd></dl>
 
 <p>Implements <a class="el" href="class_n_s_g_a2___parameter.html#adbd6239179f18ce768cbcd0483451536">NSGA2_Parameter</a>.</p>
-<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">if</span> (!isEvaluated)</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        std::shared_ptr&lt;Topology&gt; T(<span class="keyword">new</span> <a class="code" href="class_topology.html">Topology</a>(*Sim.<a class="code" href="class_simulations_1_1_simulation_type.html#a76dcb065f0856da408e02205fb59d0f9">T</a>));</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; gene.size(); i++)</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            <span class="keywordflow">if</span> (gene[i] != 0)</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                {</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                T-&gt;Nodes[i]-&gt;set_NodeType(Node::TranslucentNode);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                }</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                T-&gt;Nodes[i]-&gt;set_NodeType(Node::TransparentNode);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                }</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            T-&gt;Nodes[i]-&gt;set_NumRegenerators(gene[i]);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            }</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        std::shared_ptr&lt;RoutingAlgorithm&gt; R_Alg =</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            RoutingAlgorithm::create_RoutingAlgorithm(Sim.<a class="code" href="class_simulations_1_1_simulation___n_s_g_a2___regn_plac.html#a3c8cb1857687d426deae6c241dccfe6d">Routing_Algorithm</a>, T);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        std::shared_ptr&lt;SA::SpectrumAssignmentAlgorithm&gt; WA_Alg =</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            SA::SpectrumAssignmentAlgorithm::create_SpectrumAssignmentAlgorithm(</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                Sim.<a class="code" href="class_simulations_1_1_simulation___n_s_g_a2___regn_plac.html#a71c2ca2fcb1be2ff5ac48acb81e6823d">WavAssign_Algorithm</a>, T);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        std::shared_ptr&lt;RegeneratorAssignmentAlgorithm&gt; RA_Alg =</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            RegeneratorAssignmentAlgorithm::create_RegeneratorAssignmentAlgorithm(</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                Sim.<a class="code" href="class_simulations_1_1_simulation___n_s_g_a2___regn_plac.html#af58b1f2660b959a65ba5dc2dbcfb7421">RegAssignment_Algorithm</a>, T);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="comment">//Creates the Call Generator and the RMSA Object</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        std::shared_ptr&lt;CallGenerator&gt; Generator(<span class="keyword">new</span> <a class="code" href="class_call_generator.html">CallGenerator</a>(T,</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                Sim.<a class="code" href="class_simulations_1_1_simulation___n_s_g_a2___regn_plac.html#a3929f16cf6ef01cde4e5c8447f8e967b">NetworkLoad</a>));</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        std::shared_ptr&lt;RoutingWavelengthAssignment&gt; RMSA(</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keyword">new</span> <a class="code" href="class_routing_wavelength_assignment.html">RoutingWavelengthAssignment</a>(</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                R_Alg, WA_Alg, RA_Alg, <a class="code" href="class_modulation_scheme.html#a8dd467b4b5a9d5aa2d5777cabcc3e64d">ModulationScheme::DefaultSchemes</a>, T));</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        value = NetworkSimulation(Generator, RMSA, Sim.<a class="code" href="class_simulations_1_1_simulation___n_s_g_a2___regn_plac.html#a8561989f6f4e909767db589f7c2e0916">NumCalls</a>)</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                    .get_CallBlockingProbability();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        isEvaluated = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        }</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">return</span> value;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
-<div class="ttc" id="class_routing_wavelength_assignment_html"><div class="ttname"><a href="class_routing_wavelength_assignment.html">RoutingWavelengthAssignment</a></div><div class="ttdoc">The RoutingWavelengthAssignment class is a container to the routing, wavelength assignment, regenerator assignment and regenerator placement operations that a call must endure before its implementation. </div><div class="ttdef"><b>Definition:</b> RoutingWavelengthAssignment.h:27</div></div>
+<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">if</span> (!isEvaluated)</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        std::shared_ptr&lt;Topology&gt; T(<span class="keyword">new</span> <a class="code" href="class_topology.html">Topology</a>(*Sim.<a class="code" href="class_simulations_1_1_simulation_type.html#a76dcb065f0856da408e02205fb59d0f9">T</a>));</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; gene.size(); i++)</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <span class="keywordflow">if</span> (gene[i] != 0)</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                T-&gt;Nodes[i]-&gt;set_NodeType(Node::TranslucentNode);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                }</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                T-&gt;Nodes[i]-&gt;set_NodeType(Node::TransparentNode);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            T-&gt;Nodes[i]-&gt;set_NumRegenerators(gene[i]);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        std::shared_ptr&lt;RoutingAlgorithm&gt; R_Alg =</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            RoutingAlgorithm::create_RoutingAlgorithm(Sim.<a class="code" href="class_simulations_1_1_simulation___n_s_g_a2___regn_plac.html#a90b29920ba5c52fc26f2b8c160ee584b">Routing_Algorithm</a>, T);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        std::shared_ptr&lt;SpectrumAssignmentAlgorithm&gt; WA_Alg =</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            SA::SpectrumAssignmentAlgorithm::create_SpectrumAssignmentAlgorithm(</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                Sim.<a class="code" href="class_simulations_1_1_simulation___n_s_g_a2___regn_plac.html#a71c2ca2fcb1be2ff5ac48acb81e6823d">WavAssign_Algorithm</a>, T);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        std::shared_ptr&lt;RegeneratorAssignmentAlgorithm&gt; RA_Alg =</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            RegeneratorAssignmentAlgorithm::create_RegeneratorAssignmentAlgorithm(</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                Sim.<a class="code" href="class_simulations_1_1_simulation___n_s_g_a2___regn_plac.html#af58b1f2660b959a65ba5dc2dbcfb7421">RegAssignment_Algorithm</a>, T);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="comment">//Creates the Call Generator and the RMSA Object</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        std::shared_ptr&lt;CallGenerator&gt; Generator(<span class="keyword">new</span> <a class="code" href="class_call_generator.html">CallGenerator</a>(T,</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                Sim.<a class="code" href="class_simulations_1_1_simulation___n_s_g_a2___regn_plac.html#a3929f16cf6ef01cde4e5c8447f8e967b">NetworkLoad</a>));</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        std::shared_ptr&lt;RoutingWavelengthAssignment&gt; RMSA(</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="keyword">new</span> <a class="code" href="class_routing_wavelength_assignment.html">RoutingWavelengthAssignment</a>(</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                R_Alg, WA_Alg, RA_Alg, <a class="code" href="class_modulation_scheme.html#a8dd467b4b5a9d5aa2d5777cabcc3e64d">ModulationScheme::DefaultSchemes</a>, T));</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        value = NetworkSimulation(Generator, RMSA, Sim.<a class="code" href="class_simulations_1_1_simulation___n_s_g_a2___regn_plac.html#a8561989f6f4e909767db589f7c2e0916">NumCalls</a>)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                    .get_CallBlockingProbability();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        isEvaluated = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">return</span> value;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
+<div class="ttc" id="class_routing_wavelength_assignment_html"><div class="ttname"><a href="class_routing_wavelength_assignment.html">RoutingWavelengthAssignment</a></div><div class="ttdoc">The RoutingWavelengthAssignment class is a container to the routing, wavelength assignment, regenerator assignment and regenerator placement operations that a call must endure before its implementation. </div><div class="ttdef"><b>Definition:</b> RoutingWavelengthAssignment.h:30</div></div>
 <div class="ttc" id="class_simulations_1_1_simulation___n_s_g_a2___regn_plac_html_a8561989f6f4e909767db589f7c2e0916"><div class="ttname"><a href="class_simulations_1_1_simulation___n_s_g_a2___regn_plac.html#a8561989f6f4e909767db589f7c2e0916">Simulations::Simulation_NSGA2_RegnPlac::NumCalls</a></div><div class="ttdeci">double NumCalls</div><div class="ttdoc">NumCalls is the number of calls that must be simulated by each individual on the NSGA2 Optimization...</div><div class="ttdef"><b>Definition:</b> Simulation_NSGA2_RegnPlac.h:39</div></div>
 <div class="ttc" id="class_modulation_scheme_html_a8dd467b4b5a9d5aa2d5777cabcc3e64d"><div class="ttname"><a href="class_modulation_scheme.html#a8dd467b4b5a9d5aa2d5777cabcc3e64d">ModulationScheme::DefaultSchemes</a></div><div class="ttdeci">static std::vector&lt; ModulationScheme &gt; DefaultSchemes</div><div class="ttdoc">DefaultSchemes is a vector with the default Modulation Schemes. </div><div class="ttdef"><b>Definition:</b> ModulationScheme.h:78</div></div>
 <div class="ttc" id="class_simulations_1_1_simulation___n_s_g_a2___regn_plac_html_a3929f16cf6ef01cde4e5c8447f8e967b"><div class="ttname"><a href="class_simulations_1_1_simulation___n_s_g_a2___regn_plac.html#a3929f16cf6ef01cde4e5c8447f8e967b">Simulations::Simulation_NSGA2_RegnPlac::NetworkLoad</a></div><div class="ttdeci">double NetworkLoad</div><div class="ttdoc">NetworkLoad is the network load, in Erlangs, over which the simulation of each individual is run...</div><div class="ttdef"><b>Definition:</b> Simulation_NSGA2_RegnPlac.h:44</div></div>
-<div class="ttc" id="class_simulations_1_1_simulation___n_s_g_a2___regn_plac_html_a3c8cb1857687d426deae6c241dccfe6d"><div class="ttname"><a href="class_simulations_1_1_simulation___n_s_g_a2___regn_plac.html#a3c8cb1857687d426deae6c241dccfe6d">Simulations::Simulation_NSGA2_RegnPlac::Routing_Algorithm</a></div><div class="ttdeci">RoutingAlgorithm::RoutingAlgorithms Routing_Algorithm</div><div class="ttdoc">Routing_Algorithm is the routing algorithm used by the network simulation of each individual...</div><div class="ttdef"><b>Definition:</b> Simulation_NSGA2_RegnPlac.h:50</div></div>
 <div class="ttc" id="class_simulations_1_1_simulation_type_html_a76dcb065f0856da408e02205fb59d0f9"><div class="ttname"><a href="class_simulations_1_1_simulation_type.html#a76dcb065f0856da408e02205fb59d0f9">Simulations::SimulationType::T</a></div><div class="ttdeci">std::shared_ptr&lt; Topology &gt; T</div><div class="ttdoc">T is a pointer to a "master" Topology. </div><div class="ttdef"><b>Definition:</b> SimulationType.h:124</div></div>
+<div class="ttc" id="class_simulations_1_1_simulation___n_s_g_a2___regn_plac_html_a90b29920ba5c52fc26f2b8c160ee584b"><div class="ttname"><a href="class_simulations_1_1_simulation___n_s_g_a2___regn_plac.html#a90b29920ba5c52fc26f2b8c160ee584b">Simulations::Simulation_NSGA2_RegnPlac::Routing_Algorithm</a></div><div class="ttdeci">ROUT::RoutingAlgorithm::RoutingAlgorithms Routing_Algorithm</div><div class="ttdoc">Routing_Algorithm is the routing algorithm used by the network simulation of each individual...</div><div class="ttdef"><b>Definition:</b> Simulation_NSGA2_RegnPlac.h:50</div></div>
 <div class="ttc" id="class_simulations_1_1_simulation___n_s_g_a2___regn_plac_html_af58b1f2660b959a65ba5dc2dbcfb7421"><div class="ttname"><a href="class_simulations_1_1_simulation___n_s_g_a2___regn_plac.html#af58b1f2660b959a65ba5dc2dbcfb7421">Simulations::Simulation_NSGA2_RegnPlac::RegAssignment_Algorithm</a></div><div class="ttdeci">RegeneratorAssignmentAlgorithm::RegeneratorAssignmentAlgorithms RegAssignment_Algorithm</div><div class="ttdoc">RegAssignment_Algorithm is the regenerator assignment algorithm used by the network simulation of eac...</div><div class="ttdef"><b>Definition:</b> Simulation_NSGA2_RegnPlac.h:62</div></div>
 <div class="ttc" id="class_topology_html"><div class="ttname"><a href="class_topology.html">Topology</a></div><div class="ttdoc">The Topology class represents a topology, i.e. a set of links and nodes. </div><div class="ttdef"><b>Definition:</b> Topology.h:17</div></div>
 <div class="ttc" id="class_simulations_1_1_simulation___n_s_g_a2___regn_plac_html_a71c2ca2fcb1be2ff5ac48acb81e6823d"><div class="ttname"><a href="class_simulations_1_1_simulation___n_s_g_a2___regn_plac.html#a71c2ca2fcb1be2ff5ac48acb81e6823d">Simulations::Simulation_NSGA2_RegnPlac::WavAssign_Algorithm</a></div><div class="ttdeci">SA::SpectrumAssignmentAlgorithm::SpectrumAssignmentAlgorithms WavAssign_Algorithm</div><div class="ttdoc">WavAssign_Algorithm is the wavelength assignment algorithm used by the network simulation of each ind...</div><div class="ttdef"><b>Definition:</b> Simulation_NSGA2_RegnPlac.h:56</div></div>

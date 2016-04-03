@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['shortestpath',['ShortestPath',['../class_shortest_path.html',1,'']]],
+  ['shortestpath',['ShortestPath',['../class_r_o_u_t_1_1_shortest_path.html',1,'ROUT']]],
   ['signal',['Signal',['../class_signal.html',1,'']]],
   ['signalqualityprediction',['SignalQualityPrediction',['../class_signal_quality_prediction.html',1,'']]],
   ['signalqualityprediction_5fvariants',['SignalQualityPrediction_Variants',['../class_signal_quality_prediction___variants.html',1,'']]],
@@ -18,6 +18,5 @@ var searchData=
   ['spectrumassignmentalgorithm',['SpectrumAssignmentAlgorithm',['../class_s_a_1_1_spectrum_assignment_algorithm.html',1,'SA']]],
   ['splitter',['Splitter',['../class_devices_1_1_splitter.html',1,'Devices']]],
   ['sqp_5fnetworksimulation',['SQP_NetworkSimulation',['../class_s_q_p___network_simulation.html',1,'']]],
-  ['sss',['SSS',['../class_devices_1_1_s_s_s.html',1,'Devices']]],
-  ['staticroutingalgorithm',['StaticRoutingAlgorithm',['../class_static_routing_algorithm.html',1,'']]]
+  ['sss',['SSS',['../class_devices_1_1_s_s_s.html',1,'Devices']]]
 ];

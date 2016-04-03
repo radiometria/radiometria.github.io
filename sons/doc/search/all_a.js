@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['matricialpowerseriesrouting',['MatricialPowerSeriesRouting',['../class_matricial_power_series_routing.html',1,'']]],
-  ['minimumhops',['MinimumHops',['../class_minimum_hops.html',1,'']]],
+  ['matricialpowerseriesrouting',['MatricialPowerSeriesRouting',['../class_r_o_u_t_1_1_matricial_power_series_routing.html',1,'ROUT']]],
+  ['minimumhops',['MinimumHops',['../class_r_o_u_t_1_1_minimum_hops.html',1,'ROUT']]],
   ['modscheme',['ModScheme',['../class_transparent_segment.html#aea9c5bbd0f3e199f95a8a88e7a7896bc',1,'TransparentSegment']]],
   ['modulationscheme',['ModulationScheme',['../class_modulation_scheme.html',1,'ModulationScheme'],['../class_modulation_scheme.html#ad6d9ac6335587b19961233247fa4453c',1,'ModulationScheme::ModulationScheme(unsigned int M, Gain SNR_Per_Bit)'],['../class_modulation_scheme.html#a374c9eab640370fe672a8cd6bf727310',1,'ModulationScheme::ModulationScheme(const ModulationScheme &amp;)']]],
   ['modulationschemes',['ModulationSchemes',['../class_regenerator_assignment_algorithm.html#aeaa62c69e003813e680aa9cdc2cddeed',1,'RegeneratorAssignmentAlgorithm']]],

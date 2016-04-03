@@ -1,0 +1,8 @@
+<map id="ROUT::PowerSeriesRouting" name="ROUT::PowerSeriesRouting">
+<area shape="rect" id="node4" href="$class_r_o_u_t_1_1_adaptative_weighing_routing.html" title="The AdaptativeWeighingRouting class represents the Adaptative Weighing Routing algorithm. It is a type of PSR algorithm. Its cost is a power series with only exponent 1. " alt="" coords="735,5,919,47"/>
+<area shape="rect" id="node5" href="$class_r_o_u_t_1_1_local_power_series_routing.html" title="The LocalPowerSeriesRouting class represents the Local variant of the Power Series Routing algorithm..." alt="" coords="717,71,936,98"/>
+<area shape="rect" id="node6" href="$class_r_o_u_t_1_1_matricial_power_series_routing.html" title="The MatricialPowerSeriesRouting class is the standard Power Series Routing algorithm. Its cost is a truncated power series of carefully chosen costs. " alt="" coords="731,123,922,164"/>
+<area shape="rect" id="node7" href="$class_r_o_u_t_1_1_tensorial_power_series_routing.html" title="The TensorialPowerSeriesRouting class is a type of Power Series Routing algorithm. Differently from MatricialPowerSeriesRouting, this PSR uses the Krönecker product to produce, from a reduced set of coefficients, the large set required to calculate the power series. " alt="" coords="729,188,924,229"/>
+<area shape="rect" id="node2" href="$class_r_o_u_t_1_1_dijkstra_routing_algorithm.html" title="The DijkstraRoutingAlgorithm class is a class of routing algorithms whose routes are determined using..." alt="" coords="221,101,435,127"/>
+<area shape="rect" id="node3" href="$class_r_o_u_t_1_1_routing_algorithm.html" title="The RoutingAlgorithm class searches for a route, given a Call. " alt="" coords="5,101,173,127"/>
+</map>

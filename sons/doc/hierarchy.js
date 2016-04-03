@@ -2,20 +2,20 @@ var hierarchy =
 [
     [ "Call", "class_call.html", null ],
     [ "CallGenerator", "class_call_generator.html", null ],
-    [ "PSR::Cost", "class_p_s_r_1_1_cost.html", [
-      [ "PSR::cAvailability", "class_p_s_r_1_1c_availability.html", null ],
-      [ "PSR::cBitrate", "class_p_s_r_1_1c_bitrate.html", null ],
-      [ "PSR::cContiguity", "class_p_s_r_1_1c_contiguity.html", null ],
-      [ "PSR::cDistance", "class_p_s_r_1_1c_distance.html", null ],
-      [ "PSR::cHopDistance", "class_p_s_r_1_1c_hop_distance.html", null ],
-      [ "PSR::cLinkLength", "class_p_s_r_1_1c_link_length.html", null ],
-      [ "PSR::cModulationScheme", "class_p_s_r_1_1c_modulation_scheme.html", null ],
-      [ "PSR::cNoise", "class_p_s_r_1_1c_noise.html", null ],
-      [ "PSR::cNormContiguity", "class_p_s_r_1_1c_norm_contiguity.html", null ],
-      [ "PSR::cNormNoise", "class_p_s_r_1_1c_norm_noise.html", null ],
-      [ "PSR::cOccupability", "class_p_s_r_1_1c_occupability.html", null ],
-      [ "PSR::cOrigDestIndex", "class_p_s_r_1_1c_orig_dest_index.html", null ],
-      [ "PSR::cSlots", "class_p_s_r_1_1c_slots.html", null ]
+    [ "ROUT::PSR::Cost", "class_r_o_u_t_1_1_p_s_r_1_1_cost.html", [
+      [ "ROUT::PSR::cAvailability", "class_r_o_u_t_1_1_p_s_r_1_1c_availability.html", null ],
+      [ "ROUT::PSR::cBitrate", "class_r_o_u_t_1_1_p_s_r_1_1c_bitrate.html", null ],
+      [ "ROUT::PSR::cContiguity", "class_r_o_u_t_1_1_p_s_r_1_1c_contiguity.html", null ],
+      [ "ROUT::PSR::cDistance", "class_r_o_u_t_1_1_p_s_r_1_1c_distance.html", null ],
+      [ "ROUT::PSR::cHopDistance", "class_r_o_u_t_1_1_p_s_r_1_1c_hop_distance.html", null ],
+      [ "ROUT::PSR::cLinkLength", "class_r_o_u_t_1_1_p_s_r_1_1c_link_length.html", null ],
+      [ "ROUT::PSR::cModulationScheme", "class_r_o_u_t_1_1_p_s_r_1_1c_modulation_scheme.html", null ],
+      [ "ROUT::PSR::cNoise", "class_r_o_u_t_1_1_p_s_r_1_1c_noise.html", null ],
+      [ "ROUT::PSR::cNormContiguity", "class_r_o_u_t_1_1_p_s_r_1_1c_norm_contiguity.html", null ],
+      [ "ROUT::PSR::cNormNoise", "class_r_o_u_t_1_1_p_s_r_1_1c_norm_noise.html", null ],
+      [ "ROUT::PSR::cOccupability", "class_r_o_u_t_1_1_p_s_r_1_1c_occupability.html", null ],
+      [ "ROUT::PSR::cOrigDestIndex", "class_r_o_u_t_1_1_p_s_r_1_1c_orig_dest_index.html", null ],
+      [ "ROUT::PSR::cSlots", "class_r_o_u_t_1_1_p_s_r_1_1c_slots.html", null ]
     ] ],
     [ "Devices::Device", "class_devices_1_1_device.html", [
       [ "Devices::Amplifier", "class_devices_1_1_amplifier.html", [
@@ -77,19 +77,19 @@ var hierarchy =
       ] ]
     ] ],
     [ "Route", "class_route.html", null ],
-    [ "RoutingAlgorithm", "class_routing_algorithm.html", [
-      [ "DijkstraRoutingAlgorithm", "class_dijkstra_routing_algorithm.html", [
-        [ "LengthOccupationRoutingAvailability", "class_length_occupation_routing_availability.html", null ],
-        [ "LengthOccupationRoutingContiguity", "class_length_occupation_routing_contiguity.html", null ],
-        [ "PowerSeriesRouting", "class_power_series_routing.html", [
-          [ "AdaptativeWeighingRouting", "class_adaptative_weighing_routing.html", null ],
-          [ "LocalPowerSeriesRouting", "class_local_power_series_routing.html", null ],
-          [ "MatricialPowerSeriesRouting", "class_matricial_power_series_routing.html", null ],
-          [ "TensorialPowerSeriesRouting", "class_tensorial_power_series_routing.html", null ]
+    [ "ROUT::RoutingAlgorithm", "class_r_o_u_t_1_1_routing_algorithm.html", [
+      [ "ROUT::DijkstraRoutingAlgorithm", "class_r_o_u_t_1_1_dijkstra_routing_algorithm.html", [
+        [ "ROUT::FixedRoutingAlgorithm", "class_r_o_u_t_1_1_fixed_routing_algorithm.html", [
+          [ "ROUT::MinimumHops", "class_r_o_u_t_1_1_minimum_hops.html", null ],
+          [ "ROUT::ShortestPath", "class_r_o_u_t_1_1_shortest_path.html", null ]
         ] ],
-        [ "StaticRoutingAlgorithm", "class_static_routing_algorithm.html", [
-          [ "MinimumHops", "class_minimum_hops.html", null ],
-          [ "ShortestPath", "class_shortest_path.html", null ]
+        [ "ROUT::LengthOccupationRoutingAvailability", "class_r_o_u_t_1_1_length_occupation_routing_availability.html", null ],
+        [ "ROUT::LengthOccupationRoutingContiguity", "class_r_o_u_t_1_1_length_occupation_routing_contiguity.html", null ],
+        [ "ROUT::PowerSeriesRouting", "class_r_o_u_t_1_1_power_series_routing.html", [
+          [ "ROUT::AdaptativeWeighingRouting", "class_r_o_u_t_1_1_adaptative_weighing_routing.html", null ],
+          [ "ROUT::LocalPowerSeriesRouting", "class_r_o_u_t_1_1_local_power_series_routing.html", null ],
+          [ "ROUT::MatricialPowerSeriesRouting", "class_r_o_u_t_1_1_matricial_power_series_routing.html", null ],
+          [ "ROUT::TensorialPowerSeriesRouting", "class_r_o_u_t_1_1_tensorial_power_series_routing.html", null ]
         ] ]
       ] ]
     ] ],

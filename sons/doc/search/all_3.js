@@ -12,7 +12,7 @@ var searchData=
   ['devices',['Devices',['../namespace_devices.html',1,'Devices'],['../class_link.html#a8a02d8ea8811df0f01b5e1c51723b5a3',1,'Link::Devices()'],['../class_node.html#af2abec28ba436db9ed9796e52670e8a2',1,'Node::Devices()']]],
   ['devicetype',['DeviceType',['../class_devices_1_1_device.html#a6fe70fa8017a07adda38721261dec046',1,'Devices::Device']]],
   ['devtype',['DevType',['../class_devices_1_1_device.html#a19618fae75044a91862d0e8c00e47d4c',1,'Devices::Device']]],
-  ['dijkstraroutingalgorithm',['DijkstraRoutingAlgorithm',['../class_dijkstra_routing_algorithm.html',1,'']]],
+  ['dijkstraroutingalgorithm',['DijkstraRoutingAlgorithm',['../class_r_o_u_t_1_1_dijkstra_routing_algorithm.html',1,'ROUT']]],
   ['distanceadaptative',['DistanceAdaptative',['../class_distance_adaptative.html',1,'']]],
   ['drop',['drop',['../class_node.html#aebbf9db7a8acce64b2c32cb5c1009fba',1,'Node']]]
 ];

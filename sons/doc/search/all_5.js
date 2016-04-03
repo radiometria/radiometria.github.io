@@ -7,6 +7,7 @@ var searchData=
   ['firstfit',['FirstFit',['../class_s_a_1_1_first_fit.html',1,'SA']]],
   ['firstlongestreach',['FirstLongestReach',['../class_first_longest_reach.html',1,'FirstLongestReach'],['../class_first_longest_reach.html#a4079f3e37a9ab7ee16e559b1ed17a434',1,'FirstLongestReach::FirstLongestReach()']]],
   ['firstnarrowestspectrum',['FirstNarrowestSpectrum',['../class_first_narrowest_spectrum.html',1,'FirstNarrowestSpectrum'],['../class_first_narrowest_spectrum.html#af8083f80a1006be186ca83f3271fa148',1,'FirstNarrowestSpectrum::FirstNarrowestSpectrum()']]],
+  ['fixedroutingalgorithm',['FixedRoutingAlgorithm',['../class_r_o_u_t_1_1_fixed_routing_algorithm.html',1,'ROUT']]],
   ['free_5fregenerators',['free_Regenerators',['../class_node.html#a6e744c886f24face11d26d616bd7a2ce',1,'Node']]],
   ['freeslot',['freeSlot',['../class_slot.html#a43aeba5594d306de72165940fc21deb4',1,'Slot']]],
   ['freq',['freq',['../class_physical_constants.html#a08328d5190c4cb688fafce12a81d35ea',1,'PhysicalConstants']]],

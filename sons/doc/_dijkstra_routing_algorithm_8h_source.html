@@ -105,20 +105,23 @@ $(document).ready(function(){initNavTree('_dijkstra_routing_algorithm_8h_source.
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;RMSA/RoutingAlgorithms/RoutingAlgorithm.h&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_dijkstra_routing_algorithm.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_dijkstra_routing_algorithm.html">DijkstraRoutingAlgorithm</a> : <span class="keyword">public</span> <a class="code" href="class_routing_algorithm.html">RoutingAlgorithm</a></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="class_dijkstra_routing_algorithm.html">DijkstraRoutingAlgorithm</a>(std::shared_ptr&lt;Topology&gt; T, RoutingAlgorithms RoutAlgType);</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    std::vector&lt;std::weak_ptr&lt;Link&gt;&gt; <a class="code" href="class_dijkstra_routing_algorithm.html#a9c522a65799b036c67e0e48b302861bf">route</a>(std::shared_ptr&lt;Call&gt; C);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> get_Cost(std::weak_ptr&lt;Link&gt; link,</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                            std::shared_ptr&lt;Call&gt; C) = 0;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;};</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#endif // DIJKSTRAROUTINGALGORITHM_H</span></div>
-<div class="ttc" id="class_dijkstra_routing_algorithm_html"><div class="ttname"><a href="class_dijkstra_routing_algorithm.html">DijkstraRoutingAlgorithm</a></div><div class="ttdoc">The DijkstraRoutingAlgorithm class is a class of routing algorithms whose routes are determined using...</div><div class="ttdef"><b>Definition:</b> DijkstraRoutingAlgorithm.h:10</div></div>
-<div class="ttc" id="class_routing_algorithm_html"><div class="ttname"><a href="class_routing_algorithm.html">RoutingAlgorithm</a></div><div class="ttdoc">The RoutingAlgorithm class searches for a route, given a Call. </div><div class="ttdef"><b>Definition:</b> RoutingAlgorithm.h:15</div></div>
-<div class="ttc" id="class_dijkstra_routing_algorithm_html_a9c522a65799b036c67e0e48b302861bf"><div class="ttname"><a href="class_dijkstra_routing_algorithm.html#a9c522a65799b036c67e0e48b302861bf">DijkstraRoutingAlgorithm::route</a></div><div class="ttdeci">std::vector&lt; std::weak_ptr&lt; Link &gt; &gt; route(std::shared_ptr&lt; Call &gt; C)</div><div class="ttdef"><b>Definition:</b> DijkstraRoutingAlgorithm.cpp:18</div></div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="namespace_r_o_u_t.html">    6</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_r_o_u_t.html">ROUT</a> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_r_o_u_t_1_1_dijkstra_routing_algorithm.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_r_o_u_t_1_1_dijkstra_routing_algorithm.html">DijkstraRoutingAlgorithm</a> : <span class="keyword">public</span> <a class="code" href="class_r_o_u_t_1_1_routing_algorithm.html">RoutingAlgorithm</a></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="class_r_o_u_t_1_1_dijkstra_routing_algorithm.html">DijkstraRoutingAlgorithm</a>(std::shared_ptr&lt;Topology&gt; T, RoutingAlgorithms RoutAlgType);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    std::vector&lt;std::weak_ptr&lt;Link&gt;&gt; <a class="code" href="class_r_o_u_t_1_1_dijkstra_routing_algorithm.html#a9c522a65799b036c67e0e48b302861bf">route</a>(std::shared_ptr&lt;Call&gt; C);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> get_Cost(std::weak_ptr&lt;Link&gt; link,</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                            std::shared_ptr&lt;Call&gt; C) = 0;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;};</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif // DIJKSTRAROUTINGALGORITHM_H</span></div>
+<div class="ttc" id="namespace_r_o_u_t_html"><div class="ttname"><a href="namespace_r_o_u_t.html">ROUT</a></div><div class="ttdoc">Contains the routing algorithms. </div><div class="ttdef"><b>Definition:</b> DijkstraRoutingAlgorithm.h:6</div></div>
+<div class="ttc" id="class_r_o_u_t_1_1_dijkstra_routing_algorithm_html"><div class="ttname"><a href="class_r_o_u_t_1_1_dijkstra_routing_algorithm.html">ROUT::DijkstraRoutingAlgorithm</a></div><div class="ttdoc">The DijkstraRoutingAlgorithm class is a class of routing algorithms whose routes are determined using...</div><div class="ttdef"><b>Definition:</b> DijkstraRoutingAlgorithm.h:11</div></div>
+<div class="ttc" id="class_r_o_u_t_1_1_routing_algorithm_html"><div class="ttname"><a href="class_r_o_u_t_1_1_routing_algorithm.html">ROUT::RoutingAlgorithm</a></div><div class="ttdoc">The RoutingAlgorithm class searches for a route, given a Call. </div><div class="ttdef"><b>Definition:</b> RoutingAlgorithm.h:18</div></div>
+<div class="ttc" id="class_r_o_u_t_1_1_dijkstra_routing_algorithm_html_a9c522a65799b036c67e0e48b302861bf"><div class="ttname"><a href="class_r_o_u_t_1_1_dijkstra_routing_algorithm.html#a9c522a65799b036c67e0e48b302861bf">ROUT::DijkstraRoutingAlgorithm::route</a></div><div class="ttdeci">std::vector&lt; std::weak_ptr&lt; Link &gt; &gt; route(std::shared_ptr&lt; Call &gt; C)</div><div class="ttdef"><b>Definition:</b> DijkstraRoutingAlgorithm.cpp:20</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

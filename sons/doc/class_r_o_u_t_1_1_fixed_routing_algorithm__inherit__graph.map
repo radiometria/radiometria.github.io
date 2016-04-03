@@ -1,0 +1,6 @@
+<map id="ROUT::FixedRoutingAlgorithm" name="ROUT::FixedRoutingAlgorithm">
+<area shape="rect" id="node4" href="$class_r_o_u_t_1_1_minimum_hops.html" title="The MinimumHops class represents the Minimum Hops routing algorithm. The link cost of each link is 1..." alt="" coords="5,229,157,256"/>
+<area shape="rect" id="node5" href="$class_r_o_u_t_1_1_shortest_path.html" title="The ShortestPath class represents the Shortest Path routing algorithm. The link cost of each link is ..." alt="" coords="181,229,325,256"/>
+<area shape="rect" id="node2" href="$class_r_o_u_t_1_1_dijkstra_routing_algorithm.html" title="The DijkstraRoutingAlgorithm class is a class of routing algorithms whose routes are determined using..." alt="" coords="60,80,273,107"/>
+<area shape="rect" id="node3" href="$class_r_o_u_t_1_1_routing_algorithm.html" title="The RoutingAlgorithm class searches for a route, given a Call. " alt="" coords="83,5,251,32"/>
+</map>

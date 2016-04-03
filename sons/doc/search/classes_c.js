@@ -5,6 +5,6 @@ var searchData=
   ['regeneratorassignmentalgorithm',['RegeneratorAssignmentAlgorithm',['../class_regenerator_assignment_algorithm.html',1,'']]],
   ['regeneratorplacementalgorithm',['RegeneratorPlacementAlgorithm',['../class_regenerator_placement_algorithm.html',1,'']]],
   ['route',['Route',['../class_route.html',1,'']]],
-  ['routingalgorithm',['RoutingAlgorithm',['../class_routing_algorithm.html',1,'']]],
+  ['routingalgorithm',['RoutingAlgorithm',['../class_r_o_u_t_1_1_routing_algorithm.html',1,'ROUT']]],
   ['routingwavelengthassignment',['RoutingWavelengthAssignment',['../class_routing_wavelength_assignment.html',1,'']]]
 ];
