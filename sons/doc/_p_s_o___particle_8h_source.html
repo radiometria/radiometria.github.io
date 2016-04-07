@@ -109,53 +109,57 @@ $(document).ready(function(){initNavTree('_p_s_o___particle_8h_source.html','');
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;cmath&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;GeneralClasses/RandomGenerator.h&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> PositionType&gt;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_p_s_o___particle.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_p_s_o___particle.html">PSO_Particle</a></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="class_p_s_o___particle.html#a5805f15e5eafb92f73f91dbd869f250a">PSO_Particle</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> N, PositionType XMin, PositionType XMax);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    std::vector&lt;PositionType&gt; X; <span class="comment">//Position</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    std::vector&lt;PositionType&gt; V; <span class="comment">//Velocity</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    std::vector&lt;PositionType&gt; P; <span class="comment">//Best position so far</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_p_s_o___particle.html#ae16ddee0c4f502f5723ec804a6ba2485">   35</a></span>&#160;    PositionType <a class="code" href="class_p_s_o___particle.html#ae16ddee0c4f502f5723ec804a6ba2485">currentFit</a>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_p_s_o___particle.html#a1f0d0a8c004bbdf0c6c3e5882b663ff4">   39</a></span>&#160;    PositionType <a class="code" href="class_p_s_o___particle.html#a1f0d0a8c004bbdf0c6c3e5882b663ff4">bestFit</a>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_p_s_o___particle.html#ade9c2e243b3bfb980fcca0f4d0553e5b">   43</a></span>&#160;    std::weak_ptr&lt;PSO_Particle&gt; <a class="code" href="class_p_s_o___particle.html#ade9c2e243b3bfb980fcca0f4d0553e5b">Neighbour</a>[2];</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> N;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> initialize(PositionType XMin, PositionType XMax);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_p_s_o.html">PSO</a></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> PositionType&gt;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_p_s_o_1_1_p_s_o___particle.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_p_s_o_1_1_p_s_o___particle.html">PSO_Particle</a></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="class_p_s_o_1_1_p_s_o___particle.html#a8701e88ac237f9f3856b930802826315">PSO_Particle</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> N, PositionType XMin, PositionType XMax);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    std::vector&lt;PositionType&gt; X; <span class="comment">//Position</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    std::vector&lt;PositionType&gt; V; <span class="comment">//Velocity</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    std::vector&lt;PositionType&gt; P; <span class="comment">//Best position so far</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_p_s_o_1_1_p_s_o___particle.html#ad447784501459bc3f842d0c783417954">   37</a></span>&#160;    PositionType <a class="code" href="class_p_s_o_1_1_p_s_o___particle.html#ad447784501459bc3f842d0c783417954">currentFit</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_p_s_o_1_1_p_s_o___particle.html#a211db6088f7a760adb22c15f683d81ba">   41</a></span>&#160;    PositionType <a class="code" href="class_p_s_o_1_1_p_s_o___particle.html#a211db6088f7a760adb22c15f683d81ba">bestFit</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_p_s_o_1_1_p_s_o___particle.html#add5ce773ceb54823c35d42a97c4ac338">   45</a></span>&#160;    std::weak_ptr&lt;PSO_Particle&gt; <a class="code" href="class_p_s_o_1_1_p_s_o___particle.html#add5ce773ceb54823c35d42a97c4ac338">Neighbour</a>[2];</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> N;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> initialize(PositionType XMin, PositionType XMax);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> PositionType&gt;</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_p_s_o___particle.html#a5805f15e5eafb92f73f91dbd869f250a">   52</a></span>&#160;<a class="code" href="class_p_s_o___particle.html#a5805f15e5eafb92f73f91dbd869f250a">PSO_Particle&lt;PositionType&gt;::PSO_Particle</a>(</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> N, PositionType XMin, PositionType XMax) : N(N)</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    X.resize(N, 0);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    V.resize(N, 0);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    P.resize(N, 0);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    initialize(XMin, XMax);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> PositionType&gt;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_p_s_o___particle.html">PSO_Particle&lt;PositionType&gt;::initialize</a>(PositionType, PositionType XMax)</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    std::uniform_real_distribution&lt;PositionType&gt; distribution(0, XMax);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;x : X)</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        x = distribution(random_generator);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif // PSO_PARTICLE_H</span></div>
-<div class="ttc" id="class_p_s_o___particle_html"><div class="ttname"><a href="class_p_s_o___particle.html">PSO_Particle</a></div><div class="ttdoc">The PSO_Particle class represents a particle to the PSO Optimization. </div><div class="ttdef"><b>Definition:</b> PSO_Particle.h:16</div></div>
-<div class="ttc" id="class_p_s_o___particle_html_a1f0d0a8c004bbdf0c6c3e5882b663ff4"><div class="ttname"><a href="class_p_s_o___particle.html#a1f0d0a8c004bbdf0c6c3e5882b663ff4">PSO_Particle::bestFit</a></div><div class="ttdeci">PositionType bestFit</div><div class="ttdoc">bestFit is the best fit ever found by this particle. </div><div class="ttdef"><b>Definition:</b> PSO_Particle.h:39</div></div>
-<div class="ttc" id="class_p_s_o___particle_html_a5805f15e5eafb92f73f91dbd869f250a"><div class="ttname"><a href="class_p_s_o___particle.html#a5805f15e5eafb92f73f91dbd869f250a">PSO_Particle::PSO_Particle</a></div><div class="ttdeci">PSO_Particle(unsigned int N, PositionType XMin, PositionType XMax)</div><div class="ttdoc">PSO_Particle is the standard constructor for a particle on the PSO optimization. </div><div class="ttdef"><b>Definition:</b> PSO_Particle.h:52</div></div>
-<div class="ttc" id="class_p_s_o___particle_html_ade9c2e243b3bfb980fcca0f4d0553e5b"><div class="ttname"><a href="class_p_s_o___particle.html#ade9c2e243b3bfb980fcca0f4d0553e5b">PSO_Particle::Neighbour</a></div><div class="ttdeci">std::weak_ptr&lt; PSO_Particle &gt; Neighbour[2]</div><div class="ttdoc">Neighbour are pointers to this particle neighbours. </div><div class="ttdef"><b>Definition:</b> PSO_Particle.h:43</div></div>
-<div class="ttc" id="class_p_s_o___particle_html_ae16ddee0c4f502f5723ec804a6ba2485"><div class="ttname"><a href="class_p_s_o___particle.html#ae16ddee0c4f502f5723ec804a6ba2485">PSO_Particle::currentFit</a></div><div class="ttdeci">PositionType currentFit</div><div class="ttdoc">currentFit is the current fit of this particle. </div><div class="ttdef"><b>Definition:</b> PSO_Particle.h:35</div></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> PositionType&gt;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_p_s_o_1_1_p_s_o___particle.html#a8701e88ac237f9f3856b930802826315">   54</a></span>&#160;<a class="code" href="class_p_s_o_1_1_p_s_o___particle.html#a8701e88ac237f9f3856b930802826315">PSO_Particle&lt;PositionType&gt;::PSO_Particle</a>(</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> N, PositionType XMin, PositionType XMax) : N(N)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    X.resize(N, 0);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    V.resize(N, 0);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    P.resize(N, 0);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    initialize(XMin, XMax);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> PositionType&gt;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_p_s_o_1_1_p_s_o___particle.html">PSO_Particle&lt;PositionType&gt;::initialize</a>(PositionType, PositionType XMax)</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    std::uniform_real_distribution&lt;PositionType&gt; distribution(0, XMax);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;x : X)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        x = distribution(random_generator);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif // PSO_PARTICLE_H</span></div>
+<div class="ttc" id="class_p_s_o_1_1_p_s_o___particle_html_a211db6088f7a760adb22c15f683d81ba"><div class="ttname"><a href="class_p_s_o_1_1_p_s_o___particle.html#a211db6088f7a760adb22c15f683d81ba">PSO::PSO_Particle::bestFit</a></div><div class="ttdeci">PositionType bestFit</div><div class="ttdoc">bestFit is the best fit ever found by this particle. </div><div class="ttdef"><b>Definition:</b> PSO_Particle.h:41</div></div>
+<div class="ttc" id="class_p_s_o_1_1_p_s_o___particle_html_a8701e88ac237f9f3856b930802826315"><div class="ttname"><a href="class_p_s_o_1_1_p_s_o___particle.html#a8701e88ac237f9f3856b930802826315">PSO::PSO_Particle::PSO_Particle</a></div><div class="ttdeci">PSO_Particle(unsigned int N, PositionType XMin, PositionType XMax)</div><div class="ttdoc">PSO_Particle is the standard constructor for a particle on the PSO optimization. </div><div class="ttdef"><b>Definition:</b> PSO_Particle.h:54</div></div>
+<div class="ttc" id="class_p_s_o_1_1_p_s_o___particle_html"><div class="ttname"><a href="class_p_s_o_1_1_p_s_o___particle.html">PSO::PSO_Particle</a></div><div class="ttdoc">The PSO_Particle class represents a particle to the PSO Optimization. </div><div class="ttdef"><b>Definition:</b> PSO_Particle.h:18</div></div>
+<div class="ttc" id="class_p_s_o_1_1_p_s_o___particle_html_ad447784501459bc3f842d0c783417954"><div class="ttname"><a href="class_p_s_o_1_1_p_s_o___particle.html#ad447784501459bc3f842d0c783417954">PSO::PSO_Particle::currentFit</a></div><div class="ttdeci">PositionType currentFit</div><div class="ttdoc">currentFit is the current fit of this particle. </div><div class="ttdef"><b>Definition:</b> PSO_Particle.h:37</div></div>
+<div class="ttc" id="namespace_p_s_o_html"><div class="ttname"><a href="namespace_p_s_o.html">PSO</a></div><div class="ttdoc">Particle Swarm Optimization. </div><div class="ttdef"><b>Definition:</b> ParticleSwarmOptimization.h:10</div></div>
+<div class="ttc" id="class_p_s_o_1_1_p_s_o___particle_html_add5ce773ceb54823c35d42a97c4ac338"><div class="ttname"><a href="class_p_s_o_1_1_p_s_o___particle.html#add5ce773ceb54823c35d42a97c4ac338">PSO::PSO_Particle::Neighbour</a></div><div class="ttdeci">std::weak_ptr&lt; PSO_Particle &gt; Neighbour[2]</div><div class="ttdoc">Neighbour are pointers to this particle neighbours. </div><div class="ttdef"><b>Definition:</b> PSO_Particle.h:45</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

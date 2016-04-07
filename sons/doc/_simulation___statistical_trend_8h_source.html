@@ -110,59 +110,55 @@ $(document).ready(function(){initNavTree('_simulation___statistical_trend_8h_sou
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;RMSA/RegeneratorAssignmentAlgorithms/RegeneratorAssignmentAlgorithm.h&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;RMSA/RegeneratorPlacementAlgorithms/NX_RegeneratorPlacement.h&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_simulations.html">Simulations</a></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span>NetworkSimulation;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespace_r_m_s_a.html">RMSA</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_simulations.html">Simulations</a></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_simulations_1_1_simulation___statistical_trend.html">   23</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_simulations_1_1_simulation___statistical_trend.html">Simulation_StatisticalTrend</a> : <span class="keyword">public</span> <a class="code" href="class_simulations_1_1_simulation_type.html">SimulationType</a></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="class_simulations_1_1_simulation___statistical_trend.html#a05345b64a486fec66cb45a5ad2babe0d">Simulation_StatisticalTrend</a>();</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_simulations_1_1_simulation___statistical_trend.html#a3cbd90e1a9288957c859894cb244a391">run</a>();</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_simulations_1_1_simulation___statistical_trend.html#ae9cfa47ac5a38553e63c8206363b66e4">load</a>();</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_simulations_1_1_simulation___statistical_trend.html#acaf3772a8c37c199b5ebff364c43a785">print</a>();</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_simulations_1_1_simulation___statistical_trend.html#ab2088ae607a3a01bc08166f04e76c38f">save</a>(std::string);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_simulations_1_1_simulation___statistical_trend.html#ad2be14d497759ab5adeed7e41d1d5cda">load_file</a>(std::string);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_simulations_1_1_simulation___statistical_trend.html#a27e8d95e0f91bd3b633936cc66922f40">help</a>();</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    std::vector&lt;std::shared_ptr&lt;NetworkSimulation&gt;&gt; simulations;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">double</span> NumCalls;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">double</span> NetworkLoad;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">int</span> NumRepetitions;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    std::string FileName;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">class </span>NetworkSimulation;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_simulations_1_1_simulation___statistical_trend.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_simulations_1_1_simulation___statistical_trend.html">Simulation_StatisticalTrend</a> : <span class="keyword">public</span> <a class="code" href="class_simulations_1_1_simulation_type.html">SimulationType</a></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="class_simulations_1_1_simulation___statistical_trend.html">Simulation_StatisticalTrend</a>();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> run();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> load();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> print();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> save(std::string);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> load_file(std::string);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> help();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    std::vector&lt;std::shared_ptr&lt;NetworkSimulation&gt;&gt; simulations;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">double</span> NumCalls;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">double</span> NetworkLoad;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">int</span> NumRepetitions;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    ROUT::RoutingAlgorithm::RoutingAlgorithms Routing_Algorithm;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    SA::SpectrumAssignmentAlgorithm::SpectrumAssignmentAlgorithms</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    WavAssign_Algorithm;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    RP::RegeneratorPlacementAlgorithm::RegeneratorPlacementAlgorithms</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    RegPlacement_Algorithm;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    RA::RegeneratorAssignmentAlgorithm::RegeneratorAssignmentAlgorithms</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    RegAssignment_Algorithm;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> create_Simulations();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> place_Regenerators(std::shared_ptr&lt;Topology&gt;);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">bool</span> hasLoaded;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">bool</span> runLoadNX;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;};</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif // SIMULATION_BOXPLOT_H</span></div>
-<div class="ttc" id="namespace_simulations_html"><div class="ttname"><a href="namespace_simulations.html">Simulations</a></div><div class="ttdoc">Simulations that can run over this simulator. </div><div class="ttdef"><b>Definition:</b> NetworkSimulation.h:11</div></div>
-<div class="ttc" id="class_simulations_1_1_simulation___statistical_trend_html_acaf3772a8c37c199b5ebff364c43a785"><div class="ttname"><a href="class_simulations_1_1_simulation___statistical_trend.html#acaf3772a8c37c199b5ebff364c43a785">Simulations::Simulation_StatisticalTrend::print</a></div><div class="ttdeci">void print()</div><div class="ttdoc">print runs the simulation, and prints its results. </div><div class="ttdef"><b>Definition:</b> Simulation_StatisticalTrend.cpp:246</div></div>
-<div class="ttc" id="class_simulations_1_1_simulation___statistical_trend_html_ad2be14d497759ab5adeed7e41d1d5cda"><div class="ttname"><a href="class_simulations_1_1_simulation___statistical_trend.html#ad2be14d497759ab5adeed7e41d1d5cda">Simulations::Simulation_StatisticalTrend::load_file</a></div><div class="ttdeci">void load_file(std::string)</div><div class="ttdoc">load_file loads a file containing parameters to a simulation. </div><div class="ttdef"><b>Definition:</b> Simulation_StatisticalTrend.cpp:335</div></div>
-<div class="ttc" id="class_simulations_1_1_simulation___statistical_trend_html_a27e8d95e0f91bd3b633936cc66922f40"><div class="ttname"><a href="class_simulations_1_1_simulation___statistical_trend.html#a27e8d95e0f91bd3b633936cc66922f40">Simulations::Simulation_StatisticalTrend::help</a></div><div class="ttdeci">void help()</div><div class="ttdoc">help prints a description of this simulation. </div><div class="ttdef"><b>Definition:</b> Simulation_StatisticalTrend.cpp:23</div></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    std::string FileName;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    ROUT::RoutingAlgorithm::RoutingAlgorithms Routing_Algorithm;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    SA::SpectrumAssignmentAlgorithm::SpectrumAssignmentAlgorithms</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    WavAssign_Algorithm;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    RP::RegeneratorPlacementAlgorithm::RegeneratorPlacementAlgorithms</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    RegPlacement_Algorithm;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    RA::RegeneratorAssignmentAlgorithm::RegeneratorAssignmentAlgorithms</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    RegAssignment_Algorithm;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> create_Simulations();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> place_Regenerators(std::shared_ptr&lt;Topology&gt;);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">bool</span> hasLoaded;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">bool</span> runLoadNX;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif // SIMULATION_BOXPLOT_H</span></div>
+<div class="ttc" id="namespace_simulations_html"><div class="ttname"><a href="namespace_simulations.html">Simulations</a></div><div class="ttdoc">Simulations that can run over this simulator. </div><div class="ttdef"><b>Definition:</b> NetworkSimulation.h:15</div></div>
 <div class="ttc" id="class_simulations_1_1_simulation_type_html"><div class="ttname"><a href="class_simulations_1_1_simulation_type.html">Simulations::SimulationType</a></div><div class="ttdoc">The SimulationType class represents a simulation that can be run by this simulator. </div><div class="ttdef"><b>Definition:</b> SimulationType.h:16</div></div>
-<div class="ttc" id="class_simulations_1_1_simulation___statistical_trend_html_ae9cfa47ac5a38553e63c8206363b66e4"><div class="ttname"><a href="class_simulations_1_1_simulation___statistical_trend.html#ae9cfa47ac5a38553e63c8206363b66e4">Simulations::Simulation_StatisticalTrend::load</a></div><div class="ttdeci">void load()</div><div class="ttdoc">load loads the parameters required to the simulation. </div><div class="ttdef"><b>Definition:</b> Simulation_StatisticalTrend.cpp:30</div></div>
-<div class="ttc" id="class_simulations_1_1_simulation___statistical_trend_html_a3cbd90e1a9288957c859894cb244a391"><div class="ttname"><a href="class_simulations_1_1_simulation___statistical_trend.html#a3cbd90e1a9288957c859894cb244a391">Simulations::Simulation_StatisticalTrend::run</a></div><div class="ttdeci">void run()</div><div class="ttdoc">run silently runs a simulation. </div><div class="ttdef"><b>Definition:</b> Simulation_StatisticalTrend.cpp:427</div></div>
-<div class="ttc" id="class_simulations_1_1_simulation___statistical_trend_html"><div class="ttname"><a href="class_simulations_1_1_simulation___statistical_trend.html">Simulations::Simulation_StatisticalTrend</a></div><div class="ttdoc">The Simulation_StatisticalTrend class represents a statistical trend analysis. </div><div class="ttdef"><b>Definition:</b> Simulation_StatisticalTrend.h:23</div></div>
-<div class="ttc" id="class_simulations_1_1_simulation___statistical_trend_html_a05345b64a486fec66cb45a5ad2babe0d"><div class="ttname"><a href="class_simulations_1_1_simulation___statistical_trend.html#a05345b64a486fec66cb45a5ad2babe0d">Simulations::Simulation_StatisticalTrend::Simulation_StatisticalTrend</a></div><div class="ttdeci">Simulation_StatisticalTrend()</div><div class="ttdoc">Simulation_StatisticalTrend is the default constructor. </div><div class="ttdef"><b>Definition:</b> Simulation_StatisticalTrend.cpp:17</div></div>
-<div class="ttc" id="class_simulations_1_1_simulation___statistical_trend_html_ab2088ae607a3a01bc08166f04e76c38f"><div class="ttname"><a href="class_simulations_1_1_simulation___statistical_trend.html#ab2088ae607a3a01bc08166f04e76c38f">Simulations::Simulation_StatisticalTrend::save</a></div><div class="ttdeci">void save(std::string)</div><div class="ttdoc">save saves the parameters of the simulation into a file. </div><div class="ttdef"><b>Definition:</b> Simulation_StatisticalTrend.cpp:291</div></div>
+<div class="ttc" id="class_simulations_1_1_simulation___statistical_trend_html"><div class="ttname"><a href="class_simulations_1_1_simulation___statistical_trend.html">Simulations::Simulation_StatisticalTrend</a></div><div class="ttdoc">The Simulation_StatisticalTrend class represents a statistical trend analysis. </div><div class="ttdef"><b>Definition:</b> Simulation_StatisticalTrend.h:25</div></div>
+<div class="ttc" id="namespace_r_m_s_a_html"><div class="ttname"><a href="namespace_r_m_s_a.html">RMSA</a></div><div class="ttdoc">Routing, Modulation and Spectrum Assignment Algorithms. </div><div class="ttdef"><b>Definition:</b> Event.h:8</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['wa_5falg',['WA_Alg',['../class_routing_wavelength_assignment.html#aa157e22aebc2a2c723e4ab92c07d2372',1,'RoutingWavelengthAssignment']]],
-  ['wavassign_5falgorithm',['WavAssign_Algorithm',['../class_simulations_1_1_simulation___n_s_g_a2___regn_plac.html#a71c2ca2fcb1be2ff5ac48acb81e6823d',1,'Simulations::Simulation_NSGA2_RegnPlac']]]
+  ['wa_5falg',['WA_Alg',['../class_r_m_s_a_1_1_routing_wavelength_assignment.html#a4fce395dd7dc00a747afef3818a5a293',1,'RMSA::RoutingWavelengthAssignment']]],
+  ['wavassign_5falgorithm',['WavAssign_Algorithm',['../class_simulations_1_1_simulation___n_s_g_a2___regn_plac.html#a9e2b26b05a783e9b581ac084042c3462',1,'Simulations::Simulation_NSGA2_RegnPlac']]]
 ];

@@ -1,10 +1,9 @@
 var annotated_dup =
 [
     [ "Devices", "namespace_devices.html", "namespace_devices" ],
-    [ "RA", "namespace_r_a.html", "namespace_r_a" ],
-    [ "ROUT", "namespace_r_o_u_t.html", "namespace_r_o_u_t" ],
-    [ "RP", "namespace_r_p.html", "namespace_r_p" ],
-    [ "SA", "namespace_s_a.html", "namespace_s_a" ],
+    [ "NSGA_II", "namespace_n_s_g_a___i_i.html", "namespace_n_s_g_a___i_i" ],
+    [ "PSO", "namespace_p_s_o.html", "namespace_p_s_o" ],
+    [ "RMSA", "namespace_r_m_s_a.html", "namespace_r_m_s_a" ],
     [ "Simulations", "namespace_simulations.html", "namespace_simulations" ],
     [ "Call", "class_call.html", "class_call" ],
     [ "CallGenerator", "class_call_generator.html", "class_call_generator" ],
@@ -15,16 +14,8 @@ var annotated_dup =
     [ "Link", "class_link.html", "class_link" ],
     [ "ModulationScheme", "class_modulation_scheme.html", "class_modulation_scheme" ],
     [ "Node", "class_node.html", "class_node" ],
-    [ "NSGA2", "class_n_s_g_a2.html", "class_n_s_g_a2" ],
-    [ "NSGA2_Generation", "class_n_s_g_a2___generation.html", "class_n_s_g_a2___generation" ],
-    [ "NSGA2_Individual", "class_n_s_g_a2___individual.html", "class_n_s_g_a2___individual" ],
-    [ "NSGA2_Parameter", "class_n_s_g_a2___parameter.html", "class_n_s_g_a2___parameter" ],
-    [ "ParticleSwarmOptimization", "class_particle_swarm_optimization.html", "class_particle_swarm_optimization" ],
     [ "PhysicalConstants", "class_physical_constants.html", null ],
     [ "Power", "class_power.html", "class_power" ],
-    [ "PSO_Particle", "class_p_s_o___particle.html", "class_p_s_o___particle" ],
-    [ "Route", "class_route.html", "class_route" ],
-    [ "RoutingWavelengthAssignment", "class_routing_wavelength_assignment.html", "class_routing_wavelength_assignment" ],
     [ "Signal", "class_signal.html", "class_signal" ],
     [ "SimpsonsRule", "class_simpsons_rule.html", "class_simpsons_rule" ],
     [ "Slot", "class_slot.html", "class_slot" ],
@@ -32,6 +23,5 @@ var annotated_dup =
     [ "Topology", "class_topology.html", "class_topology" ],
     [ "TransferFunction", "class_transfer_function.html", "class_transfer_function" ],
     [ "TransmissionBitrate", "class_transmission_bitrate.html", "class_transmission_bitrate" ],
-    [ "TransparentSegment", "class_transparent_segment.html", "class_transparent_segment" ],
     [ "TrapezoidalRule", "class_trapezoidal_rule.html", "class_trapezoidal_rule" ]
 ];

@@ -106,53 +106,57 @@ $(document).ready(function(){initNavTree('_signal_quality_prediction___variants_
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;SignalQualityPrediction.h&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;boost/bimap.hpp&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_r_p.html">RP</a></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_r_m_s_a.html">RMSA</a></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>SQP</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_r_p.html">RP</a></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_r_p_1_1_s_q_p_1_1_signal_quality_prediction___variants.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_r_p_1_1_s_q_p_1_1_signal_quality_prediction___variants.html">SignalQualityPrediction_Variants</a> : <span class="keyword">public</span> <a class="code" href="class_r_p_1_1_s_q_p_1_1_signal_quality_prediction.html">SignalQualityPrediction</a></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>SQP</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#define SQPVARIANTS \</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">    X(mSCH, &quot;Minimum Scheme&quot;) \</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">    X(MSCH, &quot;Maximum Scheme&quot;)</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#define X(a,b) a,</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">enum</span> SQP_Variants</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        SQPVARIANTS</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    };</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#undef X</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="class_r_p_1_1_s_q_p_1_1_signal_quality_prediction___variants.html">SignalQualityPrediction_Variants</a>(std::shared_ptr&lt;Topology&gt; <a class="code" href="class_r_p_1_1_regenerator_placement_algorithm.html#aa1cb35e460df9cf4da5b3b9790478641">T</a>,</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                                     std::shared_ptr&lt;RoutingWavelengthAssignment&gt; RWA,</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                                     <span class="keywordtype">double</span> NetworkLoad,</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                                     <span class="keywordtype">long</span> <span class="keywordtype">long</span> <span class="keywordtype">unsigned</span> NumCalls,</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                                     std::vector&lt;TransmissionBitrate&gt; Bitrates =</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                                         TransmissionBitrate::DefaultBitrates);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_r_p_1_1_s_q_p_1_1_signal_quality_prediction___variants.html#a83abb9952e81e2f121d1ba5d20546058">load</a>();</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_r_m_s_a_1_1_r_p_1_1_s_q_p_1_1_signal_quality_prediction___variants.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_r_m_s_a_1_1_r_p_1_1_s_q_p_1_1_signal_quality_prediction___variants.html">SignalQualityPrediction_Variants</a> : <span class="keyword">public</span> <a class="code" href="class_r_m_s_a_1_1_r_p_1_1_s_q_p_1_1_signal_quality_prediction.html">SignalQualityPrediction</a></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#define SQPVARIANTS \</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">    X(mSCH, &quot;Minimum Scheme&quot;) \</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">    X(MSCH, &quot;Maximum Scheme&quot;)</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#define X(a,b) a,</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">enum</span> SQP_Variants</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        SQPVARIANTS</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    };</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#undef X</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="class_r_m_s_a_1_1_r_p_1_1_s_q_p_1_1_signal_quality_prediction___variants.html">SignalQualityPrediction_Variants</a>(std::shared_ptr&lt;Topology&gt; <a class="code" href="class_r_m_s_a_1_1_r_p_1_1_regenerator_placement_algorithm.html#a6bac18e04d241805e4ed8b99c5563247">T</a>,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                                     std::shared_ptr&lt;RoutingWavelengthAssignment&gt; RWA,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                                     <span class="keywordtype">double</span> NetworkLoad,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                                     <span class="keywordtype">long</span> <span class="keywordtype">long</span> <span class="keywordtype">unsigned</span> NumCalls,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                                     std::vector&lt;TransmissionBitrate&gt; Bitrates =</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                                         TransmissionBitrate::DefaultBitrates);</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">static</span> SQP_Variants Variant;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> chooseVariant;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">typedef</span> boost::bimap&lt;SQP_Variants, std::string&gt; SQPVariantNameBimap;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">static</span> SQPVariantNameBimap SQPVariantNames;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> chooseSQPVariant();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_r_m_s_a_1_1_r_p_1_1_s_q_p_1_1_signal_quality_prediction___variants.html#a83abb9952e81e2f121d1ba5d20546058">load</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">static</span> SQP_Variants Variant;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> chooseVariant;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">typedef</span> boost::bimap&lt;SQP_Variants, std::string&gt; SQPVariantNameBimap;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">static</span> SQPVariantNameBimap SQPVariantNames;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> evaluateLNMax();</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif // SIGNALQUALITYPREDICTION_VARIANTS_H</span></div>
-<div class="ttc" id="class_r_p_1_1_s_q_p_1_1_signal_quality_prediction_html"><div class="ttname"><a href="class_r_p_1_1_s_q_p_1_1_signal_quality_prediction.html">RP::SQP::SignalQualityPrediction</a></div><div class="ttdef"><b>Definition:</b> SignalQualityPrediction.h:14</div></div>
-<div class="ttc" id="class_r_p_1_1_regenerator_placement_algorithm_html_aa1cb35e460df9cf4da5b3b9790478641"><div class="ttname"><a href="class_r_p_1_1_regenerator_placement_algorithm.html#aa1cb35e460df9cf4da5b3b9790478641">RP::RegeneratorPlacementAlgorithm::T</a></div><div class="ttdeci">std::shared_ptr&lt; Topology &gt; T</div><div class="ttdoc">T is a pointer to the Topology. </div><div class="ttdef"><b>Definition:</b> RegeneratorPlacementAlgorithm.h:61</div></div>
-<div class="ttc" id="class_r_p_1_1_s_q_p_1_1_signal_quality_prediction___variants_html"><div class="ttname"><a href="class_r_p_1_1_s_q_p_1_1_signal_quality_prediction___variants.html">RP::SQP::SignalQualityPrediction_Variants</a></div><div class="ttdef"><b>Definition:</b> SignalQualityPrediction_Variants.h:11</div></div>
-<div class="ttc" id="namespace_r_p_html"><div class="ttname"><a href="namespace_r_p.html">RP</a></div><div class="ttdoc">Contains the Regenerator Placement Algorithms. </div><div class="ttdef"><b>Definition:</b> DistanceAdaptative.h:6</div></div>
-<div class="ttc" id="class_r_p_1_1_s_q_p_1_1_signal_quality_prediction___variants_html_a83abb9952e81e2f121d1ba5d20546058"><div class="ttname"><a href="class_r_p_1_1_s_q_p_1_1_signal_quality_prediction___variants.html#a83abb9952e81e2f121d1ba5d20546058">RP::SQP::SignalQualityPrediction_Variants::load</a></div><div class="ttdeci">void load()</div><div class="ttdoc">load loads required parameters to the RP algorithm. </div><div class="ttdef"><b>Definition:</b> SignalQualityPrediction_Variants.cpp:35</div></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> chooseSQPVariant();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> evaluateLNMax();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;};</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif // SIGNALQUALITYPREDICTION_VARIANTS_H</span></div>
+<div class="ttc" id="class_r_m_s_a_1_1_r_p_1_1_s_q_p_1_1_signal_quality_prediction___variants_html_a83abb9952e81e2f121d1ba5d20546058"><div class="ttname"><a href="class_r_m_s_a_1_1_r_p_1_1_s_q_p_1_1_signal_quality_prediction___variants.html#a83abb9952e81e2f121d1ba5d20546058">RMSA::RP::SQP::SignalQualityPrediction_Variants::load</a></div><div class="ttdeci">void load()</div><div class="ttdoc">load loads required parameters to the RP algorithm. </div><div class="ttdef"><b>Definition:</b> SignalQualityPrediction_Variants.cpp:35</div></div>
+<div class="ttc" id="class_r_m_s_a_1_1_r_p_1_1_regenerator_placement_algorithm_html_a6bac18e04d241805e4ed8b99c5563247"><div class="ttname"><a href="class_r_m_s_a_1_1_r_p_1_1_regenerator_placement_algorithm.html#a6bac18e04d241805e4ed8b99c5563247">RMSA::RP::RegeneratorPlacementAlgorithm::T</a></div><div class="ttdeci">std::shared_ptr&lt; Topology &gt; T</div><div class="ttdoc">T is a pointer to the Topology. </div><div class="ttdef"><b>Definition:</b> RegeneratorPlacementAlgorithm.h:64</div></div>
+<div class="ttc" id="namespace_r_p_html"><div class="ttname"><a href="namespace_r_p.html">RP</a></div></div>
+<div class="ttc" id="class_r_m_s_a_1_1_r_p_1_1_s_q_p_1_1_signal_quality_prediction_html"><div class="ttname"><a href="class_r_m_s_a_1_1_r_p_1_1_s_q_p_1_1_signal_quality_prediction.html">RMSA::RP::SQP::SignalQualityPrediction</a></div><div class="ttdef"><b>Definition:</b> SignalQualityPrediction.h:16</div></div>
+<div class="ttc" id="namespace_r_m_s_a_html"><div class="ttname"><a href="namespace_r_m_s_a.html">RMSA</a></div><div class="ttdoc">Routing, Modulation and Spectrum Assignment Algorithms. </div><div class="ttdef"><b>Definition:</b> Event.h:8</div></div>
+<div class="ttc" id="class_r_m_s_a_1_1_r_p_1_1_s_q_p_1_1_signal_quality_prediction___variants_html"><div class="ttname"><a href="class_r_m_s_a_1_1_r_p_1_1_s_q_p_1_1_signal_quality_prediction___variants.html">RMSA::RP::SQP::SignalQualityPrediction_Variants</a></div><div class="ttdef"><b>Definition:</b> SignalQualityPrediction_Variants.h:13</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

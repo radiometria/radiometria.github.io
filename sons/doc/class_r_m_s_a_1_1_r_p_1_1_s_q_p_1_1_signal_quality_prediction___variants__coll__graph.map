@@ -1,0 +1,5 @@
+<map id="RMSA::RP::SQP::SignalQualityPrediction_Variants" name="RMSA::RP::SQP::SignalQualityPrediction_Variants">
+<area shape="rect" id="node2" href="$class_r_m_s_a_1_1_r_p_1_1_s_q_p_1_1_signal_quality_prediction.html" title="RMSA::RP::SQP::SignalQuality\lPrediction" alt="" coords="15,184,225,225"/>
+<area shape="rect" id="node3" href="$class_r_m_s_a_1_1_r_p_1_1_n_x___regenerator_placement.html" title="The NX_RegeneratorPlacement class is a type of RegeneratorPlacementAlgorithm. " alt="" coords="23,95,217,136"/>
+<area shape="rect" id="node4" href="$class_r_m_s_a_1_1_r_p_1_1_regenerator_placement_algorithm.html" title="The RegeneratorPlacementAlgorithm class decides how to insert the regenerators over the network..." alt="" coords="5,5,235,47"/>
+</map>

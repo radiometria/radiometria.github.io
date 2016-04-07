@@ -1,9 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_simulations_1_1_simulation_type.html" title="The SimulationType class represents a simulation that can be run by this simulator. " alt="" coords="5,177,193,203"/>
-<area shape="rect" id="node2" href="$class_simulations_1_1_simulation___network_load.html" title="The Simulation_NetworkLoad class is the simulation that varies the network load and analyses the effe..." alt="" coords="241,5,400,47"/>
-<area shape="rect" id="node3" href="$class_simulations_1_1_simulation___n_s_g_a2___regn_plac.html" title="The Simulation_NSGA2_RegnPlac class runs MORP regenerator placement algorithm. This simulation uses t..." alt="" coords="241,71,400,112"/>
-<area shape="rect" id="node4" href="$class_simulations_1_1_simulation___p_s_r_optimization.html" title="The Simulation_PSROptimization class is the PSR Optimization simulation. " alt="" coords="241,136,400,177"/>
-<area shape="rect" id="node5" href="$class_simulations_1_1_simulation___regenerator_number.html" title="The Simulation_RegeneratorNumber class represents a simulation that varies the number of regenerators..." alt="" coords="241,201,400,243"/>
-<area shape="rect" id="node6" href="$class_simulations_1_1_simulation___statistical_trend.html" title="The Simulation_StatisticalTrend class represents a statistical trend analysis. " alt="" coords="241,267,400,308"/>
-<area shape="rect" id="node7" href="$class_simulations_1_1_simulation___transparency_analysis.html" title="The Simulation_TransparencyAnalysis class represents a transparency analysis simulation. " alt="" coords="241,332,400,373"/>
+<area shape="rect" id="node1" href="$class_simulations_1_1_network_simulation.html" title="The NetworkSimulation class is the a basic block. This class runs a network simulation, coordinating the CallGenerator and the RoutingWavelengthAssignment objects. " alt="" coords="5,13,213,39"/>
+<area shape="rect" id="node2" href="$class_r_m_s_a_1_1_r_p_1_1_s_q_p_1_1_s_q_p___network_simulation.html" title="RMSA::RP::SQP::SQP\l_NetworkSimulation" alt="" coords="261,5,421,47"/>
 </map>

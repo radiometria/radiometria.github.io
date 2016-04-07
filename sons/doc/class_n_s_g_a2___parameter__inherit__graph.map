@@ -1,6 +1,0 @@
-<map id="NSGA2_Parameter" name="NSGA2_Parameter">
-<area shape="rect" id="node2" href="$class_simulations_1_1_n_s_g_a2___parameters_1_1_n_s_g_a2___parameter___blocking_probability.html" title="The NSGA2_Parameter_BlockingProbability class is a parameter to the MORP algorithm, that implements the Call Request Blocking Probability parameter. " alt="" coords="208,5,424,61"/>
-<area shape="rect" id="node3" href="$class_simulations_1_1_n_s_g_a2___parameters_1_1_n_s_g_a2___parameter___cap_ex.html" title="The NSGA2_Parameter_CapEx class is a parameter to the MORP algorithm, that implements the CapEx cost ..." alt="" coords="205,85,427,141"/>
-<area shape="rect" id="node4" href="$class_simulations_1_1_n_s_g_a2___parameters_1_1_n_s_g_a2___parameter___number_of_regenerators.html" title="The NSGA2_Parameter_NumberOfRegenerators class is a parameter to the MORP algorithm, that implements the number of electronic regenerators parameter. " alt="" coords="208,165,424,221"/>
-<area shape="rect" id="node5" href="$class_simulations_1_1_n_s_g_a2___parameters_1_1_n_s_g_a2___parameter___op_ex.html" title="The NSGA2_Parameter_OpEx class is a parameter to the MORP algorithm, that implements the OpEx cost pa..." alt="" coords="188,246,444,287"/>
-</map>

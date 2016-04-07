@@ -106,39 +106,42 @@ $(document).ready(function(){initNavTree('_most_used_8h_source.html','');});
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;RMSA/RegeneratorPlacementAlgorithms/NX_RegeneratorPlacement.h&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;GeneralClasses/TransmissionBitrate.h&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">class </span><a class="code" href="class_routing_wavelength_assignment.html">RoutingWavelengthAssignment</a>;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">class </span>RoutingWavelengthAssignment;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_r_p.html">RP</a></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_r_m_s_a.html">RMSA</a></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_r_p_1_1_most_used.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_r_p_1_1_most_used.html">MostUsed</a> : <span class="keyword">public</span> <a class="code" href="class_r_p_1_1_n_x___regenerator_placement.html">NX_RegeneratorPlacement</a></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_r_p_1_1_most_used.html">MostUsed</a>(std::shared_ptr&lt;Topology&gt; <a class="code" href="class_r_p_1_1_regenerator_placement_algorithm.html#aa1cb35e460df9cf4da5b3b9790478641">T</a>,</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;             std::shared_ptr&lt;RoutingWavelengthAssignment&gt; RMSA,</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;             <span class="keywordtype">double</span> NetworkLoad,</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;             <span class="keywordtype">long</span> <span class="keywordtype">long</span> <span class="keywordtype">unsigned</span> NumCalls = 1E6,</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;             std::vector&lt;TransmissionBitrate&gt; Bitrates = TransmissionBitrate::DefaultBitrates</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            );</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_r_p_1_1_most_used.html#ab77959f8a8ee56babce787c5d7d83370">placeRegenerators</a>(<span class="keywordtype">unsigned</span> N, <span class="keywordtype">unsigned</span> X);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_r_p_1_1_most_used.html#a9a09f7536ce741022ee4bce5698d4442">load</a>();</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    std::shared_ptr&lt;RoutingWavelengthAssignment&gt; RMSA;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">double</span> NetworkLoad;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <span class="keywordtype">unsigned</span> NumCalls;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    std::vector&lt;TransmissionBitrate&gt; Bitrates;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif // MOSTUSED_H</span></div>
-<div class="ttc" id="class_routing_wavelength_assignment_html"><div class="ttname"><a href="class_routing_wavelength_assignment.html">RoutingWavelengthAssignment</a></div><div class="ttdoc">The RoutingWavelengthAssignment class is a container to the routing, wavelength assignment, regenerator assignment and regenerator placement operations that a call must endure before its implementation. </div><div class="ttdef"><b>Definition:</b> RoutingWavelengthAssignment.h:33</div></div>
-<div class="ttc" id="class_r_p_1_1_most_used_html"><div class="ttname"><a href="class_r_p_1_1_most_used.html">RP::MostUsed</a></div><div class="ttdoc">The MostUsed class is the standard constructor for the Most Used RP algorithm. </div><div class="ttdef"><b>Definition:</b> MostUsed.h:19</div></div>
-<div class="ttc" id="class_r_p_1_1_most_used_html_ab77959f8a8ee56babce787c5d7d83370"><div class="ttname"><a href="class_r_p_1_1_most_used.html#ab77959f8a8ee56babce787c5d7d83370">RP::MostUsed::placeRegenerators</a></div><div class="ttdeci">void placeRegenerators(unsigned N, unsigned X)</div><div class="ttdoc">placeRegenerators inserts the regenerators in the network. </div><div class="ttdef"><b>Definition:</b> MostUsed.cpp:31</div></div>
-<div class="ttc" id="class_r_p_1_1_regenerator_placement_algorithm_html_aa1cb35e460df9cf4da5b3b9790478641"><div class="ttname"><a href="class_r_p_1_1_regenerator_placement_algorithm.html#aa1cb35e460df9cf4da5b3b9790478641">RP::RegeneratorPlacementAlgorithm::T</a></div><div class="ttdeci">std::shared_ptr&lt; Topology &gt; T</div><div class="ttdoc">T is a pointer to the Topology. </div><div class="ttdef"><b>Definition:</b> RegeneratorPlacementAlgorithm.h:61</div></div>
-<div class="ttc" id="namespace_r_p_html"><div class="ttname"><a href="namespace_r_p.html">RP</a></div><div class="ttdoc">Contains the Regenerator Placement Algorithms. </div><div class="ttdef"><b>Definition:</b> DistanceAdaptative.h:6</div></div>
-<div class="ttc" id="class_r_p_1_1_most_used_html_a9a09f7536ce741022ee4bce5698d4442"><div class="ttname"><a href="class_r_p_1_1_most_used.html#a9a09f7536ce741022ee4bce5698d4442">RP::MostUsed::load</a></div><div class="ttdeci">void load()</div><div class="ttdoc">load loads required parameters to the RP algorithm. </div><div class="ttdef"><b>Definition:</b> MostUsed.cpp:26</div></div>
-<div class="ttc" id="class_r_p_1_1_n_x___regenerator_placement_html"><div class="ttname"><a href="class_r_p_1_1_n_x___regenerator_placement.html">RP::NX_RegeneratorPlacement</a></div><div class="ttdoc">The NX_RegeneratorPlacement class is a type of RegeneratorPlacementAlgorithm. </div><div class="ttdef"><b>Definition:</b> NX_RegeneratorPlacement.h:11</div></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_r_p.html">RP</a></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_r_m_s_a_1_1_r_p_1_1_most_used.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_r_m_s_a_1_1_r_p_1_1_most_used.html">MostUsed</a> : <span class="keyword">public</span> <a class="code" href="class_r_m_s_a_1_1_r_p_1_1_n_x___regenerator_placement.html">NX_RegeneratorPlacement</a></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="class_r_m_s_a_1_1_r_p_1_1_most_used.html">MostUsed</a>(std::shared_ptr&lt;Topology&gt; <a class="code" href="class_r_m_s_a_1_1_r_p_1_1_regenerator_placement_algorithm.html#a6bac18e04d241805e4ed8b99c5563247">T</a>,</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;             std::shared_ptr&lt;RoutingWavelengthAssignment&gt; <a class="code" href="namespace_r_m_s_a.html">RMSA</a>,</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;             <span class="keywordtype">double</span> NetworkLoad,</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;             <span class="keywordtype">long</span> <span class="keywordtype">long</span> <span class="keywordtype">unsigned</span> NumCalls = 1E6,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;             std::vector&lt;TransmissionBitrate&gt; Bitrates = TransmissionBitrate::DefaultBitrates</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            );</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_r_m_s_a_1_1_r_p_1_1_most_used.html#ab77959f8a8ee56babce787c5d7d83370">placeRegenerators</a>(<span class="keywordtype">unsigned</span> N, <span class="keywordtype">unsigned</span> X);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_r_m_s_a_1_1_r_p_1_1_most_used.html#a9a09f7536ce741022ee4bce5698d4442">load</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    std::shared_ptr&lt;RoutingWavelengthAssignment&gt; RMSA;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">double</span> NetworkLoad;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <span class="keywordtype">unsigned</span> NumCalls;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    std::vector&lt;TransmissionBitrate&gt; Bitrates;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif // MOSTUSED_H</span></div>
+<div class="ttc" id="class_r_m_s_a_1_1_r_p_1_1_most_used_html"><div class="ttname"><a href="class_r_m_s_a_1_1_r_p_1_1_most_used.html">RMSA::RP::MostUsed</a></div><div class="ttdoc">The MostUsed class is the standard constructor for the Most Used RP algorithm. </div><div class="ttdef"><b>Definition:</b> MostUsed.h:21</div></div>
+<div class="ttc" id="class_r_m_s_a_1_1_r_p_1_1_most_used_html_ab77959f8a8ee56babce787c5d7d83370"><div class="ttname"><a href="class_r_m_s_a_1_1_r_p_1_1_most_used.html#ab77959f8a8ee56babce787c5d7d83370">RMSA::RP::MostUsed::placeRegenerators</a></div><div class="ttdeci">void placeRegenerators(unsigned N, unsigned X)</div><div class="ttdoc">placeRegenerators inserts the regenerators in the network. </div><div class="ttdef"><b>Definition:</b> MostUsed.cpp:31</div></div>
+<div class="ttc" id="class_r_m_s_a_1_1_r_p_1_1_n_x___regenerator_placement_html"><div class="ttname"><a href="class_r_m_s_a_1_1_r_p_1_1_n_x___regenerator_placement.html">RMSA::RP::NX_RegeneratorPlacement</a></div><div class="ttdoc">The NX_RegeneratorPlacement class is a type of RegeneratorPlacementAlgorithm. </div><div class="ttdef"><b>Definition:</b> NX_RegeneratorPlacement.h:13</div></div>
+<div class="ttc" id="class_r_m_s_a_1_1_r_p_1_1_regenerator_placement_algorithm_html_a6bac18e04d241805e4ed8b99c5563247"><div class="ttname"><a href="class_r_m_s_a_1_1_r_p_1_1_regenerator_placement_algorithm.html#a6bac18e04d241805e4ed8b99c5563247">RMSA::RP::RegeneratorPlacementAlgorithm::T</a></div><div class="ttdeci">std::shared_ptr&lt; Topology &gt; T</div><div class="ttdoc">T is a pointer to the Topology. </div><div class="ttdef"><b>Definition:</b> RegeneratorPlacementAlgorithm.h:64</div></div>
+<div class="ttc" id="namespace_r_p_html"><div class="ttname"><a href="namespace_r_p.html">RP</a></div></div>
+<div class="ttc" id="class_r_m_s_a_1_1_r_p_1_1_most_used_html_a9a09f7536ce741022ee4bce5698d4442"><div class="ttname"><a href="class_r_m_s_a_1_1_r_p_1_1_most_used.html#a9a09f7536ce741022ee4bce5698d4442">RMSA::RP::MostUsed::load</a></div><div class="ttdeci">void load()</div><div class="ttdoc">load loads required parameters to the RP algorithm. </div><div class="ttdef"><b>Definition:</b> MostUsed.cpp:26</div></div>
+<div class="ttc" id="namespace_r_m_s_a_html"><div class="ttname"><a href="namespace_r_m_s_a.html">RMSA</a></div><div class="ttdoc">Routing, Modulation and Spectrum Assignment Algorithms. </div><div class="ttdef"><b>Definition:</b> Event.h:8</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

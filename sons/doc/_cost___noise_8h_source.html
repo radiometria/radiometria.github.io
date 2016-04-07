@@ -108,79 +108,83 @@ $(document).ready(function(){initNavTree('_cost___noise_8h_source.html','');});
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;GeneralClasses/ModulationScheme.h&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_r_o_u_t.html">ROUT</a></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_r_m_s_a.html">RMSA</a></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>PSR</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_r_o_u_t.html">ROUT</a></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_r_o_u_t_1_1_p_s_r_1_1c_noise.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_r_o_u_t_1_1_p_s_r_1_1c_noise.html">cNoise</a> : <span class="keyword">public</span> <a class="code" href="class_r_o_u_t_1_1_p_s_r_1_1_cost.html">Cost</a></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="class_r_o_u_t_1_1_p_s_r_1_1c_noise.html#a713f95951ecbc11969a10e401874e648">cNoise</a>(<span class="keywordtype">int</span> NMin, <span class="keywordtype">int</span> NMax, std::shared_ptr&lt;Topology&gt; T);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    arma::rowvec <a class="code" href="class_r_o_u_t_1_1_p_s_r_1_1c_noise.html#a67e48f5f897b4f183fccc3a60acc98dc">getCost</a>(std::weak_ptr&lt;Link&gt; link, std::shared_ptr&lt;Call&gt; C);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">struct </span>CallProperties</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordtype">int</span> Origin;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordtype">int</span> Destination;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="class_transmission_bitrate.html">TransmissionBitrate</a> bitrate;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="class_modulation_scheme.html">ModulationScheme</a> scheme;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        CallProperties(<span class="keywordtype">int</span> Origin, <span class="keywordtype">int</span> Destination,</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                       <a class="code" href="class_transmission_bitrate.html">TransmissionBitrate</a> bitrate, <a class="code" href="class_modulation_scheme.html">ModulationScheme</a> scheme) :</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            Origin(Origin), Destination(Destination), bitrate(bitrate), scheme(scheme) {}</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordtype">bool</span> operator &lt;(<span class="keyword">const</span> CallProperties &amp;other)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keywordflow">if</span> (Origin &lt; other.Origin)</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                }</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (Origin == other.Origin)</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                <span class="keywordflow">if</span> (Destination &lt; other.Destination)</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                    {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                    }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                <span class="keywordflow">else</span> <span class="keywordflow">if</span> (Destination == other.Destination)</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                    {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                    <span class="keywordflow">if</span> (bitrate &lt; other.bitrate)</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                        {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                        }</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (bitrate == other.bitrate)</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                        {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                        <span class="keywordflow">if</span> (scheme &lt; other.scheme)</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                            {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                            }</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                            {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                            }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                        }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                    }</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                }</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        }</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    };</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> createCache();</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    std::map &lt;CallProperties, arma::rowvec&gt; cache;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;};</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#endif // COST_NOISE_H</span></div>
-<div class="ttc" id="namespace_r_o_u_t_html"><div class="ttname"><a href="namespace_r_o_u_t.html">ROUT</a></div><div class="ttdoc">Contains the routing algorithms. </div><div class="ttdef"><b>Definition:</b> DijkstraRoutingAlgorithm.h:6</div></div>
-<div class="ttc" id="class_r_o_u_t_1_1_p_s_r_1_1c_noise_html"><div class="ttname"><a href="class_r_o_u_t_1_1_p_s_r_1_1c_noise.html">ROUT::PSR::cNoise</a></div><div class="ttdoc">The cNoise class has, as cost, the noide generated by this link, normalized by the maximum noise that...</div><div class="ttdef"><b>Definition:</b> Cost_Noise.h:18</div></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span>PSR</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_r_m_s_a_1_1_r_o_u_t_1_1_p_s_r_1_1c_noise.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_r_m_s_a_1_1_r_o_u_t_1_1_p_s_r_1_1c_noise.html">cNoise</a> : <span class="keyword">public</span> <a class="code" href="class_r_m_s_a_1_1_r_o_u_t_1_1_p_s_r_1_1_cost.html">Cost</a></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="class_r_m_s_a_1_1_r_o_u_t_1_1_p_s_r_1_1c_noise.html#a713f95951ecbc11969a10e401874e648">cNoise</a>(<span class="keywordtype">int</span> NMin, <span class="keywordtype">int</span> NMax, std::shared_ptr&lt;Topology&gt; T);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    arma::rowvec <a class="code" href="class_r_m_s_a_1_1_r_o_u_t_1_1_p_s_r_1_1c_noise.html#a67e48f5f897b4f183fccc3a60acc98dc">getCost</a>(std::weak_ptr&lt;Link&gt; link, std::shared_ptr&lt;Call&gt; C);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">struct </span>CallProperties</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordtype">int</span> Origin;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordtype">int</span> Destination;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="class_transmission_bitrate.html">TransmissionBitrate</a> bitrate;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="class_modulation_scheme.html">ModulationScheme</a> scheme;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        CallProperties(<span class="keywordtype">int</span> Origin, <span class="keywordtype">int</span> Destination,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                       <a class="code" href="class_transmission_bitrate.html">TransmissionBitrate</a> bitrate, <a class="code" href="class_modulation_scheme.html">ModulationScheme</a> scheme) :</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            Origin(Origin), Destination(Destination), bitrate(bitrate), scheme(scheme) {}</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordtype">bool</span> operator &lt;(<span class="keyword">const</span> CallProperties &amp;other)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="keywordflow">if</span> (Origin &lt; other.Origin)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (Origin == other.Origin)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                <span class="keywordflow">if</span> (Destination &lt; other.Destination)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                    {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                    }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                <span class="keywordflow">else</span> <span class="keywordflow">if</span> (Destination == other.Destination)</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                    {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                    <span class="keywordflow">if</span> (bitrate &lt; other.bitrate)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                        {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                        }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (bitrate == other.bitrate)</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                        {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                        <span class="keywordflow">if</span> (scheme &lt; other.scheme)</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                            {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                            }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                            {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                            }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                        }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                    }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    };</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> createCache();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    std::map &lt;CallProperties, arma::rowvec&gt; cache;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;};</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#endif // COST_NOISE_H</span></div>
+<div class="ttc" id="namespace_r_o_u_t_html"><div class="ttname"><a href="namespace_r_o_u_t.html">ROUT</a></div></div>
 <div class="ttc" id="class_transmission_bitrate_html"><div class="ttname"><a href="class_transmission_bitrate.html">TransmissionBitrate</a></div><div class="ttdoc">The TransmissionBitrate class represents a transmission bitrate. </div><div class="ttdef"><b>Definition:</b> TransmissionBitrate.h:10</div></div>
-<div class="ttc" id="class_r_o_u_t_1_1_p_s_r_1_1_cost_html"><div class="ttname"><a href="class_r_o_u_t_1_1_p_s_r_1_1_cost.html">ROUT::PSR::Cost</a></div><div class="ttdoc">The Cost class represents a cost to the PSR. </div><div class="ttdef"><b>Definition:</b> Cost.h:19</div></div>
-<div class="ttc" id="class_r_o_u_t_1_1_p_s_r_1_1c_noise_html_a713f95951ecbc11969a10e401874e648"><div class="ttname"><a href="class_r_o_u_t_1_1_p_s_r_1_1c_noise.html#a713f95951ecbc11969a10e401874e648">ROUT::PSR::cNoise::cNoise</a></div><div class="ttdeci">cNoise(int NMin, int NMax, std::shared_ptr&lt; Topology &gt; T)</div><div class="ttdoc">cNoise is the standard constructor for the cNoise cost. </div><div class="ttdef"><b>Definition:</b> Cost_Noise.cpp:7</div></div>
-<div class="ttc" id="class_r_o_u_t_1_1_p_s_r_1_1c_noise_html_a67e48f5f897b4f183fccc3a60acc98dc"><div class="ttname"><a href="class_r_o_u_t_1_1_p_s_r_1_1c_noise.html#a67e48f5f897b4f183fccc3a60acc98dc">ROUT::PSR::cNoise::getCost</a></div><div class="ttdeci">arma::rowvec getCost(std::weak_ptr&lt; Link &gt; link, std::shared_ptr&lt; Call &gt; C)</div><div class="ttdoc">getCost returns a vector containing the cost, elevated to the required exponents, in order...</div><div class="ttdef"><b>Definition:</b> Cost_Noise.cpp:14</div></div>
+<div class="ttc" id="class_r_m_s_a_1_1_r_o_u_t_1_1_p_s_r_1_1c_noise_html_a67e48f5f897b4f183fccc3a60acc98dc"><div class="ttname"><a href="class_r_m_s_a_1_1_r_o_u_t_1_1_p_s_r_1_1c_noise.html#a67e48f5f897b4f183fccc3a60acc98dc">RMSA::ROUT::PSR::cNoise::getCost</a></div><div class="ttdeci">arma::rowvec getCost(std::weak_ptr&lt; Link &gt; link, std::shared_ptr&lt; Call &gt; C)</div><div class="ttdoc">getCost returns a vector containing the cost, elevated to the required exponents, in order...</div><div class="ttdef"><b>Definition:</b> Cost_Noise.cpp:14</div></div>
+<div class="ttc" id="class_r_m_s_a_1_1_r_o_u_t_1_1_p_s_r_1_1c_noise_html_a713f95951ecbc11969a10e401874e648"><div class="ttname"><a href="class_r_m_s_a_1_1_r_o_u_t_1_1_p_s_r_1_1c_noise.html#a713f95951ecbc11969a10e401874e648">RMSA::ROUT::PSR::cNoise::cNoise</a></div><div class="ttdeci">cNoise(int NMin, int NMax, std::shared_ptr&lt; Topology &gt; T)</div><div class="ttdoc">cNoise is the standard constructor for the cNoise cost. </div><div class="ttdef"><b>Definition:</b> Cost_Noise.cpp:7</div></div>
+<div class="ttc" id="class_r_m_s_a_1_1_r_o_u_t_1_1_p_s_r_1_1_cost_html"><div class="ttname"><a href="class_r_m_s_a_1_1_r_o_u_t_1_1_p_s_r_1_1_cost.html">RMSA::ROUT::PSR::Cost</a></div><div class="ttdoc">The Cost class represents a cost to the PSR. </div><div class="ttdef"><b>Definition:</b> Cost.h:21</div></div>
 <div class="ttc" id="class_modulation_scheme_html"><div class="ttname"><a href="class_modulation_scheme.html">ModulationScheme</a></div><div class="ttdoc">The ModulationScheme class represents a modulation scheme. </div><div class="ttdef"><b>Definition:</b> ModulationScheme.h:12</div></div>
+<div class="ttc" id="class_r_m_s_a_1_1_r_o_u_t_1_1_p_s_r_1_1c_noise_html"><div class="ttname"><a href="class_r_m_s_a_1_1_r_o_u_t_1_1_p_s_r_1_1c_noise.html">RMSA::ROUT::PSR::cNoise</a></div><div class="ttdoc">The cNoise class has, as cost, the noide generated by this link, normalized by the maximum noise that...</div><div class="ttdef"><b>Definition:</b> Cost_Noise.h:20</div></div>
+<div class="ttc" id="namespace_r_m_s_a_html"><div class="ttname"><a href="namespace_r_m_s_a.html">RMSA</a></div><div class="ttdoc">Routing, Modulation and Spectrum Assignment Algorithms. </div><div class="ttdef"><b>Definition:</b> Event.h:8</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

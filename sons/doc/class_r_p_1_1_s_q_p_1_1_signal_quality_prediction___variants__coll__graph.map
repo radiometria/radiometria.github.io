@@ -1,5 +1,0 @@
-<map id="RP::SQP::SignalQualityPrediction_Variants" name="RP::SQP::SignalQualityPrediction_Variants">
-<area shape="rect" id="node2" href="$class_r_p_1_1_s_q_p_1_1_signal_quality_prediction.html" title="RP::SQP::SignalQualityPrediction" alt="" coords="5,169,225,196"/>
-<area shape="rect" id="node3" href="$class_r_p_1_1_n_x___regenerator_placement.html" title="The NX_RegeneratorPlacement class is a type of RegeneratorPlacementAlgorithm. " alt="" coords="11,95,219,121"/>
-<area shape="rect" id="node4" href="$class_r_p_1_1_regenerator_placement_algorithm.html" title="The RegeneratorPlacementAlgorithm class decides how to insert the regenerators over the network..." alt="" coords="24,5,207,47"/>
-</map>

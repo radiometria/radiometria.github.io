@@ -150,10 +150,10 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 std::shared_ptr&lt; <a class="el" href="class_call.html">Call</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event.html#ae218351fd5ae1d16f4ca41f570f7beef">Parent</a></td></tr>
 <tr class="memdesc:ae218351fd5ae1d16f4ca41f570f7beef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parent is a pointer to the <a class="el" href="class_call.html" title="The Call class is the standard object representing a connection between two nodes. ">Call</a> that owns this <a class="el" href="class_event.html" title="The Event class represents an event that happened in the network. Is either a call requisition or a c...">Event</a>. <br /></td></tr>
 <tr class="separator:ae218351fd5ae1d16f4ca41f570f7beef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36e1146799644b995642fcf9f30c9338"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a36e1146799644b995642fcf9f30c9338"></a>
-std::shared_ptr&lt; <a class="el" href="class_route.html">Route</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event.html#a36e1146799644b995642fcf9f30c9338">route</a></td></tr>
-<tr class="memdesc:a36e1146799644b995642fcf9f30c9338"><td class="mdescLeft">&#160;</td><td class="mdescRight">route is a pointer to the <a class="el" href="class_route.html" title="The Route class is the result of RMSA Algorithms. Contains a set of transparent segments, over which a Call can be implemented. Each Transparent segment might be ended with a Translucent Node. ">Route</a> used to stablish the Parent <a class="el" href="class_call.html" title="The Call class is the standard object representing a connection between two nodes. ">Call</a>. If did not succeeded to stablish, then this is a pointer to nullptr. <br /></td></tr>
-<tr class="separator:a36e1146799644b995642fcf9f30c9338"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb5b9b94c16291877594e605adf7f820"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acb5b9b94c16291877594e605adf7f820"></a>
+std::shared_ptr&lt; <a class="el" href="class_r_m_s_a_1_1_route.html">RMSA::Route</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event.html#acb5b9b94c16291877594e605adf7f820">route</a></td></tr>
+<tr class="memdesc:acb5b9b94c16291877594e605adf7f820"><td class="mdescLeft">&#160;</td><td class="mdescRight">route is a pointer to the Route used to stablish the Parent <a class="el" href="class_call.html" title="The Call class is the standard object representing a connection between two nodes. ">Call</a>. If did not succeeded to stablish, then this is a pointer to nullptr. <br /></td></tr>
+<tr class="separator:acb5b9b94c16291877594e605adf7f820"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="class_event.html" title="The Event class represents an event that happened in the network. Is either a call requisition or a c...">Event</a> class represents an event that happened in the network. Is either a call requisition or a call ending. </p>
@@ -178,12 +178,12 @@ std::shared_ptr&lt; <a class="el" href="class_route.html">Route</a> &gt;&#160;</
 <p><a class="el" href="class_event.html" title="The Event class represents an event that happened in the network. Is either a call requisition or a c...">Event</a> on the ending call. </p>
 </td></tr>
 </table>
-<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="class_event.html#aaf5ee85a0734d6cc2c69caaa6182c708ad2c9e6005b916144114c4c66a34d6c30">CallRequisition</a>, </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <a class="code" href="class_event.html#aaf5ee85a0734d6cc2c69caaa6182c708a82cb975cee14a4fd09bef95cf76ecec9">CallEnding</a> </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    };</div>
-<div class="ttc" id="class_event_html_aaf5ee85a0734d6cc2c69caaa6182c708a82cb975cee14a4fd09bef95cf76ecec9"><div class="ttname"><a href="class_event.html#aaf5ee85a0734d6cc2c69caaa6182c708a82cb975cee14a4fd09bef95cf76ecec9">Event::CallEnding</a></div><div class="ttdef"><b>Definition:</b> Event.h:25</div></div>
-<div class="ttc" id="class_event_html_aaf5ee85a0734d6cc2c69caaa6182c708ad2c9e6005b916144114c4c66a34d6c30"><div class="ttname"><a href="class_event.html#aaf5ee85a0734d6cc2c69caaa6182c708ad2c9e6005b916144114c4c66a34d6c30">Event::CallRequisition</a></div><div class="ttdef"><b>Definition:</b> Event.h:24</div></div>
+<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <a class="code" href="class_event.html#aaf5ee85a0734d6cc2c69caaa6182c708ad2c9e6005b916144114c4c66a34d6c30">CallRequisition</a>, </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="class_event.html#aaf5ee85a0734d6cc2c69caaa6182c708a82cb975cee14a4fd09bef95cf76ecec9">CallEnding</a> </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    };</div>
+<div class="ttc" id="class_event_html_aaf5ee85a0734d6cc2c69caaa6182c708a82cb975cee14a4fd09bef95cf76ecec9"><div class="ttname"><a href="class_event.html#aaf5ee85a0734d6cc2c69caaa6182c708a82cb975cee14a4fd09bef95cf76ecec9">Event::CallEnding</a></div><div class="ttdef"><b>Definition:</b> Event.h:29</div></div>
+<div class="ttc" id="class_event_html_aaf5ee85a0734d6cc2c69caaa6182c708ad2c9e6005b916144114c4c66a34d6c30"><div class="ttname"><a href="class_event.html#aaf5ee85a0734d6cc2c69caaa6182c708ad2c9e6005b916144114c4c66a34d6c30">Event::CallRequisition</a></div><div class="ttdef"><b>Definition:</b> Event.h:28</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -234,9 +234,9 @@ std::shared_ptr&lt; <a class="el" href="class_route.html">Route</a> &gt;&#160;</
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;}</div>
-<div class="ttc" id="class_event_html_ae218351fd5ae1d16f4ca41f570f7beef"><div class="ttname"><a href="class_event.html#ae218351fd5ae1d16f4ca41f570f7beef">Event::Parent</a></div><div class="ttdeci">std::shared_ptr&lt; Call &gt; Parent</div><div class="ttdoc">Parent is a pointer to the Call that owns this Event. </div><div class="ttdef"><b>Definition:</b> Event.h:53</div></div>
-<div class="ttc" id="class_event_html_ae55c0ae2ba2c76fff305f39816c03ad7"><div class="ttname"><a href="class_event.html#ae55c0ae2ba2c76fff305f39816c03ad7">Event::Type</a></div><div class="ttdeci">Event_Type Type</div><div class="ttdoc">Type is the type of Event. </div><div class="ttdef"><b>Definition:</b> Event.h:49</div></div>
-<div class="ttc" id="class_event_html_a67c029b2ee1455fbf56f1e081138be41"><div class="ttname"><a href="class_event.html#a67c029b2ee1455fbf56f1e081138be41">Event::t</a></div><div class="ttdeci">double t</div><div class="ttdoc">t is the ocurring time of the event. </div><div class="ttdef"><b>Definition:</b> Event.h:45</div></div>
+<div class="ttc" id="class_event_html_ae218351fd5ae1d16f4ca41f570f7beef"><div class="ttname"><a href="class_event.html#ae218351fd5ae1d16f4ca41f570f7beef">Event::Parent</a></div><div class="ttdeci">std::shared_ptr&lt; Call &gt; Parent</div><div class="ttdoc">Parent is a pointer to the Call that owns this Event. </div><div class="ttdef"><b>Definition:</b> Event.h:57</div></div>
+<div class="ttc" id="class_event_html_ae55c0ae2ba2c76fff305f39816c03ad7"><div class="ttname"><a href="class_event.html#ae55c0ae2ba2c76fff305f39816c03ad7">Event::Type</a></div><div class="ttdeci">Event_Type Type</div><div class="ttdoc">Type is the type of Event. </div><div class="ttdef"><b>Definition:</b> Event.h:53</div></div>
+<div class="ttc" id="class_event_html_a67c029b2ee1455fbf56f1e081138be41"><div class="ttname"><a href="class_event.html#a67c029b2ee1455fbf56f1e081138be41">Event::t</a></div><div class="ttdeci">double t</div><div class="ttdoc">t is the ocurring time of the event. </div><div class="ttdef"><b>Definition:</b> Event.h:49</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -260,7 +260,7 @@ std::shared_ptr&lt; <a class="el" href="class_route.html">Route</a> &gt;&#160;</
 <div class="fragment"><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordflow">return</span> (<a class="code" href="class_event.html#a67c029b2ee1455fbf56f1e081138be41">t</a> &gt; E.<a class="code" href="class_event.html#a67c029b2ee1455fbf56f1e081138be41">t</a>);</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
-<div class="ttc" id="class_event_html_a67c029b2ee1455fbf56f1e081138be41"><div class="ttname"><a href="class_event.html#a67c029b2ee1455fbf56f1e081138be41">Event::t</a></div><div class="ttdeci">double t</div><div class="ttdoc">t is the ocurring time of the event. </div><div class="ttdef"><b>Definition:</b> Event.h:45</div></div>
+<div class="ttc" id="class_event_html_a67c029b2ee1455fbf56f1e081138be41"><div class="ttname"><a href="class_event.html#a67c029b2ee1455fbf56f1e081138be41">Event::t</a></div><div class="ttdeci">double t</div><div class="ttdoc">t is the ocurring time of the event. </div><div class="ttdef"><b>Definition:</b> Event.h:49</div></div>
 </div><!-- fragment -->
 </div>
 </div>

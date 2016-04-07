@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['shortestpath',['ShortestPath',['../class_r_o_u_t_1_1_shortest_path.html',1,'ROUT']]],
+  ['shortestpath',['ShortestPath',['../class_r_m_s_a_1_1_r_o_u_t_1_1_shortest_path.html',1,'RMSA::ROUT']]],
   ['signal',['Signal',['../class_signal.html',1,'']]],
-  ['signalqualityprediction',['SignalQualityPrediction',['../class_r_p_1_1_s_q_p_1_1_signal_quality_prediction.html',1,'RP::SQP']]],
-  ['signalqualityprediction_5fvariants',['SignalQualityPrediction_Variants',['../class_r_p_1_1_s_q_p_1_1_signal_quality_prediction___variants.html',1,'RP::SQP']]],
+  ['signalqualityprediction',['SignalQualityPrediction',['../class_r_m_s_a_1_1_r_p_1_1_s_q_p_1_1_signal_quality_prediction.html',1,'RMSA::RP::SQP']]],
+  ['signalqualityprediction_5fvariants',['SignalQualityPrediction_Variants',['../class_r_m_s_a_1_1_r_p_1_1_s_q_p_1_1_signal_quality_prediction___variants.html',1,'RMSA::RP::SQP']]],
   ['sim_5fnsga2',['Sim_NSGA2',['../class_simulations_1_1_simulation___n_s_g_a2___regn_plac_1_1_sim___n_s_g_a2.html',1,'Simulations::Simulation_NSGA2_RegnPlac']]],
   ['simpsonsrule',['SimpsonsRule',['../class_simpsons_rule.html',1,'']]],
   ['simulation_5fnetworkload',['Simulation_NetworkLoad',['../class_simulations_1_1_simulation___network_load.html',1,'Simulations']]],
@@ -15,8 +15,8 @@ var searchData=
   ['simulationtype',['SimulationType',['../class_simulations_1_1_simulation_type.html',1,'Simulations']]],
   ['slot',['Slot',['../class_slot.html',1,'']]],
   ['spectraldensity',['SpectralDensity',['../class_spectral_density.html',1,'']]],
-  ['spectrumassignmentalgorithm',['SpectrumAssignmentAlgorithm',['../class_s_a_1_1_spectrum_assignment_algorithm.html',1,'SA']]],
+  ['spectrumassignmentalgorithm',['SpectrumAssignmentAlgorithm',['../class_r_m_s_a_1_1_s_a_1_1_spectrum_assignment_algorithm.html',1,'RMSA::SA']]],
   ['splitter',['Splitter',['../class_devices_1_1_splitter.html',1,'Devices']]],
-  ['sqp_5fnetworksimulation',['SQP_NetworkSimulation',['../class_r_p_1_1_s_q_p_1_1_s_q_p___network_simulation.html',1,'RP::SQP']]],
+  ['sqp_5fnetworksimulation',['SQP_NetworkSimulation',['../class_r_m_s_a_1_1_r_p_1_1_s_q_p_1_1_s_q_p___network_simulation.html',1,'RMSA::RP::SQP']]],
   ['sss',['SSS',['../class_devices_1_1_s_s_s.html',1,'Devices']]]
 ];

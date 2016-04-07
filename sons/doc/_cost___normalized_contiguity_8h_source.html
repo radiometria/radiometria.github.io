@@ -105,32 +105,36 @@ $(document).ready(function(){initNavTree('_cost___normalized_contiguity_8h_sourc
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;Cost.h&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_r_o_u_t.html">ROUT</a></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_r_m_s_a.html">RMSA</a></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>PSR</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_r_o_u_t.html">ROUT</a></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_r_o_u_t_1_1_p_s_r_1_1c_norm_contiguity.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_r_o_u_t_1_1_p_s_r_1_1c_norm_contiguity.html">cNormContiguity</a> : <span class="keyword">public</span> <a class="code" href="class_r_o_u_t_1_1_p_s_r_1_1_cost.html">Cost</a></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="class_r_o_u_t_1_1_p_s_r_1_1c_norm_contiguity.html#a530f005367b58bbaf3b8b4864cefc026">cNormContiguity</a>(<span class="keywordtype">int</span> NMin, <span class="keywordtype">int</span> NMax, std::shared_ptr&lt;Topology&gt; T);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    arma::rowvec <a class="code" href="class_r_o_u_t_1_1_p_s_r_1_1c_norm_contiguity.html#ae845d161ddf99dd7c8707d21396b17be">getCost</a>(std::weak_ptr&lt;Link&gt; link, std::shared_ptr&lt;Call&gt; C);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> createCache();</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    arma::mat cache;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif // COST_NORMALIZEDCONTIGUITY_H</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="ttc" id="class_r_o_u_t_1_1_p_s_r_1_1c_norm_contiguity_html"><div class="ttname"><a href="class_r_o_u_t_1_1_p_s_r_1_1c_norm_contiguity.html">ROUT::PSR::cNormContiguity</a></div><div class="ttdoc">The cNormContiguity class has, as cost, the contiguity measure of the link. It only works on transpar...</div><div class="ttdef"><b>Definition:</b> Cost_NormalizedContiguity.h:17</div></div>
-<div class="ttc" id="namespace_r_o_u_t_html"><div class="ttname"><a href="namespace_r_o_u_t.html">ROUT</a></div><div class="ttdoc">Contains the routing algorithms. </div><div class="ttdef"><b>Definition:</b> DijkstraRoutingAlgorithm.h:6</div></div>
-<div class="ttc" id="class_r_o_u_t_1_1_p_s_r_1_1c_norm_contiguity_html_ae845d161ddf99dd7c8707d21396b17be"><div class="ttname"><a href="class_r_o_u_t_1_1_p_s_r_1_1c_norm_contiguity.html#ae845d161ddf99dd7c8707d21396b17be">ROUT::PSR::cNormContiguity::getCost</a></div><div class="ttdeci">arma::rowvec getCost(std::weak_ptr&lt; Link &gt; link, std::shared_ptr&lt; Call &gt; C)</div><div class="ttdoc">getCost returns a vector containing the cost, elevated to the required exponents, in order...</div><div class="ttdef"><b>Definition:</b> Cost_NormalizedContiguity.cpp:14</div></div>
-<div class="ttc" id="class_r_o_u_t_1_1_p_s_r_1_1c_norm_contiguity_html_a530f005367b58bbaf3b8b4864cefc026"><div class="ttname"><a href="class_r_o_u_t_1_1_p_s_r_1_1c_norm_contiguity.html#a530f005367b58bbaf3b8b4864cefc026">ROUT::PSR::cNormContiguity::cNormContiguity</a></div><div class="ttdeci">cNormContiguity(int NMin, int NMax, std::shared_ptr&lt; Topology &gt; T)</div><div class="ttdoc">cNormContiguity is the standard constructor for the cNormContiguity cost. </div><div class="ttdef"><b>Definition:</b> Cost_NormalizedContiguity.cpp:6</div></div>
-<div class="ttc" id="class_r_o_u_t_1_1_p_s_r_1_1_cost_html"><div class="ttname"><a href="class_r_o_u_t_1_1_p_s_r_1_1_cost.html">ROUT::PSR::Cost</a></div><div class="ttdoc">The Cost class represents a cost to the PSR. </div><div class="ttdef"><b>Definition:</b> Cost.h:19</div></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>PSR</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_r_m_s_a_1_1_r_o_u_t_1_1_p_s_r_1_1c_norm_contiguity.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_r_m_s_a_1_1_r_o_u_t_1_1_p_s_r_1_1c_norm_contiguity.html">cNormContiguity</a> : <span class="keyword">public</span> <a class="code" href="class_r_m_s_a_1_1_r_o_u_t_1_1_p_s_r_1_1_cost.html">Cost</a></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="class_r_m_s_a_1_1_r_o_u_t_1_1_p_s_r_1_1c_norm_contiguity.html#a530f005367b58bbaf3b8b4864cefc026">cNormContiguity</a>(<span class="keywordtype">int</span> NMin, <span class="keywordtype">int</span> NMax, std::shared_ptr&lt;Topology&gt; T);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    arma::rowvec <a class="code" href="class_r_m_s_a_1_1_r_o_u_t_1_1_p_s_r_1_1c_norm_contiguity.html#ae845d161ddf99dd7c8707d21396b17be">getCost</a>(std::weak_ptr&lt;Link&gt; link, std::shared_ptr&lt;Call&gt; C);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> createCache();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    arma::mat cache;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;};</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif // COST_NORMALIZEDCONTIGUITY_H</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="ttc" id="namespace_r_o_u_t_html"><div class="ttname"><a href="namespace_r_o_u_t.html">ROUT</a></div></div>
+<div class="ttc" id="class_r_m_s_a_1_1_r_o_u_t_1_1_p_s_r_1_1_cost_html"><div class="ttname"><a href="class_r_m_s_a_1_1_r_o_u_t_1_1_p_s_r_1_1_cost.html">RMSA::ROUT::PSR::Cost</a></div><div class="ttdoc">The Cost class represents a cost to the PSR. </div><div class="ttdef"><b>Definition:</b> Cost.h:21</div></div>
+<div class="ttc" id="class_r_m_s_a_1_1_r_o_u_t_1_1_p_s_r_1_1c_norm_contiguity_html_ae845d161ddf99dd7c8707d21396b17be"><div class="ttname"><a href="class_r_m_s_a_1_1_r_o_u_t_1_1_p_s_r_1_1c_norm_contiguity.html#ae845d161ddf99dd7c8707d21396b17be">RMSA::ROUT::PSR::cNormContiguity::getCost</a></div><div class="ttdeci">arma::rowvec getCost(std::weak_ptr&lt; Link &gt; link, std::shared_ptr&lt; Call &gt; C)</div><div class="ttdoc">getCost returns a vector containing the cost, elevated to the required exponents, in order...</div><div class="ttdef"><b>Definition:</b> Cost_NormalizedContiguity.cpp:14</div></div>
+<div class="ttc" id="class_r_m_s_a_1_1_r_o_u_t_1_1_p_s_r_1_1c_norm_contiguity_html_a530f005367b58bbaf3b8b4864cefc026"><div class="ttname"><a href="class_r_m_s_a_1_1_r_o_u_t_1_1_p_s_r_1_1c_norm_contiguity.html#a530f005367b58bbaf3b8b4864cefc026">RMSA::ROUT::PSR::cNormContiguity::cNormContiguity</a></div><div class="ttdeci">cNormContiguity(int NMin, int NMax, std::shared_ptr&lt; Topology &gt; T)</div><div class="ttdoc">cNormContiguity is the standard constructor for the cNormContiguity cost. </div><div class="ttdef"><b>Definition:</b> Cost_NormalizedContiguity.cpp:6</div></div>
+<div class="ttc" id="class_r_m_s_a_1_1_r_o_u_t_1_1_p_s_r_1_1c_norm_contiguity_html"><div class="ttname"><a href="class_r_m_s_a_1_1_r_o_u_t_1_1_p_s_r_1_1c_norm_contiguity.html">RMSA::ROUT::PSR::cNormContiguity</a></div><div class="ttdoc">The cNormContiguity class has, as cost, the contiguity measure of the link. It only works on transpar...</div><div class="ttdef"><b>Definition:</b> Cost_NormalizedContiguity.h:19</div></div>
+<div class="ttc" id="namespace_r_m_s_a_html"><div class="ttname"><a href="namespace_r_m_s_a.html">RMSA</a></div><div class="ttdoc">Routing, Modulation and Spectrum Assignment Algorithms. </div><div class="ttdef"><b>Definition:</b> Event.h:8</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

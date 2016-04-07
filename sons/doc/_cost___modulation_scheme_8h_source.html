@@ -107,31 +107,35 @@ $(document).ready(function(){initNavTree('_cost___modulation_scheme_8h_source.ht
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;GeneralClasses/ModulationScheme.h&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_r_o_u_t.html">ROUT</a></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_r_m_s_a.html">RMSA</a></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>PSR</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_r_o_u_t.html">ROUT</a></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_r_o_u_t_1_1_p_s_r_1_1c_modulation_scheme.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_r_o_u_t_1_1_p_s_r_1_1c_modulation_scheme.html">cModulationScheme</a> : <span class="keyword">public</span> <a class="code" href="class_r_o_u_t_1_1_p_s_r_1_1_cost.html">Cost</a></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="class_r_o_u_t_1_1_p_s_r_1_1c_modulation_scheme.html#a5ddb4b80d229db94ffe5d9edf5673b97">cModulationScheme</a>(<span class="keywordtype">int</span> NMin, <span class="keywordtype">int</span> NMax, std::shared_ptr&lt;Topology&gt; T);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    arma::rowvec <a class="code" href="class_r_o_u_t_1_1_p_s_r_1_1c_modulation_scheme.html#aa6e89985865b352a17324ffb436bfa8d">getCost</a>(std::weak_ptr&lt;Link&gt;, std::shared_ptr&lt;Call&gt;);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> createCache();</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    std::map&lt;ModulationScheme, arma::rowvec&gt; cache;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif // CMODULATIONSCHEME_H</span></div>
-<div class="ttc" id="namespace_r_o_u_t_html"><div class="ttname"><a href="namespace_r_o_u_t.html">ROUT</a></div><div class="ttdoc">Contains the routing algorithms. </div><div class="ttdef"><b>Definition:</b> DijkstraRoutingAlgorithm.h:6</div></div>
-<div class="ttc" id="class_r_o_u_t_1_1_p_s_r_1_1c_modulation_scheme_html_a5ddb4b80d229db94ffe5d9edf5673b97"><div class="ttname"><a href="class_r_o_u_t_1_1_p_s_r_1_1c_modulation_scheme.html#a5ddb4b80d229db94ffe5d9edf5673b97">ROUT::PSR::cModulationScheme::cModulationScheme</a></div><div class="ttdeci">cModulationScheme(int NMin, int NMax, std::shared_ptr&lt; Topology &gt; T)</div><div class="ttdoc">cModulationScheme is the standard constructor for the cModulationScheme cost. </div><div class="ttdef"><b>Definition:</b> Cost_ModulationScheme.cpp:6</div></div>
-<div class="ttc" id="class_r_o_u_t_1_1_p_s_r_1_1_cost_html"><div class="ttname"><a href="class_r_o_u_t_1_1_p_s_r_1_1_cost.html">ROUT::PSR::Cost</a></div><div class="ttdoc">The Cost class represents a cost to the PSR. </div><div class="ttdef"><b>Definition:</b> Cost.h:19</div></div>
-<div class="ttc" id="class_r_o_u_t_1_1_p_s_r_1_1c_modulation_scheme_html_aa6e89985865b352a17324ffb436bfa8d"><div class="ttname"><a href="class_r_o_u_t_1_1_p_s_r_1_1c_modulation_scheme.html#aa6e89985865b352a17324ffb436bfa8d">ROUT::PSR::cModulationScheme::getCost</a></div><div class="ttdeci">arma::rowvec getCost(std::weak_ptr&lt; Link &gt;, std::shared_ptr&lt; Call &gt;)</div><div class="ttdoc">getCost returns a vector containing the cost, elevated to the required exponents, in order...</div><div class="ttdef"><b>Definition:</b> Cost_ModulationScheme.cpp:13</div></div>
-<div class="ttc" id="class_r_o_u_t_1_1_p_s_r_1_1c_modulation_scheme_html"><div class="ttname"><a href="class_r_o_u_t_1_1_p_s_r_1_1c_modulation_scheme.html">ROUT::PSR::cModulationScheme</a></div><div class="ttdoc">The cModulationScheme class has, as cost, the modulation scheme used by this connection, normalized by the greatest modulation scheme available. </div><div class="ttdef"><b>Definition:</b> Cost_ModulationScheme.h:17</div></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span>PSR</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_r_m_s_a_1_1_r_o_u_t_1_1_p_s_r_1_1c_modulation_scheme.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_r_m_s_a_1_1_r_o_u_t_1_1_p_s_r_1_1c_modulation_scheme.html">cModulationScheme</a> : <span class="keyword">public</span> <a class="code" href="class_r_m_s_a_1_1_r_o_u_t_1_1_p_s_r_1_1_cost.html">Cost</a></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="class_r_m_s_a_1_1_r_o_u_t_1_1_p_s_r_1_1c_modulation_scheme.html#a5ddb4b80d229db94ffe5d9edf5673b97">cModulationScheme</a>(<span class="keywordtype">int</span> NMin, <span class="keywordtype">int</span> NMax, std::shared_ptr&lt;Topology&gt; T);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    arma::rowvec <a class="code" href="class_r_m_s_a_1_1_r_o_u_t_1_1_p_s_r_1_1c_modulation_scheme.html#aa6e89985865b352a17324ffb436bfa8d">getCost</a>(std::weak_ptr&lt;Link&gt;, std::shared_ptr&lt;Call&gt;);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> createCache();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    std::map&lt;ModulationScheme, arma::rowvec&gt; cache;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;};</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif // CMODULATIONSCHEME_H</span></div>
+<div class="ttc" id="namespace_r_o_u_t_html"><div class="ttname"><a href="namespace_r_o_u_t.html">ROUT</a></div></div>
+<div class="ttc" id="class_r_m_s_a_1_1_r_o_u_t_1_1_p_s_r_1_1c_modulation_scheme_html"><div class="ttname"><a href="class_r_m_s_a_1_1_r_o_u_t_1_1_p_s_r_1_1c_modulation_scheme.html">RMSA::ROUT::PSR::cModulationScheme</a></div><div class="ttdoc">The cModulationScheme class has, as cost, the modulation scheme used by this connection, normalized by the greatest modulation scheme available. </div><div class="ttdef"><b>Definition:</b> Cost_ModulationScheme.h:19</div></div>
+<div class="ttc" id="class_r_m_s_a_1_1_r_o_u_t_1_1_p_s_r_1_1_cost_html"><div class="ttname"><a href="class_r_m_s_a_1_1_r_o_u_t_1_1_p_s_r_1_1_cost.html">RMSA::ROUT::PSR::Cost</a></div><div class="ttdoc">The Cost class represents a cost to the PSR. </div><div class="ttdef"><b>Definition:</b> Cost.h:21</div></div>
+<div class="ttc" id="class_r_m_s_a_1_1_r_o_u_t_1_1_p_s_r_1_1c_modulation_scheme_html_aa6e89985865b352a17324ffb436bfa8d"><div class="ttname"><a href="class_r_m_s_a_1_1_r_o_u_t_1_1_p_s_r_1_1c_modulation_scheme.html#aa6e89985865b352a17324ffb436bfa8d">RMSA::ROUT::PSR::cModulationScheme::getCost</a></div><div class="ttdeci">arma::rowvec getCost(std::weak_ptr&lt; Link &gt;, std::shared_ptr&lt; Call &gt;)</div><div class="ttdoc">getCost returns a vector containing the cost, elevated to the required exponents, in order...</div><div class="ttdef"><b>Definition:</b> Cost_ModulationScheme.cpp:13</div></div>
+<div class="ttc" id="namespace_r_m_s_a_html"><div class="ttname"><a href="namespace_r_m_s_a.html">RMSA</a></div><div class="ttdoc">Routing, Modulation and Spectrum Assignment Algorithms. </div><div class="ttdef"><b>Definition:</b> Event.h:8</div></div>
+<div class="ttc" id="class_r_m_s_a_1_1_r_o_u_t_1_1_p_s_r_1_1c_modulation_scheme_html_a5ddb4b80d229db94ffe5d9edf5673b97"><div class="ttname"><a href="class_r_m_s_a_1_1_r_o_u_t_1_1_p_s_r_1_1c_modulation_scheme.html#a5ddb4b80d229db94ffe5d9edf5673b97">RMSA::ROUT::PSR::cModulationScheme::cModulationScheme</a></div><div class="ttdeci">cModulationScheme(int NMin, int NMax, std::shared_ptr&lt; Topology &gt; T)</div><div class="ttdoc">cModulationScheme is the standard constructor for the cModulationScheme cost. </div><div class="ttdef"><b>Definition:</b> Cost_ModulationScheme.cpp:6</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

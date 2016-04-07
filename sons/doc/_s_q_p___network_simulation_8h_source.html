@@ -106,38 +106,41 @@ $(document).ready(function(){initNavTree('_s_q_p___network_simulation_8h_source.
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;SimulationTypes/NetworkSimulation.h&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;SignalQualityPrediction.h&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_r_p.html">RP</a></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_r_m_s_a.html">RMSA</a></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>SQP</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_r_p.html">RP</a></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_r_p_1_1_s_q_p_1_1_s_q_p___network_simulation.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_r_p_1_1_s_q_p_1_1_s_q_p___network_simulation.html">SQP_NetworkSimulation</a> : <span class="keyword">public</span> <a class="code" href="class_simulations_1_1_network_simulation.html">Simulations::NetworkSimulation</a></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>SQP</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_r_p_1_1_s_q_p_1_1_signal_quality_prediction.html">SignalQualityPrediction</a>;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="class_r_p_1_1_s_q_p_1_1_s_q_p___network_simulation.html">SQP_NetworkSimulation</a>(std::shared_ptr&lt;CallGenerator&gt; <a class="code" href="class_simulations_1_1_network_simulation.html#aedb86d55215f62b397299260ff53b6ec">Generator</a>,</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                          std::shared_ptr&lt;RoutingWavelengthAssignment&gt; <a class="code" href="class_simulations_1_1_network_simulation.html#aa3f73501a4028a99c9700f5513ebf642">RMSA</a>,</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                          <span class="keywordtype">long</span> <span class="keywordtype">unsigned</span> <a class="code" href="class_simulations_1_1_network_simulation.html#a1b683d6c604cc98c2568695991e6c2e1">NumMaxCalls</a>,</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                          <a class="code" href="class_r_p_1_1_s_q_p_1_1_signal_quality_prediction.html">SignalQualityPrediction</a> *SQP);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> run();</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_r_m_s_a_1_1_r_p_1_1_s_q_p_1_1_s_q_p___network_simulation.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_r_m_s_a_1_1_r_p_1_1_s_q_p_1_1_s_q_p___network_simulation.html">SQP_NetworkSimulation</a> : <span class="keyword">public</span> <a class="code" href="class_simulations_1_1_network_simulation.html">Simulations::NetworkSimulation</a></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_r_m_s_a_1_1_r_p_1_1_s_q_p_1_1_signal_quality_prediction.html">SignalQualityPrediction</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_r_m_s_a_1_1_r_p_1_1_s_q_p_1_1_s_q_p___network_simulation.html">SQP_NetworkSimulation</a>(std::shared_ptr&lt;CallGenerator&gt; <a class="code" href="class_simulations_1_1_network_simulation.html#aedb86d55215f62b397299260ff53b6ec">Generator</a>,</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                          std::shared_ptr&lt;RoutingWavelengthAssignment&gt; <a class="code" href="namespace_r_m_s_a.html">RMSA</a>,</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                          <span class="keywordtype">long</span> <span class="keywordtype">unsigned</span> <a class="code" href="class_simulations_1_1_network_simulation.html#a1b683d6c604cc98c2568695991e6c2e1">NumMaxCalls</a>,</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                          <a class="code" href="class_r_m_s_a_1_1_r_p_1_1_s_q_p_1_1_signal_quality_prediction.html">SignalQualityPrediction</a> *SQP);</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_r_p_1_1_s_q_p_1_1_signal_quality_prediction.html">SignalQualityPrediction</a> *SQP;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> implement_call(std::shared_ptr&lt;Event&gt; evt);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    std::vector&lt;long int&gt; NodeUsage;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif // SQP_NETWORKSIMULATION_H</span></div>
-<div class="ttc" id="class_simulations_1_1_network_simulation_html_aa3f73501a4028a99c9700f5513ebf642"><div class="ttname"><a href="class_simulations_1_1_network_simulation.html#aa3f73501a4028a99c9700f5513ebf642">Simulations::NetworkSimulation::RMSA</a></div><div class="ttdeci">std::shared_ptr&lt; RoutingWavelengthAssignment &gt; RMSA</div><div class="ttdoc">RMSA is a pointer to this simulation&#39;s RMSA object. </div><div class="ttdef"><b>Definition:</b> NetworkSimulation.h:49</div></div>
-<div class="ttc" id="class_r_p_1_1_s_q_p_1_1_s_q_p___network_simulation_html"><div class="ttname"><a href="class_r_p_1_1_s_q_p_1_1_s_q_p___network_simulation.html">RP::SQP::SQP_NetworkSimulation</a></div><div class="ttdef"><b>Definition:</b> SQP_NetworkSimulation.h:11</div></div>
-<div class="ttc" id="class_simulations_1_1_network_simulation_html_aedb86d55215f62b397299260ff53b6ec"><div class="ttname"><a href="class_simulations_1_1_network_simulation.html#aedb86d55215f62b397299260ff53b6ec">Simulations::NetworkSimulation::Generator</a></div><div class="ttdeci">std::shared_ptr&lt; CallGenerator &gt; Generator</div><div class="ttdoc">Generator is a pointer to this simulation&#39;s call generator. </div><div class="ttdef"><b>Definition:</b> NetworkSimulation.h:45</div></div>
-<div class="ttc" id="class_r_p_1_1_s_q_p_1_1_signal_quality_prediction_html"><div class="ttname"><a href="class_r_p_1_1_s_q_p_1_1_signal_quality_prediction.html">RP::SQP::SignalQualityPrediction</a></div><div class="ttdef"><b>Definition:</b> SignalQualityPrediction.h:14</div></div>
-<div class="ttc" id="class_simulations_1_1_network_simulation_html"><div class="ttname"><a href="class_simulations_1_1_network_simulation.html">Simulations::NetworkSimulation</a></div><div class="ttdoc">The NetworkSimulation class is the a basic block. This class runs a network simulation, coordinating the CallGenerator and the RoutingWavelengthAssignment objects. </div><div class="ttdef"><b>Definition:</b> NetworkSimulation.h:19</div></div>
-<div class="ttc" id="namespace_r_p_html"><div class="ttname"><a href="namespace_r_p.html">RP</a></div><div class="ttdoc">Contains the Regenerator Placement Algorithms. </div><div class="ttdef"><b>Definition:</b> DistanceAdaptative.h:6</div></div>
-<div class="ttc" id="class_simulations_1_1_network_simulation_html_a1b683d6c604cc98c2568695991e6c2e1"><div class="ttname"><a href="class_simulations_1_1_network_simulation.html#a1b683d6c604cc98c2568695991e6c2e1">Simulations::NetworkSimulation::NumMaxCalls</a></div><div class="ttdeci">long unsigned NumMaxCalls</div><div class="ttdoc">NumMaxCalls is the number of call requests that will be simulated. </div><div class="ttdef"><b>Definition:</b> NetworkSimulation.h:54</div></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> run();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="class_r_m_s_a_1_1_r_p_1_1_s_q_p_1_1_signal_quality_prediction.html">SignalQualityPrediction</a> *SQP;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> implement_call(std::shared_ptr&lt;Event&gt; evt);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    std::vector&lt;long int&gt; NodeUsage;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif // SQP_NETWORKSIMULATION_H</span></div>
+<div class="ttc" id="class_simulations_1_1_network_simulation_html_aedb86d55215f62b397299260ff53b6ec"><div class="ttname"><a href="class_simulations_1_1_network_simulation.html#aedb86d55215f62b397299260ff53b6ec">Simulations::NetworkSimulation::Generator</a></div><div class="ttdeci">std::shared_ptr&lt; CallGenerator &gt; Generator</div><div class="ttdoc">Generator is a pointer to this simulation&#39;s call generator. </div><div class="ttdef"><b>Definition:</b> NetworkSimulation.h:49</div></div>
+<div class="ttc" id="class_simulations_1_1_network_simulation_html"><div class="ttname"><a href="class_simulations_1_1_network_simulation.html">Simulations::NetworkSimulation</a></div><div class="ttdoc">The NetworkSimulation class is the a basic block. This class runs a network simulation, coordinating the CallGenerator and the RoutingWavelengthAssignment objects. </div><div class="ttdef"><b>Definition:</b> NetworkSimulation.h:23</div></div>
+<div class="ttc" id="class_r_m_s_a_1_1_r_p_1_1_s_q_p_1_1_s_q_p___network_simulation_html"><div class="ttname"><a href="class_r_m_s_a_1_1_r_p_1_1_s_q_p_1_1_s_q_p___network_simulation.html">RMSA::RP::SQP::SQP_NetworkSimulation</a></div><div class="ttdef"><b>Definition:</b> SQP_NetworkSimulation.h:13</div></div>
+<div class="ttc" id="namespace_r_p_html"><div class="ttname"><a href="namespace_r_p.html">RP</a></div></div>
+<div class="ttc" id="class_r_m_s_a_1_1_r_p_1_1_s_q_p_1_1_signal_quality_prediction_html"><div class="ttname"><a href="class_r_m_s_a_1_1_r_p_1_1_s_q_p_1_1_signal_quality_prediction.html">RMSA::RP::SQP::SignalQualityPrediction</a></div><div class="ttdef"><b>Definition:</b> SignalQualityPrediction.h:16</div></div>
+<div class="ttc" id="class_simulations_1_1_network_simulation_html_a1b683d6c604cc98c2568695991e6c2e1"><div class="ttname"><a href="class_simulations_1_1_network_simulation.html#a1b683d6c604cc98c2568695991e6c2e1">Simulations::NetworkSimulation::NumMaxCalls</a></div><div class="ttdeci">long unsigned NumMaxCalls</div><div class="ttdoc">NumMaxCalls is the number of call requests that will be simulated. </div><div class="ttdef"><b>Definition:</b> NetworkSimulation.h:58</div></div>
+<div class="ttc" id="namespace_r_m_s_a_html"><div class="ttname"><a href="namespace_r_m_s_a.html">RMSA</a></div><div class="ttdoc">Routing, Modulation and Spectrum Assignment Algorithms. </div><div class="ttdef"><b>Definition:</b> Event.h:8</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

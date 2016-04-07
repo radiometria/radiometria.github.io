@@ -1,0 +1,8 @@
+<map id="RMSA::RP::NX_RegeneratorPlacement" name="RMSA::RP::NX_RegeneratorPlacement">
+<area shape="rect" id="node3" href="$class_r_m_s_a_1_1_r_p_1_1_most_used.html" title="The MostUsed class is the standard constructor for the Most Used RP algorithm. " alt="" coords="581,5,737,32"/>
+<area shape="rect" id="node4" href="$class_r_m_s_a_1_1_r_p_1_1_nodal_degree_first.html" title="The NodalDegreeFirst class implements the Nodal Degree First (NDF) regenerator placement algorithm..." alt="" coords="560,56,759,83"/>
+<area shape="rect" id="node5" href="$class_r_m_s_a_1_1_r_p_1_1_n_x___most_simultaneously_used.html" title="The NX_MostSimultaneouslyUsed class is a variant of the MostSimultaneouslyUsed RP algorithm that is N..." alt="" coords="524,107,795,133"/>
+<area shape="rect" id="node6" href="$class_r_m_s_a_1_1_r_p_1_1_s_q_p_1_1_signal_quality_prediction.html" title="RMSA::RP::SQP::SignalQuality\lPrediction" alt="" coords="555,158,764,199"/>
+<area shape="rect" id="node2" href="$class_r_m_s_a_1_1_r_p_1_1_regenerator_placement_algorithm.html" title="The RegeneratorPlacementAlgorithm class decides how to insert the regenerators over the network..." alt="" coords="5,74,235,115"/>
+<area shape="rect" id="node7" href="$class_r_m_s_a_1_1_r_p_1_1_s_q_p_1_1_signal_quality_prediction___variants.html" title="RMSA::RP::SQP::SignalQuality\lPrediction_Variants" alt="" coords="843,158,1052,199"/>
+</map>
