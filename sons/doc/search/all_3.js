@@ -4,6 +4,8 @@ var searchData=
   ['dbm',['dBm',['../class_power.html#a4573f1df98243e1618b99cdcba06ccdea6dd58461280fe5f8c3890f267b780299',1,'Power']]],
   ['defaultavgspanlength',['DefaultAvgSpanLength',['../class_link.html#ac2ef0f570c0675a7c2bdfdcd0c7e2b41',1,'Link']]],
   ['defaultschemes',['DefaultSchemes',['../class_modulation_scheme.html#a8dd467b4b5a9d5aa2d5777cabcc3e64d',1,'ModulationScheme']]],
+  ['define_5fregeneratorassignmentalgorithm',['define_RegeneratorAssignmentAlgorithm',['../class_r_a_1_1_regenerator_assignment_algorithm.html#a3a6bfb272ca44c5b6f73f6a20585a573',1,'RA::RegeneratorAssignmentAlgorithm']]],
+  ['define_5fregeneratorplacementalgorithm',['define_RegeneratorPlacementAlgorithm',['../class_r_p_1_1_regenerator_placement_algorithm.html#a26b9664c96240ca3e67c54be74031d70',1,'RP::RegeneratorPlacementAlgorithm']]],
   ['define_5fsignalsfilterorder',['define_SignalsFilterOrder',['../class_spectral_density.html#a2f10243973f50c80db54994e964da639',1,'SpectralDensity']]],
   ['define_5fspectrumassignmentalgorithm',['define_SpectrumAssignmentAlgorithm',['../class_s_a_1_1_spectrum_assignment_algorithm.html#ada165e442eee3be0faacac7e1e2f6328',1,'SA::SpectrumAssignmentAlgorithm']]],
   ['densityscaling',['densityScaling',['../class_spectral_density.html#a107fdbe36299f79b2a8e245c6a8f90e6',1,'SpectralDensity']]],
@@ -14,6 +16,6 @@ var searchData=
   ['devicetype',['DeviceType',['../class_devices_1_1_device.html#a6fe70fa8017a07adda38721261dec046',1,'Devices::Device']]],
   ['devtype',['DevType',['../class_devices_1_1_device.html#a19618fae75044a91862d0e8c00e47d4c',1,'Devices::Device']]],
   ['dijkstraroutingalgorithm',['DijkstraRoutingAlgorithm',['../class_r_o_u_t_1_1_dijkstra_routing_algorithm.html',1,'ROUT']]],
-  ['distanceadaptative',['DistanceAdaptative',['../class_distance_adaptative.html',1,'']]],
+  ['distanceadaptative',['DistanceAdaptative',['../class_r_p_1_1_distance_adaptative.html',1,'RP']]],
   ['drop',['drop',['../class_node.html#aebbf9db7a8acce64b2c32cb5c1009fba',1,'Node']]]
 ];

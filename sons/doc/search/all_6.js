@@ -25,7 +25,7 @@ var searchData=
   ['get_5fnoisepower',['get_NoisePower',['../class_signal.html#ab2af783424ebc41a9da190f5b00d3385',1,'Signal']]],
   ['get_5fnumavailableregenerators',['get_NumAvailableRegenerators',['../class_node.html#ae742c70a3771330f15e5471939e5484d',1,'Node']]],
   ['get_5fnummaxsimultusedregenerators',['get_NumMaxSimultUsedRegenerators',['../class_node.html#a7314fce54962c719609dd5a686c6ff94',1,'Node']]],
-  ['get_5fnumneededregenerators',['get_NumNeededRegenerators',['../class_regenerator_assignment_algorithm.html#a70973a2ca386fdba53fde6fe8416151e',1,'RegeneratorAssignmentAlgorithm']]],
+  ['get_5fnumneededregenerators',['get_NumNeededRegenerators',['../class_r_a_1_1_regenerator_assignment_algorithm.html#a70973a2ca386fdba53fde6fe8416151e',1,'RA::RegeneratorAssignmentAlgorithm']]],
   ['get_5fnumregenerators',['get_NumRegenerators',['../class_node.html#afae4e3731750b7f65d4d27e763a3920e',1,'Node::get_NumRegenerators()'],['../class_topology.html#ac886eb27e524fa5c9fadb97f8e82e204',1,'Topology::get_NumRegenerators()']]],
   ['get_5fnumslots',['get_NumSlots',['../class_modulation_scheme.html#a38f223c0141dee769ebe3a50a3232c93',1,'ModulationScheme']]],
   ['get_5fnumtranslucentnodes',['get_NumTranslucentNodes',['../class_topology.html#a97f65859bd9f8e24cf13367af2989356',1,'Topology']]],

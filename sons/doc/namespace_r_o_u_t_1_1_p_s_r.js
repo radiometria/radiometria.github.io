@@ -1,5 +1,6 @@
 var namespace_r_o_u_t_1_1_p_s_r =
 [
+    [ "AdaptativeWeighingRouting", "class_r_o_u_t_1_1_p_s_r_1_1_adaptative_weighing_routing.html", "class_r_o_u_t_1_1_p_s_r_1_1_adaptative_weighing_routing" ],
     [ "cAvailability", "class_r_o_u_t_1_1_p_s_r_1_1c_availability.html", "class_r_o_u_t_1_1_p_s_r_1_1c_availability" ],
     [ "cBitrate", "class_r_o_u_t_1_1_p_s_r_1_1c_bitrate.html", "class_r_o_u_t_1_1_p_s_r_1_1c_bitrate" ],
     [ "cContiguity", "class_r_o_u_t_1_1_p_s_r_1_1c_contiguity.html", "class_r_o_u_t_1_1_p_s_r_1_1c_contiguity" ],
@@ -13,5 +14,9 @@ var namespace_r_o_u_t_1_1_p_s_r =
     [ "cOccupability", "class_r_o_u_t_1_1_p_s_r_1_1c_occupability.html", "class_r_o_u_t_1_1_p_s_r_1_1c_occupability" ],
     [ "cOrigDestIndex", "class_r_o_u_t_1_1_p_s_r_1_1c_orig_dest_index.html", "class_r_o_u_t_1_1_p_s_r_1_1c_orig_dest_index" ],
     [ "Cost", "class_r_o_u_t_1_1_p_s_r_1_1_cost.html", "class_r_o_u_t_1_1_p_s_r_1_1_cost" ],
-    [ "cSlots", "class_r_o_u_t_1_1_p_s_r_1_1c_slots.html", "class_r_o_u_t_1_1_p_s_r_1_1c_slots" ]
+    [ "cSlots", "class_r_o_u_t_1_1_p_s_r_1_1c_slots.html", "class_r_o_u_t_1_1_p_s_r_1_1c_slots" ],
+    [ "LocalPowerSeriesRouting", "class_r_o_u_t_1_1_p_s_r_1_1_local_power_series_routing.html", "class_r_o_u_t_1_1_p_s_r_1_1_local_power_series_routing" ],
+    [ "MatricialPowerSeriesRouting", "class_r_o_u_t_1_1_p_s_r_1_1_matricial_power_series_routing.html", "class_r_o_u_t_1_1_p_s_r_1_1_matricial_power_series_routing" ],
+    [ "PowerSeriesRouting", "class_r_o_u_t_1_1_p_s_r_1_1_power_series_routing.html", "class_r_o_u_t_1_1_p_s_r_1_1_power_series_routing" ],
+    [ "TensorialPowerSeriesRouting", "class_r_o_u_t_1_1_p_s_r_1_1_tensorial_power_series_routing.html", "class_r_o_u_t_1_1_p_s_r_1_1_tensorial_power_series_routing" ]
 ];

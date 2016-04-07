@@ -18,11 +18,13 @@ var searchData=
   ['corigdestindex',['cOrigDestIndex',['../class_r_o_u_t_1_1_p_s_r_1_1c_orig_dest_index.html#a21d900edea26d1b2ea976ffc193bc28c',1,'ROUT::PSR::cOrigDestIndex']]],
   ['cost',['Cost',['../class_r_o_u_t_1_1_p_s_r_1_1_cost.html#af0e165b8485f6909e744b79b621cbbcb',1,'ROUT::PSR::Cost']]],
   ['create_5fdefaulttopology',['create_DefaultTopology',['../class_topology.html#ad45e070e8462231180cceb27024a06fe',1,'Topology']]],
+  ['create_5fregeneratorassignmentalgorithm',['create_RegeneratorAssignmentAlgorithm',['../class_r_a_1_1_regenerator_assignment_algorithm.html#a81b4c662fbd80030302dc1337cb7b723',1,'RA::RegeneratorAssignmentAlgorithm']]],
+  ['create_5fregeneratorplacementalgorithm',['create_RegeneratorPlacementAlgorithm',['../class_r_p_1_1_regenerator_placement_algorithm.html#a624af03a0f334e80ce234cc8dcc6b2f3',1,'RP::RegeneratorPlacementAlgorithm']]],
   ['create_5fspectrumassignmentalgorithm',['create_SpectrumAssignmentAlgorithm',['../class_s_a_1_1_spectrum_assignment_algorithm.html#aa84854a847fd49cc1d3e8d47c455af2b',1,'SA::SpectrumAssignmentAlgorithm']]],
   ['createcost',['createCost',['../class_r_o_u_t_1_1_p_s_r_1_1_cost.html#a138146d2932bf1c49a16daf223fbf788',1,'ROUT::PSR::Cost']]],
   ['creategene',['createGene',['../class_n_s_g_a2___individual.html#a1141704c61a021c4166a688ed3acd40c',1,'NSGA2_Individual::createGene()'],['../class_simulations_1_1_simulation___n_s_g_a2___regn_plac_1_1_individual.html#a484236e587febc9701917839ee08ad66',1,'Simulations::Simulation_NSGA2_RegnPlac::Individual::createGene()']]],
   ['createindividual',['createIndividual',['../class_n_s_g_a2___individual.html#a2943cf8359c929ffc5339aff27eb9a68',1,'NSGA2_Individual::createIndividual()'],['../class_simulations_1_1_simulation___n_s_g_a2___regn_plac_1_1_individual.html#a5e84a5b8f37885b9801f8fe6cdc2c95e',1,'Simulations::Simulation_NSGA2_RegnPlac::Individual::createIndividual()']]],
   ['createinitialgeneration',['createInitialGeneration',['../class_n_s_g_a2.html#a113847ecd45c0512d85814ee5b2ee35d',1,'NSGA2::createInitialGeneration()'],['../class_simulations_1_1_simulation___n_s_g_a2___regn_plac_1_1_sim___n_s_g_a2.html#ada1729013324e0b3d38947d0b91dfc3b',1,'Simulations::Simulation_NSGA2_RegnPlac::Sim_NSGA2::createInitialGeneration()']]],
-  ['createtransparentsegment',['createTransparentSegment',['../class_regenerator_assignment_algorithm.html#ab00549a7f810266c57a441b509f7466e',1,'RegeneratorAssignmentAlgorithm']]],
+  ['createtransparentsegment',['createTransparentSegment',['../class_r_a_1_1_regenerator_assignment_algorithm.html#ab00549a7f810266c57a441b509f7466e',1,'RA::RegeneratorAssignmentAlgorithm']]],
   ['cslots',['cSlots',['../class_r_o_u_t_1_1_p_s_r_1_1c_slots.html#a9d152fa7fcddb356f66869ebadcb7efe',1,'ROUT::PSR::cSlots']]]
 ];

@@ -11,7 +11,7 @@ var class_simulations_1_1_simulation___n_s_g_a2___regn_plac =
     [ "save", "class_simulations_1_1_simulation___n_s_g_a2___regn_plac.html#ab636108b6c8f286a5f6050e4a1e61060", null ],
     [ "NetworkLoad", "class_simulations_1_1_simulation___n_s_g_a2___regn_plac.html#a3929f16cf6ef01cde4e5c8447f8e967b", null ],
     [ "NumCalls", "class_simulations_1_1_simulation___n_s_g_a2___regn_plac.html#a8561989f6f4e909767db589f7c2e0916", null ],
-    [ "RegAssignment_Algorithm", "class_simulations_1_1_simulation___n_s_g_a2___regn_plac.html#af58b1f2660b959a65ba5dc2dbcfb7421", null ],
+    [ "RegAssignment_Algorithm", "class_simulations_1_1_simulation___n_s_g_a2___regn_plac.html#af4146f747c1e2a1c75fe058c2a8ad11f", null ],
     [ "Routing_Algorithm", "class_simulations_1_1_simulation___n_s_g_a2___regn_plac.html#a90b29920ba5c52fc26f2b8c160ee584b", null ],
     [ "WavAssign_Algorithm", "class_simulations_1_1_simulation___n_s_g_a2___regn_plac.html#a71c2ca2fcb1be2ff5ac48acb81e6823d", null ]
 ];

@@ -39,7 +39,7 @@ var hierarchy =
     [ "Link", "class_link.html", null ],
     [ "ModulationScheme", "class_modulation_scheme.html", null ],
     [ "Simulations::NetworkSimulation", "class_simulations_1_1_network_simulation.html", [
-      [ "SQP_NetworkSimulation", "class_s_q_p___network_simulation.html", null ]
+      [ "RP::SQP::SQP_NetworkSimulation", "class_r_p_1_1_s_q_p_1_1_s_q_p___network_simulation.html", null ]
     ] ],
     [ "Node", "class_node.html", null ],
     [ "NSGA2", "class_n_s_g_a2.html", [
@@ -59,20 +59,20 @@ var hierarchy =
     [ "PhysicalConstants", "class_physical_constants.html", null ],
     [ "Power", "class_power.html", null ],
     [ "PSO_Particle< PositionType >", "class_p_s_o___particle.html", null ],
-    [ "RegeneratorAssignmentAlgorithm", "class_regenerator_assignment_algorithm.html", [
-      [ "FirstLongestReach", "class_first_longest_reach.html", null ],
-      [ "FirstNarrowestSpectrum", "class_first_narrowest_spectrum.html", null ]
+    [ "RA::RegeneratorAssignmentAlgorithm", "class_r_a_1_1_regenerator_assignment_algorithm.html", [
+      [ "RA::FirstLongestReach", "class_r_a_1_1_first_longest_reach.html", null ],
+      [ "RA::FirstNarrowestSpectrum", "class_r_a_1_1_first_narrowest_spectrum.html", null ]
     ] ],
-    [ "RegeneratorPlacementAlgorithm", "class_regenerator_placement_algorithm.html", [
-      [ "DistanceAdaptative", "class_distance_adaptative.html", null ],
-      [ "Empty_RegeneratorPlacementAlgorithm", "class_empty___regenerator_placement_algorithm.html", null ],
-      [ "MostSimultaneouslyUsed", "class_most_simultaneously_used.html", null ],
-      [ "NX_RegeneratorPlacement", "class_n_x___regenerator_placement.html", [
-        [ "MostUsed", "class_most_used.html", null ],
-        [ "NodalDegreeFirst", "class_nodal_degree_first.html", null ],
-        [ "NX_MostSimultaneouslyUsed", "class_n_x___most_simultaneously_used.html", null ],
-        [ "SignalQualityPrediction", "class_signal_quality_prediction.html", [
-          [ "SignalQualityPrediction_Variants", "class_signal_quality_prediction___variants.html", null ]
+    [ "RP::RegeneratorPlacementAlgorithm", "class_r_p_1_1_regenerator_placement_algorithm.html", [
+      [ "RP::DistanceAdaptative", "class_r_p_1_1_distance_adaptative.html", null ],
+      [ "RP::Empty_RegeneratorPlacementAlgorithm", "class_r_p_1_1_empty___regenerator_placement_algorithm.html", null ],
+      [ "RP::MostSimultaneouslyUsed", "class_r_p_1_1_most_simultaneously_used.html", null ],
+      [ "RP::NX_RegeneratorPlacement", "class_r_p_1_1_n_x___regenerator_placement.html", [
+        [ "RP::MostUsed", "class_r_p_1_1_most_used.html", null ],
+        [ "RP::NodalDegreeFirst", "class_r_p_1_1_nodal_degree_first.html", null ],
+        [ "RP::NX_MostSimultaneouslyUsed", "class_r_p_1_1_n_x___most_simultaneously_used.html", null ],
+        [ "RP::SQP::SignalQualityPrediction", "class_r_p_1_1_s_q_p_1_1_signal_quality_prediction.html", [
+          [ "RP::SQP::SignalQualityPrediction_Variants", "class_r_p_1_1_s_q_p_1_1_signal_quality_prediction___variants.html", null ]
         ] ]
       ] ]
     ] ],
@@ -85,11 +85,11 @@ var hierarchy =
         ] ],
         [ "ROUT::LengthOccupationRoutingAvailability", "class_r_o_u_t_1_1_length_occupation_routing_availability.html", null ],
         [ "ROUT::LengthOccupationRoutingContiguity", "class_r_o_u_t_1_1_length_occupation_routing_contiguity.html", null ],
-        [ "ROUT::PowerSeriesRouting", "class_r_o_u_t_1_1_power_series_routing.html", [
-          [ "ROUT::AdaptativeWeighingRouting", "class_r_o_u_t_1_1_adaptative_weighing_routing.html", null ],
-          [ "ROUT::LocalPowerSeriesRouting", "class_r_o_u_t_1_1_local_power_series_routing.html", null ],
-          [ "ROUT::MatricialPowerSeriesRouting", "class_r_o_u_t_1_1_matricial_power_series_routing.html", null ],
-          [ "ROUT::TensorialPowerSeriesRouting", "class_r_o_u_t_1_1_tensorial_power_series_routing.html", null ]
+        [ "ROUT::PSR::PowerSeriesRouting", "class_r_o_u_t_1_1_p_s_r_1_1_power_series_routing.html", [
+          [ "ROUT::PSR::AdaptativeWeighingRouting", "class_r_o_u_t_1_1_p_s_r_1_1_adaptative_weighing_routing.html", null ],
+          [ "ROUT::PSR::LocalPowerSeriesRouting", "class_r_o_u_t_1_1_p_s_r_1_1_local_power_series_routing.html", null ],
+          [ "ROUT::PSR::MatricialPowerSeriesRouting", "class_r_o_u_t_1_1_p_s_r_1_1_matricial_power_series_routing.html", null ],
+          [ "ROUT::PSR::TensorialPowerSeriesRouting", "class_r_o_u_t_1_1_p_s_r_1_1_tensorial_power_series_routing.html", null ]
         ] ]
       ] ]
     ] ],

@@ -1,5 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_regenerator_assignment_algorithm.html" title="The RegeneratorAssignmentAlgorithm class assigns which nodes will use regenerators, given a call and a set of links found by the RoutingAlgorithm. " alt="" coords="5,31,223,57"/>
-<area shape="rect" id="node2" href="$class_first_longest_reach.html" title="The FirstLongestReach class implements the First Longest Reach RegeneratorAssignmentAlgorithm. " alt="" coords="287,5,419,32"/>
-<area shape="rect" id="node3" href="$class_first_narrowest_spectrum.html" title="The FirstNarrowestSpectrum class implements the First Narrowest Spectrum RegeneratorAssignmentAlgorit..." alt="" coords="271,56,435,83"/>
+<area shape="rect" id="node1" href="$class_r_a_1_1_regenerator_assignment_algorithm.html" title="The RegeneratorAssignmentAlgorithm class assigns which nodes will use regenerators, given a call and a set of links found by the RoutingAlgorithm. " alt="" coords="5,23,195,65"/>
+<area shape="rect" id="node2" href="$class_r_a_1_1_first_longest_reach.html" title="The FirstLongestReach class implements the First Longest Reach RegeneratorAssignmentAlgorithm. " alt="" coords="259,5,417,32"/>
+<area shape="rect" id="node3" href="$class_r_a_1_1_first_narrowest_spectrum.html" title="The FirstNarrowestSpectrum class implements the First Narrowest Spectrum RegeneratorAssignmentAlgorit..." alt="" coords="243,56,433,83"/>
 </map>

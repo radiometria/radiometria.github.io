@@ -16,5 +16,7 @@ var searchData=
   ['numregused',['NumRegUsed',['../class_transparent_segment.html#a1be4fc5f67f7e2cafd742aad8c155040',1,'TransparentSegment']]],
   ['numsamples',['numSamples',['../class_transfer_function.html#a8eba4ff63a2f4837378ca7d7a5f7296b',1,'TransferFunction']]],
   ['numslot',['numSlot',['../class_slot.html#a85ddbc0dedf593a046a5d5297aa750b0',1,'Slot']]],
-  ['numslots',['NumSlots',['../class_link.html#a097cecc1016bb6809d4b76f220b7721c',1,'Link::NumSlots()'],['../class_signal.html#a0fcbcd07bb7278dca8d7a73780465219',1,'Signal::numSlots()']]]
+  ['numslots',['NumSlots',['../class_link.html#a097cecc1016bb6809d4b76f220b7721c',1,'Link::NumSlots()'],['../class_signal.html#a0fcbcd07bb7278dca8d7a73780465219',1,'Signal::numSlots()']]],
+  ['nx_5fn',['NX_N',['../class_r_p_1_1_n_x___regenerator_placement.html#a575004ea2ea9b87311fa55ed9c2032b6',1,'RP::NX_RegeneratorPlacement']]],
+  ['nx_5fx',['NX_X',['../class_r_p_1_1_n_x___regenerator_placement.html#aef9150b293aa6167f092b88c541092d1',1,'RP::NX_RegeneratorPlacement']]]
 ];

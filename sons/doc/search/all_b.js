@@ -6,7 +6,8 @@ var searchData=
   ['networkload',['NetworkLoad',['../class_simulations_1_1_simulation___n_s_g_a2___regn_plac.html#a3929f16cf6ef01cde4e5c8447f8e967b',1,'Simulations::Simulation_NSGA2_RegnPlac']]],
   ['networksimulation',['NetworkSimulation',['../class_simulations_1_1_network_simulation.html#a6e8bee7e007546d1ee346a4c618b7c7f',1,'Simulations::NetworkSimulation']]],
   ['networksimulation',['NetworkSimulation',['../class_simulations_1_1_network_simulation.html',1,'Simulations']]],
-  ['nodaldegreefirst',['NodalDegreeFirst',['../class_nodal_degree_first.html',1,'NodalDegreeFirst'],['../class_nodal_degree_first.html#afcea08854681ae0331fb2093860c972a',1,'NodalDegreeFirst::NodalDegreeFirst()']]],
+  ['nodaldegreefirst',['NodalDegreeFirst',['../class_r_p_1_1_nodal_degree_first.html',1,'RP']]],
+  ['nodaldegreefirst',['NodalDegreeFirst',['../class_r_p_1_1_nodal_degree_first.html#afcea08854681ae0331fb2093860c972a',1,'RP::NodalDegreeFirst']]],
   ['node',['Node',['../class_node.html',1,'Node'],['../class_node.html#ae5bb1a247f30e9656b19458586bab514',1,'Node::Node()']]],
   ['nodes',['Nodes',['../class_route.html#a2c9dc631a3d5c60966ba23dd7aa696b4',1,'Route::Nodes()'],['../class_transparent_segment.html#a9b05c0a1dc9e69f6db4410a9da7080f5',1,'TransparentSegment::Nodes()'],['../class_topology.html#a64be880d1cc2f2bd97cd2a59fe73f890',1,'Topology::Nodes()']]],
   ['noisepower',['NoisePower',['../class_devices_1_1_amplifier.html#afc0879979e9a74eaadcf00a2d4ffc932',1,'Devices::Amplifier']]],
@@ -31,6 +32,10 @@ var searchData=
   ['numsamples',['numSamples',['../class_transfer_function.html#a8eba4ff63a2f4837378ca7d7a5f7296b',1,'TransferFunction']]],
   ['numslot',['numSlot',['../class_slot.html#a85ddbc0dedf593a046a5d5297aa750b0',1,'Slot']]],
   ['numslots',['NumSlots',['../class_link.html#a097cecc1016bb6809d4b76f220b7721c',1,'Link::NumSlots()'],['../class_signal.html#a0fcbcd07bb7278dca8d7a73780465219',1,'Signal::numSlots()']]],
-  ['nx_5fmostsimultaneouslyused',['NX_MostSimultaneouslyUsed',['../class_n_x___most_simultaneously_used.html',1,'']]],
-  ['nx_5fregeneratorplacement',['NX_RegeneratorPlacement',['../class_n_x___regenerator_placement.html',1,'NX_RegeneratorPlacement'],['../class_n_x___regenerator_placement.html#a4b7b4c903138b2c29874ea97d6e57fa4',1,'NX_RegeneratorPlacement::NX_RegeneratorPlacement()']]]
+  ['nx_5fmostsimultaneouslyused',['NX_MostSimultaneouslyUsed',['../class_r_p_1_1_n_x___most_simultaneously_used.html#a9598688f78622a1d94a0594a9696c57e',1,'RP::NX_MostSimultaneouslyUsed']]],
+  ['nx_5fmostsimultaneouslyused',['NX_MostSimultaneouslyUsed',['../class_r_p_1_1_n_x___most_simultaneously_used.html',1,'RP']]],
+  ['nx_5fn',['NX_N',['../class_r_p_1_1_n_x___regenerator_placement.html#a575004ea2ea9b87311fa55ed9c2032b6',1,'RP::NX_RegeneratorPlacement']]],
+  ['nx_5fregeneratorplacement',['NX_RegeneratorPlacement',['../class_r_p_1_1_n_x___regenerator_placement.html#a4b7b4c903138b2c29874ea97d6e57fa4',1,'RP::NX_RegeneratorPlacement']]],
+  ['nx_5fregeneratorplacement',['NX_RegeneratorPlacement',['../class_r_p_1_1_n_x___regenerator_placement.html',1,'RP']]],
+  ['nx_5fx',['NX_X',['../class_r_p_1_1_n_x___regenerator_placement.html#aef9150b293aa6167f092b88c541092d1',1,'RP::NX_RegeneratorPlacement']]]
 ];
