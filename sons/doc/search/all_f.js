@@ -8,7 +8,7 @@ var searchData=
   ['scheme',['Scheme',['../class_call.html#a61a6ccaa8a480182d8f2ea2a9e85c95c',1,'Call']]],
   ['schemes',['Schemes',['../class_routing_wavelength_assignment.html#a23b0f417f41de11bced7cbac6ef1ac98',1,'RoutingWavelengthAssignment']]],
   ['segments',['Segments',['../class_route.html#ae0594abcca67671e8ae6a9a0f24a3e72',1,'Route']]],
-  ['set_5favgspanlength',['set_avgSpanLength',['../class_topology.html#a77a3f8482e34fe5b724f7a916c0792e7',1,'Topology::set_avgSpanLength()'],['../class_link.html#a75fb9d0c2c2f67e1eed516ab4d18c21e',1,'Link::set_AvgSpanLength()']]],
+  ['set_5favgspanlength',['set_AvgSpanLength',['../class_link.html#a75fb9d0c2c2f67e1eed516ab4d18c21e',1,'Link::set_AvgSpanLength()'],['../class_topology.html#a77a3f8482e34fe5b724f7a916c0792e7',1,'Topology::set_avgSpanLength()']]],
   ['set_5fgain',['set_Gain',['../class_devices_1_1_amplifier.html#a9a8f58faee7c82f36b33b1224a731b2a',1,'Devices::Amplifier']]],
   ['set_5fload',['set_Load',['../class_call_generator.html#ad38bcdb33326727bafa992c29a64a4cf',1,'CallGenerator']]],
   ['set_5fnodetype',['set_NodeType',['../class_node.html#a83029aa8c123569785576deacc895b94',1,'Node']]],

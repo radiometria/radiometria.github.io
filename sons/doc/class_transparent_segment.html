@@ -140,6 +140,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a909118513fee8f6a6be44aed171658b2"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transparent_segment.html#a909118513fee8f6a6be44aed171658b2">get_MaxContigSlots</a> ()</td></tr>
 <tr class="memdesc:a909118513fee8f6a6be44aed171658b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">get_MaxContigSlots returns the maximum number of adjacent free slots in the <a class="el" href="class_transparent_segment.html" title="The TransparentSegment class is a set of links, into which a call is implemented. ...">TransparentSegment</a>.  <a href="#a909118513fee8f6a6be44aed171658b2">More...</a><br /></td></tr>
 <tr class="separator:a909118513fee8f6a6be44aed171658b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32fc4e4296b9cf5087ba9a4e56de433e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_transparent_segment.html#a32fc4e4296b9cf5087ba9a4e56de433e">get_Contiguity</a> (std::shared_ptr&lt; <a class="el" href="class_call.html">Call</a> &gt; C)</td></tr>
+<tr class="memdesc:a32fc4e4296b9cf5087ba9a4e56de433e"><td class="mdescLeft">&#160;</td><td class="mdescRight">get_Contiguity returns the contiguity measure of this segment. This measure is how many ways it is possible to allocate the required slots by <a class="el" href="class_call.html" title="The Call class is the standard object representing a connection between two nodes. ">Call</a> C on this segment.  <a href="#a32fc4e4296b9cf5087ba9a4e56de433e">More...</a><br /></td></tr>
+<tr class="separator:a32fc4e4296b9cf5087ba9a4e56de433e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -203,22 +206,22 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;                                                                                            :</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="code" href="class_transparent_segment.html#abda4e89c44fdb27ce41688447c33e72a">Links</a>(<a class="code" href="class_transparent_segment.html#abda4e89c44fdb27ce41688447c33e72a">Links</a>), <a class="code" href="class_transparent_segment.html#aea9c5bbd0f3e199f95a8a88e7a7896bc">ModScheme</a>(ModScheme), <a class="code" href="class_transparent_segment.html#a1be4fc5f67f7e2cafd742aad8c155040">NumRegUsed</a>(<a class="code" href="class_transparent_segment.html#a1be4fc5f67f7e2cafd742aad8c155040">NumRegUsed</a>)</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="class_transparent_segment.html#a9b05c0a1dc9e69f6db4410a9da7080f5">Nodes</a>.push_back(<a class="code" href="class_transparent_segment.html#abda4e89c44fdb27ce41688447c33e72a">Links</a>.front().lock()-&gt;Origin);</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;it : <a class="code" href="class_transparent_segment.html#abda4e89c44fdb27ce41688447c33e72a">Links</a>)</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <a class="code" href="class_transparent_segment.html#a9b05c0a1dc9e69f6db4410a9da7080f5">Nodes</a>.push_back(it.lock()-&gt;Destination);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        }</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
-<div class="ttc" id="class_transparent_segment_html_aea9c5bbd0f3e199f95a8a88e7a7896bc"><div class="ttname"><a href="class_transparent_segment.html#aea9c5bbd0f3e199f95a8a88e7a7896bc">TransparentSegment::ModScheme</a></div><div class="ttdeci">ModulationScheme ModScheme</div><div class="ttdoc">ModScheme is the ModulationScheme used to implement the call on the TransparentSegment. </div><div class="ttdef"><b>Definition:</b> TransparentSegment.h:55</div></div>
-<div class="ttc" id="class_transparent_segment_html_a1be4fc5f67f7e2cafd742aad8c155040"><div class="ttname"><a href="class_transparent_segment.html#a1be4fc5f67f7e2cafd742aad8c155040">TransparentSegment::NumRegUsed</a></div><div class="ttdeci">unsigned int NumRegUsed</div><div class="ttdoc">NumRegUsed is the number of regenerators used on the last node of the transparent segment...</div><div class="ttdef"><b>Definition:</b> TransparentSegment.h:60</div></div>
-<div class="ttc" id="class_transparent_segment_html_abda4e89c44fdb27ce41688447c33e72a"><div class="ttname"><a href="class_transparent_segment.html#abda4e89c44fdb27ce41688447c33e72a">TransparentSegment::Links</a></div><div class="ttdeci">std::vector&lt; std::weak_ptr&lt; Link &gt; &gt; Links</div><div class="ttdoc">Links is a vector with the links in the TransparentSegment. </div><div class="ttdef"><b>Definition:</b> TransparentSegment.h:50</div></div>
-<div class="ttc" id="class_transparent_segment_html_a9b05c0a1dc9e69f6db4410a9da7080f5"><div class="ttname"><a href="class_transparent_segment.html#a9b05c0a1dc9e69f6db4410a9da7080f5">TransparentSegment::Nodes</a></div><div class="ttdeci">std::vector&lt; std::weak_ptr&lt; Node &gt; &gt; Nodes</div><div class="ttdoc">Nodes is a vector with the nodes in the TransparentSegment. </div><div class="ttdef"><b>Definition:</b> TransparentSegment.h:46</div></div>
+<div class="fragment"><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;                                                                                            :</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="class_transparent_segment.html#abda4e89c44fdb27ce41688447c33e72a">Links</a>(<a class="code" href="class_transparent_segment.html#abda4e89c44fdb27ce41688447c33e72a">Links</a>), <a class="code" href="class_transparent_segment.html#aea9c5bbd0f3e199f95a8a88e7a7896bc">ModScheme</a>(ModScheme), <a class="code" href="class_transparent_segment.html#a1be4fc5f67f7e2cafd742aad8c155040">NumRegUsed</a>(<a class="code" href="class_transparent_segment.html#a1be4fc5f67f7e2cafd742aad8c155040">NumRegUsed</a>)</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="class_transparent_segment.html#a9b05c0a1dc9e69f6db4410a9da7080f5">Nodes</a>.push_back(<a class="code" href="class_transparent_segment.html#abda4e89c44fdb27ce41688447c33e72a">Links</a>.front().lock()-&gt;Origin);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;it : <a class="code" href="class_transparent_segment.html#abda4e89c44fdb27ce41688447c33e72a">Links</a>)</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <a class="code" href="class_transparent_segment.html#a9b05c0a1dc9e69f6db4410a9da7080f5">Nodes</a>.push_back(it.lock()-&gt;Destination);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        }</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
+<div class="ttc" id="class_transparent_segment_html_aea9c5bbd0f3e199f95a8a88e7a7896bc"><div class="ttname"><a href="class_transparent_segment.html#aea9c5bbd0f3e199f95a8a88e7a7896bc">TransparentSegment::ModScheme</a></div><div class="ttdeci">ModulationScheme ModScheme</div><div class="ttdoc">ModScheme is the ModulationScheme used to implement the call on the TransparentSegment. </div><div class="ttdef"><b>Definition:</b> TransparentSegment.h:56</div></div>
+<div class="ttc" id="class_transparent_segment_html_a1be4fc5f67f7e2cafd742aad8c155040"><div class="ttname"><a href="class_transparent_segment.html#a1be4fc5f67f7e2cafd742aad8c155040">TransparentSegment::NumRegUsed</a></div><div class="ttdeci">unsigned int NumRegUsed</div><div class="ttdoc">NumRegUsed is the number of regenerators used on the last node of the transparent segment...</div><div class="ttdef"><b>Definition:</b> TransparentSegment.h:61</div></div>
+<div class="ttc" id="class_transparent_segment_html_abda4e89c44fdb27ce41688447c33e72a"><div class="ttname"><a href="class_transparent_segment.html#abda4e89c44fdb27ce41688447c33e72a">TransparentSegment::Links</a></div><div class="ttdeci">std::vector&lt; std::weak_ptr&lt; Link &gt; &gt; Links</div><div class="ttdoc">Links is a vector with the links in the TransparentSegment. </div><div class="ttdef"><b>Definition:</b> TransparentSegment.h:51</div></div>
+<div class="ttc" id="class_transparent_segment_html_a9b05c0a1dc9e69f6db4410a9da7080f5"><div class="ttname"><a href="class_transparent_segment.html#a9b05c0a1dc9e69f6db4410a9da7080f5">TransparentSegment::Nodes</a></div><div class="ttdeci">std::vector&lt; std::weak_ptr&lt; Node &gt; &gt; Nodes</div><div class="ttdoc">Nodes is a vector with the nodes in the TransparentSegment. </div><div class="ttdef"><b>Definition:</b> TransparentSegment.h:47</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -243,17 +246,17 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                                                                        :</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_transparent_segment.html#aea9c5bbd0f3e199f95a8a88e7a7896bc">ModScheme</a>(segment.<a class="code" href="class_transparent_segment.html#aea9c5bbd0f3e199f95a8a88e7a7896bc">ModScheme</a>)</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_transparent_segment.html#a1be4fc5f67f7e2cafd742aad8c155040">NumRegUsed</a> = segment.<a class="code" href="class_transparent_segment.html#a1be4fc5f67f7e2cafd742aad8c155040">NumRegUsed</a>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="class_transparent_segment.html#a9b05c0a1dc9e69f6db4410a9da7080f5">Nodes</a> = segment.<a class="code" href="class_transparent_segment.html#a9b05c0a1dc9e69f6db4410a9da7080f5">Nodes</a>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="class_transparent_segment.html#abda4e89c44fdb27ce41688447c33e72a">Links</a> = segment.<a class="code" href="class_transparent_segment.html#abda4e89c44fdb27ce41688447c33e72a">Links</a>;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
-<div class="ttc" id="class_transparent_segment_html_aea9c5bbd0f3e199f95a8a88e7a7896bc"><div class="ttname"><a href="class_transparent_segment.html#aea9c5bbd0f3e199f95a8a88e7a7896bc">TransparentSegment::ModScheme</a></div><div class="ttdeci">ModulationScheme ModScheme</div><div class="ttdoc">ModScheme is the ModulationScheme used to implement the call on the TransparentSegment. </div><div class="ttdef"><b>Definition:</b> TransparentSegment.h:55</div></div>
-<div class="ttc" id="class_transparent_segment_html_a1be4fc5f67f7e2cafd742aad8c155040"><div class="ttname"><a href="class_transparent_segment.html#a1be4fc5f67f7e2cafd742aad8c155040">TransparentSegment::NumRegUsed</a></div><div class="ttdeci">unsigned int NumRegUsed</div><div class="ttdoc">NumRegUsed is the number of regenerators used on the last node of the transparent segment...</div><div class="ttdef"><b>Definition:</b> TransparentSegment.h:60</div></div>
-<div class="ttc" id="class_transparent_segment_html_abda4e89c44fdb27ce41688447c33e72a"><div class="ttname"><a href="class_transparent_segment.html#abda4e89c44fdb27ce41688447c33e72a">TransparentSegment::Links</a></div><div class="ttdeci">std::vector&lt; std::weak_ptr&lt; Link &gt; &gt; Links</div><div class="ttdoc">Links is a vector with the links in the TransparentSegment. </div><div class="ttdef"><b>Definition:</b> TransparentSegment.h:50</div></div>
-<div class="ttc" id="class_transparent_segment_html_a9b05c0a1dc9e69f6db4410a9da7080f5"><div class="ttname"><a href="class_transparent_segment.html#a9b05c0a1dc9e69f6db4410a9da7080f5">TransparentSegment::Nodes</a></div><div class="ttdeci">std::vector&lt; std::weak_ptr&lt; Node &gt; &gt; Nodes</div><div class="ttdoc">Nodes is a vector with the nodes in the TransparentSegment. </div><div class="ttdef"><b>Definition:</b> TransparentSegment.h:46</div></div>
+<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                                                                        :</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_transparent_segment.html#aea9c5bbd0f3e199f95a8a88e7a7896bc">ModScheme</a>(segment.<a class="code" href="class_transparent_segment.html#aea9c5bbd0f3e199f95a8a88e7a7896bc">ModScheme</a>)</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="class_transparent_segment.html#a1be4fc5f67f7e2cafd742aad8c155040">NumRegUsed</a> = segment.<a class="code" href="class_transparent_segment.html#a1be4fc5f67f7e2cafd742aad8c155040">NumRegUsed</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="class_transparent_segment.html#a9b05c0a1dc9e69f6db4410a9da7080f5">Nodes</a> = segment.<a class="code" href="class_transparent_segment.html#a9b05c0a1dc9e69f6db4410a9da7080f5">Nodes</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="class_transparent_segment.html#abda4e89c44fdb27ce41688447c33e72a">Links</a> = segment.<a class="code" href="class_transparent_segment.html#abda4e89c44fdb27ce41688447c33e72a">Links</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
+<div class="ttc" id="class_transparent_segment_html_aea9c5bbd0f3e199f95a8a88e7a7896bc"><div class="ttname"><a href="class_transparent_segment.html#aea9c5bbd0f3e199f95a8a88e7a7896bc">TransparentSegment::ModScheme</a></div><div class="ttdeci">ModulationScheme ModScheme</div><div class="ttdoc">ModScheme is the ModulationScheme used to implement the call on the TransparentSegment. </div><div class="ttdef"><b>Definition:</b> TransparentSegment.h:56</div></div>
+<div class="ttc" id="class_transparent_segment_html_a1be4fc5f67f7e2cafd742aad8c155040"><div class="ttname"><a href="class_transparent_segment.html#a1be4fc5f67f7e2cafd742aad8c155040">TransparentSegment::NumRegUsed</a></div><div class="ttdeci">unsigned int NumRegUsed</div><div class="ttdoc">NumRegUsed is the number of regenerators used on the last node of the transparent segment...</div><div class="ttdef"><b>Definition:</b> TransparentSegment.h:61</div></div>
+<div class="ttc" id="class_transparent_segment_html_abda4e89c44fdb27ce41688447c33e72a"><div class="ttname"><a href="class_transparent_segment.html#abda4e89c44fdb27ce41688447c33e72a">TransparentSegment::Links</a></div><div class="ttdeci">std::vector&lt; std::weak_ptr&lt; Link &gt; &gt; Links</div><div class="ttdoc">Links is a vector with the links in the TransparentSegment. </div><div class="ttdef"><b>Definition:</b> TransparentSegment.h:51</div></div>
+<div class="ttc" id="class_transparent_segment_html_a9b05c0a1dc9e69f6db4410a9da7080f5"><div class="ttname"><a href="class_transparent_segment.html#a9b05c0a1dc9e69f6db4410a9da7080f5">TransparentSegment::Nodes</a></div><div class="ttdeci">std::vector&lt; std::weak_ptr&lt; Node &gt; &gt; Nodes</div><div class="ttdoc">Nodes is a vector with the nodes in the TransparentSegment. </div><div class="ttdef"><b>Definition:</b> TransparentSegment.h:47</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -280,26 +283,88 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the <a class="el" href="class_signal.html" title="The Signal class represents a signal that propagates through the network. ">Signal</a> after it has traversed the network. </dd></dl>
-<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    S = <a class="code" href="class_transparent_segment.html#abda4e89c44fdb27ce41688447c33e72a">Links</a>.front().lock()-&gt;Origin.lock()-&gt;add(S);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;it : <a class="code" href="class_transparent_segment.html#abda4e89c44fdb27ce41688447c33e72a">Links</a>)</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        S = it.lock()-&gt;bypass(S);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">if</span> (it.lock() == Links.back().lock())</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            S = it.lock()-&gt;Destination.lock()-&gt;drop(S);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            }</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            S = it.lock()-&gt;Destination.lock()-&gt;bypass(S);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            }</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> S;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
-<div class="ttc" id="class_transparent_segment_html_abda4e89c44fdb27ce41688447c33e72a"><div class="ttname"><a href="class_transparent_segment.html#abda4e89c44fdb27ce41688447c33e72a">TransparentSegment::Links</a></div><div class="ttdeci">std::vector&lt; std::weak_ptr&lt; Link &gt; &gt; Links</div><div class="ttdoc">Links is a vector with the links in the TransparentSegment. </div><div class="ttdef"><b>Definition:</b> TransparentSegment.h:50</div></div>
+<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    S = <a class="code" href="class_transparent_segment.html#abda4e89c44fdb27ce41688447c33e72a">Links</a>.front().lock()-&gt;Origin.lock()-&gt;add(S);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;it : <a class="code" href="class_transparent_segment.html#abda4e89c44fdb27ce41688447c33e72a">Links</a>)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        S = it.lock()-&gt;bypass(S);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">if</span> (it.lock() == Links.back().lock())</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            S = it.lock()-&gt;Destination.lock()-&gt;drop(S);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            S = it.lock()-&gt;Destination.lock()-&gt;bypass(S);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">return</span> S;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
+<div class="ttc" id="class_transparent_segment_html_abda4e89c44fdb27ce41688447c33e72a"><div class="ttname"><a href="class_transparent_segment.html#abda4e89c44fdb27ce41688447c33e72a">TransparentSegment::Links</a></div><div class="ttdeci">std::vector&lt; std::weak_ptr&lt; Link &gt; &gt; Links</div><div class="ttdoc">Links is a vector with the links in the TransparentSegment. </div><div class="ttdef"><b>Definition:</b> TransparentSegment.h:51</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a32fc4e4296b9cf5087ba9a4e56de433e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TransparentSegment::get_Contiguity </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_call.html">Call</a> &gt;&#160;</td>
+          <td class="paramname"><em>C</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get_Contiguity returns the contiguity measure of this segment. This measure is how many ways it is possible to allocate the required slots by <a class="el" href="class_call.html" title="The Call class is the standard object representing a connection between two nodes. ">Call</a> C on this segment. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">C</td><td>is the <a class="el" href="class_call.html" title="The Call class is the standard object representing a connection between two nodes. ">Call</a> against whom the contiguity measured is calculated. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>in how many ways it is possible to allocate the required slots by <a class="el" href="class_call.html" title="The Call class is the standard object representing a connection between two nodes. ">Call</a> C on this segment. </dd></dl>
+<div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;{</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">int</span> NumRequiredSlots = <a class="code" href="class_transparent_segment.html#aea9c5bbd0f3e199f95a8a88e7a7896bc">ModScheme</a>.<a class="code" href="class_modulation_scheme.html#a38f223c0141dee769ebe3a50a3232c93">get_NumSlots</a>(C-&gt;Bitrate);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">int</span> Contiguity = 0;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">int</span> CurrentFreeSlots = 0;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">auto</span> Slots = std::vector&lt;bool&gt;(<a class="code" href="class_link.html#a097cecc1016bb6809d4b76f220b7721c">Link::NumSlots</a>, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;link : <a class="code" href="class_transparent_segment.html#abda4e89c44fdb27ce41688447c33e72a">Links</a>)</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 0; i &lt; Slots.size(); ++i)</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            Slots[i] = Slots[i] &amp;&amp; link.lock()-&gt;isSlotFree(i);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> s = 0; s &lt; <a class="code" href="class_link.html#a097cecc1016bb6809d4b76f220b7721c">Link::NumSlots</a>; s++)</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordflow">if</span> (Slots[s])</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            {</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            CurrentFreeSlots++;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            }</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            CurrentFreeSlots = 0;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            }</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordflow">if</span> (CurrentFreeSlots &gt;= NumRequiredSlots)</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            Contiguity++;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            }</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        }</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordflow">return</span> Contiguity;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;}</div>
+<div class="ttc" id="class_transparent_segment_html_aea9c5bbd0f3e199f95a8a88e7a7896bc"><div class="ttname"><a href="class_transparent_segment.html#aea9c5bbd0f3e199f95a8a88e7a7896bc">TransparentSegment::ModScheme</a></div><div class="ttdeci">ModulationScheme ModScheme</div><div class="ttdoc">ModScheme is the ModulationScheme used to implement the call on the TransparentSegment. </div><div class="ttdef"><b>Definition:</b> TransparentSegment.h:56</div></div>
+<div class="ttc" id="class_modulation_scheme_html_a38f223c0141dee769ebe3a50a3232c93"><div class="ttname"><a href="class_modulation_scheme.html#a38f223c0141dee769ebe3a50a3232c93">ModulationScheme::get_NumSlots</a></div><div class="ttdeci">unsigned int get_NumSlots(TransmissionBitrate &amp;BitRate)</div><div class="ttdoc">get_NumSlots calculates the number of slots necessary to implement a Call with this scheme and a cert...</div><div class="ttdef"><b>Definition:</b> ModulationScheme.cpp:63</div></div>
+<div class="ttc" id="class_transparent_segment_html_abda4e89c44fdb27ce41688447c33e72a"><div class="ttname"><a href="class_transparent_segment.html#abda4e89c44fdb27ce41688447c33e72a">TransparentSegment::Links</a></div><div class="ttdeci">std::vector&lt; std::weak_ptr&lt; Link &gt; &gt; Links</div><div class="ttdoc">Links is a vector with the links in the TransparentSegment. </div><div class="ttdef"><b>Definition:</b> TransparentSegment.h:51</div></div>
+<div class="ttc" id="class_link_html_a097cecc1016bb6809d4b76f220b7721c"><div class="ttname"><a href="class_link.html#a097cecc1016bb6809d4b76f220b7721c">Link::NumSlots</a></div><div class="ttdeci">static int NumSlots</div><div class="ttdoc">NumSlots is the number of frequency slots on this link. </div><div class="ttdef"><b>Definition:</b> Link.h:28</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -318,44 +383,44 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 <p>get_MaxContigSlots returns the maximum number of adjacent free slots in the <a class="el" href="class_transparent_segment.html" title="The TransparentSegment class is a set of links, into which a call is implemented. ...">TransparentSegment</a>. </p>
 <dl class="section return"><dt>Returns</dt><dd>the maximum number of adjacent free slots in the <a class="el" href="class_transparent_segment.html" title="The TransparentSegment class is a set of links, into which a call is implemented. ...">TransparentSegment</a>. </dd></dl>
-<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    std::vector&lt;bool&gt; SlotsAvailability(<a class="code" href="class_link.html#a097cecc1016bb6809d4b76f220b7721c">Link::NumSlots</a>, <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;link : <a class="code" href="class_transparent_segment.html#abda4e89c44fdb27ce41688447c33e72a">Links</a>)</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keyword">auto</span> linklock = link.lock();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="class_link.html#a097cecc1016bb6809d4b76f220b7721c">Link::NumSlots</a>; i++)</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            SlotsAvailability[i] = SlotsAvailability[i] &amp;&amp;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                   linklock-&gt;isSlotFree(i);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">unsigned</span> MaxSlots = 0;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">unsigned</span> CurrentFreeSlots = 0;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">bool</span> slot : SlotsAvailability)</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordflow">if</span> (slot)</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            CurrentFreeSlots++;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            }</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            CurrentFreeSlots = 0;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            }</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">if</span> (CurrentFreeSlots &gt; MaxSlots)</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            MaxSlots = CurrentFreeSlots;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            }</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        }</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">return</span> MaxSlots;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
-<div class="ttc" id="class_transparent_segment_html_abda4e89c44fdb27ce41688447c33e72a"><div class="ttname"><a href="class_transparent_segment.html#abda4e89c44fdb27ce41688447c33e72a">TransparentSegment::Links</a></div><div class="ttdeci">std::vector&lt; std::weak_ptr&lt; Link &gt; &gt; Links</div><div class="ttdoc">Links is a vector with the links in the TransparentSegment. </div><div class="ttdef"><b>Definition:</b> TransparentSegment.h:50</div></div>
+<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    std::vector&lt;bool&gt; SlotsAvailability(<a class="code" href="class_link.html#a097cecc1016bb6809d4b76f220b7721c">Link::NumSlots</a>, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;link : <a class="code" href="class_transparent_segment.html#abda4e89c44fdb27ce41688447c33e72a">Links</a>)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keyword">auto</span> linklock = link.lock();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="class_link.html#a097cecc1016bb6809d4b76f220b7721c">Link::NumSlots</a>; i++)</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            SlotsAvailability[i] = SlotsAvailability[i] &amp;&amp;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                   linklock-&gt;isSlotFree(i);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">unsigned</span> MaxSlots = 0;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">unsigned</span> CurrentFreeSlots = 0;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">bool</span> slot : SlotsAvailability)</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">if</span> (slot)</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            CurrentFreeSlots++;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            CurrentFreeSlots = 0;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">if</span> (CurrentFreeSlots &gt; MaxSlots)</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            MaxSlots = CurrentFreeSlots;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">return</span> MaxSlots;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
+<div class="ttc" id="class_transparent_segment_html_abda4e89c44fdb27ce41688447c33e72a"><div class="ttname"><a href="class_transparent_segment.html#abda4e89c44fdb27ce41688447c33e72a">TransparentSegment::Links</a></div><div class="ttdeci">std::vector&lt; std::weak_ptr&lt; Link &gt; &gt; Links</div><div class="ttdoc">Links is a vector with the links in the TransparentSegment. </div><div class="ttdef"><b>Definition:</b> TransparentSegment.h:51</div></div>
 <div class="ttc" id="class_link_html_a097cecc1016bb6809d4b76f220b7721c"><div class="ttname"><a href="class_link.html#a097cecc1016bb6809d4b76f220b7721c">Link::NumSlots</a></div><div class="ttdeci">static int NumSlots</div><div class="ttdoc">NumSlots is the number of frequency slots on this link. </div><div class="ttdef"><b>Definition:</b> Link.h:28</div></div>
 </div><!-- fragment -->
 </div>

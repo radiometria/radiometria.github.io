@@ -5,6 +5,7 @@ var searchData=
   ['defaultavgspanlength',['DefaultAvgSpanLength',['../class_link.html#ac2ef0f570c0675a7c2bdfdcd0c7e2b41',1,'Link']]],
   ['defaultschemes',['DefaultSchemes',['../class_modulation_scheme.html#a8dd467b4b5a9d5aa2d5777cabcc3e64d',1,'ModulationScheme']]],
   ['define_5fsignalsfilterorder',['define_SignalsFilterOrder',['../class_spectral_density.html#a2f10243973f50c80db54994e964da639',1,'SpectralDensity']]],
+  ['define_5fspectrumassignmentalgorithm',['define_SpectrumAssignmentAlgorithm',['../class_s_a_1_1_spectrum_assignment_algorithm.html#ada165e442eee3be0faacac7e1e2f6328',1,'SA::SpectrumAssignmentAlgorithm']]],
   ['densityscaling',['densityScaling',['../class_spectral_density.html#a107fdbe36299f79b2a8e245c6a8f90e6',1,'SpectralDensity']]],
   ['destination',['Destination',['../class_call.html#aec6a233a15ef1b32f4849aafa7e11cc5',1,'Call::Destination()'],['../class_link.html#aa273d9ecee205daa2f69ead1a096e802',1,'Link::Destination()']]],
   ['device',['Device',['../class_devices_1_1_device.html',1,'Devices']]],

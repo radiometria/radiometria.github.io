@@ -146,7 +146,7 @@ $(document).ready(function(){initNavTree('_cost_8h_source.html','');});
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">typedef</span> boost::bimap&lt;PossibleCosts, std::string&gt; CostNicknameBimap;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">static</span> CostNicknameBimap CostsNicknames;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="class_r_o_u_t_1_1_p_s_r_1_1_cost.html#af0e165b8485f6909e744b79b621cbbcb">Cost</a>(<span class="keywordtype">int</span> NMin, <span class="keywordtype">int</span> NMax, std::shared_ptr&lt;Topology&gt; T, <a class="code" href="class_r_o_u_t_1_1_p_s_r_1_1_cost.html#addb3facee748a7a2fd0abb99ac9c7853">PossibleCosts</a> Type);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="class_r_o_u_t_1_1_p_s_r_1_1_cost.html#af0e165b8485f6909e744b79b621cbbcb">Cost</a>(<span class="keywordtype">int</span> NMin, <span class="keywordtype">int</span> NMax, std::shared_ptr&lt;Topology&gt; T, <a class="code" href="class_r_o_u_t_1_1_p_s_r_1_1_cost.html#addb3facee748a7a2fd0abb99ac9c7853">PossibleCosts</a> <a class="code" href="class_r_o_u_t_1_1_p_s_r_1_1_cost.html#a2c1df75ef47ce8c5ad0b4e12199efb8f">Type</a>);</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">virtual</span> arma::rowvec <a class="code" href="class_r_o_u_t_1_1_p_s_r_1_1_cost.html#ae2b2f59c94bd31422d146eff76b21593">getCost</a>(std::weak_ptr&lt;Link&gt; link,</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                                 std::shared_ptr&lt;Call&gt; C) = 0;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_r_o_u_t_1_1_p_s_r_1_1_cost.html#ae2b2f59c94bd31422d146eff76b21593">getCost</a>(<span class="keywordtype">int</span> N, std::weak_ptr&lt;Link&gt; link, std::shared_ptr&lt;Call&gt; C);</div>
@@ -156,17 +156,16 @@ $(document).ready(function(){initNavTree('_cost_8h_source.html','');});
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_r_o_u_t_1_1_p_s_r_1_1_cost.html#a72da7823bbf634771bf791c825753a9f">get_NMin</a>();</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_r_o_u_t_1_1_p_s_r_1_1_cost.html#a71639bc0255d6e22fff0b6faa1b5dea1">get_NMax</a>();</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_r_o_u_t_1_1_p_s_r_1_1_cost.html#a25d612f18d0f6e2ab04b8bec7403805a">get_N</a>();</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <a class="code" href="class_r_o_u_t_1_1_p_s_r_1_1_cost.html#addb3facee748a7a2fd0abb99ac9c7853">PossibleCosts</a> Type;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">int</span> NMin, NMax;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    std::shared_ptr&lt;Topology&gt; T;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;};</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;}</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;}</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#endif // COST_H</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="class_r_o_u_t_1_1_p_s_r_1_1_cost.html#a2c1df75ef47ce8c5ad0b4e12199efb8f">  106</a></span>&#160;    <a class="code" href="class_r_o_u_t_1_1_p_s_r_1_1_cost.html#addb3facee748a7a2fd0abb99ac9c7853">PossibleCosts</a> <a class="code" href="class_r_o_u_t_1_1_p_s_r_1_1_cost.html#a2c1df75ef47ce8c5ad0b4e12199efb8f">Type</a>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">int</span> NMin, NMax;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    std::shared_ptr&lt;Topology&gt; T;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;};</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;}</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#endif // COST_H</span></div>
 <div class="ttc" id="class_r_o_u_t_1_1_p_s_r_1_1_cost_html_af0e165b8485f6909e744b79b621cbbcb"><div class="ttname"><a href="class_r_o_u_t_1_1_p_s_r_1_1_cost.html#af0e165b8485f6909e744b79b621cbbcb">ROUT::PSR::Cost::Cost</a></div><div class="ttdeci">Cost(int NMin, int NMax, std::shared_ptr&lt; Topology &gt; T, PossibleCosts Type)</div><div class="ttdoc">Cost is the standard constructor. </div><div class="ttdef"><b>Definition:</b> Cost.cpp:23</div></div>
 <div class="ttc" id="namespace_r_o_u_t_html"><div class="ttname"><a href="namespace_r_o_u_t.html">ROUT</a></div><div class="ttdoc">Contains the routing algorithms. </div><div class="ttdef"><b>Definition:</b> DijkstraRoutingAlgorithm.h:6</div></div>
 <div class="ttc" id="class_call_html"><div class="ttname"><a href="class_call.html">Call</a></div><div class="ttdoc">The Call class is the standard object representing a connection between two nodes. </div><div class="ttdef"><b>Definition:</b> Call.h:15</div></div>
@@ -178,6 +177,7 @@ $(document).ready(function(){initNavTree('_cost_8h_source.html','');});
 <div class="ttc" id="class_r_o_u_t_1_1_p_s_r_1_1_cost_html_a71639bc0255d6e22fff0b6faa1b5dea1"><div class="ttname"><a href="class_r_o_u_t_1_1_p_s_r_1_1_cost.html#a71639bc0255d6e22fff0b6faa1b5dea1">ROUT::PSR::Cost::get_NMax</a></div><div class="ttdeci">int get_NMax()</div><div class="ttdoc">get_NMax returns the maximum exponent. </div><div class="ttdef"><b>Definition:</b> Cost.cpp:50</div></div>
 <div class="ttc" id="class_topology_html"><div class="ttname"><a href="class_topology.html">Topology</a></div><div class="ttdoc">The Topology class represents a topology, i.e. a set of links and nodes. </div><div class="ttdef"><b>Definition:</b> Topology.h:17</div></div>
 <div class="ttc" id="class_r_o_u_t_1_1_p_s_r_1_1_cost_html_addb3facee748a7a2fd0abb99ac9c7853"><div class="ttname"><a href="class_r_o_u_t_1_1_p_s_r_1_1_cost.html#addb3facee748a7a2fd0abb99ac9c7853">ROUT::PSR::Cost::PossibleCosts</a></div><div class="ttdeci">PossibleCosts</div><div class="ttdoc">The PossibleCosts enum represents the possible costs that are implemented. </div><div class="ttdef"><b>Definition:</b> Cost.h:42</div></div>
+<div class="ttc" id="class_r_o_u_t_1_1_p_s_r_1_1_cost_html_a2c1df75ef47ce8c5ad0b4e12199efb8f"><div class="ttname"><a href="class_r_o_u_t_1_1_p_s_r_1_1_cost.html#a2c1df75ef47ce8c5ad0b4e12199efb8f">ROUT::PSR::Cost::Type</a></div><div class="ttdeci">PossibleCosts Type</div><div class="ttdoc">Type identifies the type of this cost. </div><div class="ttdef"><b>Definition:</b> Cost.h:106</div></div>
 <div class="ttc" id="class_link_html"><div class="ttname"><a href="class_link.html">Link</a></div><div class="ttdoc">The Link class represents a link. </div><div class="ttdef"><b>Definition:</b> Link.h:22</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

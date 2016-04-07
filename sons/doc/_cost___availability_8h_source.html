@@ -113,20 +113,21 @@ $(document).ready(function(){initNavTree('_cost___availability_8h_source.html','
 <div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_r_o_u_t_1_1_p_s_r_1_1c_availability.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_r_o_u_t_1_1_p_s_r_1_1c_availability.html">cAvailability</a> : <span class="keyword">public</span> <a class="code" href="class_r_o_u_t_1_1_p_s_r_1_1_cost.html">Cost</a></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_r_o_u_t_1_1_p_s_r_1_1c_availability.html">cAvailability</a>(<span class="keywordtype">int</span> NMin, <span class="keywordtype">int</span> NMax, std::shared_ptr&lt;Topology&gt; T);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    arma::rowvec <a class="code" href="class_r_o_u_t_1_1_p_s_r_1_1c_availability.html#a4b78b135dd2e0baaa71e261ed160c6b3">getCost</a>(std::weak_ptr&lt;Link&gt; link, std::shared_ptr&lt;Call&gt;);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> createCache();</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    arma::mat cache;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif // COST_AVAILABILITY</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="class_r_o_u_t_1_1_p_s_r_1_1c_availability.html#a539ce95d35504691f36455238f051c4c">cAvailability</a>(<span class="keywordtype">int</span> NMin, <span class="keywordtype">int</span> NMax, std::shared_ptr&lt;Topology&gt; T);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    arma::rowvec <a class="code" href="class_r_o_u_t_1_1_p_s_r_1_1c_availability.html#a4b78b135dd2e0baaa71e261ed160c6b3">getCost</a>(std::weak_ptr&lt;Link&gt; link, std::shared_ptr&lt;Call&gt;);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> createCache();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    arma::mat cache;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#endif // COST_AVAILABILITY</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
 <div class="ttc" id="class_r_o_u_t_1_1_p_s_r_1_1c_availability_html_a4b78b135dd2e0baaa71e261ed160c6b3"><div class="ttname"><a href="class_r_o_u_t_1_1_p_s_r_1_1c_availability.html#a4b78b135dd2e0baaa71e261ed160c6b3">ROUT::PSR::cAvailability::getCost</a></div><div class="ttdeci">arma::rowvec getCost(std::weak_ptr&lt; Link &gt; link, std::shared_ptr&lt; Call &gt;)</div><div class="ttdoc">getCost returns a vector containing the cost, elevated to the required exponents, in order...</div><div class="ttdef"><b>Definition:</b> Cost_Availability.cpp:16</div></div>
+<div class="ttc" id="class_r_o_u_t_1_1_p_s_r_1_1c_availability_html_a539ce95d35504691f36455238f051c4c"><div class="ttname"><a href="class_r_o_u_t_1_1_p_s_r_1_1c_availability.html#a539ce95d35504691f36455238f051c4c">ROUT::PSR::cAvailability::cAvailability</a></div><div class="ttdeci">cAvailability(int NMin, int NMax, std::shared_ptr&lt; Topology &gt; T)</div><div class="ttdoc">cAvailability is the standard constructor for the cAvailability cost. </div><div class="ttdef"><b>Definition:</b> Cost_Availability.cpp:8</div></div>
 <div class="ttc" id="namespace_r_o_u_t_html"><div class="ttname"><a href="namespace_r_o_u_t.html">ROUT</a></div><div class="ttdoc">Contains the routing algorithms. </div><div class="ttdef"><b>Definition:</b> DijkstraRoutingAlgorithm.h:6</div></div>
 <div class="ttc" id="class_r_o_u_t_1_1_p_s_r_1_1_cost_html"><div class="ttname"><a href="class_r_o_u_t_1_1_p_s_r_1_1_cost.html">ROUT::PSR::Cost</a></div><div class="ttdoc">The Cost class represents a cost to the PSR. </div><div class="ttdef"><b>Definition:</b> Cost.h:19</div></div>
 <div class="ttc" id="class_r_o_u_t_1_1_p_s_r_1_1c_availability_html"><div class="ttname"><a href="class_r_o_u_t_1_1_p_s_r_1_1c_availability.html">ROUT::PSR::cAvailability</a></div><div class="ttdoc">The cAvailability class has, as cost, the number of free slots on each link, normalized by the number...</div><div class="ttdef"><b>Definition:</b> Cost_Availability.h:15</div></div>

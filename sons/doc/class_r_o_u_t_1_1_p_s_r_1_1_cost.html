@@ -157,7 +157,7 @@ typedef boost::bimap&lt; <a class="el" href="class_r_o_u_t_1_1_p_s_r_1_1_cost.ht
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af0e165b8485f6909e744b79b621cbbcb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_u_t_1_1_p_s_r_1_1_cost.html#af0e165b8485f6909e744b79b621cbbcb">Cost</a> (int NMin, int NMax, std::shared_ptr&lt; <a class="el" href="class_topology.html">Topology</a> &gt; T, <a class="el" href="class_r_o_u_t_1_1_p_s_r_1_1_cost.html#addb3facee748a7a2fd0abb99ac9c7853">PossibleCosts</a> Type)</td></tr>
+<tr class="memitem:af0e165b8485f6909e744b79b621cbbcb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_u_t_1_1_p_s_r_1_1_cost.html#af0e165b8485f6909e744b79b621cbbcb">Cost</a> (int NMin, int NMax, std::shared_ptr&lt; <a class="el" href="class_topology.html">Topology</a> &gt; T, <a class="el" href="class_r_o_u_t_1_1_p_s_r_1_1_cost.html#addb3facee748a7a2fd0abb99ac9c7853">PossibleCosts</a> <a class="el" href="class_r_o_u_t_1_1_p_s_r_1_1_cost.html#a2c1df75ef47ce8c5ad0b4e12199efb8f">Type</a>)</td></tr>
 <tr class="memdesc:af0e165b8485f6909e744b79b621cbbcb"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_r_o_u_t_1_1_p_s_r_1_1_cost.html" title="The Cost class represents a cost to the PSR. ">Cost</a> is the standard constructor.  <a href="#af0e165b8485f6909e744b79b621cbbcb">More...</a><br /></td></tr>
 <tr class="separator:af0e165b8485f6909e744b79b621cbbcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2b2f59c94bd31422d146eff76b21593"><td class="memItemLeft" align="right" valign="top">virtual arma::rowvec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_u_t_1_1_p_s_r_1_1_cost.html#ae2b2f59c94bd31422d146eff76b21593">getCost</a> (std::weak_ptr&lt; <a class="el" href="class_link.html">Link</a> &gt; link, std::shared_ptr&lt; <a class="el" href="class_call.html">Call</a> &gt; C)=0</td></tr>
@@ -185,7 +185,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a2c1df75ef47ce8c5ad0b4e12199efb8f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2c1df75ef47ce8c5ad0b4e12199efb8f"></a>
-<a class="el" href="class_r_o_u_t_1_1_p_s_r_1_1_cost.html#addb3facee748a7a2fd0abb99ac9c7853">PossibleCosts</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Type</b></td></tr>
+<a class="el" href="class_r_o_u_t_1_1_p_s_r_1_1_cost.html#addb3facee748a7a2fd0abb99ac9c7853">PossibleCosts</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_u_t_1_1_p_s_r_1_1_cost.html#a2c1df75ef47ce8c5ad0b4e12199efb8f">Type</a></td></tr>
+<tr class="memdesc:a2c1df75ef47ce8c5ad0b4e12199efb8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type identifies the type of this cost. <br /></td></tr>
 <tr class="separator:a2c1df75ef47ce8c5ad0b4e12199efb8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
@@ -256,10 +257,11 @@ std::shared_ptr&lt; <a class="el" href="class_topology.html">Topology</a> &gt;&#
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                                    : Type(Type), NMin(NMin), NMax(NMax), T(T)</div>
+<div class="fragment"><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                                    : <a class="code" href="class_r_o_u_t_1_1_p_s_r_1_1_cost.html#a2c1df75ef47ce8c5ad0b4e12199efb8f">Type</a>(<a class="code" href="class_r_o_u_t_1_1_p_s_r_1_1_cost.html#a2c1df75ef47ce8c5ad0b4e12199efb8f">Type</a>), NMin(NMin), NMax(NMax), T(T)</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
+<div class="ttc" id="class_r_o_u_t_1_1_p_s_r_1_1_cost_html_a2c1df75ef47ce8c5ad0b4e12199efb8f"><div class="ttname"><a href="class_r_o_u_t_1_1_p_s_r_1_1_cost.html#a2c1df75ef47ce8c5ad0b4e12199efb8f">ROUT::PSR::Cost::Type</a></div><div class="ttdeci">PossibleCosts Type</div><div class="ttdoc">Type identifies the type of this cost. </div><div class="ttdef"><b>Definition:</b> Cost.h:106</div></div>
 </div><!-- fragment -->
 </div>
 </div>

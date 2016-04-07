@@ -107,25 +107,27 @@ $(document).ready(function(){initNavTree('_random_fit_8h_source.html','');});
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_s_a.html">SA</a></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_s_a_1_1_random_fit.html">    8</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_s_a_1_1_random_fit.html">RandomFit</a> : <span class="keyword">public</span> <a class="code" href="class_s_a_1_1_spectrum_assignment_algorithm.html">SpectrumAssignmentAlgorithm</a></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="class_s_a_1_1_random_fit.html">RandomFit</a>(std::shared_ptr&lt;Topology&gt; T);</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    std::map&lt;std::weak_ptr&lt;Link&gt;,</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        std::vector&lt;std::weak_ptr&lt;Slot&gt;&gt;,</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        std::owner_less&lt;std::weak_ptr&lt;Link&gt;&gt;&gt;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        assignSlots(std::shared_ptr&lt;Call&gt; C, <a class="code" href="class_transparent_segment.html">TransparentSegment</a> Seg);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">void</span> load() {}</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">void</span> save(std::string);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;};</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif // RANDOMFIT_H</span></div>
-<div class="ttc" id="class_transparent_segment_html"><div class="ttname"><a href="class_transparent_segment.html">TransparentSegment</a></div><div class="ttdoc">The TransparentSegment class is a set of links, into which a call is implemented. ...</div><div class="ttdef"><b>Definition:</b> TransparentSegment.h:21</div></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_s_a_1_1_random_fit.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_s_a_1_1_random_fit.html">RandomFit</a> : <span class="keyword">public</span> <a class="code" href="class_s_a_1_1_spectrum_assignment_algorithm.html">SpectrumAssignmentAlgorithm</a></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="class_s_a_1_1_random_fit.html#a79a78f5e0a8923490b1cd50f5c2e982b">RandomFit</a>(std::shared_ptr&lt;Topology&gt; T);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    std::map&lt;std::weak_ptr&lt;Link&gt;,</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        std::vector&lt;std::weak_ptr&lt;Slot&gt;&gt;,</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        std::owner_less&lt;std::weak_ptr&lt;Link&gt;&gt;&gt;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="class_s_a_1_1_random_fit.html#a72af6c4e9bbf42d9e38e5fe01a8df812">assignSlots</a>(std::shared_ptr&lt;Call&gt; C, <a class="code" href="class_transparent_segment.html">TransparentSegment</a> Seg);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> load() {}</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> save(std::string);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif // RANDOMFIT_H</span></div>
+<div class="ttc" id="class_s_a_1_1_random_fit_html_a79a78f5e0a8923490b1cd50f5c2e982b"><div class="ttname"><a href="class_s_a_1_1_random_fit.html#a79a78f5e0a8923490b1cd50f5c2e982b">SA::RandomFit::RandomFit</a></div><div class="ttdeci">RandomFit(std::shared_ptr&lt; Topology &gt; T)</div><div class="ttdoc">RandomFit is the standard constructor for the Random Fit SA algorithm. </div><div class="ttdef"><b>Definition:</b> RandomFit.cpp:9</div></div>
+<div class="ttc" id="class_transparent_segment_html"><div class="ttname"><a href="class_transparent_segment.html">TransparentSegment</a></div><div class="ttdoc">The TransparentSegment class is a set of links, into which a call is implemented. ...</div><div class="ttdef"><b>Definition:</b> TransparentSegment.h:22</div></div>
+<div class="ttc" id="class_s_a_1_1_random_fit_html_a72af6c4e9bbf42d9e38e5fe01a8df812"><div class="ttname"><a href="class_s_a_1_1_random_fit.html#a72af6c4e9bbf42d9e38e5fe01a8df812">SA::RandomFit::assignSlots</a></div><div class="ttdeci">std::map&lt; std::weak_ptr&lt; Link &gt;, std::vector&lt; std::weak_ptr&lt; Slot &gt; &gt;, std::owner_less&lt; std::weak_ptr&lt; Link &gt; &gt; &gt; assignSlots(std::shared_ptr&lt; Call &gt; C, TransparentSegment Seg)</div><div class="ttdoc">assignSlots assigns the slots on the transparent segment. </div><div class="ttdef"><b>Definition:</b> RandomFit.cpp:18</div></div>
 <div class="ttc" id="namespace_s_a_html"><div class="ttname"><a href="namespace_s_a.html">SA</a></div><div class="ttdoc">Contains the spectrum assignment algorithms. </div><div class="ttdef"><b>Definition:</b> RoutingWavelengthAssignment.h:20</div></div>
 <div class="ttc" id="class_s_a_1_1_spectrum_assignment_algorithm_html"><div class="ttname"><a href="class_s_a_1_1_spectrum_assignment_algorithm.html">SA::SpectrumAssignmentAlgorithm</a></div><div class="ttdoc">The SpectrumAssignmentAlgorithm class represents a spectrum assignment algorithm. ...</div><div class="ttdef"><b>Definition:</b> SpectrumAssignmentAlgorithm.h:19</div></div>
-<div class="ttc" id="class_s_a_1_1_random_fit_html"><div class="ttname"><a href="class_s_a_1_1_random_fit.html">SA::RandomFit</a></div><div class="ttdef"><b>Definition:</b> RandomFit.h:8</div></div>
+<div class="ttc" id="class_s_a_1_1_random_fit_html"><div class="ttname"><a href="class_s_a_1_1_random_fit.html">SA::RandomFit</a></div><div class="ttdoc">The RandomFit class represents the Random Fit spectrum assignment algorithm. It tries to allocate the...</div><div class="ttdef"><b>Definition:</b> RandomFit.h:12</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

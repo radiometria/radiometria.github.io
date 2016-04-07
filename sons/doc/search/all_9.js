@@ -2,6 +2,7 @@ var searchData=
 [
   ['lambda',['lambda',['../class_physical_constants.html#a667e8f7d9d3f2ff71982514cc936e8df',1,'PhysicalConstants']]],
   ['leastused',['LeastUsed',['../class_s_a_1_1_least_used.html',1,'SA']]],
+  ['leastused',['LeastUsed',['../class_s_a_1_1_least_used.html#adebf4216f46ebecc4ef37ff70b90f9d7',1,'SA::LeastUsed']]],
   ['length',['Length',['../class_link.html#a43c39aaf9b64ea2155b199d89309cbae',1,'Link']]],
   ['lengthoccupationroutingavailability',['LengthOccupationRoutingAvailability',['../class_r_o_u_t_1_1_length_occupation_routing_availability.html',1,'ROUT']]],
   ['lengthoccupationroutingcontiguity',['LengthOccupationRoutingContiguity',['../class_r_o_u_t_1_1_length_occupation_routing_contiguity.html',1,'ROUT']]],

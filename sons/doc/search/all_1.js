@@ -1,7 +1,7 @@
 var searchData=
 [
   ['bestfit',['BestFit',['../class_s_a_1_1_best_fit.html',1,'SA']]],
-  ['bestfit',['bestFit',['../class_p_s_o___particle.html#a1f0d0a8c004bbdf0c6c3e5882b663ff4',1,'PSO_Particle']]],
+  ['bestfit',['bestFit',['../class_p_s_o___particle.html#a1f0d0a8c004bbdf0c6c3e5882b663ff4',1,'PSO_Particle::bestFit()'],['../class_s_a_1_1_best_fit.html#a5999388b1cbf8a079279155d40e1dc82',1,'SA::BestFit::BestFit()']]],
   ['bestparticle',['BestParticle',['../class_particle_swarm_optimization.html#a6afce5e7207601d907a610136792cdec',1,'ParticleSwarmOptimization']]],
   ['binarytournament',['binaryTournament',['../class_n_s_g_a2___generation.html#a0d6010d81a5871bf99d5f860b6a57a48',1,'NSGA2_Generation']]],
   ['binarytournamentparameter',['binaryTournamentParameter',['../class_n_s_g_a2.html#acb9abac8f78a27220295df84d1ca6b98',1,'NSGA2']]],

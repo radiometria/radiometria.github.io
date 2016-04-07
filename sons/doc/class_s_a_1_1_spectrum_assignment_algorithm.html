@@ -125,12 +125,12 @@ Inheritance diagram for SA::SpectrumAssignmentAlgorithm:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_s_a_1_1_spectrum_assignment_algorithm__inherit__graph.png" border="0" usemap="#_s_a_1_1_spectrum_assignment_algorithm_inherit__map" alt="Inheritance graph"/></div>
 <map name="_s_a_1_1_spectrum_assignment_algorithm_inherit__map" id="_s_a_1_1_spectrum_assignment_algorithm_inherit__map">
-<area shape="rect" id="node2" href="class_s_a_1_1_best_fit.html" title="SA::BestFit" alt="" coords="5,80,96,107"/>
-<area shape="rect" id="node3" href="class_s_a_1_1_exact_fit.html" title="SA::ExactFit" alt="" coords="121,80,218,107"/>
-<area shape="rect" id="node4" href="class_s_a_1_1_first_fit.html" title="SA::FirstFit" alt="" coords="242,80,331,107"/>
-<area shape="rect" id="node5" href="class_s_a_1_1_least_used.html" title="SA::LeastUsed" alt="" coords="355,80,466,107"/>
-<area shape="rect" id="node6" href="class_s_a_1_1_most_used.html" title="SA::MostUsed" alt="" coords="490,80,598,107"/>
-<area shape="rect" id="node7" href="class_s_a_1_1_random_fit.html" title="SA::RandomFit" alt="" coords="623,80,735,107"/>
+<area shape="rect" id="node2" href="class_s_a_1_1_best_fit.html" title="The BestFit class represents the Best Fit spectrum assignment algorithm. It will allocate the requisi..." alt="" coords="5,80,96,107"/>
+<area shape="rect" id="node3" href="class_s_a_1_1_exact_fit.html" title="The ExactFit class represents the Exact Fit spectrum assignment algorithm. It tries to allocate the r..." alt="" coords="121,80,218,107"/>
+<area shape="rect" id="node4" href="class_s_a_1_1_first_fit.html" title="The FirstFit class represents the First Fit spectrum assignment algorithm. It tries to allocate the r..." alt="" coords="242,80,331,107"/>
+<area shape="rect" id="node5" href="class_s_a_1_1_least_used.html" title="The LeastUsed class represents the Least Used spectrum assignment algorithm. It tries to allocate the..." alt="" coords="355,80,466,107"/>
+<area shape="rect" id="node6" href="class_s_a_1_1_most_used.html" title="The MostUsed class represents the Most Used spectrum assignment algorithm. It tries to allocate the r..." alt="" coords="490,80,598,107"/>
+<area shape="rect" id="node7" href="class_s_a_1_1_random_fit.html" title="The RandomFit class represents the Random Fit spectrum assignment algorithm. It tries to allocate the..." alt="" coords="623,80,735,107"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -151,8 +151,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad0fd5fe31bdf285af2d8011ca2655584"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad0fd5fe31bdf285af2d8011ca2655584"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SpectrumAssignmentAlgorithm</b> (std::shared_ptr&lt; <a class="el" href="class_topology.html">Topology</a> &gt; T, SpectrumAssignmentAlgorithms SpecAssAlgType)</td></tr>
 <tr class="separator:ad0fd5fe31bdf285af2d8011ca2655584"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e92ec60676bbb1cf8da11de35c6eacb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9e92ec60676bbb1cf8da11de35c6eacb"></a>
-virtual std::map&lt; std::weak_ptr&lt; <a class="el" href="class_link.html">Link</a> &gt;, std::vector&lt; std::weak_ptr&lt; <a class="el" href="class_slot.html">Slot</a> &gt; &gt;, std::owner_less&lt; std::weak_ptr&lt; <a class="el" href="class_link.html">Link</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>assignSlots</b> (std::shared_ptr&lt; <a class="el" href="class_call.html">Call</a> &gt; C, <a class="el" href="class_transparent_segment.html">TransparentSegment</a> Seg)=0</td></tr>
+<tr class="memitem:a9e92ec60676bbb1cf8da11de35c6eacb"><td class="memItemLeft" align="right" valign="top">virtual std::map&lt; std::weak_ptr&lt; <a class="el" href="class_link.html">Link</a> &gt;, std::vector&lt; std::weak_ptr&lt; <a class="el" href="class_slot.html">Slot</a> &gt; &gt;, std::owner_less&lt; std::weak_ptr&lt; <a class="el" href="class_link.html">Link</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_a_1_1_spectrum_assignment_algorithm.html#a9e92ec60676bbb1cf8da11de35c6eacb">assignSlots</a> (std::shared_ptr&lt; <a class="el" href="class_call.html">Call</a> &gt; C, <a class="el" href="class_transparent_segment.html">TransparentSegment</a> Seg)=0</td></tr>
+<tr class="memdesc:a9e92ec60676bbb1cf8da11de35c6eacb"><td class="mdescLeft">&#160;</td><td class="mdescRight">assignSlots assigns the slots on the transparent segment.  <a href="#a9e92ec60676bbb1cf8da11de35c6eacb">More...</a><br /></td></tr>
 <tr class="separator:a9e92ec60676bbb1cf8da11de35c6eacb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4bad7ee73798d0b6acbe81131499b64"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac4bad7ee73798d0b6acbe81131499b64"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>load</b> ()=0</td></tr>
@@ -163,11 +163,11 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>save</b> (std
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ada165e442eee3be0faacac7e1e2f6328"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ada165e442eee3be0faacac7e1e2f6328"></a>
-static SpectrumAssignmentAlgorithms&#160;</td><td class="memItemRight" valign="bottom"><b>define_SpectrumAssignmentAlgorithm</b> ()</td></tr>
+<tr class="memitem:ada165e442eee3be0faacac7e1e2f6328"><td class="memItemLeft" align="right" valign="top">static SpectrumAssignmentAlgorithms&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_a_1_1_spectrum_assignment_algorithm.html#ada165e442eee3be0faacac7e1e2f6328">define_SpectrumAssignmentAlgorithm</a> ()</td></tr>
+<tr class="memdesc:ada165e442eee3be0faacac7e1e2f6328"><td class="mdescLeft">&#160;</td><td class="mdescRight">define_SpectrumAssignmentAlgorithm asks the user to define a spectrum assignment algorithm.  <a href="#ada165e442eee3be0faacac7e1e2f6328">More...</a><br /></td></tr>
 <tr class="separator:ada165e442eee3be0faacac7e1e2f6328"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa84854a847fd49cc1d3e8d47c455af2b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa84854a847fd49cc1d3e8d47c455af2b"></a>
-static std::shared_ptr&lt; <a class="el" href="class_s_a_1_1_spectrum_assignment_algorithm.html">SpectrumAssignmentAlgorithm</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>create_SpectrumAssignmentAlgorithm</b> (SpectrumAssignmentAlgorithms, std::shared_ptr&lt; <a class="el" href="class_topology.html">Topology</a> &gt;)</td></tr>
+<tr class="memitem:aa84854a847fd49cc1d3e8d47c455af2b"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="class_s_a_1_1_spectrum_assignment_algorithm.html">SpectrumAssignmentAlgorithm</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_a_1_1_spectrum_assignment_algorithm.html#aa84854a847fd49cc1d3e8d47c455af2b">create_SpectrumAssignmentAlgorithm</a> (SpectrumAssignmentAlgorithms, std::shared_ptr&lt; <a class="el" href="class_topology.html">Topology</a> &gt;)</td></tr>
+<tr class="memdesc:aa84854a847fd49cc1d3e8d47c455af2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">create_SpectrumAssignmentAlgorithm creates a spectrum assignment algorithm.  <a href="#aa84854a847fd49cc1d3e8d47c455af2b">More...</a><br /></td></tr>
 <tr class="separator:aa84854a847fd49cc1d3e8d47c455af2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -188,7 +188,164 @@ Static Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="class_s_a_1_1_spectrum_assignment_algorithm.html" title="The SpectrumAssignmentAlgorithm class represents a spectrum assignment algorithm. ...">SpectrumAssignmentAlgorithm</a> class represents a spectrum assignment algorithm. </p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a9e92ec60676bbb1cf8da11de35c6eacb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::map&lt;std::weak_ptr&lt;<a class="el" href="class_link.html">Link</a>&gt;, std::vector&lt;std::weak_ptr&lt;<a class="el" href="class_slot.html">Slot</a>&gt; &gt;, std::owner_less&lt;std::weak_ptr&lt;<a class="el" href="class_link.html">Link</a>&gt; &gt; &gt; SA::SpectrumAssignmentAlgorithm::assignSlots </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_call.html">Call</a> &gt;&#160;</td>
+          <td class="paramname"><em>C</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_transparent_segment.html">TransparentSegment</a>&#160;</td>
+          <td class="paramname"><em>Seg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>assignSlots assigns the slots on the transparent segment. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">C</td><td>is the <a class="el" href="class_call.html" title="The Call class is the standard object representing a connection between two nodes. ">Call</a> where the slots will be assigned. </td></tr>
+    <tr><td class="paramname">Seg</td><td>is the transparent segment will be assigned. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a map that associates, to each pointer to a <a class="el" href="class_link.html" title="The Link class represents a link. ">Link</a>, a vector containing the slots used by this <a class="el" href="class_call.html" title="The Call class is the standard object representing a connection between two nodes. ">Call</a> on the link. </dd></dl>
+
+<p>Implemented in <a class="el" href="class_s_a_1_1_best_fit.html#aa42730ec1177566718aa3de30ac0cb55">SA::BestFit</a>, <a class="el" href="class_s_a_1_1_exact_fit.html#a527e9b5933a89c7c54f9fe0607348a6b">SA::ExactFit</a>, <a class="el" href="class_s_a_1_1_least_used.html#ac260b4598b6f90d230cda55626f40775">SA::LeastUsed</a>, <a class="el" href="class_s_a_1_1_most_used.html#af984549058604f93409443cfa1aef75f">SA::MostUsed</a>, <a class="el" href="class_s_a_1_1_random_fit.html#a72af6c4e9bbf42d9e38e5fe01a8df812">SA::RandomFit</a>, and <a class="el" href="class_s_a_1_1_first_fit.html#ac1d02c1c76452339ba27fa0ad58f22c5">SA::FirstFit</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa84854a847fd49cc1d3e8d47c455af2b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="class_s_a_1_1_spectrum_assignment_algorithm.html">SpectrumAssignmentAlgorithm</a> &gt; SpectrumAssignmentAlgorithm::create_SpectrumAssignmentAlgorithm </td>
+          <td>(</td>
+          <td class="paramtype">SpectrumAssignmentAlgorithm::SpectrumAssignmentAlgorithms&#160;</td>
+          <td class="paramname"><em>Algorithm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_topology.html">Topology</a> &gt;&#160;</td>
+          <td class="paramname"><em>T</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>create_SpectrumAssignmentAlgorithm creates a spectrum assignment algorithm. </p>
+<dl class="section return"><dt>Returns</dt><dd>a pointer to the created spectrum assignment algorithm. </dd></dl>
+<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    std::shared_ptr&lt;SpectrumAssignmentAlgorithm&gt; WA_Alg;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">switch</span> (Algorithm)</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#define X(a,b,c,d) case a: WA_Alg = std::make_shared&lt;d&gt;(T); break;</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            SPECTRUMASSIGNMENT_ALGORITHM</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#undef X</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    WA_Alg-&gt;load();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">return</span> WA_Alg;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ada165e442eee3be0faacac7e1e2f6328"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SpectrumAssignmentAlgorithm::SpectrumAssignmentAlgorithms SpectrumAssignmentAlgorithm::define_SpectrumAssignmentAlgorithm </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>define_SpectrumAssignmentAlgorithm asks the user to define a spectrum assignment algorithm. </p>
+<dl class="section return"><dt>Returns</dt><dd>the chosen spectrum assignment algorithm. </dd></dl>
+<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    std::cout &lt;&lt; std::endl &lt;&lt; <span class="stringliteral">&quot;-&gt; Choose a wavelength assignment algorithm.&quot;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;              &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">do</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;wavasgn : SpectrumAssignmentAlgorithmNames.left)</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            std::cout &lt;&lt; <span class="stringliteral">&quot;(&quot;</span> &lt;&lt; wavasgn.first &lt;&lt; <span class="stringliteral">&quot;)\t&quot;</span> &lt;&lt; wavasgn.second &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordtype">int</span> WavAssgn_Alg;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        std::cin &gt;&gt; WavAssgn_Alg;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">if</span> (std::cin.fail() || SpectrumAssignmentAlgorithmNames.left.count</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                ((SpectrumAssignmentAlgorithms) WavAssgn_Alg) == 0)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            std::cin.clear();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            std::cin.ignore();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            std::cerr &lt;&lt; <span class="stringliteral">&quot;Invalid wavelength assignment algorithm.&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            std::cout &lt;&lt; std::endl &lt;&lt; <span class="stringliteral">&quot;-&gt; Choose a wavelength assignment algorithm.&quot;</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                      &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="keywordflow">return</span> (SpectrumAssignmentAlgorithms) WavAssgn_Alg;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">while</span> (1);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">return</span> (SpectrumAssignmentAlgorithms) - 1;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="abc089c54a1392448704a5fa75290baf0"></a>
 <div class="memitem">
 <div class="memproto">
