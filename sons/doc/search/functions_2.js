@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['calculate',['calculate',['../class_integration_method.html#a64eda894cf648d20351605e0a46e8dd2',1,'IntegrationMethod::calculate()'],['../class_simpsons_rule.html#a13008a87da48f15751c4039fe1a2c952',1,'SimpsonsRule::calculate()'],['../class_trapezoidal_rule.html#aa61ea027189802a3bec80c0352e84c56',1,'TrapezoidalRule::calculate()']]],
+  ['calculate',['calculate',['../class_numeric_methods_1_1_integration_method.html#af7bad2156de239b5be63eb140be3053c',1,'NumericMethods::IntegrationMethod::calculate()'],['../class_numeric_methods_1_1_simpsons_rule.html#a13008a87da48f15751c4039fe1a2c952',1,'NumericMethods::SimpsonsRule::calculate()'],['../class_numeric_methods_1_1_trapezoidal_rule.html#aa61ea027189802a3bec80c0352e84c56',1,'NumericMethods::TrapezoidalRule::calculate()']]],
   ['call',['Call',['../class_call.html#aaeeddb760754ee5a4fde5d4c783379d1',1,'Call']]],
   ['callgenerator',['CallGenerator',['../class_call_generator.html#adfc0fe8070f7ef351c878e5ca062b083',1,'CallGenerator']]],
   ['cavailability',['cAvailability',['../class_r_m_s_a_1_1_r_o_u_t_1_1_p_s_r_1_1c_availability.html#a539ce95d35504691f36455238f051c4c',1,'RMSA::ROUT::PSR::cAvailability']]],

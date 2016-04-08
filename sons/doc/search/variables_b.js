@@ -14,7 +14,7 @@ var searchData=
   ['nummaxcalls',['NumMaxCalls',['../class_simulations_1_1_network_simulation.html#a1b683d6c604cc98c2568695991e6c2e1',1,'Simulations::NetworkSimulation']]],
   ['numpolarizations',['numPolarizations',['../class_physical_constants.html#aff90c487e2586e2cd439cdf0997b3866',1,'PhysicalConstants']]],
   ['numregused',['NumRegUsed',['../class_r_m_s_a_1_1_transparent_segment.html#ab7a21319bc481bdb8f44f8b75c553047',1,'RMSA::TransparentSegment']]],
-  ['numsamples',['numSamples',['../class_transfer_function.html#a8eba4ff63a2f4837378ca7d7a5f7296b',1,'TransferFunction']]],
+  ['numsamples',['numSamples',['../class_t_f_1_1_transfer_function.html#a95a9520e57a587436b09cc735c4052c0',1,'TF::TransferFunction']]],
   ['numslot',['numSlot',['../class_slot.html#a85ddbc0dedf593a046a5d5297aa750b0',1,'Slot']]],
   ['numslots',['NumSlots',['../class_link.html#a097cecc1016bb6809d4b76f220b7721c',1,'Link::NumSlots()'],['../class_signal.html#a0fcbcd07bb7278dca8d7a73780465219',1,'Signal::numSlots()']]],
   ['nx_5fn',['NX_N',['../class_r_m_s_a_1_1_r_p_1_1_n_x___regenerator_placement.html#a575004ea2ea9b87311fa55ed9c2032b6',1,'RMSA::RP::NX_RegeneratorPlacement']]],

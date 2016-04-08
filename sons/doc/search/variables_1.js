@@ -8,5 +8,5 @@ var searchData=
   ['breedingprob',['breedingProb',['../class_n_s_g_a___i_i_1_1_n_s_g_a2.html#ae729d997c45f664979e140da51715d32',1,'NSGA_II::NSGA2']]],
   ['bref',['BRef',['../class_physical_constants.html#a4fdec5102d98b18a56daa8455e926d8a',1,'PhysicalConstants']]],
   ['bslot',['BSlot',['../class_slot.html#a22abbdba8b3f190ff49599dceea1666e',1,'Slot']]],
-  ['bw_5f3db',['BW_3dB',['../class_gaussian_transfer_function.html#ab36f071907eb7ca79f3df0ac9ec22966',1,'GaussianTransferFunction']]]
+  ['bw_5f3db',['BW_3dB',['../class_t_f_1_1_gaussian_transfer_function.html#a8a234bdf06ce398f5c7aeb136b72249c',1,'TF::GaussianTransferFunction']]]
 ];

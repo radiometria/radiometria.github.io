@@ -14,6 +14,6 @@ var searchData=
   ['breedingprob',['breedingProb',['../class_n_s_g_a___i_i_1_1_n_s_g_a2.html#ae729d997c45f664979e140da51715d32',1,'NSGA_II::NSGA2']]],
   ['bref',['BRef',['../class_physical_constants.html#a4fdec5102d98b18a56daa8455e926d8a',1,'PhysicalConstants']]],
   ['bslot',['BSlot',['../class_slot.html#a22abbdba8b3f190ff49599dceea1666e',1,'Slot']]],
-  ['bw_5f3db',['BW_3dB',['../class_gaussian_transfer_function.html#ab36f071907eb7ca79f3df0ac9ec22966',1,'GaussianTransferFunction']]],
+  ['bw_5f3db',['BW_3dB',['../class_t_f_1_1_gaussian_transfer_function.html#a8a234bdf06ce398f5c7aeb136b72249c',1,'TF::GaussianTransferFunction']]],
   ['bypass',['bypass',['../class_r_m_s_a_1_1_route.html#adec14dd1a31a9d41aa1fbb9812578828',1,'RMSA::Route::bypass()'],['../class_r_m_s_a_1_1_transparent_segment.html#ad424e2aa1ce58599f793b214dbd9e162',1,'RMSA::TransparentSegment::bypass()'],['../class_link.html#ae847ba2805ac514d94067db126ea5d07',1,'Link::bypass()'],['../class_node.html#afbf646c3e1427a1be264d6506c8176ea',1,'Node::bypass()']]]
 ];

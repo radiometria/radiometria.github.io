@@ -5,7 +5,7 @@ var searchData=
   ['signalqualityprediction',['SignalQualityPrediction',['../class_r_m_s_a_1_1_r_p_1_1_s_q_p_1_1_signal_quality_prediction.html',1,'RMSA::RP::SQP']]],
   ['signalqualityprediction_5fvariants',['SignalQualityPrediction_Variants',['../class_r_m_s_a_1_1_r_p_1_1_s_q_p_1_1_signal_quality_prediction___variants.html',1,'RMSA::RP::SQP']]],
   ['sim_5fnsga2',['Sim_NSGA2',['../class_simulations_1_1_simulation___n_s_g_a2___regn_plac_1_1_sim___n_s_g_a2.html',1,'Simulations::Simulation_NSGA2_RegnPlac']]],
-  ['simpsonsrule',['SimpsonsRule',['../class_simpsons_rule.html',1,'']]],
+  ['simpsonsrule',['SimpsonsRule',['../class_numeric_methods_1_1_simpsons_rule.html',1,'NumericMethods']]],
   ['simulation_5fnetworkload',['Simulation_NetworkLoad',['../class_simulations_1_1_simulation___network_load.html',1,'Simulations']]],
   ['simulation_5fnsga2_5fregnplac',['Simulation_NSGA2_RegnPlac',['../class_simulations_1_1_simulation___n_s_g_a2___regn_plac.html',1,'Simulations']]],
   ['simulation_5fpsroptimization',['Simulation_PSROptimization',['../class_simulations_1_1_simulation___p_s_r_optimization.html',1,'Simulations']]],

@@ -14,6 +14,6 @@ var class_devices_1_1_device =
     [ "get_Gain", "class_devices_1_1_device.html#a5a084bb2606e56e80f5f470841f4eaa6", null ],
     [ "get_Noise", "class_devices_1_1_device.html#acd080004f179b0d01bb91070eb550c26", null ],
     [ "get_OpEx", "class_devices_1_1_device.html#accffa5d63191494582235ecd411dead5", null ],
-    [ "get_TransferFunction", "class_devices_1_1_device.html#a93a3780b813460dda72e28a2d133da87", null ],
+    [ "get_TransferFunction", "class_devices_1_1_device.html#a6ee5ef5b6890399be746ee72f567043f", null ],
     [ "DevType", "class_devices_1_1_device.html#a19618fae75044a91862d0e8c00e47d4c", null ]
 ];

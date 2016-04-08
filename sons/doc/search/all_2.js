@@ -1,7 +1,7 @@
 var searchData=
 [
   ['c',['c',['../class_physical_constants.html#ad330daed1f421a9c83d554db34d82b5a',1,'PhysicalConstants']]],
-  ['calculate',['calculate',['../class_integration_method.html#a64eda894cf648d20351605e0a46e8dd2',1,'IntegrationMethod::calculate()'],['../class_simpsons_rule.html#a13008a87da48f15751c4039fe1a2c952',1,'SimpsonsRule::calculate()'],['../class_trapezoidal_rule.html#aa61ea027189802a3bec80c0352e84c56',1,'TrapezoidalRule::calculate()']]],
+  ['calculate',['calculate',['../class_numeric_methods_1_1_integration_method.html#af7bad2156de239b5be63eb140be3053c',1,'NumericMethods::IntegrationMethod::calculate()'],['../class_numeric_methods_1_1_simpsons_rule.html#a13008a87da48f15751c4039fe1a2c952',1,'NumericMethods::SimpsonsRule::calculate()'],['../class_numeric_methods_1_1_trapezoidal_rule.html#aa61ea027189802a3bec80c0352e84c56',1,'NumericMethods::TrapezoidalRule::calculate()']]],
   ['call',['Call',['../class_call.html',1,'Call'],['../class_call.html#aaeeddb760754ee5a4fde5d4c783379d1',1,'Call::Call()']]],
   ['call_5fstatus',['Call_Status',['../class_call.html#a2ea80f6bd5194d6855b8f417c13323a8',1,'Call']]],
   ['callending',['CallEnding',['../class_call.html#a27840632ed96c1e09939bb848562083e',1,'Call::CallEnding()'],['../class_event.html#aaf5ee85a0734d6cc2c69caaa6182c708a82cb975cee14a4fd09bef95cf76ecec9',1,'Event::CallEnding()']]],

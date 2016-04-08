@@ -32,9 +32,9 @@ var hierarchy =
     ] ],
     [ "Event", "class_event.html", null ],
     [ "Gain", "class_gain.html", null ],
-    [ "IntegrationMethod", "class_integration_method.html", [
-      [ "SimpsonsRule", "class_simpsons_rule.html", null ],
-      [ "TrapezoidalRule", "class_trapezoidal_rule.html", null ]
+    [ "NumericMethods::IntegrationMethod", "class_numeric_methods_1_1_integration_method.html", [
+      [ "NumericMethods::SimpsonsRule", "class_numeric_methods_1_1_simpsons_rule.html", null ],
+      [ "NumericMethods::TrapezoidalRule", "class_numeric_methods_1_1_trapezoidal_rule.html", null ]
     ] ],
     [ "Link", "class_link.html", null ],
     [ "ModulationScheme", "class_modulation_scheme.html", null ],
@@ -114,8 +114,8 @@ var hierarchy =
       [ "RMSA::SA::RandomFit", "class_r_m_s_a_1_1_s_a_1_1_random_fit.html", null ]
     ] ],
     [ "Topology", "class_topology.html", null ],
-    [ "TransferFunction", "class_transfer_function.html", [
-      [ "GaussianTransferFunction", "class_gaussian_transfer_function.html", null ]
+    [ "TF::TransferFunction", "class_t_f_1_1_transfer_function.html", [
+      [ "TF::GaussianTransferFunction", "class_t_f_1_1_gaussian_transfer_function.html", null ]
     ] ],
     [ "TransmissionBitrate", "class_transmission_bitrate.html", null ],
     [ "RMSA::TransparentSegment", "class_r_m_s_a_1_1_transparent_segment.html", null ]

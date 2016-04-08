@@ -1,7 +1,7 @@
 var searchData=
 [
   ['sbw_5f3db',['SBW_3dB',['../class_spectral_density.html#a49b5254b9b2eea10845b1867e1d502ca',1,'SpectralDensity']]],
-  ['scale',['scale',['../class_transfer_function.html#ab0a911479b361868379bfe08d125860e',1,'TransferFunction']]],
+  ['scale',['scale',['../class_t_f_1_1_transfer_function.html#a97665ccf2ed7e23bd250ae1181defe1d',1,'TF::TransferFunction']]],
   ['scheme',['Scheme',['../class_call.html#a61a6ccaa8a480182d8f2ea2a9e85c95c',1,'Call']]],
   ['schemes',['Schemes',['../class_r_m_s_a_1_1_routing_wavelength_assignment.html#a790e984c4c0a40dbefce1b8dcd8cec29',1,'RMSA::RoutingWavelengthAssignment']]],
   ['segments',['Segments',['../class_r_m_s_a_1_1_route.html#a478d7404c87cfae10a00d46ce2706ef2',1,'RMSA::Route']]],
