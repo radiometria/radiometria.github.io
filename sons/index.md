@@ -51,6 +51,5 @@ SONS is being developed by the [Radiometry Research Group]({{ site.baseurl }}/ra
 
 * Prof. Helder Alves Pereira
 * Prof. Raul Camelo de Andrade Almeida Jr.
-* Prof. Daniel Augusto Ribeiro Chaves
 * Matheus de Araújo Cavalcante
 * Lucas Oliveira de Figueiredo

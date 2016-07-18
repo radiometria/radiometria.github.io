@@ -51,6 +51,5 @@ O SONS foi desenvolvido pelo [Grupo de Pesquisa em Radiometria]({{ site.baseurl 
 
 * Prof. Dr. Helder Alves Pereira
 * Prof. Dr. Raul Camelo de Andrade Almeida Jr.
-* Prof. Dr. Daniel Augusto Ribeiro Chaves
 * Matheus de Araújo Cavalcante
 * Lucas Oliveira de Figueiredo
