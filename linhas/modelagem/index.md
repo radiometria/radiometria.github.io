@@ -9,6 +9,6 @@ title: Modelagem Computacional de Efeitos Eletromagnéticos
 
 ## Atividades
 
-Alunos desta linha de pesquisa desenvolveram um simulador de Redes Ópticas Elásticas, o SONS (_Slice Optical Network Simulator_).
+Alunos desta linha de pesquisa desenvolveram um simulador de Redes Ópticas Elásticas, o SimEON (_Simulator for Elastic Optical Networks_).
 
-Clique [aqui]({{ site.baseurl }}/sons/pt) para mais informações sobre o SONS.
+Clique [aqui]({{ site.baseurl }}/simeon/pt) para mais informações sobre o SimEON.
