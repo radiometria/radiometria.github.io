@@ -1,9 +1,9 @@
 ---
-titulo: SimEON: an open-source elastic optical network simulator for academic and industrial purposes
-ano: 2017
-evento: Photonic Network Communications (PNC)
+titulo: Estudo Comparativo de Algoritmos de RWA para Redes Ópticas Translúcidas
+ano: 2016
+evento: Revista de Engenharia e Pesquisa Aplicada
 autores:
-    - nome: Matheus de Araújo Cavalcante
+    - nome: Jamersson Luiz de Santana
     - nome: Helder Alves Pereira
-    - nome: Raul Camelo de Andrade Almeida Jr.
+    - nome: Daniel Augusto Ribeiro Chaves
 ---
