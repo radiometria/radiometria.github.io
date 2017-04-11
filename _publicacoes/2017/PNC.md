@@ -1,9 +1,9 @@
 ---
 titulo: Estudo Comparativo de Algoritmos de RWA para Redes Ópticas Translúcidas
-ano: 2016
-evento: Revista de Engenharia e Pesquisa Aplicada
+ano: 2017
+evento: Photonic Network Communications
 autores:
-    - nome: Jamersson Luiz de Santana
+    - nome: Matheus de Araújo Cavalcante
     - nome: Helder Alves Pereira
-    - nome: Daniel Augusto Ribeiro Chaves
+    - nome: Raul Camelo de Almeida Jr.
 ---
