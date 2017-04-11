@@ -1,5 +1,5 @@
 ---
-titulo: SimEON: an open-source elastic optical network simulator for academic
+titulo: 
 ano: 2017
 evento: Photonic Network Communications (PNC)
 autores:
