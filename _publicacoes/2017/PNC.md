@@ -1,7 +1,7 @@
 ---
-titulo: Heurística Híbrida para Alocação de Regeneradores em Redes Ópticas Elásticas Translúcidas
+titulo: SimEON: an open-source elastic optical network simulator for academic and industrial purposes
 ano: 2017
-evento: Photonic Network Communication (PNC)
+evento: Photonic Network Communications (PNC)
 autores:
     - nome: Matheus de Araújo Cavalcante
     - nome: Helder Alves Pereira
