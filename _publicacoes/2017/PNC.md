@@ -1,5 +1,5 @@
 ---
-titulo: SimEON
+titulo:
 ano: 2017
 evento: Photonic Network Communications (PNC)
 autores:
