@@ -1,8 +1,0 @@
-<map id="RMSA::SA::SpectrumAssignmentAlgorithm" name="RMSA::SA::SpectrumAssignmentAlgorithm">
-<area shape="rect" id="node2" href="$class_r_m_s_a_1_1_s_a_1_1_best_fit.html" title="The BestFit class represents the Best Fit spectrum assignment algorithm. It will allocate the requisi..." alt="" coords="284,5,421,32"/>
-<area shape="rect" id="node3" href="$class_r_m_s_a_1_1_s_a_1_1_exact_fit.html" title="The ExactFit class represents the Exact Fit spectrum assignment algorithm. It tries to allocate the r..." alt="" coords="281,56,425,83"/>
-<area shape="rect" id="node4" href="$class_r_m_s_a_1_1_s_a_1_1_first_fit.html" title="The FirstFit class represents the First Fit spectrum assignment algorithm. It tries to allocate the r..." alt="" coords="285,107,421,133"/>
-<area shape="rect" id="node5" href="$class_r_m_s_a_1_1_s_a_1_1_least_used.html" title="The LeastUsed class represents the Least Used spectrum assignment algorithm. It tries to allocate the..." alt="" coords="273,157,432,184"/>
-<area shape="rect" id="node6" href="$class_r_m_s_a_1_1_s_a_1_1_most_used.html" title="The MostUsed class represents the Most Used spectrum assignment algorithm. It tries to allocate the r..." alt="" coords="275,208,430,235"/>
-<area shape="rect" id="node7" href="$class_r_m_s_a_1_1_s_a_1_1_random_fit.html" title="The RandomFit class represents the Random Fit spectrum assignment algorithm. It tries to allocate the..." alt="" coords="273,259,432,285"/>
-</map>

@@ -1,4 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_simulations_1_1_network_simulation.html" title="The NetworkSimulation class is the a basic block. This class runs a network simulation, coordinating the CallGenerator and the RoutingWavelengthAssignment objects. " alt="" coords="5,13,213,39"/>
-<area shape="rect" id="node2" href="$class_r_m_s_a_1_1_r_p_1_1_s_q_p_1_1_s_q_p___network_simulation.html" title="RMSA::RP::SQP::SQP\l_NetworkSimulation" alt="" coords="261,5,421,47"/>
-</map>

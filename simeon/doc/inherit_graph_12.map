@@ -1,5 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_numeric_methods_1_1_integration_method.html" title="The IntegrationMethod class represents a numerical integration method. " alt="" coords="5,23,196,65"/>
-<area shape="rect" id="node2" href="$class_numeric_methods_1_1_simpsons_rule.html" title="The SimpsonsRule class represents the Simpson&#39;s Rule numerical integration method. " alt="" coords="248,5,463,32"/>
-<area shape="rect" id="node3" href="$class_numeric_methods_1_1_trapezoidal_rule.html" title="The TrapezoidalRule class represents the Trapezoidal Rule numerical integration method. " alt="" coords="244,56,467,83"/>
-</map>

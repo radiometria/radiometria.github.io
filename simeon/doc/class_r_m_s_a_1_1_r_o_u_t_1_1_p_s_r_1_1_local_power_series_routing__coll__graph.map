@@ -1,5 +1,0 @@
-<map id="RMSA::ROUT::PSR::LocalPowerSeriesRouting" name="RMSA::ROUT::PSR::LocalPowerSeriesRouting">
-<area shape="rect" id="node2" href="$class_r_m_s_a_1_1_r_o_u_t_1_1_p_s_r_1_1_power_series_routing.html" title="The PowerSeriesRouting class represents the Power Series Routing algorithm. Its link cost is a trunca..." alt="" coords="5,169,231,211"/>
-<area shape="rect" id="node3" href="$class_r_m_s_a_1_1_r_o_u_t_1_1_dijkstra_routing_algorithm.html" title="The DijkstraRoutingAlgorithm class is a class of routing algorithms whose routes are determined using..." alt="" coords="15,80,221,121"/>
-<area shape="rect" id="node4" href="$class_r_m_s_a_1_1_r_o_u_t_1_1_routing_algorithm.html" title="The RoutingAlgorithm class searches for a route, given a Call. " alt="" coords="11,5,225,32"/>
-</map>

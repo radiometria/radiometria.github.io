@@ -1,7 +1,0 @@
-<map id="Devices::EDFA" name="Devices::EDFA">
-<area shape="rect" id="node4" href="$class_devices_1_1_booster_amplifier.html" title="The BoosterAmplifier class represents a booster amplifier. In the considered architecture it is on th..." alt="" coords="5,229,180,256"/>
-<area shape="rect" id="node5" href="$class_devices_1_1_in_line_amplifier.html" title="The InLineAmplifier class represents an In&#45;Line Amplifier. " alt="" coords="204,229,368,256"/>
-<area shape="rect" id="node6" href="$class_devices_1_1_pre_amplifier.html" title="The PreAmplifier class represents a Pre&#45;Amplifier. " alt="" coords="393,229,542,256"/>
-<area shape="rect" id="node2" href="$class_devices_1_1_amplifier.html" title="The Amplifier class represents an amplifier, that amplifies a signal and generates noise..." alt="" coords="221,80,351,107"/>
-<area shape="rect" id="node3" href="$class_devices_1_1_device.html" title="The Device class represents in a generic way a device on the network. " alt="" coords="227,5,345,32"/>
-</map>

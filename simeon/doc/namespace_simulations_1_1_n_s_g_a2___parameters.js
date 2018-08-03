@@ -1,7 +1,0 @@
-var namespace_simulations_1_1_n_s_g_a2___parameters =
-[
-    [ "NSGA2_Parameter_BlockingProbability", "class_simulations_1_1_n_s_g_a2___parameters_1_1_n_s_g_a2___parameter___blocking_probability.html", "class_simulations_1_1_n_s_g_a2___parameters_1_1_n_s_g_a2___parameter___blocking_probability" ],
-    [ "NSGA2_Parameter_CapEx", "class_simulations_1_1_n_s_g_a2___parameters_1_1_n_s_g_a2___parameter___cap_ex.html", "class_simulations_1_1_n_s_g_a2___parameters_1_1_n_s_g_a2___parameter___cap_ex" ],
-    [ "NSGA2_Parameter_NumberOfRegenerators", "class_simulations_1_1_n_s_g_a2___parameters_1_1_n_s_g_a2___parameter___number_of_regenerators.html", "class_simulations_1_1_n_s_g_a2___parameters_1_1_n_s_g_a2___parameter___number_of_regenerators" ],
-    [ "NSGA2_Parameter_OpEx", "class_simulations_1_1_n_s_g_a2___parameters_1_1_n_s_g_a2___parameter___op_ex.html", "class_simulations_1_1_n_s_g_a2___parameters_1_1_n_s_g_a2___parameter___op_ex" ]
-];
